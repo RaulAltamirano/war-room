@@ -1,0 +1,397 @@
+{
+  "name": "clandestinos",
+  "clanLevel": 5,
+  "tag": "#2RGC02RYC",
+  "warWins": 8,
+  "warTies": 0,
+  "warLosses": 20,
+  "warWinStreak": 1,
+  "warLeague": {
+    "name": "Silver League II"
+  },
+  "capitalLeague": {
+    "name": "Silver League II"
+  },
+  "clanPoints": 23450,
+  "clanBuilderBasePoints": 16260,
+  "clanCapitalPoints": 1049,
+  "members": 35,
+  "warFrequency": "always",
+  "location": {
+    "name": "International"
+  },
+  "type": "open",
+  "description": "Bienvenidos todos y todas 💞 es un placer invitarles a nuestro clan donde todos son bienvenidos y poder competir juntos 💞😻",
+  "requiredTownhallLevel": 9,
+  "requiredTrophies": 200,
+  "labels": [
+    {
+      "name": "Clan War League"
+    },
+    {
+      "name": "Clan Games"
+    },
+    {
+      "name": "Farming"
+    }
+  ],
+  "chatLanguage": {
+    "name": "Español"
+  },
+  "isFamilyFriendly": true,
+  "isWarLogPublic": true,
+  "clanCapital": {
+    "capitalHallLevel": 4,
+    "districts": [
+      {
+        "name": "Capital Peak",
+        "districtHallLevel": 4
+      },
+      {
+        "name": "Barbarian Camp",
+        "districtHallLevel": 2
+      },
+      {
+        "name": "Wizard Valley",
+        "districtHallLevel": 2
+      },
+      {
+        "name": "Balloon Lagoon",
+        "districtHallLevel": 1
+      }
+    ]
+  },
+  "memberList": [
+    {
+      "name": "Joshua",
+      "role": "member",
+      "townHallLevel": 18,
+      "expLevel": 214,
+      "donations": 165,
+      "donationsReceived": 121,
+      "builderBaseTrophies": 3029,
+      "tag": "#GPRY08G8G"
+    },
+    {
+      "name": "kssto",
+      "role": "member",
+      "townHallLevel": 15,
+      "expLevel": 175,
+      "donations": 463,
+      "donationsReceived": 106,
+      "builderBaseTrophies": 3204,
+      "tag": "#Y9GU8QYYG"
+    },
+    {
+      "name": "imparable",
+      "role": "leader",
+      "townHallLevel": 13,
+      "expLevel": 145,
+      "donations": 488,
+      "donationsReceived": 42,
+      "builderBaseTrophies": 2439,
+      "tag": "#QL2V8CYRU"
+    },
+    {
+      "name": "al 100%",
+      "role": "admin",
+      "townHallLevel": 14,
+      "expLevel": 141,
+      "donations": 75,
+      "donationsReceived": 45,
+      "builderBaseTrophies": 2138,
+      "tag": "#QCCVGR9P0"
+    },
+    {
+      "name": "Pete Zahut",
+      "role": "member",
+      "townHallLevel": 13,
+      "expLevel": 121,
+      "donations": 206,
+      "donationsReceived": 114,
+      "builderBaseTrophies": 1838,
+      "tag": "#GP2PGPUVJ"
+    },
+    {
+      "name": "Abrasive7X",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 85,
+      "donations": 783,
+      "donationsReceived": 563,
+      "builderBaseTrophies": 1313,
+      "tag": "#Q02JR2JYV"
+    },
+    {
+      "name": "JOSHUA",
+      "role": "member",
+      "townHallLevel": 12,
+      "expLevel": 74,
+      "donations": 344,
+      "donationsReceived": 308,
+      "builderBaseTrophies": 1258,
+      "tag": "#R8CVPGJQC"
+    },
+    {
+      "name": "@miranda_444",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 63,
+      "donations": 133,
+      "donationsReceived": 66,
+      "builderBaseTrophies": 1888
+    },
+    {
+      "name": "اوراس",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 73,
+      "donations": 50,
+      "donationsReceived": 204,
+      "builderBaseTrophies": 1114,
+      "tag": "#GUY2Y82CU"
+    },
+    {
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 130,
+      "donations": 2295,
+      "donationsReceived": 1665,
+      "builderBaseTrophies": 1941,
+      "tag": "#2VL98GPGU"
+    },
+    {
+      "name": "cozo 2000",
+      "role": "admin",
+      "townHallLevel": 10,
+      "expLevel": 72,
+      "donations": 504,
+      "donationsReceived": 1608,
+      "builderBaseTrophies": 1811
+    },
+    {
+      "name": "KOLET",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 66,
+      "donations": 81,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 1146,
+      "tag": "#GPYCLGLGG"
+    },
+    {
+      "name": "alex",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 67,
+      "donations": 35,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 278
+    },
+    {
+      "name": "joshua",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 74,
+      "donations": 87,
+      "donationsReceived": 92,
+      "builderBaseTrophies": 1126,
+      "tag": "#GGUV8U2LQ"
+    },
+    {
+      "name": "stiven",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 41,
+      "donations": 0,
+      "donationsReceived": 31,
+      "builderBaseTrophies": 802
+    },
+    {
+      "name": "demiur",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 66,
+      "donations": 301,
+      "donationsReceived": 31,
+      "builderBaseTrophies": 1614,
+      "tag": "#R2ULCJ0J8"
+    },
+    {
+      "name": "minch",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 72,
+      "donations": 93,
+      "donationsReceived": 505,
+      "builderBaseTrophies": 2069
+    },
+    {
+      "name": "MOMOLOL",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 82,
+      "donations": 141,
+      "donationsReceived": 605,
+      "builderBaseTrophies": 1840
+    },
+    {
+      "name": "jhon cna",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 59,
+      "donations": 0,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 1724,
+      "tag": "#R820CCYQ0"
+    },
+    {
+      "name": "kerrykopito",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 60,
+      "donations": 0,
+      "donationsReceived": 62,
+      "builderBaseTrophies": 1640
+    },
+    {
+      "name": "Shiba",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 63,
+      "donations": 35,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 314
+    },
+    {
+      "name": "onel",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 63,
+      "donations": 40,
+      "donationsReceived": 96,
+      "builderBaseTrophies": 656
+    },
+    {
+      "name": "ElTiti",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 38,
+      "donations": 0,
+      "donationsReceived": 150,
+      "builderBaseTrophies": 586,
+      "tag": "#R282UJLVJ"
+    },
+    {
+      "name": "Carlos",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 69,
+      "donations": 0,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 1912
+    },
+    {
+      "name": "ADES",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 47,
+      "donations": 0,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 1063
+    },
+    {
+      "name": "jesu",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 33,
+      "donations": 104,
+      "donationsReceived": 20,
+      "builderBaseTrophies": 79
+    },
+    {
+      "name": "@Nicola§••",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 42,
+      "donations": 35,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 745
+    },
+    {
+      "name": "ANGL VON PEACE#",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 102,
+      "donations": 0,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 340
+    },
+    {
+      "name": "Diego503",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 35,
+      "donations": 0,
+      "donationsReceived": 86,
+      "builderBaseTrophies": 871,
+      "tag": "#R8P80GGGR"
+    },
+    {
+      "name": "GLICHEO 8",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 69,
+      "donations": 0,
+      "donationsReceived": 0,
+      "builderBaseTrophies": 1365
+    },
+    {
+      "name": "ZackyB",
+      "role": "admin",
+      "townHallLevel": 7,
+      "expLevel": 36,
+      "donations": 0,
+      "donationsReceived": 140,
+      "builderBaseTrophies": 109
+    },
+    {
+      "name": "Nicolás",
+      "role": "admin",
+      "townHallLevel": 14,
+      "expLevel": 151,
+      "donations": 1186,
+      "donationsReceived": 797,
+      "builderBaseTrophies": 2096,
+      "tag": "#8VCYYPVLU"
+    },
+    {
+      "name": "tiroteo bulls",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 61,
+      "donations": 40,
+      "donationsReceived": 93,
+      "builderBaseTrophies": 1874
+    },
+    {
+      "name": "Brand.ows",
+      "role": "admin",
+      "townHallLevel": 6,
+      "expLevel": 19,
+      "donations": 0,
+      "donationsReceived": 100,
+      "builderBaseTrophies": 40
+    },
+    {
+      "name": "ONEL2.0",
+      "role": "member",
+      "townHallLevel": 12,
+      "expLevel": 89,
+      "donations": 214,
+      "donationsReceived": 47,
+      "builderBaseTrophies": 1105
+    }
+  ]
+}
