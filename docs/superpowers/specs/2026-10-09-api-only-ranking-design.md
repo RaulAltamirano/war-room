@@ -6,8 +6,9 @@
 - Clan/roster desde la API.
 
 ## Top 3
-Orden: impacto ↓, estrellas ↓, neto ↓, sin usar ↑; donaciones solo desempate.
-Pedestal: impacto redondeado. Hint: «Solo guerras».
+Puntos: 70% impacto de guerra + 30% donaciones (normalizadas al máximo del grupo con ≥1 guerra).
+Empate: estrellas ↓, neto ↓, sin usar ↑.
+Pedestal: puntos redondeados. Info: «Cómo se elige» como popover (no empuja el podio).
 
 ## Próxima guerra
 Automática: pelearon ≥1 guerra y no están «Fuera de guerra».

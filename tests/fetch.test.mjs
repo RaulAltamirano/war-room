@@ -69,6 +69,6 @@ test('404 de liga es normal, guarda la guerra terminada y no la duplica', async 
   const raw = JSON.parse(await readFile(path.join(root, 'data/raw/20261008-AAAA.json'), 'utf8'));
   assert.equal(raw.state, 'warEnded');
   const clan = JSON.parse(await readFile(path.join(root, 'data/clan.json'), 'utf8'));
-  assert.equal(clan.badgeUrls, undefined);
+  assert.equal(clan.badgeUrls.small, 'x');
   assert.equal(logs.some((l) => /404/.test(l) && /liga/i.test(l)), true);
 });

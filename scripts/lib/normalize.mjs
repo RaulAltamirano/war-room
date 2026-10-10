@@ -51,12 +51,19 @@ export function trLeague(s) {
   return s || '—';
 }
 
+function badgeOf(j) {
+  const b = j && j.badgeUrls;
+  if (!b) return '';
+  return b.medium || b.large || b.small || '';
+}
+
 export function fromApi(j) {
   const loc = j.location && j.location.name;
   const clan = {
     name: j.name,
     level: j.clanLevel,
     tag: j.tag,
+    badge: badgeOf(j),
     w: j.warWins || 0,
     t: j.warTies || 0,
     l: j.warLosses || 0,
@@ -182,7 +189,19 @@ export function memberStats(us, per) {
       ...def,
       per,
     ];
-    return { tag: m.tag, name: m.name, stats };
+    const hits = (m.attacks || []).slice().sort((a, b) => a.order - b.order).map((a) => [
+      a.stars || 0,
+      a.destructionPercentage || 0,
+      a.order || 0,
+    ]);
+    return {
+      tag: m.tag,
+      name: m.name,
+      stats,
+      th: m.townhallLevel || m.townHallLevel || 0,
+      map: m.mapPosition || 0,
+      attacks: hits,
+    };
   });
 }
 
@@ -204,7 +223,14 @@ export function normalizeWar(war, { clanTag = CLAN_TAG, byTag = new Map() } = {}
   const per = perOf(war);
   const members = memberStats(sides.us, per).map((m) => {
     const cur = byTag.get(m.tag);
-    return [cur?.name || m.name, cur ? (MAP_RL[cur.role] || 'M') : 'M', m.stats];
+    return [
+      cur?.name || m.name,
+      cur ? (MAP_RL[cur.role] || 'M') : 'M',
+      m.stats,
+      m.th,
+      m.map,
+      m.attacks,
+    ];
   });
   return {
     id: 'w' + date.replace(/-/g, ''),
@@ -241,13 +267,17 @@ export function buildSite({
 
 const IMAGE_KEYS = new Set(['badgeUrls', 'iconUrls']);
 
-export function stripImages(value) {
-  if (Array.isArray(value)) return value.map(stripImages);
+export function stripImages(value, { keepBadge = false } = {}) {
+  if (Array.isArray(value)) return value.map((v) => stripImages(v, { keepBadge: false }));
   if (value && typeof value === 'object') {
     const out = {};
     for (const [k, v] of Object.entries(value)) {
+      if (k === 'badgeUrls' && keepBadge) {
+        out[k] = v;
+        continue;
+      }
       if (IMAGE_KEYS.has(k)) continue;
-      out[k] = stripImages(v);
+      out[k] = stripImages(v, { keepBadge: false });
     }
     return out;
   }

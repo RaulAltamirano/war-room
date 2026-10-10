@@ -1827,5 +1827,10 @@
     "id": 75000003,
     "name": "Español",
     "languageCode": "ES"
+  },
+  "badgeUrls": {
+    "small": "https://api-assets.clashofclans.com/badges/70/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png",
+    "large": "https://api-assets.clashofclans.com/badges/512/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png",
+    "medium": "https://api-assets.clashofclans.com/badges/200/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png"
   }
 }

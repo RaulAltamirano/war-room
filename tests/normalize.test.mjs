@@ -51,7 +51,11 @@ function pageMetrics(S) {
     p.imp = p.g ? p.impSum / p.g : 0;
     p.don = don[k] || 0;
     return p;
-  }).filter((p) => p.g).sort((a, b) => cmpOff(a, b) || ((b.don || 0) - (a.don || 0)));
+  }).filter((p) => p.g);
+  let maxDon = 0;
+  for (const p of top) if ((p.don || 0) > maxDon) maxDon = p.don;
+  for (const p of top) p.score = 0.7 * p.imp + 0.3 * (maxDon ? (p.don / maxDon) * 100 : 0);
+  top.sort((a, b) => (b.score - a.score) || cmpOff(a, b) || a.n.localeCompare(b.n, 'es'));
 
   const H = {};
   for (const w of wars) {
@@ -71,7 +75,7 @@ function pageMetrics(S) {
   out.sort((a, b) => b.miss - a.miss);
   const outNames = new Set(out.map((x) => x.n));
   return {
-    top: top.slice(0, 3).map((x) => [x.n, Math.round(x.imp)]),
+    top: top.slice(0, 3).map((x) => [x.n, Math.round(x.score)]),
     out: out.map((x) => [x.n, x.miss, x.pos]),
     pros: top.filter((p) => !outNames.has(p.n)).map((p) => p.n),
   };
@@ -118,11 +122,11 @@ test('nuevas estrellas respetan el orden y el empate se rompe por destrucción',
       destructionPercentage: 100,
       members: [
         {
-          tag: '#A', name: 'A', mapPosition: 1, opponentAttacks: 0,
+          tag: '#A', name: 'A', mapPosition: 1, townhallLevel: 12, opponentAttacks: 0,
           attacks: [{ attackerTag: '#A', defenderTag: '#D', stars: 2, destructionPercentage: 80, order: 1 }],
         },
         {
-          tag: '#B', name: 'B', mapPosition: 2, opponentAttacks: 1,
+          tag: '#B', name: 'B', mapPosition: 2, townhallLevel: 11, opponentAttacks: 1,
           bestOpponentAttack: { stars: 3 },
           attacks: [{ attackerTag: '#B', defenderTag: '#D', stars: 3, destructionPercentage: 100, order: 2 }],
         },
@@ -140,6 +144,10 @@ test('nuevas estrellas respetan el orden y el empate se rompe por destrucción',
   assert.deepEqual(by.A, [35, 1, 1, 50, 1, 2, 0, 50, 0, 0, 0, 0, 0, 0, 2]);
   assert.deepEqual(by.B, [50, 1.5, 0.5, 50, 1, -2, 50, 0, 0, 0, 100, 0, 0, 0, 2]);
   assert.equal(site.wars[0].res, 'V');
+  const rowA = site.wars[0].members.find((m) => m[0] === 'A');
+  assert.equal(rowA[3], 12);
+  assert.equal(rowA[4], 1);
+  assert.deepEqual(rowA[5], [[2, 80, 1]]);
   assert.equal(warResult(
     { stars: 3, destructionPercentage: 100 },
     { stars: 3, destructionPercentage: 100 },
@@ -182,10 +190,17 @@ test('solo API: top 3, fuera de guerra y prospectos', async () => {
   assert.equal(site.wars.some((w) => w.id === 'w1' || w.date === '2026-10-01'), false);
   assert.equal('prospects' in site, false);
   const m = pageMetrics(site);
-  assert.deepEqual(m.top, [['demiur', 100], ['kssto', 100], ['Diego503', 100]]);
+  assert.deepEqual(m.top, [['kssto', 100], ['Pete Zahut', 81], ['demiur', 71]]);
   assert.deepEqual(m.out, [['Joshua', 4, 6], ['KOLET', 3, 6], ['jhon cna', 3, 6]]);
-  assert.equal(m.pros[0], 'demiur');
+  assert.equal(m.pros[0], 'kssto');
   assert.equal(m.pros.includes('Joshua'), false);
   assert.equal(m.pros.includes('KOLET'), false);
   assert.ok(m.pros.length >= 10);
+  const sample = site.wars[0].members.find((m) => Array.isArray(m[2]) && m[2][4] === 0);
+  assert.ok(sample);
+  assert.ok(sample[3] >= 9);
+  assert.ok(sample[4] >= 1);
+  assert.ok(Array.isArray(sample[5]));
+  assert.ok(sample[5].length >= 1);
+  assert.equal(sample[5][0].length, 3);
 });

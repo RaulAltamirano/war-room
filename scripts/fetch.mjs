@@ -100,7 +100,7 @@ export async function run(opts = {}) {
   }
 
   await mkdir(path.join(dir, 'data', 'raw'), { recursive: true });
-  await writeFile(path.join(dir, 'data/clan.json'), JSON.stringify(stripImages(clanRes.json), null, 2) + '\n');
+  await writeFile(path.join(dir, 'data/clan.json'), JSON.stringify(stripImages(clanRes.json, { keepBadge: true }), null, 2) + '\n');
   const saved = [];
   const skipped = [];
   for (const war of pending) {
