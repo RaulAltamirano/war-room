@@ -432,7 +432,6 @@ function updatedLabel(){if(!S||!S.generatedAt)return '';var m=Math.max(0,Math.fl
 function showError(){$('app').innerHTML='<p class="note">No se pudo cargar la bitácora. Intenta de nuevo en un momento.</p><button class="btn" type="button" data-act="retry">Reintentar</button>'}
 function boot(){$('app').innerHTML='<p class="note">Cargando bitácora…</p>';fetch('data/site.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('status');return r.json()}).then(function(data){S=data;if(!skied){sky();skied=true}render()}).catch(function(){showError()})}
 
-function isPro(n){return (S.prospects||[]).indexOf(n)>=0}
 var ROLE={L:'Líder',C:'Colíder',E:'Veterano',M:'Miembro'};
 function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function f2(n){return n.toLocaleString('es-MX',{minimumFractionDigits:2,maximumFractionDigits:2})}
@@ -484,12 +483,10 @@ function agg(ws){
 function cmpOff(x,y){return (y.imp-x.imp)||(y.stars-x.stars)||(y.net-x.net)||(x.miss-y.miss)||x.n.localeCompare(y.n,'es')}
 function sameP(a,b){return a.imp===b.imp&&a.stars===b.stars&&a.net===b.net&&a.miss===b.miss}
 function thChip(n){var q=rosterBy(n);if(!q)return '';var t=q.th>=15?5:q.th>=13?4:q.th>=11?3:q.th>=9?2:1;return '<span class="thc t'+t+'" title="Ayuntamiento '+q.th+'">TH '+q.th+'</span>'}
+function donOf(n){var r=(S.roster||[]).find(function(m){return m[0]===n});return r?r[4]:0}
 function scored(){
- var A=agg(warsSorted()),by={};A.forEach(function(p){by[p.n]=p});
- var names=[];(S.roster||[]).forEach(function(m){names.push(m[0])});A.forEach(function(p){if(names.indexOf(p.n)<0)names.push(p.n)});
- var don={},maxD=1;(S.roster||[]).forEach(function(m){don[m[0]]=m[4];if(m[4]>maxD)maxD=m[4]});
- return names.map(function(n){var p=by[n];var ok=p&&p.g;return {n:n,p:ok?p:null,score:(ok?p.imp:0)*0.7+((don[n]||0)/maxD)*30}})
-  .sort(function(a,b){return (b.score-a.score)||a.n.localeCompare(b.n,'es')});
+ return agg(warsSorted()).filter(function(p){return p.g}).map(function(p){return {n:p.n,p:p,score:p.imp,don:donOf(p.n)}})
+  .sort(function(a,b){return cmpOff(a.p,b.p)||((b.don||0)-(a.don||0))||a.n.localeCompare(b.n,'es')});
 }
 
 
@@ -563,8 +560,8 @@ function podium(){
  var order=top.length===3?[1,0,2]:[0,1,2];
  var cols=order.map(function(k,pos){var x=top[k];if(!x)return '';var rk=k+1;
   return '<div class="pod" style="--i:'+pos+'"><div class="medal"><svg><use href="#medal"/></svg><b>'+rk+'</b></div><div class="who">'+esc(x.n)+'</div>'+thChip(x.n)+
-  '<div class="ped r'+rk+'"><span class="imp tnum">'+Math.round(x.score)+'</span><span class="lbl">pts</span></div></div>'}).join('');
- return '<section id="top" aria-labelledby="h-pod"><div class="sec-head"><h2 id="h-pod" class="toon">Top 3</h2><span class="hint">Guerras + donaciones</span></div><div class="podium">'+cols+'</div></section>';
+  '<div class="ped r'+rk+'"><span class="imp tnum">'+Math.round(x.score)+'</span><span class="lbl">impacto</span></div></div>'}).join('');
+ return '<section id="top" aria-labelledby="h-pod"><div class="sec-head"><h2 id="h-pod" class="toon">Top 3</h2><span class="hint">Solo guerras</span></div><div class="podium">'+cols+'</div></section>';
 }
 
 var SORTS=[['rank','Ranking'],['stars','Estrellas'],['miss','Sin usar']];
@@ -600,14 +597,17 @@ function alerts(){
 }
 
 function lineup(){
- var L=scored(),OUT=trend().out.map(function(x){return x.n}),pros=L.filter(function(x){return isPro(x.n)&&OUT.indexOf(x.n)<0}),out=L.filter(function(x){return !isPro(x.n)||OUT.indexOf(x.n)>=0});
+ var OUT=trend().out.map(function(x){return x.n}),pros=scored().filter(function(x){return OUT.indexOf(x.n)<0}),pick={};
+ pros.forEach(function(x){pick[x.n]=1});
+ var out=[];(S.roster||[]).forEach(function(m){if(!pick[m[0]])out.push(m[0])});
+ OUT.forEach(function(n){if(!pick[n]&&out.indexOf(n)<0)out.push(n)});
  function card(x,i){var p=x.p;var st=p?(p.miss?'warn':'ok'):'idle';
   return '<div class="pro '+st+'"><span class="pro-n tnum">'+(i+1)+'</span><b class="pro-name">'+esc(x.n)+'</b>'+thChip(x.n)+'</div>'}
  return '<section id="sugerencia" aria-labelledby="h-line"><div class="sec-head"><h2 id="h-line" class="toon">Próxima guerra</h2><span class="hint">'+pros.length+' sugeridos</span></div>'+
  '<div class="legend lg-top"><span><i style="background:var(--green)"></i>Cumplió</span><span><i style="background:var(--red)"></i>Dejó ataques</span><span><i style="background:var(--blue)"></i>Sin historial</span></div>'+
  '<div class="pros">'+pros.map(card).join('')+'</div>'+
  '<details class="more"><summary>Fuera de rotación ('+out.length+')</summary><div class="bench">'+
- out.map(function(x){return '<span class="chip">'+esc(x.n)+'</span>'}).join('')+'</div></details></section>';
+ out.map(function(n){return '<span class="chip">'+esc(n)+'</span>'}).join('')+'</div></details></section>';
 }
 
 function clanCard(){
@@ -632,20 +632,20 @@ function trend(){
   if(h.length<2)return;
   var k=Math.min(2,h.length-1),rec2=h.slice(-k),prev=h.slice(0,h.length-k);
   var avg=function(a){var t=0;a.forEach(function(r){t+=r.impact});return t/a.length};
-  var d=Math.round(avg(rec2)-avg(prev));
-  if(d>=10)up.push({n:n,d:d});else if(d<=-10)down.push({n:n,d:d});
+  var a0=avg(prev),a1=avg(rec2),d=Math.round(a1-a0);
+  if(d>=10)up.push({n:n,d:d,from:Math.round(a0),to:Math.round(a1)});
+  else if(d<=-10)down.push({n:n,d:d,from:Math.round(a0),to:Math.round(a1)});
  });
  up.sort(function(a,b){return b.d-a.d});down.sort(function(a,b){return a.d-b.d});out.sort(function(a,b){return b.miss-a.miss});
  return {up:up,down:down,out:out};
 }
-function isOut(n){return trend().out.some(function(x){return x.n===n})}
 function analysis(){
  var T=trend();
  function col(cls,icon,title,list,fmt,empty){return '<div class="an '+cls+'"><div class="an-h"><span class="an-i" aria-hidden="true">'+icon+'</span>'+title+'<span class="an-c tnum">'+list.length+'</span></div>'+
   (list.length?list.map(function(x){return '<div class="an-r"><span class="an-n">'+esc(x.n)+'</span>'+thChip(x.n)+'<span class="an-v tnum">'+fmt(x)+'</span></div>'}).join(''):'<p class="note an-e">'+empty+'</p>')+'</div>'}
  return '<section id="analisis" aria-labelledby="h-an"><div class="sec-head"><h2 id="h-an" class="toon">Análisis</h2><span class="hint">Últimas 2 guerras vs. anteriores</span></div><div class="ans">'+
- col('up','▲','Mejoraron',T.up,function(x){return '+'+x.d+' pts'},'Nadie subió de forma clara.')+
- col('down','▼','Bajaron',T.down,function(x){return x.d+' pts'},'Nadie bajó de forma clara.')+
+ col('up','▲','Mejoraron',T.up,function(x){return '+'+x.d+' · '+x.from+' → '+x.to},'Nadie subió de forma clara.')+
+ col('down','▼','Bajaron',T.down,function(x){return x.d+' · '+x.from+' → '+x.to},'Nadie bajó de forma clara.')+
  col('out','✕','Fuera de guerra',T.out,function(x){return x.miss+' de '+x.pos+' sin usar'},'Todos cumplen con sus ataques.')+
  '</div><p class="note an-foot">Fuera de guerra: dejó la mitad o más de sus ataques.</p></section>';
 }

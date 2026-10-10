@@ -8,8 +8,6 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export async function build(opts = {}) {
   const dir = opts.root || root;
   const clanJson = JSON.parse(await readFile(path.join(dir, 'data/clan.json'), 'utf8'));
-  const prospects = JSON.parse(await readFile(path.join(dir, 'data/prospects.json'), 'utf8'));
-  const legacy = JSON.parse(await readFile(path.join(dir, 'data/legacy-wars.json'), 'utf8'));
   const rawDir = path.join(dir, 'data/raw');
   const names = (await readdir(rawDir)).filter((n) => n.endsWith('.json')).sort();
   const rawWars = [];
@@ -19,8 +17,6 @@ export async function build(opts = {}) {
   const generatedAt = opts.generatedAt || new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
   const site = buildSite({
     clanJson,
-    prospects,
-    legacy,
     rawWars,
     generatedAt,
     clanTag: opts.clanTag || process.env.CLAN_TAG || '#2RGC02RYC',

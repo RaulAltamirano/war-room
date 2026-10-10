@@ -19,6 +19,10 @@ function rec(s) {
   return { impact: s[0], miss, pos, stars: Math.round(s[1] * pos), net: s[5] };
 }
 
+function cmpOff(x, y) {
+  return (y.imp - x.imp) || (y.stars - x.stars) || (y.net - x.net) || (x.miss - y.miss) || x.n.localeCompare(y.n, 'es');
+}
+
 function pageMetrics(S) {
   const wars = S.wars.slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
   const P = {};
@@ -40,25 +44,14 @@ function pageMetrics(S) {
       p.impSum += r.impact;
     }
   }
-  const by = {};
-  for (const k of order) {
+  const don = {};
+  for (const m of S.roster || []) don[m[0]] = m[4];
+  const top = order.map((k) => {
     const p = P[k];
     p.imp = p.g ? p.impSum / p.g : 0;
-    by[k] = p;
-  }
-  const names = (S.roster || []).map((m) => m[0]);
-  for (const k of order) if (!names.includes(k)) names.push(k);
-  const don = {};
-  let maxD = 1;
-  for (const m of S.roster || []) {
-    don[m[0]] = m[4];
-    if (m[4] > maxD) maxD = m[4];
-  }
-  const top = names.map((n) => {
-    const p = by[n];
-    const ok = p && p.g;
-    return { n, score: (ok ? p.imp : 0) * 0.7 + ((don[n] || 0) / maxD) * 30 };
-  }).sort((a, b) => (b.score - a.score) || a.n.localeCompare(b.n, 'es'));
+    p.don = don[k] || 0;
+    return p;
+  }).filter((p) => p.g).sort((a, b) => cmpOff(a, b) || ((b.don || 0) - (a.don || 0)));
 
   const H = {};
   for (const w of wars) {
@@ -76,19 +69,12 @@ function pageMetrics(S) {
     if (miss >= 2 && miss * 2 >= pos) out.push({ n, miss, pos });
   }
   out.sort((a, b) => b.miss - a.miss);
+  const outNames = new Set(out.map((x) => x.n));
   return {
-    top: top.slice(0, 3).map((x) => [x.n, Math.round(x.score)]),
+    top: top.slice(0, 3).map((x) => [x.n, Math.round(x.imp)]),
     out: out.map((x) => [x.n, x.miss, x.pos]),
+    pros: top.filter((p) => !outNames.has(p.n)).map((p) => p.n),
   };
-}
-
-function byName(members) {
-  const o = {};
-  for (const m of members) {
-    const stats = Array.isArray(m[2]) && m[2].length === 14 ? m[2].concat([2]) : m[2];
-    o[m[0]] = [m[1], stats];
-  }
-  return o;
 }
 
 test('traduce ligas, frecuencia, tipo y distritos', () => {
@@ -146,8 +132,6 @@ test('nuevas estrellas respetan el orden y el empate se rompe por destrucción',
   };
   const site = buildSite({
     clanJson: { name: 'x', tag: CLAN, memberList: [] },
-    prospects: [],
-    legacy: [],
     rawWars: [war],
     generatedAt: '2026-10-01T00:00:00Z',
     clanTag: CLAN,
@@ -156,18 +140,17 @@ test('nuevas estrellas respetan el orden y el empate se rompe por destrucción',
   assert.deepEqual(by.A, [35, 1, 1, 50, 1, 2, 0, 50, 0, 0, 0, 0, 0, 0, 2]);
   assert.deepEqual(by.B, [50, 1.5, 0.5, 50, 1, -2, 50, 0, 0, 0, 100, 0, 0, 0, 2]);
   assert.equal(site.wars[0].res, 'V');
-  const tied = {
-    ...war,
-    opponent: { ...war.opponent, destructionPercentage: 100 },
-  };
   assert.equal(warResult(
     { stars: 3, destructionPercentage: 100 },
     { stars: 3, destructionPercentage: 100 },
   ), 'E');
-  assert.equal(summarizeWar(tied, CLAN).res, 'E');
+  assert.equal(summarizeWar({
+    ...war,
+    opponent: { ...war.opponent, destructionPercentage: 100 },
+  }, CLAN).res, 'E');
 });
 
-test('guerras de liga del 3 al 6 de octubre', async () => {
+test('guerras de liga desde raw/', async () => {
   const files = (await readdir(path.join(root, 'data/raw'))).filter((f) => f.endsWith('.json')).sort();
   const rows = [];
   for (const f of files) {
@@ -180,46 +163,29 @@ test('guerras de liga del 3 al 6 de octubre', async () => {
     { date: '2026-10-04', rival: 'ICE BLIZZARD', res: 'V', stars: [40, 12] },
     { date: '2026-10-05', rival: 'The BORO', res: 'D', stars: [24, 27] },
     { date: '2026-10-06', rival: 'EMPIRE', res: 'V', stars: [35, 15] },
+    { date: '2026-10-07', rival: 'Sarıyer', res: 'V', stars: [33, 8] },
+    { date: '2026-10-08', rival: 'ایرانیان', res: 'V', stars: [34, 23] },
   ]);
 });
 
-test('cinco guerras, top 3 y fuera de guerra', async () => {
-  const approved = await readJson('tests/fixtures/approved-state.json');
+test('solo API: top 3, fuera de guerra y prospectos', async () => {
   const clanJson = await readJson('data/clan.json');
-  const prospects = await readJson('data/prospects.json');
-  const legacy = await readJson('data/legacy-wars.json');
   const files = (await readdir(path.join(root, 'data/raw'))).filter((f) => f.endsWith('.json')).sort();
   const rawWars = [];
   for (const f of files) rawWars.push(JSON.parse(await readFile(path.join(root, 'data/raw', f), 'utf8')));
   const site = buildSite({
-    clanJson, prospects, legacy, rawWars,
+    clanJson, rawWars,
     generatedAt: '2026-10-09T00:00:00Z',
     clanTag: CLAN,
   });
-  const again = buildSite({
-    clanJson, prospects, legacy, rawWars,
-    generatedAt: '2026-10-09T00:00:00Z',
-    clanTag: CLAN,
-  });
-  assert.equal(site.wars.length, 5);
-  assert.deepEqual(again.wars.map((w) => w.id), site.wars.map((w) => w.id));
-  assert.deepEqual(fromApi(clanJson).clan, approved.clan);
-  assert.deepEqual(fromApi(clanJson).roster, approved.roster);
-  assert.deepEqual(site.prospects, approved.prospects);
-  const approvedById = Object.fromEntries(approved.wars.map((w) => [w.id, w]));
-  for (const w of site.wars) {
-    const exp = approvedById[w.id];
-    assert.ok(exp, w.id);
-    assert.equal(w.date, exp.date);
-    assert.equal(w.rival, exp.rival);
-    assert.equal(w.res, exp.res);
-    assert.deepEqual(byName(w.members), byName(exp.members));
-  }
-  assert.deepEqual(pageMetrics(site), {
-    top: [['Abrasive7X', 80], ['kssto', 75], ['demiur', 74]],
-    out: [['Joshua', 4, 6], ['ⓟⓐⓒⓜⓐⓝ', 3, 6], ['JOSHUA', 2, 2], ['jhon cna', 2, 4]],
-  });
-  assert.equal(site.wars.filter((w) => w.id === 'w1')[0].members.some((m) => m[0] === 'joshua'), true);
-  assert.equal(site.wars.filter((w) => w.id === 'w1')[0].members.some((m) => m[0] === 'Joshua'), true);
-  assert.equal(site.wars.filter((w) => w.id === 'w1')[0].members.some((m) => m[0] === 'JOSHUA'), true);
+  assert.equal(site.wars.length, 6);
+  assert.equal(site.wars.some((w) => w.id === 'w1' || w.date === '2026-10-01'), false);
+  assert.equal('prospects' in site, false);
+  const m = pageMetrics(site);
+  assert.deepEqual(m.top, [['demiur', 100], ['kssto', 100], ['Diego503', 100]]);
+  assert.deepEqual(m.out, [['Joshua', 4, 6], ['KOLET', 3, 6], ['jhon cna', 3, 6]]);
+  assert.equal(m.pros[0], 'demiur');
+  assert.equal(m.pros.includes('Joshua'), false);
+  assert.equal(m.pros.includes('KOLET'), false);
+  assert.ok(m.pros.length >= 10);
 });

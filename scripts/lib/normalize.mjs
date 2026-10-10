@@ -215,24 +215,8 @@ export function normalizeWar(war, { clanTag = CLAN_TAG, byTag = new Map() } = {}
   };
 }
 
-export function padLegacyWar(war) {
-  return {
-    id: war.id,
-    date: war.date,
-    rival: war.rival || '',
-    res: war.res || '',
-    members: (war.members || []).map((m) => {
-      const stats = m[2];
-      const next = Array.isArray(stats) && stats.length === 14 ? stats.concat([2]) : stats;
-      return [m[0], m[1], next];
-    }),
-  };
-}
-
 export function buildSite({
   clanJson,
-  prospects = [],
-  legacy = [],
   rawWars = [],
   generatedAt,
   clanTag = CLAN_TAG,
@@ -251,14 +235,8 @@ export function buildSite({
     seen.add(id);
     wars.push({ ...war, id });
   }
-  for (const item of legacy) {
-    const war = padLegacyWar(item);
-    if (seen.has(war.id)) continue;
-    seen.add(war.id);
-    wars.push(war);
-  }
   wars.sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
-  return { generatedAt, clan, roster, prospects, wars };
+  return { generatedAt, clan, roster, wars };
 }
 
 const IMAGE_KEYS = new Set(['badgeUrls', 'iconUrls']);

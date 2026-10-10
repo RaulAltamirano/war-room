@@ -2,9 +2,7 @@
 
 Página estática del clan `#2RGC02RYC`. GitHub Actions consulta la API de Clash of Clans cada 30 minutos, guarda las guerras terminadas y publica `data/site.json`. La llave no sale de los secretos del repositorio.
 
-## Editar los prospectos
-
-`data/prospects.json` es una lista manual. Ábrela en GitHub, cambia los nombres (tal cual, sin pasarlos a minúsculas: `joshua`, `Joshua` y `JOSHUA` son tres jugadores) y guarda el archivo en `main`. El workflow se dispara solo.
+El Top 3 y la sugerencia de próxima guerra se calculan solos con el historial de guerras (impacto, estrellas, neto; donaciones solo desempate). Quien dejó la mitad o más de sus ataques queda fuera.
 
 ## Forzar una actualización
 
