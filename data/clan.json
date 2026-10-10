@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26150,
-  "clanBuilderBasePoints": 17998,
+  "clanBuilderBasePoints": 18014,
   "clanCapitalPoints": 1085,
   "capitalLeague": {
     "id": 85000005,
@@ -319,11 +319,11 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 66,
+      "trophies": 106,
       "builderBaseTrophies": 1280,
       "clanRank": 7,
       "previousClanRank": 6,
-      "donations": 165,
+      "donations": 169,
       "donationsReceived": 294,
       "builderBaseLeague": {
         "id": 44000012,
@@ -418,7 +418,7 @@
       "builderBaseTrophies": 1973,
       "clanRank": 10,
       "previousClanRank": 8,
-      "donations": 500,
+      "donations": 548,
       "donationsReceived": 406,
       "builderBaseLeague": {
         "id": 44000019,
@@ -800,7 +800,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2109,
+      "builderBaseTrophies": 2140,
       "clanRank": 19,
       "previousClanRank": 18,
       "donations": 0,
@@ -1574,7 +1574,7 @@
       "clanRank": 37,
       "previousClanRank": 36,
       "donations": 0,
-      "donationsReceived": 44,
+      "donationsReceived": 48,
       "playerHouse": {
         "elements": [
           {
@@ -1709,7 +1709,7 @@
       "clanRank": 40,
       "previousClanRank": 40,
       "donations": 241,
-      "donationsReceived": 181,
+      "donationsReceived": 229,
       "playerHouse": {
         "elements": [
           {
