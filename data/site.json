@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T00:21:59Z",
+  "generatedAt": "2026-10-10T00:23:28Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -11,7 +11,7 @@
     "league": "Plata II",
     "capLeague": "Plata II",
     "trophies": 26150,
-    "builder": 17997,
+    "builder": 17998,
     "capital": 1085,
     "members": 41,
     "freq": "Siempre",
@@ -335,7 +335,7 @@
       67,
       64,
       0,
-      1355
+      1362
     ],
     [
       "@Nicola§••",

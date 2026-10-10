@@ -11,7 +11,7 @@
   "isFamilyFriendly": true,
   "clanLevel": 5,
   "clanPoints": 26150,
-  "clanBuilderBasePoints": 17997,
+  "clanBuilderBasePoints": 17998,
   "clanCapitalPoints": 1085,
   "capitalLeague": {
     "id": 85000005,
@@ -1315,7 +1315,7 @@
         "name": "Skeleton League 3"
       },
       "trophies": 319,
-      "builderBaseTrophies": 1355,
+      "builderBaseTrophies": 1362,
       "clanRank": 31,
       "previousClanRank": 30,
       "donations": 64,
