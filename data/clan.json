@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26150,
-  "clanBuilderBasePoints": 18014,
+  "clanBuilderBasePoints": 18017,
   "clanCapitalPoints": 1085,
   "capitalLeague": {
     "id": 85000005,
@@ -98,8 +98,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 939,
-      "donationsReceived": 189,
+      "donations": 1037,
+      "donationsReceived": 271,
       "playerHouse": {
         "elements": [
           {
@@ -278,8 +278,8 @@
       "builderBaseTrophies": 1981,
       "clanRank": 6,
       "previousClanRank": 5,
-      "donations": 421,
-      "donationsReceived": 144,
+      "donations": 503,
+      "donationsReceived": 216,
       "playerHouse": {
         "elements": [
           {
@@ -370,7 +370,7 @@
         "name": "Archer League 9"
       },
       "trophies": 133,
-      "builderBaseTrophies": 1919,
+      "builderBaseTrophies": 1931,
       "clanRank": 9,
       "previousClanRank": 7,
       "donations": 0,
@@ -876,56 +876,11 @@
       }
     },
     {
-      "tag": "#9JPRC9PJ0",
-      "name": "facu3D",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 93,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000005,
-        "name": "Barbarian League 5"
-      },
-      "trophies": 269,
-      "builderBaseTrophies": 1829,
-      "clanRank": 21,
-      "previousClanRank": 20,
-      "donations": 61,
-      "donationsReceived": 244,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000053
-          },
-          {
-            "type": "roof",
-            "id": 82000026
-          },
-          {
-            "type": "decoration",
-            "id": 82000063
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000018,
-        "name": "Copper League II"
-      }
-    },
-    {
       "tag": "#G92R92J98",
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 57,
+      "expLevel": 58,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -934,9 +889,9 @@
         "id": 105000005,
         "name": "Barbarian League 5"
       },
-      "trophies": 249,
+      "trophies": 277,
       "builderBaseTrophies": 594,
-      "clanRank": 22,
+      "clanRank": 21,
       "previousClanRank": 21,
       "donations": 0,
       "donationsReceived": 0,
@@ -963,6 +918,51 @@
       "builderBaseLeague": {
         "id": 44000005,
         "name": "Clay League V"
+      }
+    },
+    {
+      "tag": "#9JPRC9PJ0",
+      "name": "facu3D",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 93,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000005,
+        "name": "Barbarian League 5"
+      },
+      "trophies": 269,
+      "builderBaseTrophies": 1829,
+      "clanRank": 22,
+      "previousClanRank": 20,
+      "donations": 61,
+      "donationsReceived": 244,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000053
+          },
+          {
+            "type": "roof",
+            "id": 82000026
+          },
+          {
+            "type": "decoration",
+            "id": 82000063
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000018,
+        "name": "Copper League II"
       }
     },
     {
@@ -1445,7 +1445,7 @@
       "name": "clandes",
       "role": "member",
       "townHallLevel": 9,
-      "expLevel": 51,
+      "expLevel": 52,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1549,7 +1549,7 @@
       "clanRank": 36,
       "previousClanRank": 35,
       "donations": 0,
-      "donationsReceived": 102,
+      "donationsReceived": 128,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
