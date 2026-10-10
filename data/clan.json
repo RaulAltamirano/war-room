@@ -9,6 +9,11 @@
     "isCountry": false
   },
   "isFamilyFriendly": true,
+  "badgeUrls": {
+    "small": "https://api-assets.clashofclans.com/badges/70/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png",
+    "large": "https://api-assets.clashofclans.com/badges/512/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png",
+    "medium": "https://api-assets.clashofclans.com/badges/200/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png"
+  },
   "clanLevel": 5,
   "clanPoints": 26150,
   "clanBuilderBasePoints": 17998,
@@ -49,7 +54,7 @@
       "clanRank": 1,
       "previousClanRank": 1,
       "donations": 65,
-      "donationsReceived": 12,
+      "donationsReceived": 18,
       "playerHouse": {
         "elements": [
           {
@@ -1703,7 +1708,7 @@
       "builderBaseTrophies": 2096,
       "clanRank": 40,
       "previousClanRank": 40,
-      "donations": 235,
+      "donations": 241,
       "donationsReceived": 181,
       "playerHouse": {
         "elements": [
@@ -1827,10 +1832,5 @@
     "id": 75000003,
     "name": "Español",
     "languageCode": "ES"
-  },
-  "badgeUrls": {
-    "small": "https://api-assets.clashofclans.com/badges/70/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png",
-    "large": "https://api-assets.clashofclans.com/badges/512/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png",
-    "medium": "https://api-assets.clashofclans.com/badges/200/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png"
   }
 }
