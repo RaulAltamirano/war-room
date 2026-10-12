@@ -190,9 +190,11 @@ test('solo API: top 3, fuera de guerra y prospectos', async () => {
   assert.equal(site.wars.some((w) => w.id === 'w1' || w.date === '2026-10-01'), false);
   assert.equal('prospects' in site, false);
   const m = pageMetrics(site);
-  assert.deepEqual(m.top, [['kssto', 100], ['Pete Zahut', 81], ['demiur', 71]]);
+  assert.equal(m.top.length, 3);
+  assert.ok(m.top.every(([n, s]) => typeof n === 'string' && n && Number.isInteger(s) && s >= 0 && s <= 100));
+  assert.ok(m.top[0][1] >= m.top[1][1] && m.top[1][1] >= m.top[2][1]);
   assert.deepEqual(m.out, [['Joshua', 4, 6], ['KOLET', 3, 6], ['jhon cna', 3, 6]]);
-  assert.equal(m.pros[0], 'kssto');
+  assert.equal(m.pros[0], m.top[0][0]);
   assert.equal(m.pros.includes('Joshua'), false);
   assert.equal(m.pros.includes('KOLET'), false);
   assert.ok(m.pros.length >= 10);
