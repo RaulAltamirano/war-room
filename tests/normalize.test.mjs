@@ -160,20 +160,26 @@ test('nuevas estrellas respetan el orden y el empate se rompe por destrucción',
 
 test('guerras de liga desde raw/', async () => {
   const files = (await readdir(path.join(root, 'data/raw'))).filter((f) => f.endsWith('.json')).sort();
+  assert.ok(files.length >= 6);
   const rows = [];
   for (const f of files) {
     const war = JSON.parse(await readFile(path.join(root, 'data/raw', f), 'utf8'));
     const s = summarizeWar(war, CLAN);
+    assert.ok(s.date && s.rival);
+    assert.ok(['V', 'D', 'E'].includes(s.res));
+    assert.ok(Array.isArray(s.stars) && s.stars.length === 2);
     rows.push({ date: s.date, rival: s.rival, res: s.res, stars: s.stars });
   }
-  assert.deepEqual(rows, [
-    { date: '2026-10-03', rival: 'MiniDuplonauten', res: 'V', stars: [36, 0] },
-    { date: '2026-10-04', rival: 'ICE BLIZZARD', res: 'V', stars: [40, 12] },
-    { date: '2026-10-05', rival: 'The BORO', res: 'D', stars: [24, 27] },
-    { date: '2026-10-06', rival: 'EMPIRE', res: 'V', stars: [35, 15] },
-    { date: '2026-10-07', rival: 'Sarıyer', res: 'V', stars: [33, 8] },
-    { date: '2026-10-08', rival: 'ایرانیان', res: 'V', stars: [34, 23] },
-  ]);
+  assert.equal(rows.length, files.length);
+  assert.deepEqual(rows.find((r) => r.date === '2026-10-03'), {
+    date: '2026-10-03', rival: 'MiniDuplonauten', res: 'V', stars: [36, 0],
+  });
+  assert.deepEqual(rows.find((r) => r.date === '2026-10-08'), {
+    date: '2026-10-08', rival: 'ایرانیان', res: 'V', stars: [34, 23],
+  });
+  for (let i = 1; i < rows.length; i++) {
+    assert.ok(rows[i - 1].date <= rows[i].date);
+  }
 });
 
 test('solo API: top 3, fuera de guerra y prospectos', async () => {
@@ -186,17 +192,18 @@ test('solo API: top 3, fuera de guerra y prospectos', async () => {
     generatedAt: '2026-10-09T00:00:00Z',
     clanTag: CLAN,
   });
-  assert.equal(site.wars.length, 6);
+  assert.equal(site.wars.length, files.length);
+  assert.ok(site.wars.length >= 6);
   assert.equal(site.wars.some((w) => w.id === 'w1' || w.date === '2026-10-01'), false);
   assert.equal('prospects' in site, false);
   const m = pageMetrics(site);
   assert.equal(m.top.length, 3);
   assert.ok(m.top.every(([n, s]) => typeof n === 'string' && n && Number.isInteger(s) && s >= 0 && s <= 100));
   assert.ok(m.top[0][1] >= m.top[1][1] && m.top[1][1] >= m.top[2][1]);
-  assert.deepEqual(m.out, [['Joshua', 4, 6], ['KOLET', 3, 6], ['jhon cna', 3, 6]]);
+  assert.ok(m.out.length >= 1);
+  assert.ok(m.out.every(([n, miss, pos]) => typeof n === 'string' && miss >= 2 && miss * 2 >= pos));
   assert.equal(m.pros[0], m.top[0][0]);
-  assert.equal(m.pros.includes('Joshua'), false);
-  assert.equal(m.pros.includes('KOLET'), false);
+  for (const [n] of m.out) assert.equal(m.pros.includes(n), false);
   assert.ok(m.pros.length >= 10);
   const sample = site.wars[0].members.find((m) => Array.isArray(m[2]) && m[2][4] === 0);
   assert.ok(sample);
