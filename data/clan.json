@@ -24,10 +24,10 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 1,
+  "warWinStreak": 0,
   "warWins": 8,
   "warTies": 0,
-  "warLosses": 20,
+  "warLosses": 21,
   "isWarLogPublic": true,
   "warLeague": {
     "id": 48000006,
@@ -54,7 +54,7 @@
       "clanRank": 1,
       "previousClanRank": 1,
       "donations": 129,
-      "donationsReceived": 24,
+      "donationsReceived": 30,
       "playerHouse": {
         "elements": [
           {
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 2,
-      "donations": 1235,
-      "donationsReceived": 271,
+      "donations": 1241,
+      "donationsReceived": 346,
       "playerHouse": {
         "elements": [
           {
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 1981,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 503,
+      "donations": 578,
       "donationsReceived": 293,
       "playerHouse": {
         "elements": [
