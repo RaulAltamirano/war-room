@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
   push:
     branches: [main]
-    paths: ["index.html", "scripts/**"]
+    paths: ["index.html", "scripts/**", "tests/**", ".github/workflows/**"]
 permissions:
   contents: write
   pages: write
@@ -15,9 +15,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
       - run: node --test tests/
       - run: node scripts/fetch.mjs
         env:
