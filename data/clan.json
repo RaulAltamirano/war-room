@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18158,
+  "clanBuilderBasePoints": 18198,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000030,
         "name": "Dragon League 30"
       },
-      "trophies": 453,
+      "trophies": 462,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -356,11 +356,36 @@
       }
     },
     {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 132,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 79,
+      "builderBaseTrophies": 1988,
+      "clanRank": 9,
+      "previousClanRank": 11,
+      "donations": 725,
+      "donationsReceived": 741,
+      "builderBaseLeague": {
+        "id": 44000019,
+        "name": "Copper League I"
+      }
+    },
+    {
       "tag": "#L8Q82PUQ0",
       "name": "يسوري❤️❤️",
       "role": "member",
       "townHallLevel": 12,
-      "expLevel": 105,
+      "expLevel": 106,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -371,7 +396,7 @@
       },
       "trophies": 40,
       "builderBaseTrophies": 1609,
-      "clanRank": 9,
+      "clanRank": 10,
       "previousClanRank": 8,
       "donations": 66,
       "donationsReceived": 0,
@@ -398,31 +423,6 @@
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
-      }
-    },
-    {
-      "tag": "#2VL98GPGU",
-      "name": "ⓟⓐⓒⓜⓐⓝ",
-      "role": "coLeader",
-      "townHallLevel": 11,
-      "expLevel": 132,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 39,
-      "builderBaseTrophies": 1988,
-      "clanRank": 10,
-      "previousClanRank": 11,
-      "donations": 714,
-      "donationsReceived": 674,
-      "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
       }
     },
     {
@@ -533,7 +533,7 @@
       "builderBaseTrophies": 1258,
       "clanRank": 13,
       "previousClanRank": 12,
-      "donations": 51,
+      "donations": 118,
       "donationsReceived": 40,
       "playerHouse": {
         "elements": [
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 29,
+      "trophies": 51,
       "builderBaseTrophies": 1164,
       "clanRank": 14,
       "previousClanRank": 16,
@@ -665,10 +665,10 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1862,
+      "builderBaseTrophies": 1901,
       "clanRank": 16,
       "previousClanRank": 15,
-      "donations": 59,
+      "donations": 61,
       "donationsReceived": 471,
       "playerHouse": {
         "elements": [
@@ -691,8 +691,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000018,
-        "name": "Copper League II"
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -1279,7 +1279,7 @@
       "clanRank": 30,
       "previousClanRank": 31,
       "donations": 157,
-      "donationsReceived": 0,
+      "donationsReceived": 11,
       "playerHouse": {
         "elements": [
           {
@@ -1664,7 +1664,7 @@
       "clanRank": 39,
       "previousClanRank": 38,
       "donations": 457,
-      "donationsReceived": 330,
+      "donationsReceived": 378,
       "playerHouse": {
         "elements": [
           {
@@ -1705,10 +1705,10 @@
         "name": "Unranked"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1924,
+      "builderBaseTrophies": 1988,
       "clanRank": 40,
       "previousClanRank": 39,
-      "donations": 11,
+      "donations": 57,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
