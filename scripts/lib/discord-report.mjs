@@ -52,10 +52,13 @@ export function buildReportPayload(site, { pageUrl } = {}) {
   const downLines = b.trend.down.slice(0, 8).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);
   const outLines = b.trend.out.slice(0, 10).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
 
-  const prosShow = b.prospects.slice(0, 15);
+  const LTR = '\u200E';
+  const prosShow = b.prospects.slice(0, 16);
   const prosExtra = b.prospects.length - prosShow.length;
-  const prosLines = prosShow.map((p) => `\`${String(p.rank).padStart(2, ' ')}.\` **${p.n}** · ${p.score} pts${p.miss ? ` · ⚠ ${p.miss} sin usar` : ''}`);
-  if (prosExtra > 0) prosLines.push(`_…y ${prosExtra} más_`);
+  const prosLine = (p) => `${LTR}${p.rank}. ${p.n} · **${p.score}**`;
+  const prosLeft = prosShow.slice(0, 8).map(prosLine);
+  const prosRight = prosShow.slice(8, 16).map(prosLine);
+  if (prosExtra > 0) prosRight.push(`${LTR}_…y ${prosExtra} más_`);
 
   const embeds = [
     {
@@ -100,22 +103,29 @@ export function buildReportPayload(site, { pageUrl } = {}) {
     },
     {
       title: '⚔️ Prospectos · próxima guerra',
-      description: `Sugeridos: **${b.prospects.length}** (pelearon ≥1 guerra y no están fuera).`,
+      description: `Sugeridos: **${b.prospects.length}** · pelearon ≥1 guerra y no están fuera.`,
       color: COLOR.prospects,
-      fields: [
-        {
-          name: 'Alineación sugerida',
-          value: clip(listOr('_Sin prospectos._', prosLines)),
-          inline: false,
-        },
-      ],
+      fields: prosShow.length
+        ? [
+          {
+            name: 'Alineación',
+            value: clip(listOr('_—_', prosLeft)),
+            inline: true,
+          },
+          {
+            name: '\u200b',
+            value: clip(listOr('_—_', prosRight.length ? prosRight : ['\u200b'])),
+            inline: true,
+          },
+        ]
+        : [{ name: 'Alineación', value: '_Sin prospectos._', inline: false }],
     },
   ];
 
   return {
     briefing: b,
     payload: {
-      username: 'Bitácora clandestinos',
+      username: 'clandestinos.ops',
       embeds,
     },
   };
