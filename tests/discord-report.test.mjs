@@ -64,11 +64,33 @@ test('buildReportPayload usa embeds Discord', () => {
   assert.ok(payload.embeds.every((e) => typeof e.color === 'number'));
 });
 
-test('shouldSendReport respeta bootstrap y force', () => {
+test('shouldSendReport respeta bootstrap, force y war-ended', () => {
   assert.equal(shouldSendReport({ bootstrapped: false }, 'a|b').send, false);
   assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b').send, false);
   assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a' }, 'a|b').send, true);
   assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b', { force: true }).send, true);
+  assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b', { warEnded: true }).reason, 'war-ended');
+});
+
+test('warEnded manda informe aunque la firma no cambie', async () => {
+  let posts = 0;
+  const state = { bootstrapped: true, signature: 'w1|w2', postedAt: null };
+  const out = await runDiscordReport({
+    site,
+    state,
+    warEnded: true,
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async (_u, opts) => {
+      posts += 1;
+      const body = JSON.parse(opts.body);
+      assert.match(body.embeds[0].title, /Guerra terminada/);
+      return { ok: true };
+    },
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.equal(out.reason, 'war-ended');
+  assert.equal(posts, 1);
 });
 
 test('runDiscordReport bootstrap no postea; force sí', async () => {

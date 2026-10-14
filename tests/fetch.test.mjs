@@ -59,6 +59,8 @@ test('404 de liga es normal, guarda la guerra terminada y no la duplica', async 
   };
   const opts = { root, token: 't', clanTag: CLAN, log: (m) => logs.push(String(m)), sleep: async () => {}, fetchImpl };
   const first = await run(opts);
+  const lastFetch1 = JSON.parse(await readFile(path.join(root, 'data/last-fetch.json'), 'utf8'));
+  assert.deepEqual(lastFetch1.saved, first.saved);
   const second = await run(opts);
   assert.equal(first.ok, true);
   assert.equal(second.ok, true);
@@ -68,6 +70,9 @@ test('404 de liga es normal, guarda la guerra terminada y no la duplica', async 
   assert.equal(second.skipped.includes('20261008-AAAA.json'), true);
   const raw = JSON.parse(await readFile(path.join(root, 'data/raw/20261008-AAAA.json'), 'utf8'));
   assert.equal(raw.state, 'warEnded');
+  const lastFetch2 = JSON.parse(await readFile(path.join(root, 'data/last-fetch.json'), 'utf8'));
+  assert.deepEqual(lastFetch2.saved, []);
+  assert.ok(lastFetch2.skipped.includes('20261008-AAAA.json'));
   const clan = JSON.parse(await readFile(path.join(root, 'data/clan.json'), 'utf8'));
   assert.equal(clan.badgeUrls.small, 'x');
   assert.equal(logs.some((l) => /404/.test(l) && /liga/i.test(l)), true);

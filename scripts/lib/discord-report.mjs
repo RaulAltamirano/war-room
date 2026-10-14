@@ -26,12 +26,12 @@ function listOr(empty, rows) {
   return rows.length ? rows.join('\n') : empty;
 }
 
-export function buildReportPayload(site, { pageUrl } = {}) {
+export function buildReportPayload(site, { pageUrl, warEnded = false } = {}) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
   const last = b.last;
   const lastLine = last
-    ? `Última guerra: **${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
+    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
     : 'Sin guerras registradas.';
 
   const topFields = b.top3.map((p, i) => ({
@@ -62,9 +62,11 @@ export function buildReportPayload(site, { pageUrl } = {}) {
 
   const embeds = [
     {
-      title: `📒 Informe de guerra · ${clan}`,
+      title: warEnded
+        ? `⚔️ Guerra terminada · ${clan}`
+        : `📒 Informe de guerra · ${clan}`,
       description: [
-        lastLine,
+        warEnded ? `Resultado listo:\n${lastLine}` : `Última guerra: ${lastLine}`,
         '',
         `Historial: **${b.warsCount}** guerras · Ranking **70% impacto + 30% donaciones**`,
         pageUrl ? `[Abrir bitácora](${pageUrl})` : null,
@@ -131,8 +133,9 @@ export function buildReportPayload(site, { pageUrl } = {}) {
   };
 }
 
-export function shouldSendReport(state, signature, { force = false } = {}) {
+export function shouldSendReport(state, signature, { force = false, warEnded = false } = {}) {
   if (force) return { send: true, reason: 'force' };
+  if (warEnded) return { send: true, reason: 'war-ended' };
   if (!state?.bootstrapped) return { send: false, reason: 'bootstrap' };
   if (!signature) return { send: false, reason: 'empty' };
   if (state.signature === signature) return { send: false, reason: 'unchanged' };
@@ -144,14 +147,15 @@ export async function runDiscordReport({
   state,
   webhookUrl,
   force = false,
+  warEnded = false,
   pageUrl = 'https://raulaltamirano.github.io/war-room/',
   fetchImpl = fetch,
   log = console.log,
 }) {
-  const { briefing, payload } = buildReportPayload(site, { pageUrl });
-  const decision = shouldSendReport(state, briefing.signature, { force });
+  const { briefing, payload } = buildReportPayload(site, { pageUrl, warEnded });
+  const decision = shouldSendReport(state, briefing.signature, { force, warEnded });
 
-  if (decision.reason === 'bootstrap') {
+  if (decision.reason === 'bootstrap' && !warEnded && !force) {
     const next = { bootstrapped: true, signature: briefing.signature, postedAt: null };
     log(`Discord informe: bootstrap (${briefing.warsCount} guerras, sin enviar).`);
     return { posted: false, state: next, reason: 'bootstrap', briefing };
@@ -182,6 +186,7 @@ export async function runDiscordReport({
     signature: briefing.signature,
     postedAt: new Date().toISOString(),
   };
-  log(`Discord informe: enviado (Top 3, análisis, ${briefing.prospects.length} prospectos).`);
+  const why = decision.reason === 'war-ended' ? 'guerra terminada' : decision.reason;
+  log(`Discord informe: enviado (${why}; Top 3, análisis, ${briefing.prospects.length} prospectos).`);
   return { posted: true, state: next, reason: decision.reason, briefing };
 }

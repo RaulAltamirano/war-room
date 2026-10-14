@@ -116,6 +116,10 @@ export async function run(opts = {}) {
     saved.push(name);
     log(`Guardada ${name}.`);
   }
+  await writeFile(
+    path.join(dir, 'data/last-fetch.json'),
+    `${JSON.stringify({ at: new Date().toISOString(), saved, skipped }, null, 2)}\n`,
+  );
   return { ok: true, saved, skipped };
 }
 

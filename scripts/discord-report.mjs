@@ -7,6 +7,14 @@ function truthy(v) {
   return v === '1' || v === 'true' || v === 'yes';
 }
 
+async function readLastFetch(root) {
+  try {
+    return JSON.parse(await readFile(path.join(root, 'data/last-fetch.json'), 'utf8'));
+  } catch {
+    return { saved: [], skipped: [] };
+  }
+}
+
 async function main() {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const site = JSON.parse(await readFile(path.join(root, 'data/site.json'), 'utf8'));
@@ -18,11 +26,15 @@ async function main() {
     /* empty */
   }
 
+  const lastFetch = await readLastFetch(root);
+  const warEnded = Array.isArray(lastFetch.saved) && lastFetch.saved.length > 0;
+
   const out = await runDiscordReport({
     site,
     state,
     webhookUrl: process.env.DISCORD_WEBHOOK_URL || '',
     force: truthy(process.env.DISCORD_SEND_REPORT),
+    warEnded,
     pageUrl: process.env.BITACORA_URL || 'https://raulaltamirano.github.io/war-room/',
   });
 

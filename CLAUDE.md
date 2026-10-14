@@ -29,7 +29,7 @@ No subas el token. En el estandarte sí va el `badge` del clan (API). Sigue sin 
 
 Secreto `DISCORD_WEBHOOK_URL`. Tras el build:
 
-- `scripts/discord-report.mjs` → embeds Top 3 + análisis + prospectos (`data/discord-report.json`; se envía si cambia el historial o con `DISCORD_SEND_REPORT`).
+- `scripts/discord-report.mjs` → embeds Top 3 + análisis + prospectos. Se envía cuando `fetch` guarda una guerra `warEnded` (`data/last-fetch.json`, no se commitea) o con `DISCORD_SEND_REPORT`. Estado en `data/discord-report.json`.
 - `scripts/discord-monthly.mjs` → Top 1 del mes cerrado Mexico City (`data/discord-awards.json`).
 
 Sin URL → skip. Fallo HTTP → no marca ese ítem (reintento luego). No spamear una guerra por mensaje.
