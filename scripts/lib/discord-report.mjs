@@ -26,7 +26,7 @@ function listOr(empty, rows) {
   return rows.length ? rows.join('\n') : empty;
 }
 
-export function buildReportPayload(site, { pageUrl, warEnded = false } = {}) {
+export function buildReportPayload(site, { warEnded = false } = {}) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
   const last = b.last;
@@ -69,8 +69,7 @@ export function buildReportPayload(site, { pageUrl, warEnded = false } = {}) {
         warEnded ? `Resultado listo:\n${lastLine}` : `Última guerra: ${lastLine}`,
         '',
         `Historial: **${b.warsCount}** guerras · Ranking **70% impacto (liga ×2) + 30% donaciones**`,
-        pageUrl ? `[Abrir bitácora](${pageUrl})` : null,
-      ].filter(Boolean).join('\n'),
+      ].join('\n'),
       color: COLOR.header,
       timestamp: new Date().toISOString(),
       footer: { text: `${clan} · Bitácora de guerras` },
@@ -148,11 +147,10 @@ export async function runDiscordReport({
   webhookUrl,
   force = false,
   warEnded = false,
-  pageUrl = 'https://raulaltamirano.github.io/war-room/',
   fetchImpl = fetch,
   log = console.log,
 }) {
-  const { briefing, payload } = buildReportPayload(site, { pageUrl, warEnded });
+  const { briefing, payload } = buildReportPayload(site, { warEnded });
   const decision = shouldSendReport(state, briefing.signature, { force, warEnded });
 
   if (decision.reason === 'bootstrap' && !warEnded && !force) {

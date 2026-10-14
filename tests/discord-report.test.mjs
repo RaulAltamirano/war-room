@@ -55,9 +55,10 @@ test('buildBriefing arma top3, análisis y prospectos', () => {
 });
 
 test('buildReportPayload usa embeds Discord', () => {
-  const { payload } = buildReportPayload(site, { pageUrl: 'https://example.com' });
+  const { payload } = buildReportPayload(site);
   assert.equal(payload.embeds.length, 4);
   assert.match(payload.embeds[0].title, /Informe/);
+  assert.equal(payload.embeds[0].description.includes('Abrir bitácora'), false);
   assert.match(payload.embeds[1].title, /Top 3/);
   assert.match(payload.embeds[2].title, /Análisis/);
   assert.match(payload.embeds[3].title, /Prospectos/);

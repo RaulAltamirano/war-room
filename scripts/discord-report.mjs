@@ -35,7 +35,6 @@ async function main() {
     webhookUrl: process.env.DISCORD_WEBHOOK_URL || '',
     force: truthy(process.env.DISCORD_SEND_REPORT),
     warEnded,
-    pageUrl: process.env.BITACORA_URL || 'https://raulaltamirano.github.io/war-room/',
   });
 
   if (out.reason === 'bootstrap' || out.posted) {
