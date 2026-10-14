@@ -79,6 +79,25 @@ export function monthLabelEs(monthKey) {
   return `${name} ${y}`;
 }
 
+export function monthCloseDate(monthKey) {
+  const [y, m] = monthKey.split('-').map(Number);
+  const close = new Date(y, m, 1);
+  return {
+    date: close,
+    key: `${close.getFullYear()}-${String(close.getMonth() + 1).padStart(2, '0')}`,
+    label: new Intl.DateTimeFormat('es-MX', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    }).format(close),
+    short: new Intl.DateTimeFormat('es-MX', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+    }).format(close),
+  };
+}
+
 export function discordContent(result, monthKey) {
   const label = monthLabelEs(monthKey);
   const lines = [
@@ -92,7 +111,60 @@ export function discordContent(result, monthKey) {
 
 const MEDAL = ['🥇', '🥈', '🥉'];
 
-export function discordMonthlyPayload(result, monthKey, { preview = false } = {}) {
+export function discordPassRulesPayload(monthKey) {
+  const label = monthLabelEs(monthKey);
+  const close = monthCloseDate(monthKey);
+  return {
+    username: 'clandestinos.ops',
+    embeds: [
+      {
+        title: '🎁 Premio del mes · Pase de batalla',
+        description: [
+          `Durante **${label}**, el clan compite por el **pase de batalla**.`,
+          '',
+          '📌 **Ancla este mensaje** para que todos lo tengan presente.',
+          '',
+          '### Cómo se gana',
+          `El **${close.label}** (00:00, Mexico City) se cierra el ranking.`,
+          'Quien quede **Top 1** ese día se lleva el pase.',
+          'Hasta entonces **no hay ganador anunciado**: cuenta todo el mes (guerras + donaciones).',
+          '',
+          '### Ranking',
+          '• **70%** impacto en guerra',
+          '• **30%** donaciones (relativas al mayor donador)',
+          '• Empate: estrellas → neto → ataques sin usar',
+          '',
+          '### Entrega',
+          'Un líder entrega el pase a mano cuando se publique el Top 1 oficial.',
+          '',
+          '_Sigue el informe en este canal y la bitácora del clan._',
+        ].join('\n'),
+        color: 0xffc83d,
+        fields: [
+          {
+            name: '📅 Cierra el',
+            value: `**${close.short}**\n00:00 Mexico City`,
+            inline: true,
+          },
+          {
+            name: '🏆 Premio',
+            value: '**1 pase de batalla**\npara el Top 1',
+            inline: true,
+          },
+          {
+            name: '👀 Mientras tanto',
+            value: 'Compite en guerra y dona.\nEl resultado se revela al cierre.',
+            inline: true,
+          },
+        ],
+        timestamp: new Date().toISOString(),
+        footer: { text: `clandestinos.ops · cierra ${close.short}` },
+      },
+    ],
+  };
+}
+
+export function discordMonthlyPayload(result, monthKey) {
   const label = monthLabelEs(monthKey);
   const fields = (result.top3 || []).map(([n, s], i) => ({
     name: `${MEDAL[i] || `${i + 1}.`} ${n}`,
@@ -103,16 +175,13 @@ export function discordMonthlyPayload(result, monthKey, { preview = false } = {}
     username: 'clandestinos.ops',
     embeds: [
       {
-        title: preview ? '🎁 Vista previa · Pase del mes' : '🎁 Pase del mes',
+        title: '🎁 Pase del mes · ganador',
         description: [
-          preview
-            ? `Así se verá el anuncio. Ranking provisional de **${label}** (mes aún abierto).`
-            : `Cierre de **${label}**.`,
+          `Cierre de **${label}**.`,
           '',
           `🏆 **Top 1: ${result.winner}** — **${result.score}** pts`,
-          preview
-            ? '_No cuenta como entrega oficial; el pase se confirma al cerrar el mes._'
-            : 'Se gana el **pase del mes**. Un líder lo entrega a mano.',
+          '',
+          `**${result.winner}** se lleva el **pase de batalla**. Un líder lo entrega a mano.`,
           '',
           '_Fórmula: 70% impacto de guerra + 30% donaciones._',
         ].join('\n'),

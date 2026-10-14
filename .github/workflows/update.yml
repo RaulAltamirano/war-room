@@ -9,7 +9,7 @@ on:
         type: boolean
         default: false
       enviar_pase:
-        description: Enviar anuncio del pase mensual (vista previa si el mes sigue abierto)
+        description: Enviar reglas del pase mensual (para anclar; sin ganador)
         type: boolean
         default: false
   push:

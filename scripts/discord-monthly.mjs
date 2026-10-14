@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import {
   closedMonthKey,
   discordMonthlyPayload,
+  discordPassRulesPayload,
   monthKeyInZone,
   scoreMonth,
   shouldPost,
@@ -23,25 +24,40 @@ export async function runDiscordMonthly({
   fetchImpl = fetch,
   log = console.log,
 }) {
-  const preview = !!force;
-  const monthKey = preview ? monthKeyInZone(now) : closedMonthKey(now);
-  const monthWars = warsInMonth(site.wars || [], monthKey);
-  const result = scoreMonth(monthWars, site.roster || []);
+  if (!webhookUrl) {
+    log('Discord: falta DISCORD_WEBHOOK_URL; se omite el anuncio.');
+    return { posted: false, reason: 'no-webhook' };
+  }
 
-  if (!preview && !shouldPost(awards, monthKey)) {
+  if (force) {
+    const monthKey = monthKeyInZone(now);
+    const payload = discordPassRulesPayload(monthKey);
+    const res = await fetchImpl(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    if (!res.ok) {
+      log(`Discord: webhook respondió ${res.status} al enviar reglas del pase.`);
+      return { posted: false, monthKey, reason: 'http', status: res.status, rules: true };
+    }
+    log(`Discord: reglas del pase enviadas (${monthKey}). Ancla el mensaje en el canal.`);
+    return { posted: true, monthKey, rules: true };
+  }
+
+  const monthKey = closedMonthKey(now);
+  if (!shouldPost(awards, monthKey)) {
     log(`Discord: ${monthKey} ya anunciado.`);
     return { posted: false, monthKey, reason: 'already' };
   }
+  const monthWars = warsInMonth(site.wars || [], monthKey);
+  const result = scoreMonth(monthWars, site.roster || []);
   if (!result) {
-    log(`Discord: sin guerras en ${monthKey}; no se anuncia.`);
+    log(`Discord: sin guerras en ${monthKey}; no se anuncia ganador.`);
     return { posted: false, monthKey, reason: 'empty' };
   }
-  if (!webhookUrl) {
-    log('Discord: falta DISCORD_WEBHOOK_URL; se omite el anuncio.');
-    return { posted: false, monthKey, reason: 'no-webhook' };
-  }
 
-  const payload = discordMonthlyPayload(result, monthKey, { preview });
+  const payload = discordMonthlyPayload(result, monthKey);
   const res = await fetchImpl(webhookUrl, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -52,16 +68,14 @@ export async function runDiscordMonthly({
     return { posted: false, monthKey, reason: 'http', status: res.status };
   }
 
-  if (!preview) {
-    awards[monthKey] = {
-      winner: result.winner,
-      score: result.score,
-      top3: result.top3,
-      postedAt: new Date().toISOString(),
-    };
-  }
-  log(`Discord: ${preview ? 'vista previa' : 'anunciado'} Top 1 ${monthKey} → ${result.winner}.`);
-  return { posted: true, monthKey, result, preview };
+  awards[monthKey] = {
+    winner: result.winner,
+    score: result.score,
+    top3: result.top3,
+    postedAt: new Date().toISOString(),
+  };
+  log(`Discord: ganador del pase ${monthKey} → ${result.winner}.`);
+  return { posted: true, monthKey, result, rules: false };
 }
 
 async function main() {
@@ -80,7 +94,7 @@ async function main() {
     webhookUrl: process.env.DISCORD_WEBHOOK_URL || '',
     force: truthy(process.env.DISCORD_SEND_MONTHLY),
   });
-  if (out.posted && !out.preview) {
+  if (out.posted && !out.rules) {
     await writeFile(awardsPath, `${JSON.stringify(awards, null, 2)}\n`);
   }
 }

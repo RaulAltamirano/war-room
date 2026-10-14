@@ -4,6 +4,8 @@ import {
   closedMonthKey,
   discordContent,
   discordMonthlyPayload,
+  discordPassRulesPayload,
+  monthCloseDate,
   scoreMonth,
   shouldPost,
   warsInMonth,
@@ -79,14 +81,30 @@ test('discordContent menciona pase y ganador', () => {
   assert.match(text, /octubre/i);
 });
 
-test('discordMonthlyPayload usa embed de clandestinos.ops', () => {
+test('monthCloseDate es el 1 del mes siguiente', () => {
+  const c = monthCloseDate('2026-10');
+  assert.equal(c.key, '2026-11');
+  assert.match(c.label, /noviembre/i);
+  assert.match(c.label, /2026/);
+});
+
+test('discordPassRulesPayload no revela ganador e incluye fecha de cierre', () => {
+  const payload = discordPassRulesPayload('2026-10');
+  assert.equal(payload.username, 'clandestinos.ops');
+  assert.match(payload.embeds[0].title, /Pase de batalla/);
+  assert.match(payload.embeds[0].description, /Ancla/);
+  assert.match(payload.embeds[0].description, /noviembre/i);
+  assert.match(payload.embeds[0].fields[0].value, /2026/);
+  assert.equal(payload.embeds[0].description.includes('Alpha'), false);
+});
+
+test('discordMonthlyPayload revela ganador al cierre', () => {
   const payload = discordMonthlyPayload(
     { winner: 'Alpha', score: 100, top3: [['Alpha', 100], ['Beta', 71], ['Gamma', 50]] },
     '2026-10',
-    { preview: true },
   );
-  assert.equal(payload.username, 'clandestinos.ops');
-  assert.match(payload.embeds[0].title, /Vista previa/);
+  assert.match(payload.embeds[0].title, /ganador/);
+  assert.match(payload.embeds[0].description, /Alpha/);
   assert.equal(payload.embeds[0].fields.length, 3);
 });
 
@@ -153,7 +171,7 @@ test('runDiscordMonthly no guarda award si Discord falla', async () => {
   assert.equal(awards['2026-10'], undefined);
 });
 
-test('force en mes abierto manda vista previa sin guardar award', async () => {
+test('force manda reglas del pase para anclar, sin ganador ni award', async () => {
   const awards = {};
   let body = null;
   const out = await runDiscordMonthly({
@@ -169,8 +187,9 @@ test('force en mes abierto manda vista previa sin guardar award', async () => {
     log: () => {},
   });
   assert.equal(out.posted, true);
-  assert.equal(out.preview, true);
+  assert.equal(out.rules, true);
   assert.equal(out.monthKey, '2026-10');
-  assert.equal(awards['2026-10'], undefined);
-  assert.match(body.embeds[0].title, /Vista previa/);
+  assert.equal(Object.keys(awards).length, 0);
+  assert.match(body.embeds[0].description, /Ancla/);
+  assert.equal(body.embeds[0].description.includes('Alpha'), false);
 });
