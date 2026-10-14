@@ -10,15 +10,14 @@ Actions → **Actualizar bitácora** → **Run workflow**.
 
 ## Discord
 
-Con el secreto `DISCORD_WEBHOOK_URL` el cron publica:
+Con el secreto `DISCORD_WEBHOOK_URL` el cron publica **embeds** profesionales:
 
-- **Guerra nueva** (cuando se guarda en `data/raw`): rival, resultado, estrellas y top impacto.
-- **Top 1 del mes** (día 1, Mexico City): ganador del pase (fórmula 70/30). Entrega del pase a mano.
+- **Informe** (cuando hay guerra nueva, o a demanda): Top 3, análisis (mejoraron / bajaron / fuera) y prospectos para la próxima guerra.
+- **Top 1 del mes** (día 1, Mexico City): ganador del pase (70/30). Entrega del pase a mano.
 
 1. Canal → Integraciones → **Webhook** → URL → secret `DISCORD_WEBHOOK_URL`.
 2. Sin secreto el fetch sigue; solo se omiten los avisos.
-3. La primera corrida marca el historial actual sin spamear; solo las guerras nuevas se anuncian.
-4. Para mandar toda la bitácora ya: Actions → **Actualizar bitácora** → **Run workflow** → marca **Enviar bitácora completa a Discord ahora**.
+3. Enviar ahora: Actions → **Run workflow** → marca **Enviar informe Discord ahora**.
 
 ## Primera vez
 

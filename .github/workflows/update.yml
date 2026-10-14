@@ -4,8 +4,8 @@ on:
     - cron: "*/30 * * * *"
   workflow_dispatch:
     inputs:
-      enviar_bitacora:
-        description: Enviar bitácora completa a Discord ahora
+      enviar_informe:
+        description: Enviar informe Discord ahora (Top 3, análisis, prospectos)
         type: boolean
         default: false
   push:
@@ -32,10 +32,10 @@ jobs:
           COC_API_TOKEN: ${{ secrets.COC_API_TOKEN }}
           CLAN_TAG: "#2RGC02RYC"
       - run: node scripts/build.mjs
-      - run: node scripts/discord-wars.mjs
+      - run: node scripts/discord-report.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_SEND_BITACORA: ${{ github.event.inputs.enviar_bitacora }}
+          DISCORD_SEND_REPORT: ${{ github.event.inputs.enviar_informe }}
       - run: node scripts/discord-monthly.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
