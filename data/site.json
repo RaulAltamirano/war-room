@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T01:17:20Z",
+  "generatedAt": "2026-10-14T03:27:01Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27650,
-    "builder": 18200,
+    "builder": 18204,
     "capital": 1127,
     "members": 40,
     "freq": "Siempre",
@@ -64,7 +64,7 @@
       "C",
       18,
       215,
-      265,
+      266,
       30,
       3066
     ],
@@ -164,7 +164,7 @@
       12,
       91,
       213,
-      192,
+      193,
       1105
     ],
     [
@@ -288,7 +288,7 @@
       "kerrykopito",
       "M",
       10,
-      64,
+      65,
       0,
       0,
       1618
@@ -318,7 +318,7 @@
       53,
       0,
       0,
-      1172
+      1208
     ],
     [
       "TaP",

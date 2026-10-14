@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18200,
+  "clanBuilderBasePoints": 18204,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 265,
+      "donations": 266,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -139,7 +139,7 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 0,
+      "trophies": 15,
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
@@ -489,7 +489,7 @@
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 213,
-      "donationsReceived": 192,
+      "donationsReceived": 193,
       "playerHouse": {
         "elements": [
           {
@@ -1105,7 +1105,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 64,
+      "expLevel": 65,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1230,7 +1230,7 @@
         "name": "Barbarian League 4"
       },
       "trophies": 138,
-      "builderBaseTrophies": 1172,
+      "builderBaseTrophies": 1208,
       "clanRank": 29,
       "previousClanRank": 29,
       "donations": 0,
@@ -1256,8 +1256,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
+        "id": 44000012,
+        "name": "Stone League III"
       }
     },
     {
