@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 266,
+      "donations": 333,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -229,7 +229,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 40,
+      "trophies": 68,
       "builderBaseTrophies": 2455,
       "clanRank": 5,
       "previousClanRank": 5,
@@ -344,7 +344,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 188,
+      "trophies": 198,
       "builderBaseTrophies": 1110,
       "clanRank": 8,
       "previousClanRank": 8,
@@ -374,7 +374,7 @@
       "clanRank": 9,
       "previousClanRank": 10,
       "donations": 757,
-      "donationsReceived": 741,
+      "donationsReceived": 808,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -394,7 +394,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 40,
+      "trophies": 61,
       "builderBaseTrophies": 1609,
       "clanRank": 10,
       "previousClanRank": 9,
@@ -439,7 +439,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 25,
+      "trophies": 50,
       "builderBaseTrophies": 1931,
       "clanRank": 11,
       "previousClanRank": 11,
@@ -709,7 +709,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 61,
+      "trophies": 97,
       "builderBaseTrophies": 455,
       "clanRank": 17,
       "previousClanRank": 17,
@@ -727,7 +727,7 @@
           },
           {
             "type": "roof",
-            "id": 82000015
+            "id": 82000028
           },
           {
             "type": "decoration",
@@ -1274,7 +1274,7 @@
         "id": 105000004,
         "name": "Barbarian League 4"
       },
-      "trophies": 46,
+      "trophies": 76,
       "builderBaseTrophies": 1295,
       "clanRank": 30,
       "previousClanRank": 32,
