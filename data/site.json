@@ -1,11 +1,5 @@
 {
-<<<<<<< Updated upstream
-  "generatedAt": "2026-10-14T01:02:09Z",
-||||||| Stash base
-  "generatedAt": "2026-10-14T00:44:43Z",
-=======
-  "generatedAt": "2026-10-14T01:06:56Z",
->>>>>>> Stashed changes
+  "generatedAt": "2026-10-14T01:07:56Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
