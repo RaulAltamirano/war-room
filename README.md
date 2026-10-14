@@ -8,13 +8,16 @@ El Top 3 y la sugerencia de próxima guerra se calculan solos: 70% impacto de gu
 
 Actions → **Actualizar bitácora** → **Run workflow**.
 
-## Discord (Top 1 del mes → pase)
+## Discord
 
-El 1° de cada mes (hora Mexico City) el cron anuncia en Discord el Top 1 del mes anterior (misma fórmula 70/30). El pase lo entrega un líder a mano.
+Con el secreto `DISCORD_WEBHOOK_URL` el cron publica:
 
-1. En el servidor: canal → Editar canal → Integraciones → **Webhook** → copiar URL.
-2. Secrets del repo → `DISCORD_WEBHOOK_URL`.
-3. Sin ese secreto el fetch sigue; solo se omite el anuncio.
+- **Guerra nueva** (cuando se guarda en `data/raw`): rival, resultado, estrellas y top impacto.
+- **Top 1 del mes** (día 1, Mexico City): ganador del pase (fórmula 70/30). Entrega del pase a mano.
+
+1. Canal → Integraciones → **Webhook** → URL → secret `DISCORD_WEBHOOK_URL`.
+2. Sin secreto el fetch sigue; solo se omiten los avisos.
+3. La primera corrida marca el historial actual sin spamear; solo las guerras nuevas se anuncian.
 
 ## Primera vez
 

@@ -27,4 +27,9 @@ No subas el token. En el estandarte sí va el `badge` del clan (API). Sigue sin 
 
 ## Discord
 
-Tras el build, `scripts/discord-monthly.mjs` anuncia el Top 1 del mes cerrado (`America/Mexico_City`) si falta en `data/discord-awards.json`. Secreto `DISCORD_WEBHOOK_URL`. Sin URL → skip. Fallo HTTP → no marca el mes.
+Secreto `DISCORD_WEBHOOK_URL`. Tras el build:
+
+- `scripts/discord-wars.mjs` → guerras nuevas (`data/discord-wars.json`; primer run = bootstrap sin spam).
+- `scripts/discord-monthly.mjs` → Top 1 del mes cerrado Mexico City (`data/discord-awards.json`).
+
+Sin URL → skip. Fallo HTTP → no marca ese ítem (reintento luego).
