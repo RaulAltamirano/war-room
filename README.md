@@ -18,6 +18,7 @@ Con el secreto `DISCORD_WEBHOOK_URL` el cron publica:
 1. Canal → Integraciones → **Webhook** → URL → secret `DISCORD_WEBHOOK_URL`.
 2. Sin secreto el fetch sigue; solo se omiten los avisos.
 3. La primera corrida marca el historial actual sin spamear; solo las guerras nuevas se anuncian.
+4. Para mandar toda la bitácora ya: Actions → **Actualizar bitácora** → **Run workflow** → marca **Enviar bitácora completa a Discord ahora**.
 
 ## Primera vez
 

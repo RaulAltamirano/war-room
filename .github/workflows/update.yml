@@ -2,7 +2,12 @@ name: Actualizar bitácora
 on:
   schedule:
     - cron: "*/30 * * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      enviar_bitacora:
+        description: Enviar bitácora completa a Discord ahora
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["index.html", "scripts/**", "tests/**", ".github/workflows/**"]
@@ -30,6 +35,7 @@ jobs:
       - run: node scripts/discord-wars.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_SEND_BITACORA: ${{ github.event.inputs.enviar_bitacora }}
       - run: node scripts/discord-monthly.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}

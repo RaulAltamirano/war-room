@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { formatWarDiscord, runDiscordWars, warsToAnnounce } from '../scripts/lib/discord-wars.mjs';
+import { formatBitacoraDiscord, formatWarDiscord, runDiscordBitacora, runDiscordWars, warsToAnnounce } from '../scripts/lib/discord-wars.mjs';
 
 const sample = {
   id: 'w20261011',
@@ -74,4 +74,24 @@ test('warsToAnnounce lista pendientes tras bootstrap', () => {
   const plan = warsToAnnounce([sample], { bootstrapped: true, wars: {} });
   assert.equal(plan.mode, 'post');
   assert.equal(plan.pending.length, 1);
+});
+
+test('formatBitacoraDiscord lista el historial', () => {
+  const text = formatBitacoraDiscord([sample], 'clandestinos');
+  assert.match(text, /Bitácora/);
+  assert.match(text, /BUILT 2 WAR/);
+  assert.match(text, /1 guerras/);
+});
+
+test('runDiscordBitacora postea el resumen', async () => {
+  let posts = 0;
+  const out = await runDiscordBitacora({
+    wars: [sample],
+    clanName: 'clandestinos',
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async () => { posts += 1; return { ok: true }; },
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.equal(posts, 1);
 });
