@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18199,
+  "clanBuilderBasePoints": 18222,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -319,7 +319,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 32,
+      "trophies": 58,
       "builderBaseTrophies": 1355,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -439,7 +439,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 56,
+      "trophies": 72,
       "builderBaseTrophies": 1258,
       "clanRank": 11,
       "previousClanRank": 13,
@@ -935,7 +935,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1649,
+      "builderBaseTrophies": 1717,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 76,
@@ -961,8 +961,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
+        "id": 44000017,
+        "name": "Copper League III"
       }
     },
     {
@@ -970,7 +970,7 @@
       "name": "minch",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 75,
+      "expLevel": 76,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -980,7 +980,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2205,
+      "builderBaseTrophies": 2217,
       "clanRank": 23,
       "previousClanRank": 23,
       "donations": 0,
@@ -1195,7 +1195,7 @@
       "name": "onel",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 66,
+      "expLevel": 67,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1204,7 +1204,7 @@
         "id": 105000005,
         "name": "Barbarian League 5"
       },
-      "trophies": 41,
+      "trophies": 52,
       "builderBaseTrophies": 656,
       "clanRank": 28,
       "previousClanRank": 28,

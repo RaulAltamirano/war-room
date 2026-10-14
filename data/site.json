@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T17:41:06Z",
+  "generatedAt": "2026-10-14T19:50:40Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27650,
-    "builder": 18199,
+    "builder": 18222,
     "capital": 1127,
     "members": 40,
     "freq": "Siempre",
@@ -255,16 +255,16 @@
       71,
       76,
       67,
-      1649
+      1717
     ],
     [
       "minch",
       "M",
       10,
-      75,
+      76,
       0,
       0,
-      2205
+      2217
     ],
     [
       "facu3D",
@@ -306,7 +306,7 @@
       "onel",
       "M",
       10,
-      66,
+      67,
       122,
       131,
       656
