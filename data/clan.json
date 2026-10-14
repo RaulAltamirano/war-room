@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18182,
+  "clanBuilderBasePoints": 18199,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -27,7 +27,7 @@
   "warWinStreak": 0,
   "warWins": 8,
   "warTies": 0,
-  "warLosses": 21,
+  "warLosses": 22,
   "isWarLogPublic": true,
   "warLeague": {
     "id": 48000006,
@@ -49,11 +49,11 @@
         "id": 105000030,
         "name": "Dragon League 30"
       },
-      "trophies": 462,
+      "trophies": 484,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 333,
+      "donations": 400,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 1376,
-      "donationsReceived": 354,
+      "donations": 1530,
+      "donationsReceived": 437,
       "playerHouse": {
         "elements": [
           {
@@ -265,7 +265,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 13,
-      "expLevel": 122,
+      "expLevel": 123,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -279,7 +279,7 @@
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 578,
-      "donationsReceived": 293,
+      "donationsReceived": 447,
       "playerHouse": {
         "elements": [
           {
@@ -374,7 +374,7 @@
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 757,
-      "donationsReceived": 808,
+      "donationsReceived": 875,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -394,7 +394,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 61,
+      "trophies": 88,
       "builderBaseTrophies": 1609,
       "clanRank": 10,
       "previousClanRank": 10,
@@ -1265,7 +1265,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 9,
-      "expLevel": 53,
+      "expLevel": 54,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1660,10 +1660,10 @@
         "name": "Unranked"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2096,
+      "builderBaseTrophies": 2131,
       "clanRank": 39,
       "previousClanRank": 39,
-      "donations": 488,
+      "donations": 571,
       "donationsReceived": 378,
       "playerHouse": {
         "elements": [
