@@ -94,7 +94,8 @@ test('discordPassRulesPayload no revela ganador e incluye fecha de cierre', () =
   assert.match(payload.embeds[0].title, /Pase de batalla/);
   assert.equal(payload.embeds[0].description.includes('Ancla'), false);
   assert.match(payload.embeds[0].description, /liga de clanes pesa el doble/i);
-  assert.match(payload.embeds[0].description, /Mucha suerte/);
+  assert.match(payload.embeds[0].description, /Échenle ganas/);
+  assert.match(payload.embeds[0].description, /primer lugar|Top 1/);
   assert.match(payload.embeds[0].description, /noviembre/i);
   assert.match(payload.embeds[0].fields[0].value, /2026/);
   assert.equal(payload.embeds[0].description.includes('Alpha'), false);
@@ -222,6 +223,6 @@ test('force manda reglas del pase para anclar, sin ganador ni award', async () =
   assert.equal(out.monthKey, '2026-10');
   assert.equal(Object.keys(awards).length, 0);
   assert.equal(body.embeds[0].description.includes('Ancla'), false);
-  assert.match(body.embeds[0].description, /Mucha suerte/);
+  assert.match(body.embeds[0].description, /Échenle ganas/);
   assert.equal(body.embeds[0].description.includes('Alpha'), false);
 });

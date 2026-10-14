@@ -139,7 +139,7 @@ export function discordPassRulesPayload(monthKey) {
           '### Entrega',
           'Un líder entrega el pase a mano cuando se publique el Top 1 oficial.',
           '',
-          '¡Mucha suerte a todos! Que gane quien más se la rifa este mes.',
+          '¡Échenle ganas! El pase se lo lleva quien pelee por el **primer lugar** — ataquen, donen y no se duerman. ¡A por el Top 1!',
         ].join('\n'),
         color: 0xffc83d,
         fields: [
