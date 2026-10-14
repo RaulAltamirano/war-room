@@ -68,7 +68,7 @@ export function buildReportPayload(site, { pageUrl, warEnded = false } = {}) {
       description: [
         warEnded ? `Resultado listo:\n${lastLine}` : `Última guerra: ${lastLine}`,
         '',
-        `Historial: **${b.warsCount}** guerras · Ranking **70% impacto + 30% donaciones**`,
+        `Historial: **${b.warsCount}** guerras · Ranking **70% impacto (liga ×2) + 30% donaciones**`,
         pageUrl ? `[Abrir bitácora](${pageUrl})` : null,
       ].filter(Boolean).join('\n'),
       color: COLOR.header,

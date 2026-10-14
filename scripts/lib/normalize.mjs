@@ -238,6 +238,7 @@ export function normalizeWar(war, { clanTag = CLAN_TAG, byTag = new Map() } = {}
     rival: sides.them.name || '',
     res: warResult(sides.us, sides.them),
     stars: [sides.us.stars || 0, sides.them.stars || 0],
+    liga: per === 1,
     members,
   };
 }

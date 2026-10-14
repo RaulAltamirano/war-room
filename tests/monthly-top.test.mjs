@@ -92,10 +92,41 @@ test('discordPassRulesPayload no revela ganador e incluye fecha de cierre', () =
   const payload = discordPassRulesPayload('2026-10');
   assert.equal(payload.username, 'clandestinos.ops');
   assert.match(payload.embeds[0].title, /Pase de batalla/);
-  assert.match(payload.embeds[0].description, /Ancla/);
+  assert.equal(payload.embeds[0].description.includes('Ancla'), false);
+  assert.match(payload.embeds[0].description, /liga de clanes pesa el doble/i);
+  assert.match(payload.embeds[0].description, /Mucha suerte/);
   assert.match(payload.embeds[0].description, /noviembre/i);
   assert.match(payload.embeds[0].fields[0].value, /2026/);
   assert.equal(payload.embeds[0].description.includes('Alpha'), false);
+});
+
+test('scoreMonth da más peso a la liga de clanes', () => {
+  const wars = [
+    {
+      id: 'n1',
+      date: '2026-10-05',
+      liga: false,
+      members: [
+        member('Alpha', 100, 3, 0, 2, 4, 0),
+        member('Beta', 50, 1, 0, 2, 0, 0),
+      ],
+    },
+    {
+      id: 'l1',
+      date: '2026-10-10',
+      liga: true,
+      members: [
+        member('Alpha', 50, 1, 0, 1, 0, 0),
+        member('Beta', 100, 3, 0, 1, 3, 0),
+      ],
+    },
+  ];
+  const roster = [
+    ['Alpha', 'M', 15, 1, 0, 0, 0],
+    ['Beta', 'M', 15, 1, 0, 0, 0],
+  ];
+  const r = scoreMonth(wars, roster);
+  assert.equal(r.winner, 'Beta');
 });
 
 test('discordMonthlyPayload revela ganador al cierre', () => {
@@ -190,6 +221,7 @@ test('force manda reglas del pase para anclar, sin ganador ni award', async () =
   assert.equal(out.rules, true);
   assert.equal(out.monthKey, '2026-10');
   assert.equal(Object.keys(awards).length, 0);
-  assert.match(body.embeds[0].description, /Ancla/);
+  assert.equal(body.embeds[0].description.includes('Ancla'), false);
+  assert.match(body.embeds[0].description, /Mucha suerte/);
   assert.equal(body.embeds[0].description.includes('Alpha'), false);
 });

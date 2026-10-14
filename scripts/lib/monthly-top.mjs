@@ -32,14 +32,17 @@ export function warsInMonth(wars, monthKey) {
   return (wars || []).filter((w) => (w.date || '').startsWith(monthKey));
 }
 
+const LIGA_WEIGHT = 2;
+
 export function scoreMonth(wars, roster) {
   const P = {};
   const order = [];
   for (const w of wars || []) {
+    const weight = w.liga ? LIGA_WEIGHT : 1;
     for (const m of w.members || []) {
       let p = P[m[0]];
       if (!p) {
-        p = P[m[0]] = { n: m[0], g: 0, pos: 0, stars: 0, miss: 0, net: 0, impSum: 0 };
+        p = P[m[0]] = { n: m[0], g: 0, pos: 0, stars: 0, miss: 0, net: 0, impSum: 0, wSum: 0 };
         order.push(m[0]);
       }
       if (!m[2]) continue;
@@ -49,14 +52,15 @@ export function scoreMonth(wars, roster) {
       p.stars += r.stars;
       p.miss += r.miss;
       p.net += r.net;
-      p.impSum += r.impact;
+      p.impSum += r.impact * weight;
+      p.wSum += weight;
     }
   }
   const don = {};
   for (const m of roster || []) don[m[0]] = m[4] || 0;
   const list = order.map((k) => {
     const p = P[k];
-    p.imp = p.g ? p.impSum / p.g : 0;
+    p.imp = p.wSum ? p.impSum / p.wSum : 0;
     p.don = don[k] || 0;
     return p;
   }).filter((p) => p.g);
@@ -122,22 +126,20 @@ export function discordPassRulesPayload(monthKey) {
         description: [
           `Durante **${label}**, el clan compite por el **pase de batalla**.`,
           '',
-          '📌 **Ancla este mensaje** para que todos lo tengan presente.',
-          '',
           '### Cómo se gana',
           `El **${close.label}** (00:00, Mexico City) se cierra el ranking.`,
           'Quien quede **Top 1** ese día se lleva el pase.',
-          'Hasta entonces **no hay ganador anunciado**: cuenta todo el mes (guerras + donaciones).',
+          'Hasta entonces **no hay ganador anunciado**: cuenta todo el mes (guerras normales, **liga de clanes** y donaciones).',
           '',
           '### Ranking',
-          '• **70%** impacto en guerra',
+          '• **70%** impacto en guerra — la **liga de clanes pesa el doble**',
           '• **30%** donaciones (relativas al mayor donador)',
           '• Empate: estrellas → neto → ataques sin usar',
           '',
           '### Entrega',
           'Un líder entrega el pase a mano cuando se publique el Top 1 oficial.',
           '',
-          '_Sigue el informe en este canal y la bitácora del clan._',
+          '¡Mucha suerte a todos! Que gane quien más se la rifa este mes.',
         ].join('\n'),
         color: 0xffc83d,
         fields: [
@@ -183,7 +185,7 @@ export function discordMonthlyPayload(result, monthKey) {
           '',
           `**${result.winner}** se lleva el **pase de batalla**. Un líder lo entrega a mano.`,
           '',
-          '_Fórmula: 70% impacto de guerra + 30% donaciones._',
+          '_Fórmula: 70% impacto (liga ×2) + 30% donaciones._',
         ].join('\n'),
         color: 0xffc83d,
         fields,

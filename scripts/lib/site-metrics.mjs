@@ -13,14 +13,18 @@ export function warsSorted(wars) {
   return (wars || []).slice().sort((a, b) => (a.date || '').localeCompare(b.date || ''));
 }
 
+/** Liga de clanes (CWL) pesa el doble en el promedio de impacto. */
+export const LIGA_WEIGHT = 2;
+
 export function scoredList(wars, roster) {
   const P = {};
   const order = [];
   for (const w of warsSorted(wars)) {
+    const weight = w.liga ? LIGA_WEIGHT : 1;
     for (const m of w.members || []) {
       let p = P[m[0]];
       if (!p) {
-        p = P[m[0]] = { n: m[0], g: 0, pos: 0, stars: 0, miss: 0, net: 0, impSum: 0 };
+        p = P[m[0]] = { n: m[0], g: 0, pos: 0, stars: 0, miss: 0, net: 0, impSum: 0, wSum: 0 };
         order.push(m[0]);
       }
       if (!m[2]) continue;
@@ -30,14 +34,15 @@ export function scoredList(wars, roster) {
       p.stars += r.stars;
       p.miss += r.miss;
       p.net += r.net;
-      p.impSum += r.impact;
+      p.impSum += r.impact * weight;
+      p.wSum += weight;
     }
   }
   const don = {};
   for (const m of roster || []) don[m[0]] = m[4] || 0;
   const list = order.map((k) => {
     const p = P[k];
-    p.imp = p.g ? p.impSum / p.g : 0;
+    p.imp = p.wSum ? p.impSum / p.wSum : 0;
     p.don = don[k] || 0;
     return p;
   }).filter((p) => p.g);

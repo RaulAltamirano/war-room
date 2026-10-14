@@ -2,7 +2,7 @@
 
 Página estática del clan `#2RGC02RYC`. GitHub Actions consulta la API de Clash of Clans cada 30 minutos, guarda las guerras terminadas y publica `data/site.json`. La llave no sale de los secretos del repositorio.
 
-El Top 3 y la sugerencia de próxima guerra se calculan solos: 70% impacto de guerra + 30% donaciones (relativas al mayor donador del grupo). Empate: estrellas, neto, ataques sin usar. Quien dejó la mitad o más de sus ataques queda fuera.
+El Top 3 y la sugerencia de próxima guerra se calculan solos: 70% impacto de guerra + 30% donaciones (relativas al mayor donador del grupo). La liga de clanes pesa el doble en el impacto. Empate: estrellas, neto, ataques sin usar. Quien dejó la mitad o más de sus ataques queda fuera.
 
 ## Forzar una actualización
 
