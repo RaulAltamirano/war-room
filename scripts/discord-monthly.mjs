@@ -23,19 +23,12 @@ export async function runDiscordMonthly({
   fetchImpl = fetch,
   log = console.log,
 }) {
-  let monthKey = closedMonthKey(now);
-  let preview = false;
-  let monthWars = warsInMonth(site.wars || [], monthKey);
-  let result = scoreMonth(monthWars, site.roster || []);
+  const preview = !!force;
+  const monthKey = preview ? monthKeyInZone(now) : closedMonthKey(now);
+  const monthWars = warsInMonth(site.wars || [], monthKey);
+  const result = scoreMonth(monthWars, site.roster || []);
 
-  if ((!result || !monthWars.length) && force) {
-    monthKey = monthKeyInZone(now);
-    monthWars = warsInMonth(site.wars || [], monthKey);
-    result = scoreMonth(monthWars, site.roster || []);
-    preview = true;
-  }
-
-  if (!force && !shouldPost(awards, monthKey)) {
+  if (!preview && !shouldPost(awards, monthKey)) {
     log(`Discord: ${monthKey} ya anunciado.`);
     return { posted: false, monthKey, reason: 'already' };
   }

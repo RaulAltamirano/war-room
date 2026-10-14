@@ -125,7 +125,7 @@ test('runDiscordMonthly postea una vez y guarda award', async () => {
   assert.equal(out.posted, true);
   assert.equal(posts, 1);
   assert.equal(awards['2026-10'].winner, 'Alpha');
-  assert.match(body[0].content, /Alpha/);
+  assert.match(body[0].embeds[0].description, /Alpha/);
 
   const again = await runDiscordMonthly({
     site: { wars: octWars, roster },
