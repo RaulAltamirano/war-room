@@ -24,3 +24,7 @@ Los 15 números se calculan solo con los ataques del clan, en orden de `order`.
 Nombres exactos, sin minúsculas. El historial se une por tag. Conocidos: `Joshua` `#GPRY08G8G`, `joshua` `#GGUV8U2LQ`, `JOSHUA` `#R8CVPGJQC`.
 
 No subas el token. En el estandarte sí va el `badge` del clan (API). Sigue sin usar `iconUrls` ni arte de TH/rivales de Supercell.
+
+## Discord
+
+Tras el build, `scripts/discord-monthly.mjs` anuncia el Top 1 del mes cerrado (`America/Mexico_City`) si falta en `data/discord-awards.json`. Secreto `DISCORD_WEBHOOK_URL`. Sin URL → skip. Fallo HTTP → no marca el mes.

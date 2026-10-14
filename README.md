@@ -8,10 +8,18 @@ El Top 3 y la sugerencia de próxima guerra se calculan solos: 70% impacto de gu
 
 Actions → **Actualizar bitácora** → **Run workflow**.
 
+## Discord (Top 1 del mes → pase)
+
+El 1° de cada mes (hora Mexico City) el cron anuncia en Discord el Top 1 del mes anterior (misma fórmula 70/30). El pase lo entrega un líder a mano.
+
+1. En el servidor: canal → Editar canal → Integraciones → **Webhook** → copiar URL.
+2. Secrets del repo → `DISCORD_WEBHOOK_URL`.
+3. Sin ese secreto el fetch sigue; solo se omite el anuncio.
+
 ## Primera vez
 
 1. En [developer.clashofclans.com](https://developer.clashofclans.com), crea una llave con la IP `45.79.218.79`.
-2. En el repositorio: Settings → Secrets and variables → Actions → `COC_API_TOKEN`.
+2. En el repositorio: Settings → Secrets and variables → Actions → `COC_API_TOKEN` (y opcional `DISCORD_WEBHOOK_URL`).
 3. Settings → Pages → Source: **GitHub Actions**.
 4. Settings → Actions → General → Workflow permissions → **Read and write permissions**.
 
