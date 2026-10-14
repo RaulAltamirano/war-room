@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18204,
+  "clanBuilderBasePoints": 18218,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -95,7 +95,7 @@
         "name": "Witch League 18"
       },
       "trophies": 27,
-      "builderBaseTrophies": 2439,
+      "builderBaseTrophies": 2440,
       "clanRank": 2,
       "previousClanRank": 2,
       "donations": 110,
@@ -369,15 +369,15 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 79,
-      "builderBaseTrophies": 1988,
+      "trophies": 100,
+      "builderBaseTrophies": 2013,
       "clanRank": 9,
       "previousClanRank": 10,
       "donations": 757,
       "donationsReceived": 741,
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
@@ -1274,7 +1274,7 @@
         "id": 105000004,
         "name": "Barbarian League 4"
       },
-      "trophies": 22,
+      "trophies": 46,
       "builderBaseTrophies": 1295,
       "clanRank": 30,
       "previousClanRank": 32,
@@ -1480,7 +1480,7 @@
         "name": "Skeleton League 3"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1099,
+      "builderBaseTrophies": 1102,
       "clanRank": 35,
       "previousClanRank": 35,
       "donations": 0,
@@ -1506,8 +1506,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000010,
-        "name": "Stone League V"
+        "id": 44000011,
+        "name": "Stone League IV"
       }
     },
     {
