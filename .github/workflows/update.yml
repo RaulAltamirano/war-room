@@ -61,6 +61,16 @@ jobs:
           done
           echo "No se pudo pushear tras rebase"
           exit 1
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with: { path: "." }
-      - uses: actions/deploy-pages@v4
+      # Pages a veces responde 500 transitorio; un reintento evita re-run manual.
+      - name: Deploy to GitHub Pages
+        id: pages
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+      - name: Esperar antes de reintentar Pages
+        if: steps.pages.outcome == 'failure'
+        run: sleep 45
+      - name: Deploy to GitHub Pages (reintento)
+        if: steps.pages.outcome == 'failure'
+        uses: actions/deploy-pages@v5
