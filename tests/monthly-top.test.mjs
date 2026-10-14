@@ -3,6 +3,7 @@ import test from 'node:test';
 import {
   closedMonthKey,
   discordContent,
+  discordMonthlyPayload,
   scoreMonth,
   shouldPost,
   warsInMonth,
@@ -78,6 +79,17 @@ test('discordContent menciona pase y ganador', () => {
   assert.match(text, /octubre/i);
 });
 
+test('discordMonthlyPayload usa embed de clandestinos.ops', () => {
+  const payload = discordMonthlyPayload(
+    { winner: 'Alpha', score: 100, top3: [['Alpha', 100], ['Beta', 71], ['Gamma', 50]] },
+    '2026-10',
+    { preview: true },
+  );
+  assert.equal(payload.username, 'clandestinos.ops');
+  assert.match(payload.embeds[0].title, /Vista previa/);
+  assert.equal(payload.embeds[0].fields.length, 3);
+});
+
 test('runDiscordMonthly no postea si falta webhook', async () => {
   let posts = 0;
   const awards = {};
@@ -139,4 +151,26 @@ test('runDiscordMonthly no guarda award si Discord falla', async () => {
   });
   assert.equal(out.posted, false);
   assert.equal(awards['2026-10'], undefined);
+});
+
+test('force en mes abierto manda vista previa sin guardar award', async () => {
+  const awards = {};
+  let body = null;
+  const out = await runDiscordMonthly({
+    site: { wars: octWars, roster },
+    awards,
+    now: new Date('2026-10-13T12:00:00-06:00'),
+    force: true,
+    webhookUrl: 'https://discord.example/webhook',
+    fetchImpl: async (_u, opts) => {
+      body = JSON.parse(opts.body);
+      return { ok: true, status: 204 };
+    },
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.equal(out.preview, true);
+  assert.equal(out.monthKey, '2026-10');
+  assert.equal(awards['2026-10'], undefined);
+  assert.match(body.embeds[0].title, /Vista previa/);
 });

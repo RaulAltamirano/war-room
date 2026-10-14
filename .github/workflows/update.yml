@@ -8,6 +8,10 @@ on:
         description: Enviar informe Discord ahora (Top 3, análisis, prospectos)
         type: boolean
         default: false
+      enviar_pase:
+        description: Enviar anuncio del pase mensual (vista previa si el mes sigue abierto)
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["index.html", "scripts/**", "tests/**", ".github/workflows/**"]
@@ -39,6 +43,7 @@ jobs:
       - run: node scripts/discord-monthly.mjs
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_SEND_MONTHLY: ${{ github.event.inputs.enviar_pase }}
       - name: Commit si hay cambios
         run: |
           git config user.name "bitacora-bot"

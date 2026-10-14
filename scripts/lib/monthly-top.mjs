@@ -89,3 +89,38 @@ export function discordContent(result, monthKey) {
   }
   return lines.join('\n');
 }
+
+const MEDAL = ['🥇', '🥈', '🥉'];
+
+export function discordMonthlyPayload(result, monthKey, { preview = false } = {}) {
+  const label = monthLabelEs(monthKey);
+  const fields = (result.top3 || []).map(([n, s], i) => ({
+    name: `${MEDAL[i] || `${i + 1}.`} ${n}`,
+    value: `**${s}** pts`,
+    inline: true,
+  }));
+  return {
+    username: 'clandestinos.ops',
+    embeds: [
+      {
+        title: preview ? '🎁 Vista previa · Pase del mes' : '🎁 Pase del mes',
+        description: [
+          preview
+            ? `Así se verá el anuncio. Ranking provisional de **${label}** (mes aún abierto).`
+            : `Cierre de **${label}**.`,
+          '',
+          `🏆 **Top 1: ${result.winner}** — **${result.score}** pts`,
+          preview
+            ? '_No cuenta como entrega oficial; el pase se confirma al cerrar el mes._'
+            : 'Se gana el **pase del mes**. Un líder lo entrega a mano.',
+          '',
+          '_Fórmula: 70% impacto de guerra + 30% donaciones._',
+        ].join('\n'),
+        color: 0xffc83d,
+        fields,
+        timestamp: new Date().toISOString(),
+        footer: { text: 'clandestinos.ops · premio mensual' },
+      },
+    ],
+  };
+}
