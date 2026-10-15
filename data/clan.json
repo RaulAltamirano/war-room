@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18219,
+  "clanBuilderBasePoints": 18203,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 416,
+      "donations": 483,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -369,15 +369,15 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 100,
-      "builderBaseTrophies": 2013,
+      "trophies": 117,
+      "builderBaseTrophies": 1981,
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 757,
-      "donationsReceived": 875,
+      "donationsReceived": 942,
       "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
