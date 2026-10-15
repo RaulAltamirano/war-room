@@ -1,6 +1,12 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { buildReportPayload, runDiscordReport, shouldSendReport } from '../scripts/lib/discord-report.mjs';
+import {
+  buildProspectsPayload,
+  buildReportPayload,
+  runDiscordProspects,
+  runDiscordReport,
+  shouldSendReport,
+} from '../scripts/lib/discord-report.mjs';
 import { buildBriefing } from '../scripts/lib/site-metrics.mjs';
 
 function member(name, impact, starsAvg, miss, pos, net) {
@@ -91,6 +97,41 @@ test('warEnded manda informe aunque la firma no cambie', async () => {
   });
   assert.equal(out.posted, true);
   assert.equal(out.reason, 'war-ended');
+  assert.equal(posts, 1);
+});
+
+test('buildProspectsPayload es alineación para iniciar guerra', () => {
+  const { payload } = buildProspectsPayload(site);
+  assert.equal(payload.embeds.length, 1);
+  assert.match(payload.embeds[0].title, /iniciar guerra|Alineación/);
+  assert.ok(payload.embeds[0].fields.some((f) => f.name === 'Alineación'));
+});
+
+test('runDiscordProspects solo postea con force', async () => {
+  let posts = 0;
+  const idle = await runDiscordProspects({
+    site,
+    force: false,
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async () => { posts += 1; return { ok: true }; },
+    log: () => {},
+  });
+  assert.equal(idle.posted, false);
+  assert.equal(posts, 0);
+
+  const sent = await runDiscordProspects({
+    site,
+    force: true,
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async (_u, opts) => {
+      posts += 1;
+      const body = JSON.parse(opts.body);
+      assert.match(body.embeds[0].title, /Alineación|iniciar/);
+      return { ok: true };
+    },
+    log: () => {},
+  });
+  assert.equal(sent.posted, true);
   assert.equal(posts, 1);
 });
 

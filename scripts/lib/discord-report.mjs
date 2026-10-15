@@ -26,6 +26,98 @@ function listOr(empty, rows) {
   return rows.length ? rows.join('\n') : empty;
 }
 
+function prospectsColumns(briefing) {
+  const LTR = '\u200E';
+  const prosShow = briefing.prospects.slice(0, 16);
+  const prosExtra = briefing.prospects.length - prosShow.length;
+  const prosLine = (p) => `${LTR}${p.rank}. ${p.n} · **${p.score}**`;
+  const prosLeft = prosShow.slice(0, 8).map(prosLine);
+  const prosRight = prosShow.slice(8, 16).map(prosLine);
+  if (prosExtra > 0) prosRight.push(`${LTR}_…y ${prosExtra} más_`);
+  return { prosShow, prosLeft, prosRight };
+}
+
+function prospectsEmbed(briefing, { kickoff = false } = {}) {
+  const { prosShow, prosLeft, prosRight } = prospectsColumns(briefing);
+  const outLines = briefing.trend.out.slice(0, 10).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
+  const fields = prosShow.length
+    ? [
+      {
+        name: 'Alineación',
+        value: clip(listOr('_—_', prosLeft)),
+        inline: true,
+      },
+      {
+        name: '\u200b',
+        value: clip(listOr('_—_', prosRight.length ? prosRight : ['\u200b'])),
+        inline: true,
+      },
+    ]
+    : [{ name: 'Alineación', value: '_Sin prospectos._', inline: false }];
+  if (kickoff && briefing.trend.out.length) {
+    fields.push({
+      name: `✕ Fuera · ${briefing.trend.out.length}`,
+      value: clip(listOr('_—_', outLines)),
+      inline: false,
+    });
+  }
+  return {
+    title: kickoff ? '⚔️ Alineación · iniciar guerra' : '⚔️ Prospectos · próxima guerra',
+    description: kickoff
+      ? `Sugeridos para la **próxima guerra**: **${briefing.prospects.length}** · pelearon ≥1 y no están fuera.`
+      : `Sugeridos: **${briefing.prospects.length}** · pelearon ≥1 guerra y no están fuera.`,
+    color: COLOR.prospects,
+    fields,
+  };
+}
+
+export function buildProspectsPayload(site) {
+  const b = buildBriefing(site);
+  const clan = b.clan.name || 'clandestinos';
+  return {
+    briefing: b,
+    payload: {
+      username: 'clandestinos.ops',
+      embeds: [
+        {
+          ...prospectsEmbed(b, { kickoff: true }),
+          timestamp: new Date().toISOString(),
+          footer: { text: `${clan} · Alineación sugerida` },
+        },
+      ],
+    },
+  };
+}
+
+export async function runDiscordProspects({
+  site,
+  webhookUrl,
+  force = false,
+  fetchImpl = fetch,
+  log = console.log,
+}) {
+  const { briefing, payload } = buildProspectsPayload(site);
+  if (!force) {
+    log(`Prospectos: ${briefing.prospects.length} sugeridos (sin enviar; usa force / enviar_prospectos).`);
+    return { posted: false, reason: 'idle', briefing };
+  }
+  if (!webhookUrl) {
+    log('Discord prospectos: falta DISCORD_WEBHOOK_URL.');
+    return { posted: false, reason: 'no-webhook', briefing };
+  }
+  const res = await fetchImpl(webhookUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    log(`Discord prospectos: webhook ${res.status}.`);
+    return { posted: false, reason: 'http', status: res.status, briefing };
+  }
+  log(`Discord prospectos: enviada alineación (${briefing.prospects.length}).`);
+  return { posted: true, reason: 'force', briefing };
+}
+
 export function buildReportPayload(site, { warEnded = false } = {}) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
@@ -51,14 +143,6 @@ export function buildReportPayload(site, { warEnded = false } = {}) {
   const upLines = b.trend.up.slice(0, 8).map((x) => `• **${x.n}** · \`+${x.d}\` · ${x.from} → ${x.to}`);
   const downLines = b.trend.down.slice(0, 8).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);
   const outLines = b.trend.out.slice(0, 10).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
-
-  const LTR = '\u200E';
-  const prosShow = b.prospects.slice(0, 16);
-  const prosExtra = b.prospects.length - prosShow.length;
-  const prosLine = (p) => `${LTR}${p.rank}. ${p.n} · **${p.score}**`;
-  const prosLeft = prosShow.slice(0, 8).map(prosLine);
-  const prosRight = prosShow.slice(8, 16).map(prosLine);
-  if (prosExtra > 0) prosRight.push(`${LTR}_…y ${prosExtra} más_`);
 
   const embeds = [
     {
@@ -102,25 +186,7 @@ export function buildReportPayload(site, { warEnded = false } = {}) {
         },
       ],
     },
-    {
-      title: '⚔️ Prospectos · próxima guerra',
-      description: `Sugeridos: **${b.prospects.length}** · pelearon ≥1 guerra y no están fuera.`,
-      color: COLOR.prospects,
-      fields: prosShow.length
-        ? [
-          {
-            name: 'Alineación',
-            value: clip(listOr('_—_', prosLeft)),
-            inline: true,
-          },
-          {
-            name: '\u200b',
-            value: clip(listOr('_—_', prosRight.length ? prosRight : ['\u200b'])),
-            inline: true,
-          },
-        ]
-        : [{ name: 'Alineación', value: '_Sin prospectos._', inline: false }],
-    },
+    prospectsEmbed(b),
   ];
 
   return {

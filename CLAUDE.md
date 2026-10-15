@@ -31,5 +31,6 @@ Secreto `DISCORD_WEBHOOK_URL`. Tras el build:
 
 - `scripts/discord-report.mjs` → embeds Top 3 + análisis + prospectos. Se envía cuando `fetch` guarda una guerra `warEnded` (`data/last-fetch.json`, no se commitea) o con `DISCORD_SEND_REPORT`. Estado en `data/discord-report.json`.
 - `scripts/discord-monthly.mjs` → Top 1 del mes cerrado Mexico City (`data/discord-awards.json`).
+- `scripts/prospects.mjs` → alineación para iniciar guerra; Discord solo con `DISCORD_SEND_PROSPECTS` / input `enviar_prospectos`.
 
 Sin URL → skip. Fallo HTTP → no marca ese ítem (reintento luego). No spamear una guerra por mensaje.
