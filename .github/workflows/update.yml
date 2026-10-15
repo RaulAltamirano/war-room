@@ -16,6 +16,10 @@ on:
         description: Enviar alineación de prospectos (iniciar próxima guerra)
         type: boolean
         default: false
+      enviar_zonas_ban:
+        description: Enviar aviso Discord zona roja / zona gris (disciplina)
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ["index.html", "scripts/**", "tests/**", ".github/workflows/**"]
@@ -52,6 +56,10 @@ jobs:
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_SEND_PROSPECTS: ${{ github.event.inputs.enviar_prospectos }}
+      - run: node scripts/ban-zones.mjs
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_SEND_BAN_ZONES: ${{ github.event.inputs.enviar_zonas_ban }}
       - name: Commit si hay cambios
         run: |
           git config user.name "bitacora-bot"

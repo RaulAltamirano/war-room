@@ -17,7 +17,7 @@ Con el secreto `DISCORD_WEBHOOK_URL` el cron publica **embeds** profesionales:
 
 1. Canal → Integraciones → **Webhook** → URL → secret `DISCORD_WEBHOOK_URL`.
 2. Sin secreto el fetch sigue; solo se omiten los avisos.
-3. Enviar ahora: Actions → **Run workflow** → **Enviar informe**, **Enviar reglas del pase** (anclá; el ganador solo al cerrar el mes) y/o **Enviar alineación de prospectos** (iniciar próxima guerra).
+3. Enviar ahora: Actions → **Run workflow** → **Enviar informe**, **Enviar reglas del pase**, **Enviar alineación de prospectos** y/o **Enviar aviso zona roja / gris** (disciplina de guerra).
 
 ## Primera vez
 
