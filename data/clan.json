@@ -85,7 +85,7 @@
       "name": "imparable",
       "role": "leader",
       "townHallLevel": 13,
-      "expLevel": 145,
+      "expLevel": 146,
       "league": {
         "id": 29000011,
         "name": "Crystal League II"
@@ -94,7 +94,7 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 39,
+      "trophies": 66,
       "builderBaseTrophies": 2440,
       "clanRank": 2,
       "previousClanRank": 2,
@@ -619,7 +619,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 12,
+      "trophies": 27,
       "builderBaseTrophies": 1146,
       "clanRank": 15,
       "previousClanRank": 15,
@@ -700,7 +700,7 @@
       "name": "Shiba",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 67,
+      "expLevel": 68,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1445,7 +1445,7 @@
       "name": "ZackyB",
       "role": "admin",
       "townHallLevel": 8,
-      "expLevel": 43,
+      "expLevel": 44,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1515,7 +1515,7 @@
       "name": "Brand.ows",
       "role": "admin",
       "townHallLevel": 7,
-      "expLevel": 31,
+      "expLevel": 32,
       "league": {
         "id": 29000000,
         "name": "Unranked"
