@@ -52,9 +52,23 @@ test('payload Discord trae aviso y zonas', () => {
   const { payload, zones } = buildBanZonesPayload(site);
   assert.ok(zones.red.some((x) => x.n === 'A'));
   assert.ok(zones.grey.some((x) => x.n === 'B'));
-  assert.match(payload.embeds[0].description, /2 guerras seguidas/);
+  assert.match(payload.embeds[0].description, /dos seguidas|zona roja/i);
   assert.match(payload.embeds[0].fields[0].name, /roja/i);
   assert.match(payload.embeds[0].fields[1].name, /gris/i);
+  const grey = payload.embeds[0].fields[1].value;
+  assert.match(grey, /\u200E/);
+  assert.match(grey, /\u2068/);
+});
+
+test('nombres RTL van aislados en LTR', () => {
+  const site = {
+    clan: { name: 'clandestinos' },
+    roster: [],
+    wars: [{ date: '2026-10-13', members: [['اوراس', 'M', [0, 0, 0, 100, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2], 15, 1, []]] }],
+  };
+  const { payload } = buildBanZonesPayload(site);
+  const text = payload.embeds[0].fields.map((f) => f.value).join('\n');
+  assert.ok(text.includes('\u200E• **\u2068اوراس\u2069**'));
 });
 
 test('runDiscordBanZones solo postea con force', async () => {
@@ -75,7 +89,7 @@ test('runDiscordBanZones solo postea con force', async () => {
     webhookUrl: 'https://discord.example/hook',
     fetchImpl: async (_u, opts) => {
       posts += 1;
-      assert.match(JSON.parse(opts.body).embeds[0].title, /Aviso/);
+      assert.match(JSON.parse(opts.body).embeds[0].title, /Disciplina/);
       return { ok: true };
     },
     log: () => {},

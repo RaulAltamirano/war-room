@@ -80,6 +80,9 @@ export function banZones(wars, roster = []) {
 }
 
 const COLOR = { warn: 0xffc83d, red: 0xe74c3c, grey: 0x95a5a6 };
+const LTR = '\u200E';
+const FSI = '\u2068'; // first strong isolate — nombres árabes no voltean la línea
+const PDI = '\u2069';
 
 function clip(text, max = 1024) {
   const s = String(text || '');
@@ -87,50 +90,67 @@ function clip(text, max = 1024) {
   return `${s.slice(0, max - 1)}…`;
 }
 
-function lines(rows, empty) {
+function nameOf(n) {
+  return `${FSI}${n}${PDI}`;
+}
+
+function whyRed(x) {
+  if (x.streak >= 2) return `${x.streak} guerras seguidas sin atacar`;
+  if (x.miss === x.pos) return `nunca atacó (${x.miss}/${x.pos})`;
+  return `${x.miss}/${x.pos} ataques sin usar`;
+}
+
+function whyGrey(x) {
+  if (x.lastFull && x.g === 1) return '1 guerra · no atacó';
+  if (x.lastFull) return 'última guerra · no atacó';
+  if (x.miss === x.pos) return `nunca atacó (${x.miss}/${x.pos})`;
+  return `${x.miss}/${x.pos} ataques sin usar`;
+}
+
+function lines(rows, whyFn, empty) {
   if (!rows.length) return empty;
-  return rows.map((x) => {
-    const why = x.streak >= 2
-      ? `${x.streak} seguidas sin atacar`
-      : x.miss === x.pos
-        ? `${x.miss}/${x.pos} sin usar (nunca atacó)`
-        : `${x.miss}/${x.pos} sin usar`;
-    return `• **${x.n}** · \`${why}\``;
-  }).join('\n');
+  return rows.map((x) => `${LTR}• **${nameOf(x.n)}** — ${whyFn(x)}`).join('\n');
 }
 
 export function buildBanZonesPayload(site) {
   const zones = banZones(site.wars || [], site.roster || []);
   const clan = site.clan?.name || 'clandestinos';
+  const nRed = zones.red.length;
+  const nGrey = zones.grey.length;
   return {
     zones,
     payload: {
       username: 'clandestinos.ops',
       embeds: [
         {
-          title: '⚠️ Aviso · zonas de ban',
+          title: '⚠️ Disciplina de guerra',
           description: [
-            'Regla del clan (ataques en guerra):',
-            '• **1 guerra** sin atacar → **aviso** (zona gris)',
-            '• **2 guerras seguidas** sin atacar → **zona roja** (kick / ban)',
+            'Si te meten a guerra, **hay que atacar**.',
             '',
-            '_La decisión final es de los líderes. Esto es una sugerencia automática._',
+            '**1️⃣ Aviso** — una guerra sin atacar → zona gris',
+            '**2️⃣ Riesgo de kick** — dos seguidas sin atacar → zona roja',
+            '',
+            nRed || nGrey
+              ? `Ahora: **${nRed}** en roja · **${nGrey}** en gris.`
+              : 'Ahora: nadie en zona de aviso.',
+            '',
+            '_Sugerencia automática. Deciden los líderes._',
           ].join('\n'),
           color: COLOR.warn,
           fields: [
             {
-              name: `🔴 Zona roja · ${zones.red.length}`,
-              value: clip(lines(zones.red, '_Nadie en zona roja._')),
+              name: nRed ? `🔴 Zona roja · kick / ban (${nRed})` : '🔴 Zona roja · nadie',
+              value: clip(lines(zones.red, whyRed, '_Nadie con 2 guerras seguidas sin atacar._')),
               inline: false,
             },
             {
-              name: `⚪ Zona gris · ${zones.grey.length}`,
-              value: clip(lines(zones.grey, '_Nadie en zona gris._')),
+              name: nGrey ? `⚪ Zona gris · aviso (${nGrey})` : '⚪ Zona gris · nadie',
+              value: clip(lines(zones.grey, whyGrey, '_Nadie en aviso._')),
               inline: false,
             },
           ],
           timestamp: new Date().toISOString(),
-          footer: { text: `${clan} · Aviso de disciplina` },
+          footer: { text: `${clan} · Atacar es obligatorio` },
         },
       ],
     },
