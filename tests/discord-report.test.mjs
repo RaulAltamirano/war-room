@@ -107,6 +107,28 @@ test('buildProspectsPayload es alineación para iniciar guerra', () => {
   assert.ok(payload.embeds[0].fields.some((f) => f.name === 'Alineación'));
 });
 
+test('alineación lista todos los prospectos, sin “…y N más”', () => {
+  const big = {
+    ...site,
+    roster: Array.from({ length: 24 }, (_, i) => [`P${i + 1}`, 'M', 15, 1, 10, 0, 0]),
+    wars: [{
+      id: 'w1',
+      date: '2026-10-01',
+      rival: 'R',
+      res: 'V',
+      stars: [30, 10],
+      members: Array.from({ length: 24 }, (_, i) => member(`P${i + 1}`, 80 - (i % 20), 2, 0, 2, 1)),
+    }],
+  };
+  const { payload, briefing } = buildProspectsPayload(big);
+  assert.equal(briefing.prospects.length, 24);
+  const text = payload.embeds[0].fields.map((f) => f.value).join('\n');
+  assert.equal(text.includes('más'), false);
+  for (const p of briefing.prospects) {
+    assert.match(text, new RegExp(`${p.n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`));
+  }
+});
+
 test('runDiscordProspects solo postea con force', async () => {
   let posts = 0;
   const idle = await runDiscordProspects({

@@ -28,18 +28,19 @@ function listOr(empty, rows) {
 
 function prospectsColumns(briefing) {
   const LTR = '\u200E';
-  const prosShow = briefing.prospects.slice(0, 16);
-  const prosExtra = briefing.prospects.length - prosShow.length;
+  const all = briefing.prospects;
+  const mid = Math.ceil(all.length / 2) || 0;
   const prosLine = (p) => `${LTR}${p.rank}. ${p.n} · **${p.score}**`;
-  const prosLeft = prosShow.slice(0, 8).map(prosLine);
-  const prosRight = prosShow.slice(8, 16).map(prosLine);
-  if (prosExtra > 0) prosRight.push(`${LTR}_…y ${prosExtra} más_`);
-  return { prosShow, prosLeft, prosRight };
+  return {
+    prosShow: all,
+    prosLeft: all.slice(0, mid).map(prosLine),
+    prosRight: all.slice(mid).map(prosLine),
+  };
 }
 
 function prospectsEmbed(briefing, { kickoff = false } = {}) {
   const { prosShow, prosLeft, prosRight } = prospectsColumns(briefing);
-  const outLines = briefing.trend.out.slice(0, 10).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
+  const outLines = briefing.trend.out.map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
   const fields = prosShow.length
     ? [
       {
