@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T22:51:04Z",
+  "generatedAt": "2026-10-15T01:06:10Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27650,
-    "builder": 18219,
+    "builder": 18217,
     "capital": 1127,
     "members": 40,
     "freq": "Siempre",
@@ -64,7 +64,7 @@
       "C",
       18,
       215,
-      400,
+      416,
       30,
       3066
     ],
@@ -264,7 +264,7 @@
       76,
       0,
       0,
-      2218
+      2214
     ],
     [
       "facu3D",
@@ -362,7 +362,7 @@
       8,
       43,
       0,
-      266,
+      282,
       109
     ],
     [

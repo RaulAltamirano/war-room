@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 27650,
-  "clanBuilderBasePoints": 18219,
+  "clanBuilderBasePoints": 18217,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 400,
+      "donations": 416,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -319,7 +319,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 69,
+      "trophies": 91,
       "builderBaseTrophies": 1355,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -980,7 +980,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2218,
+      "builderBaseTrophies": 2214,
       "clanRank": 23,
       "previousClanRank": 23,
       "donations": 0,
@@ -1459,7 +1459,7 @@
       "clanRank": 34,
       "previousClanRank": 34,
       "donations": 0,
-      "donationsReceived": 266,
+      "donationsReceived": 282,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
