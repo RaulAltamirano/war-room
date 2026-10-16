@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T05:17:03Z",
+  "generatedAt": "2026-10-16T09:59:42Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26050,
-    "builder": 16791,
+    "builder": 16796,
     "capital": 1127,
     "members": 33,
     "freq": "Siempre",
@@ -137,7 +137,7 @@
       11,
       133,
       757,
-      1046,
+      1113,
       1981
     ],
     [
@@ -145,7 +145,7 @@
       "C",
       12,
       76,
-      118,
+      185,
       40,
       1258
     ],
@@ -210,7 +210,7 @@
       59,
       0,
       66,
-      704
+      744
     ],
     [
       "jhon cna",
