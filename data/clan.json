@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26150,
-  "clanBuilderBasePoints": 16784,
+  "clanBuilderBasePoints": 16797,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -181,8 +181,8 @@
         "name": "Unranked"
       },
       "leagueTier": {
-        "id": 105000016,
-        "name": "Witch League 16"
+        "id": 105000015,
+        "name": "Valkyrie League 15"
       },
       "trophies": 0,
       "builderBaseTrophies": 2138,
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 18,
-      "builderBaseTrophies": 1858,
+      "builderBaseTrophies": 1908,
       "clanRank": 15,
       "previousClanRank": 16,
       "donations": 61,
@@ -646,8 +646,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000018,
-        "name": "Copper League II"
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -1039,7 +1039,7 @@
       "tag": "#GC9ULU80G",
       "name": "TaP",
       "role": "member",
-      "townHallLevel": 10,
+      "townHallLevel": 11,
       "expLevel": 71,
       "league": {
         "id": 29000000,
@@ -1379,7 +1379,7 @@
       "tag": "#R9CJG2CJJ",
       "name": "tiroteo bulls",
       "role": "member",
-      "townHallLevel": 9,
+      "townHallLevel": 10,
       "expLevel": 63,
       "league": {
         "id": 29000000,

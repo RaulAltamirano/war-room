@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T22:46:50Z",
+  "generatedAt": "2026-10-16T00:54:13Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26150,
-    "builder": 16784,
+    "builder": 16797,
     "capital": 1127,
     "members": 33,
     "freq": "Siempre",
@@ -192,7 +192,7 @@
       77,
       61,
       471,
-      1858
+      1908
     ],
     [
       "Shiba",
@@ -278,7 +278,7 @@
     [
       "TaP",
       "M",
-      10,
+      11,
       71,
       194,
       66,
@@ -350,7 +350,7 @@
     [
       "tiroteo bulls",
       "M",
-      9,
+      10,
       63,
       57,
       0,
