@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16784,
+  "clanBuilderBasePoints": 16801,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 599,
+      "donations": 615,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -370,14 +370,14 @@
         "name": "Archer League 9"
       },
       "trophies": 132,
-      "builderBaseTrophies": 1981,
+      "builderBaseTrophies": 2009,
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 766,
-      "donationsReceived": 1113,
+      "donationsReceived": 1180,
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
@@ -398,7 +398,7 @@
       "builderBaseTrophies": 1258,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 185,
+      "donations": 252,
       "donationsReceived": 40,
       "playerHouse": {
         "elements": [
@@ -516,51 +516,6 @@
       }
     },
     {
-      "tag": "#GPYCLGLGG",
-      "name": "KOLET",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 70,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000008,
-        "name": "Archer League 8"
-      },
-      "trophies": 110,
-      "builderBaseTrophies": 1146,
-      "clanRank": 13,
-      "previousClanRank": 13,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
-      }
-    },
-    {
       "tag": "#GGUV8U2LQ",
       "name": "joshua",
       "role": "member",
@@ -574,9 +529,9 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 91,
+      "trophies": 120,
       "builderBaseTrophies": 1164,
-      "clanRank": 14,
+      "clanRank": 13,
       "previousClanRank": 14,
       "donations": 57,
       "donationsReceived": 66,
@@ -597,6 +552,51 @@
           {
             "type": "decoration",
             "id": 82000061
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
+      }
+    },
+    {
+      "tag": "#GPYCLGLGG",
+      "name": "KOLET",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 70,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000008,
+        "name": "Archer League 8"
+      },
+      "trophies": 110,
+      "builderBaseTrophies": 1146,
+      "clanRank": 14,
+      "previousClanRank": 13,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
           }
         ]
       },
@@ -1130,7 +1130,7 @@
       "name": "Diego503",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 42,
+      "expLevel": 43,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1140,7 +1140,7 @@
         "name": "Barbarian League 4"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1262,
+      "builderBaseTrophies": 1275,
       "clanRank": 27,
       "previousClanRank": 27,
       "donations": 0,
@@ -1189,7 +1189,7 @@
       "clanRank": 28,
       "previousClanRank": 28,
       "donations": 0,
-      "donationsReceived": 316,
+      "donationsReceived": 332,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
