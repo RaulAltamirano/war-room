@@ -15,8 +15,8 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/5WSMffhecfg3Z6YYvKiIKmvsUQtLk_u__qIdNVvk7es.png"
   },
   "clanLevel": 5,
-  "clanPoints": 26150,
-  "clanBuilderBasePoints": 16797,
+  "clanPoints": 26050,
+  "clanBuilderBasePoints": 16791,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 483,
+      "donations": 599,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -98,8 +98,8 @@
       "builderBaseTrophies": 2440,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 110,
-      "donationsReceived": 201,
+      "donations": 155,
+      "donationsReceived": 248,
       "playerHouse": {
         "elements": [
           {
@@ -189,7 +189,7 @@
       "clanRank": 4,
       "previousClanRank": 4,
       "donations": 98,
-      "donationsReceived": 193,
+      "donationsReceived": 238,
       "playerHouse": {
         "elements": [
           {
@@ -324,7 +324,7 @@
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 245,
-      "donationsReceived": 493,
+      "donationsReceived": 529,
       "builderBaseLeague": {
         "id": 44000013,
         "name": "Stone League II"
@@ -374,7 +374,7 @@
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 757,
-      "donationsReceived": 1009,
+      "donationsReceived": 1046,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -848,7 +848,7 @@
       "builderBaseTrophies": 1717,
       "clanRank": 20,
       "previousClanRank": 22,
-      "donations": 85,
+      "donations": 121,
       "donationsReceived": 67,
       "playerHouse": {
         "elements": [
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2269,
+      "builderBaseTrophies": 2212,
       "clanRank": 21,
       "previousClanRank": 23,
       "donations": 0,
@@ -1050,10 +1050,10 @@
         "name": "Barbarian League 4"
       },
       "trophies": 255,
-      "builderBaseTrophies": 1325,
+      "builderBaseTrophies": 1343,
       "clanRank": 25,
       "previousClanRank": 29,
-      "donations": 194,
+      "donations": 198,
       "donationsReceived": 66,
       "playerHouse": {
         "elements": [
@@ -1095,7 +1095,7 @@
         "name": "Barbarian League 4"
       },
       "trophies": 193,
-      "builderBaseTrophies": 1216,
+      "builderBaseTrophies": 1288,
       "clanRank": 26,
       "previousClanRank": 30,
       "donations": 0,
@@ -1189,7 +1189,7 @@
       "clanRank": 28,
       "previousClanRank": 34,
       "donations": 0,
-      "donationsReceived": 291,
+      "donationsReceived": 307,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
@@ -1259,7 +1259,7 @@
       "clanRank": 30,
       "previousClanRank": 36,
       "donations": 0,
-      "donationsReceived": 116,
+      "donationsReceived": 136,
       "playerHouse": {
         "elements": [
           {
