@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T08:56:25Z",
+  "generatedAt": "2026-10-17T12:36:59Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26050,
-    "builder": 16844,
+    "builder": 16853,
     "capital": 1127,
     "members": 33,
     "freq": "Siempre",
@@ -192,7 +192,7 @@
       78,
       61,
       572,
-      1958
+      1995
     ],
     [
       "Shiba",
@@ -270,7 +270,7 @@
       "ElTiti",
       "M",
       10,
-      43,
+      44,
       0,
       165,
       586

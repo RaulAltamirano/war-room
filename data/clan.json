@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16844,
+  "clanBuilderBasePoints": 16853,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -619,8 +619,8 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 18,
-      "builderBaseTrophies": 1958,
+      "trophies": 43,
+      "builderBaseTrophies": 1995,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 61,
@@ -995,7 +995,7 @@
       "name": "ElTiti",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 43,
+      "expLevel": 44,
       "league": {
         "id": 29000000,
         "name": "Unranked"
