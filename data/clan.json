@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16853,
+  "clanBuilderBasePoints": 16881,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -229,7 +229,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 210,
+      "trophies": 240,
       "builderBaseTrophies": 2455,
       "clanRank": 5,
       "previousClanRank": 5,
@@ -532,7 +532,7 @@
       "trophies": 138,
       "builderBaseTrophies": 1146,
       "clanRank": 13,
-      "previousClanRank": 13,
+      "previousClanRank": 14,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -577,7 +577,7 @@
       "trophies": 120,
       "builderBaseTrophies": 1164,
       "clanRank": 14,
-      "previousClanRank": 14,
+      "previousClanRank": 13,
       "donations": 57,
       "donationsReceived": 66,
       "playerHouse": {
@@ -1040,7 +1040,7 @@
       "name": "TaP",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 71,
+      "expLevel": 72,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1053,7 +1053,7 @@
       "builderBaseTrophies": 1343,
       "clanRank": 25,
       "previousClanRank": 25,
-      "donations": 198,
+      "donations": 208,
       "donationsReceived": 66,
       "playerHouse": {
         "elements": [
@@ -1085,7 +1085,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 57,
+      "expLevel": 58,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1095,11 +1095,11 @@
         "name": "Barbarian League 4"
       },
       "trophies": 193,
-      "builderBaseTrophies": 1288,
+      "builderBaseTrophies": 1400,
       "clanRank": 26,
       "previousClanRank": 26,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 11,
       "playerHouse": {
         "elements": [
           {
@@ -1121,8 +1121,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000012,
-        "name": "Stone League III"
+        "id": 44000014,
+        "name": "Stone League I"
       }
     },
     {
@@ -1189,7 +1189,7 @@
       "clanRank": 28,
       "previousClanRank": 28,
       "donations": 0,
-      "donationsReceived": 332,
+      "donationsReceived": 342,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
@@ -1245,7 +1245,7 @@
       "name": "Brand.ows",
       "role": "admin",
       "townHallLevel": 7,
-      "expLevel": 32,
+      "expLevel": 33,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1335,7 +1335,7 @@
       "name": "Nicolás",
       "role": "admin",
       "townHallLevel": 14,
-      "expLevel": 152,
+      "expLevel": 153,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1348,7 +1348,7 @@
       "builderBaseTrophies": 2131,
       "clanRank": 32,
       "previousClanRank": 32,
-      "donations": 672,
+      "donations": 683,
       "donationsReceived": 426,
       "playerHouse": {
         "elements": [
