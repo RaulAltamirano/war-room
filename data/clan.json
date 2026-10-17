@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16813,
+  "clanBuilderBasePoints": 16844,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 0,
-  "warWins": 8,
+  "warWinStreak": 1,
+  "warWins": 9,
   "warTies": 0,
   "warLosses": 22,
   "isWarLogPublic": true,
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 1714,
+      "donations": 1784,
       "donationsReceived": 493,
       "playerHouse": {
         "elements": [
@@ -275,7 +275,7 @@
         "name": "Wizard League 11"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1970,
+      "builderBaseTrophies": 2032,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 634,
@@ -301,8 +301,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
@@ -399,7 +399,7 @@
       "clanRank": 10,
       "previousClanRank": 10,
       "donations": 252,
-      "donationsReceived": 42,
+      "donationsReceived": 112,
       "playerHouse": {
         "elements": [
           {
