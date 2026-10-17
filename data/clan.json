@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16801,
+  "clanBuilderBasePoints": 16813,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000030,
         "name": "Dragon League 30"
       },
-      "trophies": 513,
+      "trophies": 531,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -373,7 +373,7 @@
       "builderBaseTrophies": 2009,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 814,
+      "donations": 816,
       "donationsReceived": 1180,
       "builderBaseLeague": {
         "id": 44000020,
@@ -399,7 +399,7 @@
       "clanRank": 10,
       "previousClanRank": 10,
       "donations": 252,
-      "donationsReceived": 40,
+      "donationsReceived": 42,
       "playerHouse": {
         "elements": [
           {
@@ -516,51 +516,6 @@
       }
     },
     {
-      "tag": "#GGUV8U2LQ",
-      "name": "joshua",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 77,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000008,
-        "name": "Archer League 8"
-      },
-      "trophies": 120,
-      "builderBaseTrophies": 1164,
-      "clanRank": 13,
-      "previousClanRank": 14,
-      "donations": 57,
-      "donationsReceived": 66,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000146
-          },
-          {
-            "type": "walls",
-            "id": 82000147
-          },
-          {
-            "type": "roof",
-            "id": 82000010
-          },
-          {
-            "type": "decoration",
-            "id": 82000061
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
-      }
-    },
-    {
       "tag": "#GPYCLGLGG",
       "name": "KOLET",
       "role": "member",
@@ -574,9 +529,9 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 110,
+      "trophies": 138,
       "builderBaseTrophies": 1146,
-      "clanRank": 14,
+      "clanRank": 13,
       "previousClanRank": 13,
       "donations": 0,
       "donationsReceived": 0,
@@ -606,10 +561,10 @@
       }
     },
     {
-      "tag": "#LY9J99L9G",
-      "name": "cozo 2000",
-      "role": "admin",
-      "townHallLevel": 10,
+      "tag": "#GGUV8U2LQ",
+      "name": "joshua",
+      "role": "member",
+      "townHallLevel": 11,
       "expLevel": 77,
       "league": {
         "id": 29000000,
@@ -619,12 +574,57 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
+      "trophies": 120,
+      "builderBaseTrophies": 1164,
+      "clanRank": 14,
+      "previousClanRank": 14,
+      "donations": 57,
+      "donationsReceived": 66,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000146
+          },
+          {
+            "type": "walls",
+            "id": 82000147
+          },
+          {
+            "type": "roof",
+            "id": 82000010
+          },
+          {
+            "type": "decoration",
+            "id": 82000061
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
+      }
+    },
+    {
+      "tag": "#LY9J99L9G",
+      "name": "cozo 2000",
+      "role": "admin",
+      "townHallLevel": 10,
+      "expLevel": 78,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000008,
+        "name": "Archer League 8"
+      },
       "trophies": 18,
-      "builderBaseTrophies": 1908,
+      "builderBaseTrophies": 1958,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 61,
-      "donationsReceived": 537,
+      "donationsReceived": 572,
       "playerHouse": {
         "elements": [
           {
@@ -925,7 +925,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 65,
+      "expLevel": 66,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -966,6 +966,31 @@
       }
     },
     {
+      "tag": "#GVQC09P80",
+      "name": "onel",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 67,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000005,
+        "name": "Barbarian League 5"
+      },
+      "trophies": 92,
+      "builderBaseTrophies": 656,
+      "clanRank": 23,
+      "previousClanRank": 24,
+      "donations": 122,
+      "donationsReceived": 131,
+      "builderBaseLeague": {
+        "id": 44000006,
+        "name": "Clay League IV"
+      }
+    },
+    {
       "tag": "#R282UJLVJ",
       "name": "ElTiti",
       "role": "member",
@@ -981,7 +1006,7 @@
       },
       "trophies": 61,
       "builderBaseTrophies": 586,
-      "clanRank": 23,
+      "clanRank": 24,
       "previousClanRank": 23,
       "donations": 0,
       "donationsReceived": 165,
@@ -1008,31 +1033,6 @@
       "builderBaseLeague": {
         "id": 44000005,
         "name": "Clay League V"
-      }
-    },
-    {
-      "tag": "#GVQC09P80",
-      "name": "onel",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 67,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000005,
-        "name": "Barbarian League 5"
-      },
-      "trophies": 52,
-      "builderBaseTrophies": 656,
-      "clanRank": 24,
-      "previousClanRank": 24,
-      "donations": 122,
-      "donationsReceived": 131,
-      "builderBaseLeague": {
-        "id": 44000006,
-        "name": "Clay League IV"
       }
     },
     {
@@ -1085,7 +1085,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 56,
+      "expLevel": 57,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1348,7 +1348,7 @@
       "builderBaseTrophies": 2131,
       "clanRank": 32,
       "previousClanRank": 32,
-      "donations": 637,
+      "donations": 672,
       "donationsReceived": 426,
       "playerHouse": {
         "elements": [
