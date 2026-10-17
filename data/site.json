@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T21:09:21Z",
+  "generatedAt": "2026-10-17T23:14:55Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,9 +12,9 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26050,
-    "builder": 16927,
+    "builder": 16572,
     "capital": 1127,
-    "members": 33,
+    "members": 32,
     "freq": "Siempre",
     "location": "Internacional",
     "join": "Abierto a todos",
@@ -63,8 +63,8 @@
       "Joshua",
       "C",
       18,
-      215,
-      615,
+      216,
+      726,
       30,
       3066
     ],
@@ -137,7 +137,7 @@
       11,
       133,
       816,
-      1217,
+      1247,
       2009
     ],
     [
@@ -191,7 +191,7 @@
       10,
       78,
       61,
-      572,
+      637,
       1995
     ],
     [
@@ -308,7 +308,7 @@
       8,
       45,
       0,
-      342,
+      358,
       109
     ],
     [
@@ -346,15 +346,6 @@
       683,
       426,
       2131
-    ],
-    [
-      "tiroteo bulls",
-      "M",
-      10,
-      63,
-      57,
-      0,
-      2030
     ]
   ],
   "wars": [

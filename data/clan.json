@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16927,
+  "clanBuilderBasePoints": 16572,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -33,14 +33,14 @@
     "id": 48000006,
     "name": "Silver League I"
   },
-  "members": 33,
+  "members": 32,
   "memberList": [
     {
       "tag": "#GPRY08G8G",
       "name": "Joshua",
       "role": "coLeader",
       "townHallLevel": 18,
-      "expLevel": 215,
+      "expLevel": 216,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 615,
+      "donations": 726,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -369,12 +369,12 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 132,
+      "trophies": 160,
       "builderBaseTrophies": 2009,
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 816,
-      "donationsReceived": 1217,
+      "donationsReceived": 1247,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 120,
+      "trophies": 124,
       "builderBaseTrophies": 1164,
       "clanRank": 14,
       "previousClanRank": 13,
@@ -619,12 +619,12 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 43,
+      "trophies": 53,
       "builderBaseTrophies": 1995,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 61,
-      "donationsReceived": 572,
+      "donationsReceived": 637,
       "playerHouse": {
         "elements": [
           {
@@ -1189,7 +1189,7 @@
       "clanRank": 28,
       "previousClanRank": 28,
       "donations": 0,
-      "donationsReceived": 342,
+      "donationsReceived": 358,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
@@ -1363,51 +1363,6 @@
           {
             "type": "roof",
             "id": 82000011
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
-      }
-    },
-    {
-      "tag": "#R9CJG2CJJ",
-      "name": "tiroteo bulls",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 63,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000000,
-        "name": "Unranked"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 2030,
-      "clanRank": 33,
-      "previousClanRank": 33,
-      "donations": 57,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
           },
           {
             "type": "decoration",
