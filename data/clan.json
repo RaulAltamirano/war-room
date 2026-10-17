@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16881,
+  "clanBuilderBasePoints": 16903,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 1784,
+      "donations": 1804,
       "donationsReceived": 493,
       "playerHouse": {
         "elements": [
@@ -484,7 +484,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 56,
+      "trophies": 69,
       "builderBaseTrophies": 1105,
       "clanRank": 12,
       "previousClanRank": 12,
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2189,
+      "builderBaseTrophies": 2233,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 0,
@@ -916,8 +916,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
+        "id": 44000021,
+        "name": "Brass League II"
       }
     },
     {
@@ -1099,7 +1099,7 @@
       "clanRank": 26,
       "previousClanRank": 26,
       "donations": 0,
-      "donationsReceived": 11,
+      "donationsReceived": 31,
       "playerHouse": {
         "elements": [
           {
