@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16560,
+  "clanBuilderBasePoints": 16554,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000030,
         "name": "Dragon League 30"
       },
-      "trophies": 551,
+      "trophies": 571,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -94,7 +94,7 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 66,
+      "trophies": 93,
       "builderBaseTrophies": 2440,
       "clanRank": 2,
       "previousClanRank": 2,
@@ -319,7 +319,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 104,
+      "trophies": 224,
       "builderBaseTrophies": 1335,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -394,7 +394,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 120,
+      "trophies": 160,
       "builderBaseTrophies": 1609,
       "clanRank": 10,
       "previousClanRank": 10,
@@ -1095,7 +1095,7 @@
         "name": "Barbarian League 4"
       },
       "trophies": 193,
-      "builderBaseTrophies": 1400,
+      "builderBaseTrophies": 1379,
       "clanRank": 26,
       "previousClanRank": 26,
       "donations": 0,
@@ -1121,8 +1121,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000014,
-        "name": "Stone League I"
+        "id": 44000013,
+        "name": "Stone League II"
       }
     },
     {
