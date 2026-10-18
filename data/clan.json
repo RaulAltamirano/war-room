@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16554,
+  "clanBuilderBasePoints": 16565,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,8 +53,8 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 737,
-      "donationsReceived": 30,
+      "donations": 821,
+      "donationsReceived": 60,
       "playerHouse": {
         "elements": [
           {
@@ -344,15 +344,60 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 200,
+      "trophies": 240,
       "builderBaseTrophies": 1984,
       "clanRank": 8,
       "previousClanRank": 9,
       "donations": 816,
-      "donationsReceived": 1314,
+      "donationsReceived": 1381,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
+      }
+    },
+    {
+      "tag": "#R8CVPGJQC",
+      "name": "JOSHUA",
+      "role": "coLeader",
+      "townHallLevel": 12,
+      "expLevel": 77,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 213,
+      "builderBaseTrophies": 1258,
+      "clanRank": 9,
+      "previousClanRank": 11,
+      "donations": 349,
+      "donationsReceived": 196,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000012,
+        "name": "Stone League III"
       }
     },
     {
@@ -371,7 +416,7 @@
       },
       "trophies": 198,
       "builderBaseTrophies": 1110,
-      "clanRank": 9,
+      "clanRank": 10,
       "previousClanRank": 8,
       "donations": 49,
       "donationsReceived": 66,
@@ -396,7 +441,7 @@
       },
       "trophies": 160,
       "builderBaseTrophies": 1609,
-      "clanRank": 10,
+      "clanRank": 11,
       "previousClanRank": 10,
       "donations": 66,
       "donationsReceived": 0,
@@ -441,7 +486,7 @@
       },
       "trophies": 109,
       "builderBaseTrophies": 1105,
-      "clanRank": 11,
+      "clanRank": 12,
       "previousClanRank": 12,
       "donations": 213,
       "donationsReceived": 193,
@@ -468,51 +513,6 @@
       "builderBaseLeague": {
         "id": 44000011,
         "name": "Stone League IV"
-      }
-    },
-    {
-      "tag": "#R8CVPGJQC",
-      "name": "JOSHUA",
-      "role": "coLeader",
-      "townHallLevel": 12,
-      "expLevel": 76,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 93,
-      "builderBaseTrophies": 1258,
-      "clanRank": 12,
-      "previousClanRank": 11,
-      "donations": 252,
-      "donationsReceived": 112,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000012,
-        "name": "Stone League III"
       }
     },
     {
@@ -755,7 +755,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1918,
+      "builderBaseTrophies": 1933,
       "clanRank": 18,
       "previousClanRank": 18,
       "donations": 0,
@@ -1095,7 +1095,7 @@
         "name": "Barbarian League 4"
       },
       "trophies": 193,
-      "builderBaseTrophies": 1379,
+      "builderBaseTrophies": 1406,
       "clanRank": 26,
       "previousClanRank": 26,
       "donations": 0,
@@ -1121,8 +1121,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000013,
-        "name": "Stone League II"
+        "id": 44000014,
+        "name": "Stone League I"
       }
     },
     {
