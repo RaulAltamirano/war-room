@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16572,
+  "clanBuilderBasePoints": 16559,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 726,
+      "donations": 737,
       "donationsReceived": 30,
       "playerHouse": {
         "elements": [
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2440,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 155,
+      "donations": 251,
       "donationsReceived": 248,
       "playerHouse": {
         "elements": [
@@ -323,11 +323,36 @@
       "builderBaseTrophies": 1335,
       "clanRank": 7,
       "previousClanRank": 7,
-      "donations": 318,
-      "donationsReceived": 585,
+      "donations": 355,
+      "donationsReceived": 662,
       "builderBaseLeague": {
         "id": 44000013,
         "name": "Stone League II"
+      }
+    },
+    {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 133,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 200,
+      "builderBaseTrophies": 1984,
+      "clanRank": 8,
+      "previousClanRank": 9,
+      "donations": 816,
+      "donationsReceived": 1314,
+      "builderBaseLeague": {
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -346,38 +371,13 @@
       },
       "trophies": 198,
       "builderBaseTrophies": 1110,
-      "clanRank": 8,
+      "clanRank": 9,
       "previousClanRank": 8,
       "donations": 49,
       "donationsReceived": 66,
       "builderBaseLeague": {
         "id": 44000011,
         "name": "Stone League IV"
-      }
-    },
-    {
-      "tag": "#2VL98GPGU",
-      "name": "ⓟⓐⓒⓜⓐⓝ",
-      "role": "coLeader",
-      "townHallLevel": 11,
-      "expLevel": 133,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 160,
-      "builderBaseTrophies": 2009,
-      "clanRank": 9,
-      "previousClanRank": 9,
-      "donations": 816,
-      "donationsReceived": 1247,
-      "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
       }
     },
     {
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 53,
-      "builderBaseTrophies": 1995,
+      "builderBaseTrophies": 1993,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 61,
