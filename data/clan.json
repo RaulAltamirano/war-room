@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16565,
+  "clanBuilderBasePoints": 16604,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 1856,
-      "donationsReceived": 493,
+      "donations": 1965,
+      "donationsReceived": 549,
       "playerHouse": {
         "elements": [
           {
@@ -275,11 +275,11 @@
         "name": "Wizard League 11"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2032,
+      "builderBaseTrophies": 2111,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 638,
-      "donationsReceived": 601,
+      "donations": 694,
+      "donationsReceived": 710,
       "playerHouse": {
         "elements": [
           {
@@ -331,31 +331,6 @@
       }
     },
     {
-      "tag": "#2VL98GPGU",
-      "name": "ⓟⓐⓒⓜⓐⓝ",
-      "role": "coLeader",
-      "townHallLevel": 11,
-      "expLevel": 133,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 240,
-      "builderBaseTrophies": 1984,
-      "clanRank": 8,
-      "previousClanRank": 9,
-      "donations": 816,
-      "donationsReceived": 1381,
-      "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
-      }
-    },
-    {
       "tag": "#R8CVPGJQC",
       "name": "JOSHUA",
       "role": "coLeader",
@@ -369,9 +344,9 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 213,
+      "trophies": 413,
       "builderBaseTrophies": 1258,
-      "clanRank": 9,
+      "clanRank": 8,
       "previousClanRank": 11,
       "donations": 349,
       "donationsReceived": 196,
@@ -398,6 +373,31 @@
       "builderBaseLeague": {
         "id": 44000012,
         "name": "Stone League III"
+      }
+    },
+    {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 133,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 240,
+      "builderBaseTrophies": 1984,
+      "clanRank": 9,
+      "previousClanRank": 9,
+      "donations": 816,
+      "donationsReceived": 1381,
+      "builderBaseLeague": {
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -520,7 +520,7 @@
       "name": "KOLET",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 70,
+      "expLevel": 71,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -700,7 +700,7 @@
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 59,
+      "expLevel": 60,
       "league": {
         "id": 29000000,
         "name": "Unranked"
