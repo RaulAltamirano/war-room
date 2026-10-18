@@ -319,7 +319,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 91,
+      "trophies": 104,
       "builderBaseTrophies": 1335,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -426,51 +426,6 @@
       }
     },
     {
-      "tag": "#R8CVPGJQC",
-      "name": "JOSHUA",
-      "role": "coLeader",
-      "townHallLevel": 12,
-      "expLevel": 76,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 93,
-      "builderBaseTrophies": 1258,
-      "clanRank": 11,
-      "previousClanRank": 10,
-      "donations": 252,
-      "donationsReceived": 112,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000012,
-        "name": "Stone League III"
-      }
-    },
-    {
       "tag": "#QPLJUCPLY",
       "name": "ONEL2.0",
       "role": "member",
@@ -484,9 +439,9 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 69,
+      "trophies": 109,
       "builderBaseTrophies": 1105,
-      "clanRank": 12,
+      "clanRank": 11,
       "previousClanRank": 12,
       "donations": 213,
       "donationsReceived": 193,
@@ -513,6 +468,51 @@
       "builderBaseLeague": {
         "id": 44000011,
         "name": "Stone League IV"
+      }
+    },
+    {
+      "tag": "#R8CVPGJQC",
+      "name": "JOSHUA",
+      "role": "coLeader",
+      "townHallLevel": 12,
+      "expLevel": 76,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 93,
+      "builderBaseTrophies": 1258,
+      "clanRank": 12,
+      "previousClanRank": 10,
+      "donations": 252,
+      "donationsReceived": 112,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000012,
+        "name": "Stone League III"
       }
     },
     {
