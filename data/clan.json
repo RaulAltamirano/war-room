@@ -16,7 +16,7 @@
   },
   "clanLevel": 5,
   "clanPoints": 26050,
-  "clanBuilderBasePoints": 16559,
+  "clanBuilderBasePoints": 16560,
   "clanCapitalPoints": 1127,
   "capitalLeague": {
     "id": 85000005,
@@ -397,7 +397,7 @@
       "trophies": 120,
       "builderBaseTrophies": 1609,
       "clanRank": 10,
-      "previousClanRank": 11,
+      "previousClanRank": 10,
       "donations": 66,
       "donationsReceived": 0,
       "playerHouse": {
@@ -487,7 +487,7 @@
       "trophies": 93,
       "builderBaseTrophies": 1258,
       "clanRank": 12,
-      "previousClanRank": 10,
+      "previousClanRank": 11,
       "donations": 252,
       "donationsReceived": 112,
       "playerHouse": {
@@ -1140,7 +1140,7 @@
         "name": "Barbarian League 4"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1275,
+      "builderBaseTrophies": 1276,
       "clanRank": 27,
       "previousClanRank": 27,
       "donations": 0,

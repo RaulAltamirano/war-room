@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T11:28:00Z",
+  "generatedAt": "2026-10-18T14:44:11Z",
   "clan": {
     "name": "clandestinos",
     "level": 5,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26050,
-    "builder": 16559,
+    "builder": 16560,
     "capital": 1127,
     "members": 32,
     "freq": "Siempre",
@@ -300,7 +300,7 @@
       43,
       0,
       0,
-      1275
+      1276
     ],
     [
       "ZackyB",
