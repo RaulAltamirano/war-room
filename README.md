@@ -12,7 +12,8 @@ Actions → **Actualizar bitácora** → **Run workflow**.
 
 Con el secreto `DISCORD_WEBHOOK_URL` el cron publica **embeds** profesionales:
 
-- **Informe** al terminar una guerra (`currentwar` → `warEnded`, o a demanda): Top 3, análisis y prospectos. El cron cada 30 min lo detecta.
+- **Highlight** al terminar una guerra (`currentwar` → `warEnded`): MVP, mejores ataques y quienes no atacaron. El cron cada 30 min lo detecta.
+- **Informe completo** (Top 3, análisis y prospectos): Actions → **Enviar informe** (`enviar_informe`).
 - **Top 1 del mes** (día 1, Mexico City): ganador del pase (70/30). Entrega del pase a mano.
 
 1. Canal → Integraciones → **Webhook** → URL → secret `DISCORD_WEBHOOK_URL`.

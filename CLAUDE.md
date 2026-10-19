@@ -29,7 +29,7 @@ No subas el token. En el estandarte sí va el `badge` del clan (API). Sigue sin 
 
 Secreto `DISCORD_WEBHOOK_URL`. Tras el build:
 
-- `scripts/discord-report.mjs` → embeds Top 3 + análisis + prospectos. Se envía cuando `fetch` guarda una guerra `warEnded` (`data/last-fetch.json`, no se commitea) o con `DISCORD_SEND_REPORT`. Estado en `data/discord-report.json`.
+- `scripts/discord-report.mjs` → con `warEnded` y guerras en `saved` (`data/last-fetch.json`, no se commitea), highlight corto (MVP + top ataques + no atacaron) por cada archivo guardado. Informe completo (Top 3 + análisis + prospectos) solo con `DISCORD_SEND_REPORT` / input `enviar_informe`. Estado en `data/discord-report.json`.
 - `scripts/discord-monthly.mjs` → Top 1 del mes cerrado Mexico City (`data/discord-awards.json`).
 - `scripts/prospects.mjs` → alineación para iniciar guerra; Discord solo con `DISCORD_SEND_PROSPECTS` / input `enviar_prospectos`.
 - `scripts/ban-zones.mjs` → aviso zona roja (≥2 guerras seguidas sin atacar) / zona gris (1 falla o “fuera”); Discord con `DISCORD_SEND_BAN_ZONES` / `enviar_zonas_ban`.
