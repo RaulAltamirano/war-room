@@ -22,16 +22,42 @@ function savedToDate(name) {
   return `${day.slice(0, 4)}-${day.slice(4, 6)}-${day.slice(6, 8)}`;
 }
 
+function savedToRivalTag(name) {
+  const base = String(name).replace(/\.json$/i, '');
+  const dash = base.indexOf('-');
+  if (dash < 8) return null;
+  const tag = base.slice(dash + 1);
+  return tag || null;
+}
+
+function warRivalTagFromId(w) {
+  const m = /^w\d{8}-(.+)$/.exec(w?.id || '');
+  return m ? m[1] : null;
+}
+
 export function resolveWarsFromSaved(site, saved = []) {
   const wars = site?.wars || [];
   const out = [];
   for (const file of saved) {
     const date = savedToDate(file);
     if (!date) continue;
+    const rivalTag = savedToRivalTag(file);
     const matches = wars.filter((w) => w.date === date);
-    out.push(matches.length ? matches[matches.length - 1] : null);
+    let picked = null;
+    if (rivalTag && matches.length) {
+      const byTag = matches.filter((w) => {
+        const idTag = warRivalTagFromId(w);
+        if (idTag && idTag.toUpperCase() === rivalTag.toUpperCase()) return true;
+        const rt = String(w.rivalTag || '').replace(/^#/, '');
+        return rt && rt.toUpperCase() === rivalTag.toUpperCase();
+      });
+      if (byTag.length === 1) picked = byTag[0];
+      else if (byTag.length > 1) picked = byTag[byTag.length - 1];
+    }
+    if (!picked && matches.length) picked = matches[matches.length - 1];
+    if (picked) out.push(picked);
   }
-  return out.filter(Boolean);
+  return out;
 }
 
 export function topAttacks(war, limit = 3) {

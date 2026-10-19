@@ -55,6 +55,17 @@ test('resolveWarsFromSaved mapea YYYYMMDD-tag a date', () => {
   assert.equal(rows[0].date, '2026-10-13');
 });
 
+test('resolveWarsFromSaved distingue rivales el mismo día por tag en filename', () => {
+  const sameDay = [
+    { ...war, id: 'w20261013-BBBB', rival: 'OTHER CLAN', members: [] },
+    { ...war, id: 'w20261013-AAAA', rival: 'SAVAGE FOUR' },
+  ];
+  const site = { wars: sameDay };
+  const rows = resolveWarsFromSaved(site, ['20261013-BBBB.json']);
+  assert.equal(rows.length, 1);
+  assert.equal(rows[0].rival, 'OTHER CLAN');
+});
+
 test('buildWarHighlightPayload un embed con RTL', () => {
   const { payload } = buildWarHighlightPayload(war, { clan: { name: 'clandestinos' } });
   assert.equal(payload.username, 'clandestinos.ops');

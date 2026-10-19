@@ -27,7 +27,8 @@ async function main() {
   }
 
   const lastFetch = await readLastFetch(root);
-  const warEnded = Array.isArray(lastFetch.saved) && lastFetch.saved.length > 0;
+  const saved = Array.isArray(lastFetch.saved) ? lastFetch.saved : [];
+  const warEnded = saved.length > 0;
 
   const out = await runDiscordReport({
     site,
@@ -35,6 +36,7 @@ async function main() {
     webhookUrl: process.env.DISCORD_WEBHOOK_URL || '',
     force: truthy(process.env.DISCORD_SEND_REPORT),
     warEnded,
+    saved,
   });
 
   if (out.reason === 'bootstrap' || out.posted) {

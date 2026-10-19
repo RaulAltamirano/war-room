@@ -79,24 +79,68 @@ test('shouldSendReport respeta bootstrap, force y war-ended', () => {
   assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b', { warEnded: true }).reason, 'war-ended');
 });
 
-test('warEnded manda informe aunque la firma no cambie', async () => {
+test('warEnded envía highlight aunque la firma no cambie', async () => {
   let posts = 0;
+  const highlightSite = {
+    ...site,
+    wars: [
+      ...site.wars,
+      {
+        id: 'w20261013',
+        date: '2026-10-13',
+        rival: 'SAVAGE',
+        res: 'V',
+        stars: [54, 0],
+        members: [member('Alpha', 100, 3, 0, 2, 4).map((v, i) => (i === 5 ? [[3, 100, 1]] : v))],
+      },
+    ],
+  };
   const state = { bootstrapped: true, signature: 'w1|w2', postedAt: null };
   const out = await runDiscordReport({
-    site,
+    site: highlightSite,
     state,
     warEnded: true,
+    saved: ['20261013-AAAA.json'],
     webhookUrl: 'https://discord.example/hook',
     fetchImpl: async (_u, opts) => {
       posts += 1;
       const body = JSON.parse(opts.body);
+      assert.equal(body.embeds.length, 1);
       assert.match(body.embeds[0].title, /Guerra terminada/);
+      assert.equal(body.embeds[0].description.includes('70% impacto'), false);
+      assert.ok(body.embeds[0].fields.some((f) => /Mejores ataques/.test(f.name)));
+      assert.equal(body.username, 'clandestinos.ops');
       return { ok: true };
     },
     log: () => {},
   });
   assert.equal(out.posted, true);
   assert.equal(out.reason, 'war-ended');
+  assert.equal(posts, 1);
+});
+
+test('force sin warEnded sigue enviando informe de 4 embeds', async () => {
+  let posts = 0;
+  const out = await runDiscordReport({
+    site,
+    state: { bootstrapped: true, signature: 'w1|w2', postedAt: null },
+    force: true,
+    warEnded: false,
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async (_u, opts) => {
+      posts += 1;
+      const body = JSON.parse(opts.body);
+      assert.equal(body.embeds.length, 4);
+      assert.match(body.embeds[0].title, /Informe/);
+      assert.match(body.embeds[1].title, /Top 3/);
+      assert.match(body.embeds[2].title, /Análisis/);
+      assert.match(body.embeds[3].title, /Prospectos/);
+      return { ok: true };
+    },
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.equal(out.reason, 'force');
   assert.equal(posts, 1);
 });
 

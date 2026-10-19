@@ -1,4 +1,5 @@
 import { buildBriefing } from './site-metrics.mjs';
+import { buildWarHighlightPayload, resolveWarsFromSaved } from './war-highlight.mjs';
 
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
 const MEDAL = ['🥇', '🥈', '🥉'];
@@ -119,7 +120,7 @@ export async function runDiscordProspects({
   return { posted: true, reason: 'force', briefing };
 }
 
-export function buildReportPayload(site, { warEnded = false } = {}) {
+export function buildReportPayload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
   const last = b.last;
@@ -147,11 +148,9 @@ export function buildReportPayload(site, { warEnded = false } = {}) {
 
   const embeds = [
     {
-      title: warEnded
-        ? `⚔️ Guerra terminada · ${clan}`
-        : `📒 Informe de guerra · ${clan}`,
+      title: `📒 Informe de guerra · ${clan}`,
       description: [
-        warEnded ? `Resultado listo:\n${lastLine}` : `Última guerra: ${lastLine}`,
+        `Última guerra: ${lastLine}`,
         '',
         `Historial: **${b.warsCount}** guerras · Ranking **70% impacto (liga ×2) + 30% donaciones**`,
       ].join('\n'),
@@ -214,13 +213,15 @@ export async function runDiscordReport({
   webhookUrl,
   force = false,
   warEnded = false,
+  saved = [],
   fetchImpl = fetch,
   log = console.log,
 }) {
-  const { briefing, payload } = buildReportPayload(site, { warEnded });
-  const decision = shouldSendReport(state, briefing.signature, { force, warEnded });
+  const briefing = buildBriefing(site);
+  const highlightMode = warEnded && saved.length > 0;
+  const decision = shouldSendReport(state, briefing.signature, { force, warEnded: highlightMode });
 
-  if (decision.reason === 'bootstrap' && !warEnded && !force) {
+  if (decision.reason === 'bootstrap' && !highlightMode && !force) {
     const next = { bootstrapped: true, signature: briefing.signature, postedAt: null };
     log(`Discord informe: bootstrap (${briefing.warsCount} guerras, sin enviar).`);
     return { posted: false, state: next, reason: 'bootstrap', briefing };
@@ -236,6 +237,34 @@ export async function runDiscordReport({
     return { posted: false, state, reason: 'no-webhook', briefing };
   }
 
+  if (highlightMode) {
+    const wars = resolveWarsFromSaved(site, saved);
+    let anyOk = false;
+    let lastStatus;
+    for (const war of wars) {
+      const { payload } = buildWarHighlightPayload(war, { clan: site.clan });
+      const res = await fetchImpl(webhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) anyOk = true;
+      else lastStatus = res.status;
+    }
+    if (!anyOk) {
+      log(`Discord highlight: webhook ${lastStatus ?? 'sin guerras'}; no se marca.`);
+      return { posted: false, state, reason: 'http', status: lastStatus, briefing };
+    }
+    const next = {
+      bootstrapped: true,
+      signature: briefing.signature,
+      postedAt: new Date().toISOString(),
+    };
+    log(`Discord highlight: enviado (${wars.length} guerra(s)).`);
+    return { posted: true, state: next, reason: 'war-ended', briefing };
+  }
+
+  const { payload } = buildReportPayload(site);
   const res = await fetchImpl(webhookUrl, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -251,7 +280,6 @@ export async function runDiscordReport({
     signature: briefing.signature,
     postedAt: new Date().toISOString(),
   };
-  const why = decision.reason === 'war-ended' ? 'guerra terminada' : decision.reason;
-  log(`Discord informe: enviado (${why}; Top 3, análisis, ${briefing.prospects.length} prospectos).`);
+  log(`Discord informe: enviado (${decision.reason}; Top 3, análisis, ${briefing.prospects.length} prospectos).`);
   return { posted: true, state: next, reason: decision.reason, briefing };
 }
