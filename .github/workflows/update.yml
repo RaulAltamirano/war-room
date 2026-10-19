@@ -1,4 +1,5 @@
 name: Actualizar bitácora
+# Trigger: cron, workflow_dispatch, push a scripts|tests|index|workflow
 on:
   schedule:
     - cron: "*/30 * * * *"
