@@ -351,6 +351,31 @@
       }
     },
     {
+      "tag": "#Q02JR2JYV",
+      "name": "Abrasive7X",
+      "role": "coLeader",
+      "townHallLevel": 12,
+      "expLevel": 91,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000010,
+        "name": "Wizard League 10"
+      },
+      "trophies": 40,
+      "builderBaseTrophies": 1335,
+      "clanRank": 8,
+      "previousClanRank": 7,
+      "donations": 355,
+      "donationsReceived": 662,
+      "builderBaseLeague": {
+        "id": 44000013,
+        "name": "Stone League II"
+      }
+    },
+    {
       "tag": "#L8Q82PUQ0",
       "name": "يسوري❤️❤️",
       "role": "member",
@@ -366,7 +391,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1609,
-      "clanRank": 8,
+      "clanRank": 9,
       "previousClanRank": 11,
       "donations": 66,
       "donationsReceived": 0,
@@ -411,38 +436,13 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1984,
-      "clanRank": 9,
+      "clanRank": 10,
       "previousClanRank": 9,
       "donations": 945,
       "donationsReceived": 1513,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
-      }
-    },
-    {
-      "tag": "#Q02JR2JYV",
-      "name": "Abrasive7X",
-      "role": "coLeader",
-      "townHallLevel": 12,
-      "expLevel": 91,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000010,
-        "name": "Wizard League 10"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1335,
-      "clanRank": 10,
-      "previousClanRank": 7,
-      "donations": 355,
-      "donationsReceived": 662,
-      "builderBaseLeague": {
-        "id": 44000013,
-        "name": "Stone League II"
       }
     },
     {
