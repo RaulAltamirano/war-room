@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 0,
+      "trophies": 52,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -319,7 +319,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 28,
+      "trophies": 348,
       "builderBaseTrophies": 1258,
       "clanRank": 7,
       "previousClanRank": 8,
@@ -664,7 +664,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 0,
+      "trophies": 8,
       "builderBaseTrophies": 744,
       "clanRank": 16,
       "previousClanRank": 16,
@@ -1011,51 +1011,6 @@
       }
     },
     {
-      "tag": "#R282UJLVJ",
-      "name": "ElTiti",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 44,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000005,
-        "name": "Barbarian League 5"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 586,
-      "clanRank": 24,
-      "previousClanRank": 24,
-      "donations": 0,
-      "donationsReceived": 165,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000005,
-        "name": "Clay League V"
-      }
-    },
-    {
       "tag": "#QV20QPJGR",
       "name": "Casdo",
       "role": "member",
@@ -1069,9 +1024,9 @@
         "id": 105000005,
         "name": "Barbarian League 5"
       },
-      "trophies": 0,
+      "trophies": 203,
       "builderBaseTrophies": 1444,
-      "clanRank": 25,
+      "clanRank": 24,
       "previousClanRank": 26,
       "donations": 0,
       "donationsReceived": 62,
@@ -1098,6 +1053,51 @@
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
+      }
+    },
+    {
+      "tag": "#R282UJLVJ",
+      "name": "ElTiti",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 44,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000005,
+        "name": "Barbarian League 5"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 586,
+      "clanRank": 25,
+      "previousClanRank": 24,
+      "donations": 0,
+      "donationsReceived": 165,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000005,
+        "name": "Clay League V"
       }
     },
     {
