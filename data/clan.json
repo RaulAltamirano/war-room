@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 1,
-  "warWins": 9,
+  "warWinStreak": 2,
+  "warWins": 10,
   "warTies": 0,
   "warLosses": 22,
   "isWarLogPublic": true,
@@ -413,7 +413,7 @@
       "builderBaseTrophies": 1984,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 936,
+      "donations": 945,
       "donationsReceived": 1513,
       "builderBaseLeague": {
         "id": 44000019,
@@ -1234,7 +1234,7 @@
       "clanRank": 29,
       "previousClanRank": 28,
       "donations": 0,
-      "donationsReceived": 358,
+      "donationsReceived": 367,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
