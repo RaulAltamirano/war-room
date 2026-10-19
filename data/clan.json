@@ -389,7 +389,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 240,
+      "trophies": 280,
       "builderBaseTrophies": 1984,
       "clanRank": 9,
       "previousClanRank": 9,
@@ -651,51 +651,6 @@
       }
     },
     {
-      "tag": "#G09LQLJV0",
-      "name": "Shiba",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 68,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000006,
-        "name": "Barbarian League 6"
-      },
-      "trophies": 123,
-      "builderBaseTrophies": 455,
-      "clanRank": 16,
-      "previousClanRank": 16,
-      "donations": 40,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000001
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000028
-          },
-          {
-            "type": "decoration",
-            "id": 82000061
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000004,
-        "name": "Wood League I"
-      }
-    },
-    {
       "tag": "#G92R92J98",
       "name": "VORTEX",
       "role": "member",
@@ -709,9 +664,9 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 101,
+      "trophies": 181,
       "builderBaseTrophies": 744,
-      "clanRank": 17,
+      "clanRank": 16,
       "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 66,
@@ -738,6 +693,51 @@
       "builderBaseLeague": {
         "id": 44000007,
         "name": "Clay League III"
+      }
+    },
+    {
+      "tag": "#G09LQLJV0",
+      "name": "Shiba",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 68,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 123,
+      "builderBaseTrophies": 455,
+      "clanRank": 17,
+      "previousClanRank": 16,
+      "donations": 40,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000001
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000028
+          },
+          {
+            "type": "decoration",
+            "id": 82000061
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000004,
+        "name": "Wood League I"
       }
     },
     {
