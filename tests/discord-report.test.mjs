@@ -119,6 +119,43 @@ test('warEnded envía highlight aunque la firma no cambie', async () => {
   assert.equal(posts, 1);
 });
 
+test('force con warEnded y saved envía informe de 4 embeds, no highlight', async () => {
+  let posts = 0;
+  const highlightSite = {
+    ...site,
+    wars: [
+      ...site.wars,
+      {
+        id: 'w20261013',
+        date: '2026-10-13',
+        rival: 'SAVAGE',
+        res: 'V',
+        stars: [54, 0],
+        members: [member('Alpha', 100, 3, 0, 2, 4)],
+      },
+    ],
+  };
+  const out = await runDiscordReport({
+    site: highlightSite,
+    state: { bootstrapped: true, signature: 'w1|w2', postedAt: null },
+    force: true,
+    warEnded: true,
+    saved: ['20261013-AAAA.json'],
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async (_u, opts) => {
+      posts += 1;
+      const body = JSON.parse(opts.body);
+      assert.equal(body.embeds.length, 4);
+      assert.match(body.embeds[0].title, /Informe/);
+      return { ok: true };
+    },
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.equal(out.reason, 'force');
+  assert.equal(posts, 1);
+});
+
 test('force sin warEnded sigue enviando informe de 4 embeds', async () => {
   let posts = 0;
   const out = await runDiscordReport({

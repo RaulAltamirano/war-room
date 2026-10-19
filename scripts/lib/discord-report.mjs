@@ -218,7 +218,7 @@ export async function runDiscordReport({
   log = console.log,
 }) {
   const briefing = buildBriefing(site);
-  const highlightMode = warEnded && saved.length > 0;
+  const highlightMode = warEnded && saved.length > 0 && !force;
   const decision = shouldSendReport(state, briefing.signature, { force, warEnded: highlightMode });
 
   if (decision.reason === 'bootstrap' && !highlightMode && !force) {
