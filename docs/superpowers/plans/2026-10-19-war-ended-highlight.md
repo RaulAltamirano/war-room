@@ -1,6 +1,6 @@
 # War-ended Discord highlight — Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [x]`) syntax for tracking.
 
 **Goal:** Al guardar una guerra `warEnded`, Discord recibe un embed corto (resultado, MVP, Top 3 ataques, no atacaron); el informe largo solo con envío forzado.
 
@@ -47,7 +47,7 @@
   - `didNotAttack(war): string[]`
   - `buildWarHighlightPayload(war, { clan }): { payload, meta }`
 
-- [ ] **Step 1: Write failing tests**
+- [x] **Step 1: Write failing tests**
 
 ```js
 import assert from 'node:assert/strict';
@@ -121,10 +121,10 @@ test('buildWarHighlightPayload un embed con RTL', () => {
 });
 ```
 
-- [ ] **Step 2: Run** `node --test tests/war-highlight.test.mjs`  
+- [x] **Step 2: Run** `node --test tests/war-highlight.test.mjs`  
   Expected: FAIL (módulo no existe).
 
-- [ ] **Step 3: Implement** `scripts/lib/war-highlight.mjs`
+- [x] **Step 3: Implement** `scripts/lib/war-highlight.mjs`
 
 ```js
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
@@ -252,9 +252,9 @@ export function buildWarHighlightPayload(war, { clan } = {}) {
 }
 ```
 
-- [ ] **Step 4: Run** `node --test tests/war-highlight.test.mjs` — Expected: PASS.
+- [x] **Step 4: Run** `node --test tests/war-highlight.test.mjs` — Expected: PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/lib/war-highlight.mjs tests/war-highlight.test.mjs
@@ -278,7 +278,7 @@ EOF
 - Consumes: `buildWarHighlightPayload`, `resolveWarsFromSaved` from Task 1
 - `runDiscordReport({ …, warEnded, saved = [] })` — si `warEnded` y `saved.length`, postea highlights; si `force` y no warEnded, informe largo
 
-- [ ] **Step 1: Update tests in `tests/discord-report.test.mjs`**
+- [x] **Step 1: Update tests in `tests/discord-report.test.mjs`**
 
 Reemplazar el test `warEnded manda informe aunque la firma no cambie` para esperar **1 embed** cuyo título match `/Guerra terminada/` y description **sin** `70% impacto`, y body con `Mejores ataques`.
 
@@ -286,9 +286,9 @@ Añadir: con `force: true` y `warEnded: false` sigue habiendo 4 embeds (`/Inform
 
 Pasar `saved: ['20261013-AAAA.json']` y `site.wars` con una guerra `date: '2026-10-13'`.
 
-- [ ] **Step 2: Run** `node --test tests/discord-report.test.mjs` — Expected: FAIL en el test warEnded.
+- [x] **Step 2: Run** `node --test tests/discord-report.test.mjs` — Expected: FAIL en el test warEnded.
 
-- [ ] **Step 3: Implement wiring**
+- [x] **Step 3: Implement wiring**
 
 En `runDiscordReport`:
 - Aceptar `saved = []`.
@@ -311,9 +311,9 @@ const out = await runDiscordReport({ site, state, webhookUrl, force, warEnded, s
 
 Quitar de `buildReportPayload` el título/description especiales de `warEnded` si ya no se usan en ese camino (dejar `warEnded` param solo si aún se pasa; preferible dejar informe siempre con título “Informe”).
 
-- [ ] **Step 4: Run** `node --test tests/discord-report.test.mjs tests/war-highlight.test.mjs` — PASS.
+- [x] **Step 4: Run** `node --test tests/discord-report.test.mjs tests/war-highlight.test.mjs` — PASS.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/lib/discord-report.mjs scripts/discord-report.mjs tests/discord-report.test.mjs
@@ -332,11 +332,11 @@ EOF
 - Modify: `CLAUDE.md` (bloque Discord)
 - Modify: `README.md` (línea del informe)
 
-- [ ] **Step 1: Docs** — indicar que al terminar guerra se envía highlight (MVP + top ataques + no atacaron); informe completo solo con `enviar_informe`.
+- [x] **Step 1: Docs** — indicar que al terminar guerra se envía highlight (MVP + top ataques + no atacaron); informe completo solo con `enviar_informe`.
 
-- [ ] **Step 2: Run** `node --test tests/` — Expected: all pass.
+- [x] **Step 2: Run** `node --test tests/` — Expected: all pass.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add README.md CLAUDE.md
