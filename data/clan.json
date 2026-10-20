@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 52,
+      "trophies": 62,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -376,6 +376,31 @@
       }
     },
     {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 133,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000010,
+        "name": "Wizard League 10"
+      },
+      "trophies": 18,
+      "builderBaseTrophies": 1984,
+      "clanRank": 9,
+      "previousClanRank": 9,
+      "donations": 951,
+      "donationsReceived": 1580,
+      "builderBaseLeague": {
+        "id": 44000019,
+        "name": "Copper League I"
+      }
+    },
+    {
       "tag": "#L8Q82PUQ0",
       "name": "يسوري❤️❤️",
       "role": "member",
@@ -391,7 +416,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1609,
-      "clanRank": 9,
+      "clanRank": 10,
       "previousClanRank": 11,
       "donations": 66,
       "donationsReceived": 0,
@@ -421,56 +446,6 @@
       }
     },
     {
-      "tag": "#2VL98GPGU",
-      "name": "ⓟⓐⓒⓜⓐⓝ",
-      "role": "coLeader",
-      "townHallLevel": 11,
-      "expLevel": 133,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000010,
-        "name": "Wizard League 10"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1984,
-      "clanRank": 10,
-      "previousClanRank": 9,
-      "donations": 945,
-      "donationsReceived": 1513,
-      "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
-      }
-    },
-    {
-      "tag": "#GUY2Y82CU",
-      "name": "اوراس",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 75,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1110,
-      "clanRank": 11,
-      "previousClanRank": 10,
-      "donations": 49,
-      "donationsReceived": 66,
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
-      }
-    },
-    {
       "tag": "#QPLJUCPLY",
       "name": "ONEL2.0",
       "role": "member",
@@ -484,9 +459,9 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 0,
+      "trophies": 23,
       "builderBaseTrophies": 1105,
-      "clanRank": 12,
+      "clanRank": 11,
       "previousClanRank": 12,
       "donations": 213,
       "donationsReceived": 193,
@@ -510,6 +485,31 @@
           }
         ]
       },
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
+      }
+    },
+    {
+      "tag": "#GUY2Y82CU",
+      "name": "اوراس",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 75,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 1110,
+      "clanRank": 12,
+      "previousClanRank": 10,
+      "donations": 49,
+      "donationsReceived": 66,
       "builderBaseLeague": {
         "id": 44000011,
         "name": "Stone League IV"
@@ -579,7 +579,7 @@
       "clanRank": 14,
       "previousClanRank": 15,
       "donations": 61,
-      "donationsReceived": 637,
+      "donationsReceived": 643,
       "playerHouse": {
         "elements": [
           {
@@ -696,6 +696,51 @@
       }
     },
     {
+      "tag": "#R9GR9QC9C",
+      "name": "kerrykopito",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 66,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 54,
+      "builderBaseTrophies": 1618,
+      "clanRank": 17,
+      "previousClanRank": 22,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000016,
+        "name": "Copper League IV"
+      }
+    },
+    {
       "tag": "#R820CCYQ0",
       "name": "jhon cna",
       "role": "member",
@@ -711,7 +756,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1933,
-      "clanRank": 17,
+      "clanRank": 18,
       "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
@@ -756,7 +801,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 455,
-      "clanRank": 18,
+      "clanRank": 19,
       "previousClanRank": 17,
       "donations": 40,
       "donationsReceived": 0,
@@ -801,7 +846,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 802,
-      "clanRank": 19,
+      "clanRank": 20,
       "previousClanRank": 19,
       "donations": 0,
       "donationsReceived": 0,
@@ -846,7 +891,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1717,
-      "clanRank": 20,
+      "clanRank": 21,
       "previousClanRank": 20,
       "donations": 121,
       "donationsReceived": 67,
@@ -873,51 +918,6 @@
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
-      }
-    },
-    {
-      "tag": "#R9GR9QC9C",
-      "name": "kerrykopito",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 66,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000006,
-        "name": "Barbarian League 6"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1618,
-      "clanRank": 21,
-      "previousClanRank": 22,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
       }
     },
     {
@@ -1229,7 +1229,7 @@
         "id": 105000003,
         "name": "Skeleton League 3"
       },
-      "trophies": 0,
+      "trophies": 40,
       "builderBaseTrophies": 109,
       "clanRank": 29,
       "previousClanRank": 28,
@@ -1393,7 +1393,7 @@
       "builderBaseTrophies": 2131,
       "clanRank": 33,
       "previousClanRank": 32,
-      "donations": 748,
+      "donations": 815,
       "donationsReceived": 474,
       "playerHouse": {
         "elements": [
