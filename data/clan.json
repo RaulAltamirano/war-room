@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27200,
-  "clanBuilderBasePoints": 16904,
+  "clanBuilderBasePoints": 16891,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
     "id": 85000005,
@@ -754,7 +754,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 29,
+      "trophies": 69,
       "builderBaseTrophies": 1343,
       "clanRank": 18,
       "previousClanRank": 23,
@@ -835,7 +835,7 @@
       "name": "jhon cna",
       "role": "member",
       "townHallLevel": 9,
-      "expLevel": 64,
+      "expLevel": 65,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -980,7 +980,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2227,
+      "builderBaseTrophies": 2201,
       "clanRank": 23,
       "previousClanRank": 22,
       "donations": 0,
