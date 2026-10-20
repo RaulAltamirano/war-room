@@ -15,7 +15,7 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png"
   },
   "clanLevel": 6,
-  "clanPoints": 27200,
+  "clanPoints": 27400,
   "clanBuilderBasePoints": 16891,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 108,
+      "trophies": 119,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 2123,
+      "donations": 2158,
       "donationsReceived": 549,
       "playerHouse": {
         "elements": [
@@ -579,7 +579,7 @@
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,
-      "donationsReceived": 643,
+      "donationsReceived": 678,
       "playerHouse": {
         "elements": [
           {
@@ -876,6 +876,51 @@
       }
     },
     {
+      "tag": "#R8P80GGGR",
+      "name": "Diego503",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 43,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 1276,
+      "clanRank": 21,
+      "previousClanRank": 27,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000012,
+        "name": "Stone League III"
+      }
+    },
+    {
       "tag": "#GQYUGUGCY",
       "name": "stiven",
       "role": "member",
@@ -891,7 +936,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 802,
-      "clanRank": 21,
+      "clanRank": 22,
       "previousClanRank": 20,
       "donations": 0,
       "donationsReceived": 0,
@@ -936,7 +981,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1717,
-      "clanRank": 22,
+      "clanRank": 23,
       "previousClanRank": 21,
       "donations": 121,
       "donationsReceived": 67,
@@ -981,7 +1026,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2201,
-      "clanRank": 23,
+      "clanRank": 24,
       "previousClanRank": 22,
       "donations": 0,
       "donationsReceived": 0,
@@ -1026,7 +1071,7 @@
       },
       "trophies": 227,
       "builderBaseTrophies": 1479,
-      "clanRank": 24,
+      "clanRank": 25,
       "previousClanRank": 24,
       "donations": 0,
       "donationsReceived": 62,
@@ -1069,9 +1114,9 @@
         "id": 105000005,
         "name": "Barbarian League 5"
       },
-      "trophies": 0,
+      "trophies": 13,
       "builderBaseTrophies": 586,
-      "clanRank": 25,
+      "clanRank": 26,
       "previousClanRank": 25,
       "donations": 0,
       "donationsReceived": 165,
@@ -1116,58 +1161,13 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 656,
-      "clanRank": 26,
+      "clanRank": 27,
       "previousClanRank": 26,
       "donations": 122,
       "donationsReceived": 131,
       "builderBaseLeague": {
         "id": 44000006,
         "name": "Clay League IV"
-      }
-    },
-    {
-      "tag": "#R8P80GGGR",
-      "name": "Diego503",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 43,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000004,
-        "name": "Barbarian League 4"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1276,
-      "clanRank": 27,
-      "previousClanRank": 27,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000012,
-        "name": "Stone League III"
       }
     },
     {
