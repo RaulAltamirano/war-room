@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27200,
-  "clanBuilderBasePoints": 16877,
+  "clanBuilderBasePoints": 16892,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 62,
+      "trophies": 92,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -274,7 +274,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 9,
+      "trophies": 38,
       "builderBaseTrophies": 2111,
       "clanRank": 6,
       "previousClanRank": 6,
@@ -319,7 +319,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 348,
+      "trophies": 361,
       "builderBaseTrophies": 1258,
       "clanRank": 7,
       "previousClanRank": 9,
@@ -364,7 +364,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 58,
+      "trophies": 70,
       "builderBaseTrophies": 1984,
       "clanRank": 8,
       "previousClanRank": 8,
@@ -414,7 +414,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 0,
+      "trophies": 14,
       "builderBaseTrophies": 1609,
       "clanRank": 10,
       "previousClanRank": 7,
@@ -565,7 +565,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 10,
-      "expLevel": 78,
+      "expLevel": 79,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1993,
+      "builderBaseTrophies": 2022,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,
@@ -601,8 +601,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
