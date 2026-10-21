@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 28300,
-  "clanBuilderBasePoints": 18159,
+  "clanBuilderBasePoints": 18157,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
     "id": 85000005,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 2,
-  "warWins": 10,
+  "warWinStreak": 3,
+  "warWins": 11,
   "warTies": 0,
   "warLosses": 22,
   "isWarLogPublic": true,
@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 131,
+      "trophies": 161,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -491,31 +491,6 @@
       }
     },
     {
-      "tag": "#GUY2Y82CU",
-      "name": "اوراس",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 75,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000009,
-        "name": "Archer League 9"
-      },
-      "trophies": 89,
-      "builderBaseTrophies": 1110,
-      "clanRank": 12,
-      "previousClanRank": 11,
-      "donations": 49,
-      "donationsReceived": 66,
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
-      }
-    },
-    {
       "tag": "#QPLJUCPLY",
       "name": "ONEL2.0",
       "role": "member",
@@ -529,9 +504,9 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 63,
+      "trophies": 91,
       "builderBaseTrophies": 1105,
-      "clanRank": 13,
+      "clanRank": 12,
       "previousClanRank": 12,
       "donations": 280,
       "donationsReceived": 194,
@@ -561,6 +536,31 @@
       }
     },
     {
+      "tag": "#GUY2Y82CU",
+      "name": "اوراس",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 75,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000009,
+        "name": "Archer League 9"
+      },
+      "trophies": 89,
+      "builderBaseTrophies": 1110,
+      "clanRank": 13,
+      "previousClanRank": 11,
+      "donations": 49,
+      "donationsReceived": 66,
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
+      }
+    },
+    {
       "tag": "#LY9J99L9G",
       "name": "cozo 2000",
       "role": "admin",
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 101,
-      "builderBaseTrophies": 1958,
+      "builderBaseTrophies": 1949,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,
@@ -700,7 +700,7 @@
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 61,
+      "expLevel": 62,
       "league": {
         "id": 29000000,
         "name": "Unranked"
