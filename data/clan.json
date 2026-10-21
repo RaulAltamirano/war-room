@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 119,
+      "trophies": 131,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -274,7 +274,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 38,
+      "trophies": 56,
       "builderBaseTrophies": 2111,
       "clanRank": 6,
       "previousClanRank": 6,
@@ -310,7 +310,7 @@
       "name": "xlMURDOClx",
       "role": "member",
       "townHallLevel": 13,
-      "expLevel": 144,
+      "expLevel": 145,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -409,7 +409,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 184,
+      "trophies": 212,
       "builderBaseTrophies": 1377,
       "clanRank": 9,
       "previousClanRank": 8,
@@ -504,7 +504,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 45,
+      "trophies": 71,
       "builderBaseTrophies": 1110,
       "clanRank": 12,
       "previousClanRank": 12,
@@ -529,7 +529,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 23,
+      "trophies": 63,
       "builderBaseTrophies": 1105,
       "clanRank": 13,
       "previousClanRank": 11,
