@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27400,
-  "clanBuilderBasePoints": 16891,
+  "clanBuilderBasePoints": 16868,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
     "id": 85000005,
@@ -364,7 +364,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 83,
+      "trophies": 184,
       "builderBaseTrophies": 1377,
       "clanRank": 8,
       "previousClanRank": 8,
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2061,
+      "builderBaseTrophies": 2015,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,
