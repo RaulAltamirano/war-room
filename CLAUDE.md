@@ -35,3 +35,7 @@ Secreto `DISCORD_WEBHOOK_URL`. Tras el build:
 - `scripts/ban-zones.mjs` → aviso zona roja (≥2 guerras seguidas sin atacar) / zona gris (1 falla o “fuera”); Discord con `DISCORD_SEND_BAN_ZONES` / `enviar_zonas_ban`.
 
 Sin URL → skip. Fallo HTTP o de red → no marca ese ítem (reintento luego). Los pasos de Discord en Actions llevan `continue-on-error` para no perder el commit de `data/`. No spamear una guerra por mensaje. Prospectos y zonas de ban solo incluyen gente que sigue en el roster.
+
+### Slash commands (HTTP)
+
+Código y docs en inglés bajo `discord/` (Cloudflare Worker). Comandos de guild: `/report`, `/lineup`, `/discipline`, `/pass`. Verifican Ed25519, hacen defer y reutilizan los builders de `scripts/lib`. No sustituyen el cron. Spec: `docs/superpowers/specs/2026-10-22-discord-slash-commands-design.md`. Setup: `discord/README.md`.

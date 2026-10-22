@@ -1,4 +1,6 @@
 .env
 .env.*
 node_modules/
+discord/node_modules/
+discord/.wrangler/
 data/last-fetch.json

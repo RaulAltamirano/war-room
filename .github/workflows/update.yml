@@ -39,7 +39,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-node@v5
         with: { node-version: 22 }
-      - run: node --test tests/
+      - run: node --test tests/*.mjs
       - run: node scripts/fetch.mjs
         env:
           COC_API_TOKEN: ${{ secrets.COC_API_TOKEN }}
