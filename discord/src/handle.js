@@ -36,13 +36,36 @@ export async function loadSite(siteJsonUrl, fetchImpl = fetch) {
   return res.json();
 }
 
-export async function patchOriginal(applicationId, token, body, fetchImpl = fetch) {
+export async function patchOriginal(applicationId, token, body, fetchImpl = fetch, files = []) {
   const url = `https://discord.com/api/v10/webhooks/${applicationId}/${token}/messages/@original`;
-  const res = await fetchImpl(url, {
-    method: 'PATCH',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
+  let res;
+  if (files.length) {
+    const form = new FormData();
+    const payload = {
+      ...body,
+      // Required on PATCH so Discord binds uploaded files to attachment:// refs.
+      attachments: files.map((f, i) => ({
+        id: i,
+        filename: f.name || `file${i}`,
+      })),
+    };
+    form.append('payload_json', JSON.stringify(payload));
+    for (let i = 0; i < files.length; i++) {
+      const f = files[i];
+      form.append(
+        `files[${i}]`,
+        new Blob([f.bytes], { type: f.type || 'application/octet-stream' }),
+        f.name || `file${i}`,
+      );
+    }
+    res = await fetchImpl(url, { method: 'PATCH', body: form });
+  } else {
+    res = await fetchImpl(url, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+  }
   let detail = '';
   if (!res.ok) {
     try {
@@ -129,7 +152,13 @@ export async function handleInteractionRequest(request, env, runtime = {}) {
       const followUp = message.embeds
         ? { embeds: message.embeds }
         : { content: message.content, flags: message.flags };
-      const res = await patchOriginal(applicationId, interaction.token, followUp, fetchImpl);
+      const res = await patchOriginal(
+        applicationId,
+        interaction.token,
+        followUp,
+        fetchImpl,
+        message.files || [],
+      );
       if (!res.ok) {
         await patchOriginal(
           applicationId,

@@ -11,9 +11,13 @@ const COLOR = {
   prospects: 0x5ee08a,
   clan: 0xb07cff,
 };
-/** Custom trophy art (not the clan badge). Served from the repo for Discord embeds. */
-const TOP3_THUMB =
-  'https://raw.githubusercontent.com/RaulAltamirano/war-room/main/discord/assets/top3.jpg';
+/**
+ * Custom trophy art (not the clan badge).
+ * `attachment://` when the slash Worker uploads the file; public Worker URL otherwise.
+ */
+export const TOP3_THUMB_ATTACHMENT = 'attachment://top3.jpg';
+export const TOP3_THUMB_URL =
+  'https://clandestinos-ops.clandestinos.workers.dev/assets/top3.jpg';
 
 function fshort(date) {
   if (!date) return 'Sin fecha';
@@ -139,7 +143,7 @@ function top3Fields(top3) {
 }
 
 /** Cumulative bitácora Top 3 (not a single-war podium — that belongs on the war-ended highlight). */
-export function buildTop3Payload(site) {
+export function buildTop3Payload(site, { thumbUrl = TOP3_THUMB_URL } = {}) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
 
@@ -156,7 +160,7 @@ export function buildTop3Payload(site) {
             `**${b.warsCount}** guerras · 70% impacto (liga ×2) + 30% donaciones · ≥1 guerra.`,
           ].join('\n'),
           color: COLOR.top,
-          thumbnail: { url: TOP3_THUMB },
+          thumbnail: { url: thumbUrl },
           fields: top3Fields(b.top3),
           timestamp: new Date().toISOString(),
           footer: { text: `${clan} · Ranking acumulado` },

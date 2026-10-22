@@ -96,6 +96,10 @@ test('resolveCommand maps to existing embed builders', () => {
   assert.match(top.embeds[0].fields[0].name, /Alpha/);
   assert.match(top.embeds[0].fields[0].value, /Donaciones/);
   assert.equal(top.embeds[0].fields.length, 3);
+  assert.equal(top.embeds[0].thumbnail.url, 'attachment://top3.jpg');
+  assert.equal(top.files?.length, 1);
+  assert.equal(top.files[0].name, 'top3.jpg');
+  assert.ok(top.files[0].bytes?.length > 100);
   assert.equal(resolveCommand('report', site).embeds.length, 1);
   assert.match(resolveCommand('report', site).embeds[0].title, /Estado del clan/);
   assert.equal(resolveCommand('discipline', site).embeds.length, 1);
@@ -161,6 +165,7 @@ test('slash command defers and patches embeds from site.json', async () => {
   const pk = await publicKeyHex(publicKey);
   const body = JSON.stringify({
     type: InteractionType.APPLICATION_COMMAND,
+    application_id: 'app',
     token: 'interaction-token',
     member: { roles: ['leader'] },
     data: { name: 'report' },
@@ -214,4 +219,61 @@ test('slash command defers and patches embeds from site.json', async () => {
   assert.equal(patches.length, 1);
   assert.equal(patches[0].embeds.length, 1);
   assert.match(patches[0].embeds[0].title, /Estado del clan/);
+});
+
+test('slash /top uploads trophy attachment for thumbnail', async () => {
+  const { privateKey, publicKey } = await generateKeyPair();
+  const pk = await publicKeyHex(publicKey);
+  const body = JSON.stringify({
+    type: InteractionType.APPLICATION_COMMAND,
+    application_id: 'app',
+    token: 'interaction-token',
+    member: { roles: ['leader'] },
+    data: { name: 'top' },
+  });
+  const ts = '1710000003';
+  const sig = await sign(privateKey, ts, body);
+
+  const pending = [];
+  const patches = [];
+  const fetchImpl = async (url, opts = {}) => {
+    if (String(url).includes('site.json')) {
+      return { ok: true, async json() { return site; } };
+    }
+    if (String(url).includes('/messages/@original')) {
+      assert.ok(opts.body instanceof FormData);
+      const payload = JSON.parse(opts.body.get('payload_json'));
+      patches.push(payload);
+      assert.equal(payload.embeds[0].thumbnail.url, 'attachment://top3.jpg');
+      assert.deepEqual(payload.attachments, [{ id: 0, filename: 'top3.jpg' }]);
+      assert.ok(opts.body.get('files[0]'));
+      return { ok: true, status: 200 };
+    }
+    throw new Error(`unexpected fetch ${url}`);
+  };
+
+  const res = await handleInteractionRequest(
+    new Request('https://example.test/', {
+      method: 'POST',
+      headers: {
+        'X-Signature-Ed25519': sig,
+        'X-Signature-Timestamp': ts,
+      },
+      body,
+    }),
+    {
+      DISCORD_PUBLIC_KEY: pk,
+      DISCORD_APPLICATION_ID: 'app',
+      SITE_JSON_URL: 'https://example.test/site.json',
+    },
+    {
+      waitUntil: (p) => pending.push(p),
+      fetchImpl,
+    },
+  );
+
+  assert.equal(res.status, 200);
+  await Promise.all(pending);
+  assert.equal(patches.length, 1);
+  assert.match(patches[0].embeds[0].title, /Top 3/);
 });

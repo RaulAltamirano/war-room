@@ -1,11 +1,13 @@
 import { buildBanZonesPayload } from '../../scripts/lib/ban-zones.mjs';
 import {
+  TOP3_THUMB_ATTACHMENT,
   buildClanPayload,
   buildProspectsPayload,
   buildReportPayload,
   buildTop3Payload,
 } from '../../scripts/lib/discord-report.mjs';
 import { discordPassRulesPayload, monthKeyInZone } from '../../scripts/lib/monthly-top.mjs';
+import { TOP3_FILENAME, TOP3_MIME, top3Bytes } from './top3-thumb.js';
 
 /** Discord permission: Manage Guild */
 export const MANAGE_GUILD = String(1n << 5n);
@@ -64,7 +66,7 @@ export const COMMAND_DEFINITIONS = [
  * @param {string} name
  * @param {object} site
  * @param {{ now?: Date }} [opts]
- * @returns {{ embeds: object[] } | { content: string, flags?: number }}
+ * @returns {{ embeds: object[], files?: object[] } | { content: string, flags?: number }}
  */
 export function resolveCommand(name, site, { now = new Date() } = {}) {
   switch (name) {
@@ -74,7 +76,16 @@ export function resolveCommand(name, site, { now = new Date() } = {}) {
     case 'clan':
       return { embeds: buildClanPayload(site).payload.embeds };
     case 'top':
-      return { embeds: buildTop3Payload(site).payload.embeds };
+      return {
+        embeds: buildTop3Payload(site, { thumbUrl: TOP3_THUMB_ATTACHMENT }).payload.embeds,
+        files: [
+          {
+            name: TOP3_FILENAME,
+            type: TOP3_MIME,
+            bytes: top3Bytes(),
+          },
+        ],
+      };
     case 'report':
       return { embeds: buildReportPayload(site).payload.embeds };
     case 'discipline':

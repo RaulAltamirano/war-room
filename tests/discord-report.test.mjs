@@ -184,7 +184,7 @@ test('buildTop3Payload es ranking acumulado, no la última guerra', () => {
   assert.match(payload.embeds[0].fields[0].value, /Impacto/);
   assert.match(payload.embeds[0].fields[0].value, /Donaciones/);
   assert.match(payload.embeds[0].fields[0].value, /Guerras/);
-  assert.match(payload.embeds[0].thumbnail.url, /discord\/assets\/top3\.jpg/);
+  assert.match(payload.embeds[0].thumbnail.url, /assets\/top3\.jpg/);
   assert.match(payload.embeds[0].footer.text, /Ranking acumulado/);
 });
 
