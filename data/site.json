@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T02:28:24Z",
+  "generatedAt": "2026-10-22T07:50:39Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 28300,
-    "builder": 18139,
+    "builder": 18152,
     "capital": 1150,
     "members": 35,
     "freq": "Siempre",
@@ -126,7 +126,7 @@
       "JOSHUA",
       "C",
       12,
-      78,
+      79,
       349,
       196,
       1258
@@ -300,7 +300,7 @@
       59,
       0,
       62,
-      1397
+      1450
     ],
     [
       "ElTiti",
