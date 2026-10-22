@@ -93,7 +93,8 @@ test('resolveCommand maps to existing embed builders', () => {
   const top = resolveCommand('top', site);
   assert.equal(top.embeds.length, 1);
   assert.match(top.embeds[0].title, /Top 3/);
-  assert.match(top.embeds[0].description, /Alpha/);
+  assert.match(top.embeds[0].fields[0].name, /Alpha/);
+  assert.match(top.embeds[0].fields[0].value, /Donaciones/);
   assert.equal(top.embeds[0].fields.length, 3);
   assert.equal(resolveCommand('report', site).embeds.length, 1);
   assert.match(resolveCommand('report', site).embeds[0].title, /Estado del clan/);

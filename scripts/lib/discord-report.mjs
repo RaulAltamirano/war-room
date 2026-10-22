@@ -113,15 +113,22 @@ export async function runDiscordProspects({
 }
 
 function top3Fields(top3) {
-  const fields = (top3 || []).map((p, i) => ({
-    name: `${MEDAL[i] || `${i + 1}.`} ${p.n}`,
-    value: [
-      `**${p.score}** pts`,
-      `Impacto \`${p.imp}\` · ★ \`${p.stars}\` · Don \`${p.don}\``,
-      `Guerras \`${p.g}\`${p.miss ? ` · Sin usar \`${p.miss}\`` : ''}`,
-    ].join('\n'),
-    inline: true,
-  }));
+  const fields = (top3 || []).map((p, i) => {
+    const lines = [
+      `**${p.score}** pts totales`,
+      '',
+      `Impacto · **${p.imp}**`,
+      `Estrellas · **${p.stars}**`,
+      `Donaciones · **${p.don}**`,
+      `Guerras · **${p.g}**`,
+    ];
+    if (p.miss) lines.push(`Sin usar · **${p.miss}**`);
+    return {
+      name: `${MEDAL[i] || `${i + 1}.`} ${p.n}`,
+      value: lines.join('\n'),
+      inline: true,
+    };
+  });
   while (fields.length < 3) {
     fields.push({ name: '—', value: '_Sin datos_', inline: true });
   }
@@ -132,9 +139,6 @@ function top3Fields(top3) {
 export function buildTop3Payload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
-  const podium = (b.top3 || [])
-    .map((p, i) => `${MEDAL[i] || `${i + 1}.`} **${p.n}** · **${p.score}** pts`)
-    .join('\n');
 
   return {
     briefing: b,
@@ -144,11 +148,9 @@ export function buildTop3Payload(site) {
         {
           title: `🏆 Top 3 · ${clan}`,
           description: [
-            'Ranking **acumulado** de la bitácora (todas las guerras), no solo la última.',
+            'Ranking **acumulado** de toda la bitácora (no solo la última guerra).',
             '',
-            podium || '_Sin datos todavía._',
-            '',
-            `Historial: **${b.warsCount}** guerras · _70% impacto (liga ×2) + 30% donaciones · ≥1 guerra._`,
+            `**${b.warsCount}** guerras · 70% impacto (liga ×2) + 30% donaciones · ≥1 guerra.`,
           ].join('\n'),
           color: COLOR.top,
           fields: top3Fields(b.top3),

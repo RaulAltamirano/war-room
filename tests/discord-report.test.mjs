@@ -179,9 +179,11 @@ test('buildTop3Payload es ranking acumulado, no la última guerra', () => {
   assert.match(payload.embeds[0].title, /Top 3/);
   assert.match(payload.embeds[0].description, /acumulado/i);
   assert.equal(payload.embeds[0].description.includes('Última guerra'), false);
-  assert.match(payload.embeds[0].description, /🥇/);
-  assert.match(payload.embeds[0].description, /Alpha/);
   assert.equal(payload.embeds[0].fields.length, 3);
+  assert.match(payload.embeds[0].fields[0].name, /Alpha/);
+  assert.match(payload.embeds[0].fields[0].value, /Impacto/);
+  assert.match(payload.embeds[0].fields[0].value, /Donaciones/);
+  assert.match(payload.embeds[0].fields[0].value, /Guerras/);
   assert.match(payload.embeds[0].footer.text, /Ranking acumulado/);
 });
 
