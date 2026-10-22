@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 28300,
-  "clanBuilderBasePoints": 18157,
+  "clanBuilderBasePoints": 18139,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000031,
         "name": "Electro League 31"
       },
-      "trophies": 161,
+      "trophies": 529,
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 2189,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 830,
+      "donations": 897,
       "donationsReceived": 864,
       "playerHouse": {
         "elements": [
@@ -421,6 +421,31 @@
       }
     },
     {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 11,
+      "expLevel": 133,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000010,
+        "name": "Wizard League 10"
+      },
+      "trophies": 169,
+      "builderBaseTrophies": 1984,
+      "clanRank": 10,
+      "previousClanRank": 9,
+      "donations": 982,
+      "donationsReceived": 1848,
+      "builderBaseLeague": {
+        "id": 44000019,
+        "name": "Copper League I"
+      }
+    },
+    {
       "tag": "#L8Q82PUQ0",
       "name": "يسوري❤️❤️",
       "role": "member",
@@ -436,7 +461,7 @@
       },
       "trophies": 156,
       "builderBaseTrophies": 1609,
-      "clanRank": 10,
+      "clanRank": 11,
       "previousClanRank": 10,
       "donations": 66,
       "donationsReceived": 0,
@@ -463,31 +488,6 @@
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
-      }
-    },
-    {
-      "tag": "#2VL98GPGU",
-      "name": "ⓟⓐⓒⓜⓐⓝ",
-      "role": "coLeader",
-      "townHallLevel": 11,
-      "expLevel": 133,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000010,
-        "name": "Wizard League 10"
-      },
-      "trophies": 118,
-      "builderBaseTrophies": 1984,
-      "clanRank": 11,
-      "previousClanRank": 9,
-      "donations": 982,
-      "donationsReceived": 1781,
-      "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
       }
     },
     {
@@ -1140,7 +1140,7 @@
         "name": "Barbarian League 5"
       },
       "trophies": 227,
-      "builderBaseTrophies": 1468,
+      "builderBaseTrophies": 1397,
       "clanRank": 27,
       "previousClanRank": 25,
       "donations": 0,
@@ -1166,8 +1166,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000014,
-        "name": "Stone League I"
+        "id": 44000013,
+        "name": "Stone League II"
       }
     },
     {
