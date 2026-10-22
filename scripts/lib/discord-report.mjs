@@ -163,36 +163,35 @@ export function buildTop3Payload(site) {
 export function buildReportPayload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
-  const upLines = b.trend.up.slice(0, 5).map((x) => `• **${x.n}** · \`+${x.d}\` · ${x.from} → ${x.to}`);
-  const downLines = b.trend.down.slice(0, 5).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);
-  const outLines = b.trend.out.slice(0, 8).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
-  const outRule = '\n\n_Regla: ≥2 ataques sin usar y ≥50% · detalle en `/discipline`._';
+  // Trend = avg impact in last ≤2 wars vs earlier wars; ±10 to list.
+  const upLines = b.trend.up.slice(0, 5).map((x) => `• **${x.n}** · impacto \`${x.from} → ${x.to}\` (\`+${x.d}\`)`);
+  const downLines = b.trend.down.slice(0, 5).map((x) => `• **${x.n}** · impacto \`${x.from} → ${x.to}\` (\`${x.d}\`)`);
+  const outLines = b.trend.out.slice(0, 8).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` ataques sin usar`);
+  const outRule = '\n\n_Criterio: ≥2 ataques sin usar y ≥50% del cupo. Más detalle: `/discipline`._';
 
   const embeds = [
     {
       title: `📒 Estado del clan · ${clan}`,
       description: [
-        `Ranking: **70% impacto (liga ×2) + 30% donaciones**.`,
+        `Bitácora: **${b.warsCount}** guerras · **${b.prospects.length}** en alineación · **${b.trend.out.length}** fuera.`,
         '',
-        `En bitácora: **${b.warsCount}** guerras · **${b.prospects.length}** en alineación sugerida · **${b.trend.out.length}** fuera.`,
-        '',
-        `_Atajos: \`/top\` · \`/lineup\` · \`/discipline\` · \`/pass\`_`,
+        'Tendencia de **impacto en guerra**: promedio de las **últimas 2** vs el resto del historial (solo cambios de **±10** o más).',
       ].join('\n'),
       color: COLOR.header,
       fields: [
         {
-          name: `▲ Mejoraron · ${b.trend.up.length}`,
-          value: listOr('_Nadie subió de forma clara._', upLines),
+          name: `▲ Impacto al alza · ${b.trend.up.length}`,
+          value: listOr('_Nadie subió ≥10 de impacto._', upLines),
           inline: false,
         },
         {
-          name: `▼ Bajaron · ${b.trend.down.length}`,
-          value: listOr('_Nadie bajó de forma clara._', downLines),
+          name: `▼ Impacto a la baja · ${b.trend.down.length}`,
+          value: listOr('_Nadie bajó ≥10 de impacto._', downLines),
           inline: false,
         },
         {
-          name: `✕ Fuera · ${b.trend.out.length}`,
-          value: `${listOr('_Todos cumplen con sus ataques._', outLines, 1024 - outRule.length)}${outRule}`,
+          name: `✕ Cupo de ataques mal usado · ${b.trend.out.length}`,
+          value: `${listOr('_Nadie está fuera por ataques sin usar._', outLines, 1024 - outRule.length)}${outRule}`,
           inline: false,
         },
       ],

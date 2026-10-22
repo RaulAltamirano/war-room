@@ -163,9 +163,12 @@ test('buildReportPayload es un informe general sin guerra ni Top 3', () => {
   assert.match(payload.embeds[0].title, /Estado del clan/);
   assert.equal(payload.embeds[0].description.includes('Última guerra'), false);
   assert.equal(payload.embeds[0].description.includes('Abrir bitácora'), false);
-  assert.match(payload.embeds[0].description, /\/top/);
+  assert.equal(payload.embeds[0].description.includes('Atajos'), false);
+  assert.match(payload.embeds[0].description, /últimas 2/i);
   assert.equal(payload.embeds[0].fields.length, 3);
-  assert.match(payload.embeds[0].fields[0].name, /Mejoraron/);
+  assert.match(payload.embeds[0].fields[0].name, /Impacto al alza/);
+  assert.match(payload.embeds[0].fields[1].name, /Impacto a la baja/);
+  assert.match(payload.embeds[0].fields[2].name, /Cupo de ataques/);
   assert.ok(payload.embeds.every((e) => typeof e.color === 'number'));
 });
 
