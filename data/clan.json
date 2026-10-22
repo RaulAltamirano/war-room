@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 28300,
-  "clanBuilderBasePoints": 18152,
+  "clanBuilderBasePoints": 18153,
   "clanCapitalPoints": 1150,
   "capitalLeague": {
     "id": 85000005,
@@ -399,7 +399,7 @@
       "tag": "#Q02JR2JYV",
       "name": "Abrasive7X",
       "role": "coLeader",
-      "townHallLevel": 12,
+      "townHallLevel": 13,
       "expLevel": 92,
       "league": {
         "id": 29000000,
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 101,
-      "builderBaseTrophies": 1949,
+      "builderBaseTrophies": 1952,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,

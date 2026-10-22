@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T07:50:39Z",
+  "generatedAt": "2026-10-22T13:18:43Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 28300,
-    "builder": 18152,
+    "builder": 18153,
     "capital": 1150,
     "members": 35,
     "freq": "Siempre",
@@ -134,7 +134,7 @@
     [
       "Abrasive7X",
       "C",
-      12,
+      13,
       92,
       392,
       662,
@@ -183,7 +183,7 @@
       80,
       61,
       678,
-      1949
+      1952
     ],
     [
       "KOLET",
