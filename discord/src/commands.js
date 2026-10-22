@@ -23,7 +23,7 @@ export const COMMAND_DEFINITIONS = [
   },
   {
     name: 'report',
-    description: 'Post the full war briefing (Top 3, analysis, lineup).',
+    description: 'Post a general clan status pulse (trends; no war card).',
     type: 1,
     default_member_permissions: MANAGE_GUILD,
     dm_permission: false,

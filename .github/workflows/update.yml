@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       enviar_informe:
-        description: Enviar informe Discord ahora (Top 3, análisis, prospectos)
+        description: Enviar informe general Discord (tendencias; sin Top 3 ni última guerra)
         type: boolean
         default: false
       enviar_pase:

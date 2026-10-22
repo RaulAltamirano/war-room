@@ -163,43 +163,26 @@ export function buildTop3Payload(site) {
   };
 }
 
+/** Clan-wide status pulse — no last-war card, no Top 3 (use `/top`), no full lineup (use `/lineup`). */
 export function buildReportPayload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
-  const last = b.last;
-  const lastLine = last
-    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
-    : 'Sin guerras registradas.';
-
-  const topFields = top3Fields(b.top3);
-
-  const upLines = b.trend.up.slice(0, 8).map((x) => `• **${x.n}** · \`+${x.d}\` · ${x.from} → ${x.to}`);
-  const downLines = b.trend.down.slice(0, 8).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);
-  const outLines = b.trend.out.slice(0, 10).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
-  const outRule = '\n\n_Regla: ≥2 ataques sin usar y ≥50%._';
+  const upLines = b.trend.up.slice(0, 5).map((x) => `• **${x.n}** · \`+${x.d}\` · ${x.from} → ${x.to}`);
+  const downLines = b.trend.down.slice(0, 5).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);
+  const outLines = b.trend.out.slice(0, 8).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
+  const outRule = '\n\n_Regla: ≥2 ataques sin usar y ≥50% · detalle en `/discipline`._';
 
   const embeds = [
     {
-      title: `📒 Informe de guerra · ${clan}`,
+      title: `📒 Estado del clan · ${clan}`,
       description: [
-        `Última guerra: ${lastLine}`,
+        `Ranking: **70% impacto (liga ×2) + 30% donaciones**.`,
         '',
-        `Historial: **${b.warsCount}** guerras · Ranking **70% impacto (liga ×2) + 30% donaciones**`,
+        `En bitácora: **${b.warsCount}** guerras · **${b.prospects.length}** en alineación sugerida · **${b.trend.out.length}** fuera.`,
+        '',
+        `_Atajos: \`/top\` · \`/lineup\` · \`/discipline\` · \`/pass\`_`,
       ].join('\n'),
       color: COLOR.header,
-      timestamp: new Date().toISOString(),
-      footer: { text: `${clan} · Bitácora de guerras` },
-    },
-    {
-      title: '🏆 Top 3',
-      description: 'Quienes más aportan al clan (con ≥1 guerra).',
-      color: COLOR.top,
-      fields: topFields,
-    },
-    {
-      title: '📊 Análisis',
-      description: 'Últimas 2 guerras frente al resto del historial (±10 impacto).',
-      color: COLOR.analysis,
       fields: [
         {
           name: `▲ Mejoraron · ${b.trend.up.length}`,
@@ -212,13 +195,14 @@ export function buildReportPayload(site) {
           inline: false,
         },
         {
-          name: `✕ Fuera de guerra · ${b.trend.out.length}`,
+          name: `✕ Fuera · ${b.trend.out.length}`,
           value: `${listOr('_Todos cumplen con sus ataques._', outLines, 1024 - outRule.length)}${outRule}`,
           inline: false,
         },
       ],
+      timestamp: new Date().toISOString(),
+      footer: { text: `${clan} · Informe general` },
     },
-    prospectsEmbed(b),
   ];
 
   return {

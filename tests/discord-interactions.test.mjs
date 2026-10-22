@@ -69,7 +69,8 @@ test('resolveCommand maps to existing embed builders', () => {
   assert.match(top.embeds[0].title, /Top 3/);
   assert.match(top.embeds[0].description, /Alpha/);
   assert.equal(top.embeds[0].fields.length, 3);
-  assert.equal(resolveCommand('report', site).embeds.length, 4);
+  assert.equal(resolveCommand('report', site).embeds.length, 1);
+  assert.match(resolveCommand('report', site).embeds[0].title, /Estado del clan/);
   assert.equal(resolveCommand('lineup', site).embeds.length, 1);
   assert.equal(resolveCommand('discipline', site).embeds.length, 1);
   assert.equal(resolveCommand('pass', site, { now: new Date('2026-10-22T12:00:00-06:00') }).embeds.length, 1);
@@ -185,6 +186,6 @@ test('slash command defers and patches embeds from site.json', async () => {
   });
   await Promise.all(pending);
   assert.equal(patches.length, 1);
-  assert.equal(patches[0].embeds.length, 4);
-  assert.match(patches[0].embeds[0].title, /Informe/);
+  assert.equal(patches[0].embeds.length, 1);
+  assert.match(patches[0].embeds[0].title, /Estado del clan/);
 });

@@ -157,14 +157,15 @@ test('prospectos no incluyen a quien ya no está en el roster', () => {
   assert.ok(b.prospects.some((p) => p.n === 'Alpha'));
 });
 
-test('buildReportPayload usa embeds Discord', () => {
+test('buildReportPayload es un informe general sin guerra ni Top 3', () => {
   const { payload } = buildReportPayload(site);
-  assert.equal(payload.embeds.length, 4);
-  assert.match(payload.embeds[0].title, /Informe/);
+  assert.equal(payload.embeds.length, 1);
+  assert.match(payload.embeds[0].title, /Estado del clan/);
+  assert.equal(payload.embeds[0].description.includes('Última guerra'), false);
   assert.equal(payload.embeds[0].description.includes('Abrir bitácora'), false);
-  assert.match(payload.embeds[1].title, /Top 3/);
-  assert.match(payload.embeds[2].title, /Análisis/);
-  assert.match(payload.embeds[3].title, /Prospectos/);
+  assert.match(payload.embeds[0].description, /\/top/);
+  assert.equal(payload.embeds[0].fields.length, 3);
+  assert.match(payload.embeds[0].fields[0].name, /Mejoraron/);
   assert.ok(payload.embeds.every((e) => typeof e.color === 'number'));
 });
 
@@ -260,12 +261,12 @@ test('force con saved envía el highlight y después el informe', async () => {
   assert.equal(bodies.length, 2);
   assert.equal(bodies[0].embeds.length, 1);
   assert.match(bodies[0].embeds[0].title, /Guerra terminada/);
-  assert.equal(bodies[1].embeds.length, 4);
-  assert.match(bodies[1].embeds[0].title, /Informe/);
+  assert.equal(bodies[1].embeds.length, 1);
+  assert.match(bodies[1].embeds[0].title, /Estado del clan/);
   assert.equal(out.state.highlights['20261013-AAAA.json'].warId, 'w20261013');
 });
 
-test('force sin warEnded sigue enviando informe de 4 embeds', async () => {
+test('force sin warEnded sigue enviando el informe general', async () => {
   let posts = 0;
   const out = await runDiscordReport({
     site,
@@ -276,11 +277,9 @@ test('force sin warEnded sigue enviando informe de 4 embeds', async () => {
     fetchImpl: async (_u, opts) => {
       posts += 1;
       const body = JSON.parse(opts.body);
-      assert.equal(body.embeds.length, 4);
-      assert.match(body.embeds[0].title, /Informe/);
-      assert.match(body.embeds[1].title, /Top 3/);
-      assert.match(body.embeds[2].title, /Análisis/);
-      assert.match(body.embeds[3].title, /Prospectos/);
+      assert.equal(body.embeds.length, 1);
+      assert.match(body.embeds[0].title, /Estado del clan/);
+      assert.equal(body.embeds[0].fields.length, 3);
       return { ok: true };
     },
     log: () => {},
@@ -368,7 +367,8 @@ test('runDiscordReport bootstrap no postea; force sí', async () => {
     fetchImpl: async (_u, opts) => {
       posts += 1;
       const body = JSON.parse(opts.body);
-      assert.equal(body.embeds.length, 4);
+      assert.equal(body.embeds.length, 1);
+      assert.match(body.embeds[0].title, /Estado del clan/);
       return { ok: true };
     },
     log: () => {},
