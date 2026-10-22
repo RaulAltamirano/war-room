@@ -6,6 +6,7 @@ import {
   armyForTh,
   buildScoutPlan,
   mirrorOk,
+  pickActiveWarFromFetched,
   snapshotActiveWar,
 } from '../scripts/lib/war-scout.mjs';
 
@@ -75,6 +76,29 @@ test('buildScoutPlan prefers mirror when viable, else dips', () => {
   assert.equal(rows[1].mode, 'otro');
   assert.equal(rows[1].target.tag, '#X');
   assert.match(summary, /espejos/);
+});
+
+test('pickActiveWarFromFetched prefers CWL live when currentwar is idle', () => {
+  const current = { state: 'notInWar' };
+  const cwl = {
+    state: 'inWar',
+    teamSize: 15,
+    attacksPerMember: 1,
+    clan: {
+      tag: CLAN,
+      name: 'clandestinos',
+      members: [{ tag: '#A', name: 'A', townhallLevel: 15, mapPosition: 1 }],
+    },
+    opponent: {
+      tag: '#Z',
+      name: 'CWL Rival',
+      members: [{ tag: '#Z1', name: 'Z1', townhallLevel: 15, mapPosition: 1 }],
+    },
+  };
+  const snap = pickActiveWarFromFetched(current, [cwl], CLAN, pickSides);
+  assert.equal(snap.state, 'inWar');
+  assert.equal(snap.source, 'cwl');
+  assert.equal(snap.rival, 'CWL Rival');
 });
 
 test('buildScoutPayload embeds plan or empty state', () => {

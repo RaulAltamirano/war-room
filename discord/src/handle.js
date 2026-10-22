@@ -1,5 +1,6 @@
 import { memberHasAllowedRole, parseAllowedRoleIds, resolveCommand } from './commands.js';
 import { verifyDiscordRequest } from './verify.js';
+import { fetchActiveWarSnapshot } from '../../scripts/lib/war-scout.mjs';
 
 export const InteractionType = {
   PING: 1,
@@ -148,6 +149,21 @@ export async function handleInteractionRequest(request, env, runtime = {}) {
   waitUntil((async () => {
     try {
       const site = await loadSite(siteUrl, fetchImpl);
+      if (name === 'scout') {
+        const cocToken = String(env.COC_API_TOKEN || '').trim();
+        if (cocToken) {
+          try {
+            site.activeWar = await fetchActiveWarSnapshot({
+              token: cocToken,
+              clanTag: String(env.CLAN_TAG || '#2RGC02RYC').trim(),
+              fetchImpl,
+            });
+          } catch (err) {
+            // Keep site.activeWar fallback; surface soft note on empty scout.
+            site._scoutLiveError = err?.message || 'live fetch failed';
+          }
+        }
+      }
       const message = resolveCommand(name, site, { now: runtime.now || new Date() });
       const followUp = message.embeds
         ? { embeds: message.embeds }

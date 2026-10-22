@@ -234,6 +234,84 @@ test('slash command defers and patches embeds from site.json', async () => {
   assert.match(patches[0].embeds[0].title, /Estado del clan/);
 });
 
+test('slash /scout live-fetches active war when COC_API_TOKEN is set', async () => {
+  const { privateKey, publicKey } = await generateKeyPair();
+  const pk = await publicKeyHex(publicKey);
+  const body = JSON.stringify({
+    type: InteractionType.APPLICATION_COMMAND,
+    application_id: 'app',
+    token: 'interaction-token',
+    member: { roles: ['leader'] },
+    data: { name: 'scout' },
+  });
+  const ts = '1710000004';
+  const sig = await sign(privateKey, ts, body);
+
+  const pending = [];
+  const patches = [];
+  const fetchImpl = async (url, opts = {}) => {
+    const u = String(url);
+    if (u.includes('site.json')) {
+      return { ok: true, async json() { return { ...site, activeWar: { state: 'notInWar' } }; } };
+    }
+    if (u.includes('/currentwar') && !u.includes('leaguegroup')) {
+      return {
+        ok: true,
+        async json() {
+          return {
+            state: 'inWar',
+            teamSize: 1,
+            attacksPerMember: 2,
+            clan: {
+              tag: '#2RGC02RYC',
+              name: 'clandestinos',
+              members: [{ tag: '#A', name: 'Alpha', townhallLevel: 15, mapPosition: 1 }],
+            },
+            opponent: {
+              tag: '#RIV',
+              name: 'LiveRival',
+              members: [{ tag: '#R', name: 'R1', townhallLevel: 15, mapPosition: 1 }],
+            },
+          };
+        },
+      };
+    }
+    if (u.includes('/messages/@original')) {
+      patches.push(JSON.parse(opts.body));
+      return { ok: true, status: 200 };
+    }
+    throw new Error(`unexpected fetch ${url}`);
+  };
+
+  const res = await handleInteractionRequest(
+    new Request('https://example.test/', {
+      method: 'POST',
+      headers: {
+        'X-Signature-Ed25519': sig,
+        'X-Signature-Timestamp': ts,
+      },
+      body,
+    }),
+    {
+      DISCORD_PUBLIC_KEY: pk,
+      DISCORD_APPLICATION_ID: 'app',
+      SITE_JSON_URL: 'https://example.test/site.json',
+      COC_API_TOKEN: 'test-token',
+      CLAN_TAG: '#2RGC02RYC',
+    },
+    {
+      waitUntil: (p) => pending.push(p),
+      fetchImpl,
+    },
+  );
+
+  assert.equal(res.status, 200);
+  await Promise.all(pending);
+  assert.equal(patches.length, 1);
+  assert.match(patches[0].embeds[0].title, /LiveRival/);
+  assert.match(patches[0].embeds[0].fields.map((f) => f.value).join('\n'), /Alpha/);
+});
+
 test('slash /top uploads trophy attachment for thumbnail', async () => {
   const { privateKey, publicKey } = await generateKeyPair();
   const pk = await publicKeyHex(publicKey);

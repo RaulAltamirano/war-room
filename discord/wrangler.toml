@@ -5,9 +5,11 @@ compatibility_date = "2024-11-12"
 # Set after deploy (example):
 #   wrangler secret put DISCORD_PUBLIC_KEY
 #   wrangler secret put DISCORD_APPLICATION_ID
+#   wrangler secret put COC_API_TOKEN          # live /scout (currentwar + CWL)
 # Optional:
 #   wrangler secret put ALLOWED_ROLE_IDS   # comma-separated snowflakes
 #
 # Non-secret vars (override per env as needed):
 [vars]
 SITE_JSON_URL = "https://raw.githubusercontent.com/RaulAltamirano/war-room/main/data/site.json"
+CLAN_TAG = "#2RGC02RYC"

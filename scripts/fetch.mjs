@@ -2,7 +2,7 @@ import { mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CLAN_TAG, pickSides, rawFileName, stripImages } from './lib/normalize.mjs';
-import { snapshotActiveWar } from './lib/war-scout.mjs';
+import { pickActiveWarFromFetched } from './lib/war-scout.mjs';
 
 const rootDefault = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -83,6 +83,7 @@ export async function run(opts = {}) {
   if (leagueRes.status === 404) log('404 en la liga de guerras: no hay temporada activa. Se sigue con el resto.');
 
   const pending = [];
+  const leagueLive = [];
   if (currentRes.json?.state === 'warEnded' && pickSides(currentRes.json, clanTag)) pending.push(currentRes.json);
   const rounds = leagueRes.json?.rounds || [];
   for (const round of rounds) {
@@ -94,18 +95,22 @@ export async function run(opts = {}) {
         continue;
       }
       if (!warRes.ok) return { ok: false, saved: [], skipped: [] };
-      if (warRes.json?.state !== 'warEnded') continue;
-      if (!pickSides(warRes.json, clanTag)) continue;
-      pending.push({ ...warRes.json, warTag: warRes.json.warTag || warTag });
+      const warJson = { ...warRes.json, warTag: warRes.json.warTag || warTag };
+      if (!pickSides(warJson, clanTag)) continue;
+      if (warJson.state === 'preparation' || warJson.state === 'inWar') {
+        leagueLive.push(warJson);
+      }
+      if (warJson.state !== 'warEnded') continue;
+      pending.push(warJson);
     }
   }
 
   await mkdir(path.join(dir, 'data', 'raw'), { recursive: true });
   await writeFile(path.join(dir, 'data/clan.json'), JSON.stringify(stripImages(clanRes.json, { keepBadge: true }), null, 2) + '\n');
-  const activeWar = snapshotActiveWar(currentRes.json, clanTag, { pickSides });
+  const activeWar = pickActiveWarFromFetched(currentRes.json, leagueLive, clanTag, pickSides);
   await writeFile(path.join(dir, 'data/active-war.json'), `${JSON.stringify(activeWar, null, 2)}\n`);
   if (activeWar.state === 'preparation' || activeWar.state === 'inWar') {
-    log(`Guerra activa (${activeWar.state}) vs ${activeWar.rival || '?'}: scout snapshot guardado.`);
+    log(`Guerra activa (${activeWar.state}${activeWar.source === 'cwl' ? ' CWL' : ''}) vs ${activeWar.rival || '?'}: scout snapshot guardado.`);
   } else {
     log('Sin guerra en preparación/batalla: scout snapshot en notInWar.');
   }

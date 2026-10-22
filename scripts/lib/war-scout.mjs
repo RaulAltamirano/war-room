@@ -3,6 +3,14 @@
  * Uses current-war roster only (TH + map position). No base layouts from the API.
  */
 
+import { CLAN_TAG, pickSides as defaultPickSides } from './normalize.mjs';
+
+const DEFAULT_BASE = 'https://cocproxy.royaleapi.dev/v1';
+
+function enc(tag) {
+  return encodeURIComponent(tag);
+}
+
 /** @param {number} th */
 export function armyForTh(th) {
   const t = Number(th) || 0;
@@ -105,6 +113,86 @@ export function snapshotActiveWar(war, clanTag, { pickSides, at } = {}) {
     them: (sides.them.members || []).map(slimMember),
     at: at || new Date().toISOString(),
   };
+}
+
+/**
+ * Live current war (regular or CWL) → scout snapshot.
+ * @param {{ token: string, clanTag?: string, base?: string, fetchImpl?: typeof fetch, pickSides?: Function }} opts
+ */
+export async function fetchActiveWarSnapshot({
+  token,
+  clanTag = CLAN_TAG,
+  base = DEFAULT_BASE,
+  fetchImpl = fetch,
+  pickSides = defaultPickSides,
+} = {}) {
+  if (!token) {
+    return { state: 'notInWar', at: new Date().toISOString(), source: 'no-token' };
+  }
+  const headers = {
+    Authorization: `Bearer ${token}`,
+    Accept: 'application/json',
+    'User-Agent': 'clandestinos-ops (war-scout)',
+  };
+
+  const currentRes = await fetchImpl(`${base}/clans/${enc(clanTag)}/currentwar`, { headers });
+  if (!currentRes.ok) {
+    const err = new Error(`currentwar HTTP ${currentRes.status}`);
+    err.status = currentRes.status;
+    throw err;
+  }
+  const current = await currentRes.json();
+  let snap = snapshotActiveWar(current, clanTag, { pickSides });
+  if (snap.state === 'preparation' || snap.state === 'inWar') {
+    return { ...snap, source: 'currentwar' };
+  }
+
+  const leagueRes = await fetchImpl(`${base}/clans/${enc(clanTag)}/currentwar/leaguegroup`, { headers });
+  if (leagueRes.status === 404) {
+    return { ...snap, source: 'currentwar' };
+  }
+  if (!leagueRes.ok) {
+    const err = new Error(`leaguegroup HTTP ${leagueRes.status}`);
+    err.status = leagueRes.status;
+    throw err;
+  }
+  const league = await leagueRes.json();
+  for (const round of league.rounds || []) {
+    for (const warTag of round.warTags || []) {
+      if (!warTag || warTag === '#0') continue;
+      const warRes = await fetchImpl(`${base}/clanwarleagues/wars/${enc(warTag)}`, { headers });
+      if (!warRes.ok) continue;
+      const war = await warRes.json();
+      if (war.state !== 'preparation' && war.state !== 'inWar') continue;
+      if (!pickSides(war, clanTag)) continue;
+      return {
+        ...snapshotActiveWar(
+          { ...war, warTag: war.warTag || warTag },
+          clanTag,
+          { pickSides },
+        ),
+        source: 'cwl',
+        warTag: war.warTag || warTag,
+      };
+    }
+  }
+  return { ...snap, source: 'none' };
+}
+
+/**
+ * From already-fetched current + optional league war payloads (used by scripts/fetch.mjs).
+ */
+export function pickActiveWarFromFetched(currentWar, leagueWars, clanTag, pickSides = defaultPickSides) {
+  let snap = snapshotActiveWar(currentWar, clanTag, { pickSides });
+  if (snap.state === 'preparation' || snap.state === 'inWar') {
+    return { ...snap, source: 'currentwar' };
+  }
+  for (const war of leagueWars || []) {
+    if (war?.state !== 'preparation' && war?.state !== 'inWar') continue;
+    if (!pickSides(war, clanTag)) continue;
+    return { ...snapshotActiveWar(war, clanTag, { pickSides }), source: 'cwl' };
+  }
+  return { ...snap, source: 'none' };
 }
 
 /**

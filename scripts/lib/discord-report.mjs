@@ -94,6 +94,9 @@ export function buildScoutPayload(site) {
   const plan = buildScoutPlan(active);
 
   if (plan.error) {
+    const liveErr = site?._scoutLiveError
+      ? `\n\n_Consulta en vivo falló: ${site._scoutLiveError}_`
+      : '';
     return {
       payload: {
         username: 'clandestinos.ops',
@@ -101,9 +104,12 @@ export function buildScoutPayload(site) {
           {
             title: '🧭 Scout · sin guerra activa',
             description: [
-              'No hay snapshot de guerra en **preparación** o **en batalla**.',
+              'No hay guerra en **preparación** ni **en batalla** (ni normal ni CWL).',
               '',
-              '_Se actualiza en cada `fetch` de la API. Espera el próximo sync o corre el workflow._',
+              'Si sí hay guerra en el juego:',
+              '• el Worker necesita el secreto `COC_API_TOKEN` (consulta en vivo), o',
+              '• espera el próximo sync del workflow (`activeWar` en site.json).',
+              liveErr,
             ].join('\n'),
             color: COLOR.prospects,
             timestamp: new Date().toISOString(),

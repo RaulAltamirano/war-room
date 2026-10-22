@@ -27,6 +27,8 @@ GitHub / Cloudflare secrets (never commit these):
 | `DISCORD_PUBLIC_KEY` | Worker secret | Ed25519 verify |
 | `DISCORD_GUILD_ID` | register only | Clan Discord server id |
 | `SITE_JSON_URL` | Worker var | Built `data/site.json` URL |
+| `CLAN_TAG` | Worker var | Clan tag for live `/scout` (default `#2RGC02RYC`) |
+| `COC_API_TOKEN` | Worker secret (recommended) | Live `/scout` via cocproxy (regular + CWL) |
 | `ALLOWED_ROLE_IDS` | Worker secret (optional) | Extra role gate (comma-separated) |
 
 Default `SITE_JSON_URL` points at the `main` branch raw file. Override if you use Pages or another CDN.
@@ -39,6 +41,7 @@ npm install
 npx wrangler login
 npx wrangler secret put DISCORD_PUBLIC_KEY
 npx wrangler secret put DISCORD_APPLICATION_ID
+npx wrangler secret put COC_API_TOKEN   # same token as GitHub Actions (live /scout)
 # optional: npx wrangler secret put ALLOWED_ROLE_IDS
 npm run deploy
 ```
