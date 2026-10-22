@@ -34,7 +34,7 @@ Discord  --POST signed interaction-->  Cloudflare Worker
 | Command       | Effect                                      | Mirrors workflow input      |
 |---------------|---------------------------------------------|-----------------------------|
 | `/war`        | Next-war suggested lineup                   | `enviar_prospectos`         |
-| `/clan`       | Clan war record, streak, league, snapshot   | _(slash only)_              |
+| `/clan`       | Clan API war record + streak (badge thumb)  | _(slash only)_              |
 | `/top`        | Cumulative bitácora Top 3                   | _(slash only)_              |
 | `/report`     | General clan status (trends; no war card)   | `enviar_informe`            |
 | `/discipline` | Red / grey discipline embed                 | `enviar_zonas_ban`          |

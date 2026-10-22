@@ -69,12 +69,27 @@ test('resolveCommand maps to existing embed builders', () => {
   assert.match(war.embeds[0].title, /Próxima guerra|Alineación/);
   const clan = resolveCommand('clan', {
     ...site,
-    clan: { ...site.clan, w: 11, l: 22, t: 0, streak: 3, league: 'Plata I', members: 35, trophies: 1, builder: 2, capital: 3, freq: 'Siempre' },
+    clan: {
+      ...site.clan,
+      w: 11,
+      l: 22,
+      t: 0,
+      streak: 3,
+      league: 'Plata I',
+      members: 35,
+      trophies: 1,
+      builder: 2,
+      capital: 3,
+      freq: 'Siempre',
+      badge: 'https://example.test/b.png',
+    },
   });
   assert.equal(clan.embeds.length, 1);
-  assert.match(clan.embeds[0].title, /Clan/);
+  assert.match(clan.embeds[0].title, /clandestinos/);
+  assert.match(clan.embeds[0].description, /Racha de victorias: 3/);
   assert.match(clan.embeds[0].fields[0].name, /Record/);
   assert.match(clan.embeds[0].fields[0].value, /11/);
+  assert.equal(clan.embeds[0].thumbnail?.url, 'https://example.test/b.png');
   const top = resolveCommand('top', site);
   assert.equal(top.embeds.length, 1);
   assert.match(top.embeds[0].title, /Top 3/);

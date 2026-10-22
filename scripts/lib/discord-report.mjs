@@ -1,5 +1,5 @@
 import { clipLines, postWebhook } from './discord-text.mjs';
-import { buildBriefing, warsSorted } from './site-metrics.mjs';
+import { buildBriefing } from './site-metrics.mjs';
 import { buildWarHighlightPayload, resolveWarsFromSaved } from './war-highlight.mjs';
 
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
@@ -160,74 +160,65 @@ export function buildTop3Payload(site) {
   };
 }
 
-/** Clan card: API war record + bitácora snapshot (slash `/clan`). */
+function streakFlair(n) {
+  const streak = Number(n) || 0;
+  if (streak >= 5) return '🔥🔥🔥';
+  if (streak >= 3) return '🔥🔥';
+  if (streak >= 1) return '🔥';
+  return '💤';
+}
+
+/** Clan card: API war record with emphasized win streak (slash `/clan`). */
 export function buildClanPayload(site) {
   const clan = site?.clan || {};
   const name = clan.name || 'clandestinos';
-  const wars = warsSorted(site?.wars || []);
-  const last = wars.slice(-1)[0] || null;
-  const log = { V: 0, D: 0, E: 0 };
-  for (const w of wars) {
-    if (log[w.res] != null) log[w.res] += 1;
-  }
   const apiW = clan.w || 0;
   const apiL = clan.l || 0;
   const apiT = clan.t || 0;
   const apiTotal = apiW + apiL + apiT;
-  const lastLine = last
-    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
-    : '_Sin guerras en bitácora._';
+  const streak = clan.streak ?? 0;
+  const embed = {
+    title: `🏰 ${name}`,
+    description: [
+      `Nivel **${clan.level ?? '—'}** · **${clan.members ?? '—'}** miembros`,
+      `Liga **${clan.league || '—'}** · Capital **${clan.capLeague || '—'}** · Guerras: **${clan.freq || '—'}**`,
+      '',
+      `${streakFlair(streak)} **Racha de victorias: ${streak}**`,
+      streak > 0
+        ? '_¡No la rompan! Cada guerra cuenta para alargar la racha._'
+        : '_Sin racha activa — la próxima victoria la enciende._',
+    ].join('\n'),
+    color: COLOR.clan,
+    fields: [
+      {
+        name: '⚔️ Record de guerra',
+        value: [
+          `**${apiW}** V · **${apiL}** D · **${apiT}** E`,
+          apiTotal ? `_Total ${apiTotal} guerras_` : '_Sin datos_',
+        ].join('\n'),
+        inline: true,
+      },
+      {
+        name: '📊 Clan',
+        value: [
+          `Trofeos **${clan.trophies ?? 0}**`,
+          `Builder **${clan.builder ?? 0}**`,
+          `Capital **${clan.capital ?? 0}**`,
+        ].join('\n'),
+        inline: true,
+      },
+    ],
+    timestamp: new Date().toISOString(),
+    footer: { text: `${name} · No pierdan la racha` },
+  };
+  if (clan.badge) {
+    embed.thumbnail = { url: clan.badge };
+  }
 
   return {
     payload: {
       username: 'clandestinos.ops',
-      embeds: [
-        {
-          title: `🏰 Clan · ${name}`,
-          description: [
-            clan.tag ? `\`${clan.tag}\` · nivel **${clan.level ?? '—'}** · **${clan.members ?? '—'}** miembros` : `Nivel **${clan.level ?? '—'}**`,
-            '',
-            `Liga: **${clan.league || '—'}** · Capital: **${clan.capLeague || '—'}**`,
-            `Frecuencia de guerra: **${clan.freq || '—'}**`,
-          ].join('\n'),
-          color: COLOR.clan,
-          fields: [
-            {
-              name: '⚔️ Record (API)',
-              value: [
-                `**${apiW}** V · **${apiL}** D · **${apiT}** E`,
-                apiTotal ? `_Total ${apiTotal} guerras_` : '_Sin datos_',
-                `Racha de victorias: **${clan.streak ?? 0}**`,
-              ].join('\n'),
-              inline: true,
-            },
-            {
-              name: '📒 En bitácora',
-              value: [
-                `**${log.V}** V · **${log.D}** D · **${log.E}** E`,
-                `_ ${wars.length} guerras guardadas_`,
-              ].join('\n'),
-              inline: true,
-            },
-            {
-              name: '📊 Clan',
-              value: [
-                `Trofeos \`${clan.trophies ?? 0}\``,
-                `Builder \`${clan.builder ?? 0}\``,
-                `Capital \`${clan.capital ?? 0}\``,
-              ].join('\n'),
-              inline: true,
-            },
-            {
-              name: 'Última en bitácora',
-              value: lastLine,
-              inline: false,
-            },
-          ],
-          timestamp: new Date().toISOString(),
-          footer: { text: `${name} · Ficha del clan` },
-        },
-      ],
+      embeds: [embed],
     },
   };
 }

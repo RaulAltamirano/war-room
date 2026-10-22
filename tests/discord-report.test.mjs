@@ -302,7 +302,7 @@ test('buildProspectsPayload es alineación para iniciar guerra', () => {
   assert.ok(payload.embeds[0].fields.some((f) => f.name === 'Alineación'));
 });
 
-test('buildClanPayload muestra record API y bitácora', () => {
+test('buildClanPayload enfatiza racha API y badge, sin bitácora ni tag', () => {
   const siteClan = {
     ...site,
     clan: {
@@ -320,15 +320,18 @@ test('buildClanPayload muestra record API y bitácora', () => {
       builder: 50,
       capital: 10,
       freq: 'Siempre',
+      badge: 'https://example.test/badge.png',
     },
   };
   const { payload } = buildClanPayload(siteClan);
   assert.equal(payload.embeds.length, 1);
-  assert.match(payload.embeds[0].title, /Clan/);
-  assert.match(payload.embeds[0].fields.map((f) => f.name).join(' '), /Record/);
+  assert.match(payload.embeds[0].title, /clandestinos/);
+  assert.equal(payload.embeds[0].description.includes('#2RGC02RYC'), false);
+  assert.match(payload.embeds[0].description, /Racha de victorias: 3/);
+  assert.match(payload.embeds[0].description, /No la rompan|racha/i);
+  assert.equal(payload.embeds[0].fields.some((f) => /bitácora/i.test(f.name)), false);
   assert.match(payload.embeds[0].fields[0].value, /\*\*11\*\* V/);
-  assert.match(payload.embeds[0].fields[0].value, /Racha/);
-  assert.match(payload.embeds[0].fields[1].name, /bitácora/i);
+  assert.equal(payload.embeds[0].thumbnail.url, 'https://example.test/badge.png');
 });
 
 test('alineación lista todos los prospectos, sin “…y N más”', () => {
