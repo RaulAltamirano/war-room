@@ -111,15 +111,8 @@ export async function runDiscordProspects({
   return { posted: true, reason: 'force', briefing };
 }
 
-export function buildReportPayload(site) {
-  const b = buildBriefing(site);
-  const clan = b.clan.name || 'clandestinos';
-  const last = b.last;
-  const lastLine = last
-    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
-    : 'Sin guerras registradas.';
-
-  const topFields = b.top3.map((p, i) => ({
+function top3Fields(top3) {
+  const fields = (top3 || []).map((p, i) => ({
     name: `${MEDAL[i] || `${i + 1}.`} ${p.n}`,
     value: [
       `**${p.score}** pts`,
@@ -128,10 +121,57 @@ export function buildReportPayload(site) {
     ].join('\n'),
     inline: true,
   }));
-
-  while (topFields.length < 3) {
-    topFields.push({ name: '—', value: '_Sin datos_', inline: true });
+  while (fields.length < 3) {
+    fields.push({ name: '—', value: '_Sin datos_', inline: true });
   }
+  return fields;
+}
+
+/** Single polished Top 3 embed (slash `/top` and shared with the full report). */
+export function buildTop3Payload(site) {
+  const b = buildBriefing(site);
+  const clan = b.clan.name || 'clandestinos';
+  const last = b.last;
+  const lastLine = last
+    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
+    : 'Sin guerras registradas.';
+  const podium = (b.top3 || [])
+    .map((p, i) => `${MEDAL[i] || `${i + 1}.`} **${p.n}** · **${p.score}** pts`)
+    .join('\n');
+
+  return {
+    briefing: b,
+    payload: {
+      username: 'clandestinos.ops',
+      embeds: [
+        {
+          title: `🏆 Top 3 · ${clan}`,
+          description: [
+            podium || '_Sin datos todavía._',
+            '',
+            `Última guerra: ${lastLine}`,
+            '',
+            '_70% impacto (liga ×2) + 30% donaciones · con ≥1 guerra._',
+          ].join('\n'),
+          color: COLOR.top,
+          fields: top3Fields(b.top3),
+          timestamp: new Date().toISOString(),
+          footer: { text: `${clan} · Ranking en vivo` },
+        },
+      ],
+    },
+  };
+}
+
+export function buildReportPayload(site) {
+  const b = buildBriefing(site);
+  const clan = b.clan.name || 'clandestinos';
+  const last = b.last;
+  const lastLine = last
+    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
+    : 'Sin guerras registradas.';
+
+  const topFields = top3Fields(b.top3);
 
   const upLines = b.trend.up.slice(0, 8).map((x) => `• **${x.n}** · \`+${x.d}\` · ${x.from} → ${x.to}`);
   const downLines = b.trend.down.slice(0, 8).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);

@@ -38,4 +38,4 @@ Sin URL → skip. Fallo HTTP o de red → no marca ese ítem (reintento luego). 
 
 ### Slash commands (HTTP)
 
-Código y docs en inglés bajo `discord/` (Cloudflare Worker). Comandos de guild: `/report`, `/lineup`, `/discipline`, `/pass`. Verifican Ed25519, hacen defer y reutilizan los builders de `scripts/lib`. No sustituyen el cron. Spec: `docs/superpowers/specs/2026-10-22-discord-slash-commands-design.md`. Setup: `discord/README.md`.
+Código y docs en inglés bajo `discord/` (Cloudflare Worker). Comandos de guild: `/top`, `/report`, `/lineup`, `/discipline`, `/pass`. Verifican Ed25519, hacen defer y reutilizan los builders de `scripts/lib`. No sustituyen el cron. Spec: `docs/superpowers/specs/2026-10-22-discord-slash-commands-design.md`. Setup: `discord/README.md`.

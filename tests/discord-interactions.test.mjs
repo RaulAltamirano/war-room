@@ -54,7 +54,7 @@ const site = {
 test('command definitions are guild-safe English slash commands', () => {
   assert.deepEqual(
     COMMAND_DEFINITIONS.map((c) => c.name),
-    ['report', 'lineup', 'discipline', 'pass'],
+    ['top', 'report', 'lineup', 'discipline', 'pass'],
   );
   for (const cmd of COMMAND_DEFINITIONS) {
     assert.equal(cmd.dm_permission, false);
@@ -64,6 +64,11 @@ test('command definitions are guild-safe English slash commands', () => {
 });
 
 test('resolveCommand maps to existing embed builders', () => {
+  const top = resolveCommand('top', site);
+  assert.equal(top.embeds.length, 1);
+  assert.match(top.embeds[0].title, /Top 3/);
+  assert.match(top.embeds[0].description, /Alpha/);
+  assert.equal(top.embeds[0].fields.length, 3);
   assert.equal(resolveCommand('report', site).embeds.length, 4);
   assert.equal(resolveCommand('lineup', site).embeds.length, 1);
   assert.equal(resolveCommand('discipline', site).embeds.length, 1);

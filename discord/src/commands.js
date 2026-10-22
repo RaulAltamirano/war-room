@@ -1,5 +1,9 @@
 import { buildBanZonesPayload } from '../../scripts/lib/ban-zones.mjs';
-import { buildProspectsPayload, buildReportPayload } from '../../scripts/lib/discord-report.mjs';
+import {
+  buildProspectsPayload,
+  buildReportPayload,
+  buildTop3Payload,
+} from '../../scripts/lib/discord-report.mjs';
 import { discordPassRulesPayload, monthKeyInZone } from '../../scripts/lib/monthly-top.mjs';
 
 /** Discord permission: Manage Guild */
@@ -10,6 +14,13 @@ export const MANAGE_GUILD = String(1n << 5n);
  * Embed bodies remain Spanish for the clan channel.
  */
 export const COMMAND_DEFINITIONS = [
+  {
+    name: 'top',
+    description: 'Post the live Top 3 ranking (impact + donations).',
+    type: 1,
+    default_member_permissions: MANAGE_GUILD,
+    dm_permission: false,
+  },
   {
     name: 'report',
     description: 'Post the full war briefing (Top 3, analysis, lineup).',
@@ -49,6 +60,8 @@ export const COMMAND_DEFINITIONS = [
  */
 export function resolveCommand(name, site, { now = new Date() } = {}) {
   switch (name) {
+    case 'top':
+      return { embeds: buildTop3Payload(site).payload.embeds };
     case 'report':
       return { embeds: buildReportPayload(site).payload.embeds };
     case 'lineup':

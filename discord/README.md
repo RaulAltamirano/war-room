@@ -4,6 +4,7 @@ HTTP interactions endpoint for guild slash commands. Replaces manual GitHub Acti
 
 | Command        | Result                                      |
 |----------------|---------------------------------------------|
+| `/top`         | Live Top 3 ranking (single polished embed)  |
 | `/report`      | Full war briefing (4 embeds)                |
 | `/lineup`      | Suggested war lineup                        |
 | `/discipline`  | Red / grey discipline zones                 |

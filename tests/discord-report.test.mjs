@@ -3,6 +3,7 @@ import test from 'node:test';
 import {
   buildProspectsPayload,
   buildReportPayload,
+  buildTop3Payload,
   runDiscordProspects,
   runDiscordReport,
   shouldSendReport,
@@ -165,6 +166,16 @@ test('buildReportPayload usa embeds Discord', () => {
   assert.match(payload.embeds[2].title, /Análisis/);
   assert.match(payload.embeds[3].title, /Prospectos/);
   assert.ok(payload.embeds.every((e) => typeof e.color === 'number'));
+});
+
+test('buildTop3Payload es un solo embed de podio', () => {
+  const { payload } = buildTop3Payload(site);
+  assert.equal(payload.embeds.length, 1);
+  assert.match(payload.embeds[0].title, /Top 3/);
+  assert.match(payload.embeds[0].description, /🥇/);
+  assert.match(payload.embeds[0].description, /Alpha/);
+  assert.equal(payload.embeds[0].fields.length, 3);
+  assert.match(payload.embeds[0].footer.text, /Ranking en vivo/);
 });
 
 test('shouldSendReport solo envía el informe largo con force', () => {
