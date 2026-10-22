@@ -169,14 +169,16 @@ test('buildReportPayload es un informe general sin guerra ni Top 3', () => {
   assert.ok(payload.embeds.every((e) => typeof e.color === 'number'));
 });
 
-test('buildTop3Payload es un solo embed de podio', () => {
+test('buildTop3Payload es ranking acumulado, no la última guerra', () => {
   const { payload } = buildTop3Payload(site);
   assert.equal(payload.embeds.length, 1);
   assert.match(payload.embeds[0].title, /Top 3/);
+  assert.match(payload.embeds[0].description, /acumulado/i);
+  assert.equal(payload.embeds[0].description.includes('Última guerra'), false);
   assert.match(payload.embeds[0].description, /🥇/);
   assert.match(payload.embeds[0].description, /Alpha/);
   assert.equal(payload.embeds[0].fields.length, 3);
-  assert.match(payload.embeds[0].footer.text, /Ranking en vivo/);
+  assert.match(payload.embeds[0].footer.text, /Ranking acumulado/);
 });
 
 test('shouldSendReport solo envía el informe largo con force', () => {

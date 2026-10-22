@@ -16,7 +16,7 @@ export const MANAGE_GUILD = String(1n << 5n);
 export const COMMAND_DEFINITIONS = [
   {
     name: 'top',
-    description: 'Post the live Top 3 ranking (impact + donations).',
+    description: 'Post the cumulative bitácora Top 3 (all wars; not last war only).',
     type: 1,
     default_member_permissions: MANAGE_GUILD,
     dm_permission: false,

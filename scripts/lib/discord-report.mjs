@@ -1,6 +1,6 @@
 import { clipLines, postWebhook } from './discord-text.mjs';
 import { buildBriefing } from './site-metrics.mjs';
-import { buildWarHighlightPayload, resolveWarsFromSaved } from './war-highlight.mjs';
+import { buildWarHighlightPayload, resolveWarsFromSaved, warTop3 } from './war-highlight.mjs';
 
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
 const MEDAL = ['🥇', '🥈', '🥉'];
@@ -127,14 +127,10 @@ function top3Fields(top3) {
   return fields;
 }
 
-/** Single polished Top 3 embed (slash `/top` and shared with the full report). */
+/** Cumulative bitácora Top 3 (not a single-war podium — that belongs on `/war` / highlight). */
 export function buildTop3Payload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
-  const last = b.last;
-  const lastLine = last
-    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
-    : 'Sin guerras registradas.';
   const podium = (b.top3 || [])
     .map((p, i) => `${MEDAL[i] || `${i + 1}.`} **${p.n}** · **${p.score}** pts`)
     .join('\n');
@@ -147,16 +143,16 @@ export function buildTop3Payload(site) {
         {
           title: `🏆 Top 3 · ${clan}`,
           description: [
+            'Ranking **acumulado** de la bitácora (todas las guerras), no solo la última.',
+            '',
             podium || '_Sin datos todavía._',
             '',
-            `Última guerra: ${lastLine}`,
-            '',
-            '_70% impacto (liga ×2) + 30% donaciones · con ≥1 guerra._',
+            `Historial: **${b.warsCount}** guerras · _70% impacto (liga ×2) + 30% donaciones · ≥1 guerra._`,
           ].join('\n'),
           color: COLOR.top,
           fields: top3Fields(b.top3),
           timestamp: new Date().toISOString(),
-          footer: { text: `${clan} · Ranking en vivo` },
+          footer: { text: `${clan} · Ranking acumulado` },
         },
       ],
     },
