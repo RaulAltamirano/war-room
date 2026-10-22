@@ -301,8 +301,9 @@ test('force sin warEnded sigue enviando el informe general', async () => {
 test('buildProspectsPayload es alineación para iniciar guerra', () => {
   const { payload } = buildProspectsPayload(site);
   assert.equal(payload.embeds.length, 1);
-  assert.match(payload.embeds[0].title, /próxima guerra|Alineación/i);
-  assert.ok(payload.embeds[0].fields.some((f) => f.name === 'Alineación'));
+  assert.match(payload.embeds[0].title, /próxima guerra/i);
+  assert.ok(payload.embeds[0].fields.some((f) => f.name === 'Entran'));
+  assert.equal(payload.embeds[0].fields.some((f) => /Fuera/i.test(f.name)), false);
 });
 
 test('buildClanPayload enfatiza racha API y badge, sin bitácora ni tag', () => {

@@ -44,11 +44,10 @@ function prospectsColumns(briefing) {
 
 function prospectsEmbed(briefing, { kickoff = false } = {}) {
   const { prosShow, prosLeft, prosRight } = prospectsColumns(briefing);
-  const outLines = briefing.trend.out.map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
   const fields = prosShow.length
     ? [
       {
-        name: 'Alineación',
+        name: 'Entran',
         value: listOr('_—_', prosLeft),
         inline: true,
       },
@@ -58,18 +57,11 @@ function prospectsEmbed(briefing, { kickoff = false } = {}) {
         inline: true,
       },
     ]
-    : [{ name: 'Alineación', value: '_Sin prospectos._', inline: false }];
-  if (kickoff && briefing.trend.out.length) {
-    fields.push({
-      name: `✕ Fuera · ${briefing.trend.out.length}`,
-      value: listOr('_—_', outLines),
-      inline: false,
-    });
-  }
+    : [{ name: 'Entran', value: '_Nadie sugerido._', inline: false }];
   return {
-    title: kickoff ? '⚔️ Próxima guerra · alineación' : '⚔️ Prospectos · próxima guerra',
+    title: kickoff ? '⚔️ Próxima guerra' : '⚔️ Prospectos · próxima guerra',
     description: kickoff
-      ? `Quién metemos a la **próxima guerra**: **${briefing.prospects.length}** sugeridos · pelearon ≥1 y no están fuera.`
+      ? `**${briefing.prospects.length}** para meter a la guerra.`
       : `Sugeridos: **${briefing.prospects.length}** · pelearon ≥1 guerra y no están fuera.`,
     color: COLOR.prospects,
     fields,
