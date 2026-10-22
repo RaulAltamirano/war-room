@@ -409,11 +409,11 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 212,
+      "trophies": 372,
       "builderBaseTrophies": 1377,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 392,
+      "donations": 432,
       "donationsReceived": 662,
       "builderBaseLeague": {
         "id": 44000013,
@@ -1438,7 +1438,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 34,
       "previousClanRank": 34,
-      "donations": 1,
+      "donations": 9,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -1484,7 +1484,7 @@
       "clanRank": 35,
       "previousClanRank": 35,
       "donations": 815,
-      "donationsReceived": 474,
+      "donationsReceived": 522,
       "playerHouse": {
         "elements": [
           {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T18:04:31Z",
+  "generatedAt": "2026-10-22T19:34:40Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -136,7 +136,7 @@
       "C",
       13,
       92,
-      392,
+      432,
       662,
       1377
     ],
@@ -361,7 +361,7 @@
       "M",
       14,
       207,
-      1,
+      9,
       0,
       2993
     ],
@@ -371,7 +371,7 @@
       14,
       153,
       815,
-      474,
+      522,
       2131
     ]
   ],
@@ -386,6 +386,7 @@
         0
       ],
       "liga": true,
+      "rivalTag": "2GJ9YRP8C",
       "members": [
         [
           "Joshua",
@@ -843,6 +844,7 @@
         12
       ],
       "liga": true,
+      "rivalTag": "2JCCLLJLL",
       "members": [
         [
           "Joshua",
@@ -1300,6 +1302,7 @@
         27
       ],
       "liga": true,
+      "rivalTag": "2RU28UQU9",
       "members": [
         [
           "Joshua",
@@ -1739,6 +1742,7 @@
         15
       ],
       "liga": true,
+      "rivalTag": "V09LUJPP",
       "members": [
         [
           "Joshua",
@@ -2184,6 +2188,7 @@
         8
       ],
       "liga": true,
+      "rivalTag": "2J8Q8LP00",
       "members": [
         [
           "Joshua",
@@ -2629,6 +2634,7 @@
         23
       ],
       "liga": true,
+      "rivalTag": "R9C0JP9R",
       "members": [
         [
           "Joshua",
@@ -3086,6 +3092,7 @@
         60
       ],
       "liga": false,
+      "rivalTag": "2Y22JQ028",
       "members": [
         [
           "Joshua",
@@ -3750,6 +3757,7 @@
         87
       ],
       "liga": false,
+      "rivalTag": "2U82CQCCG",
       "members": [
         [
           "Joshua",
@@ -4711,6 +4719,7 @@
         0
       ],
       "liga": false,
+      "rivalTag": "2PJPRRY8J",
       "members": [
         [
           "Joshua",
@@ -5452,6 +5461,7 @@
         9
       ],
       "liga": false,
+      "rivalTag": "2C9V9YVUP",
       "members": [
         [
           "Joshua",
@@ -6061,6 +6071,7 @@
         22
       ],
       "liga": false,
+      "rivalTag": "2C8YP00QR",
       "members": [
         [
           "Joshua",
