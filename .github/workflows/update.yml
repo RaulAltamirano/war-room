@@ -46,18 +46,22 @@ jobs:
           CLAN_TAG: "#2RGC02RYC"
       - run: node scripts/build.mjs
       - run: node scripts/discord-report.mjs
+        continue-on-error: true
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_SEND_REPORT: ${{ github.event.inputs.enviar_informe }}
       - run: node scripts/discord-monthly.mjs
+        continue-on-error: true
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_SEND_MONTHLY: ${{ github.event.inputs.enviar_pase }}
       - run: node scripts/prospects.mjs
+        continue-on-error: true
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_SEND_PROSPECTS: ${{ github.event.inputs.enviar_prospectos }}
       - run: node scripts/ban-zones.mjs
+        continue-on-error: true
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           DISCORD_SEND_BAN_ZONES: ${{ github.event.inputs.enviar_zonas_ban }}

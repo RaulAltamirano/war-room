@@ -7,7 +7,7 @@ Cuando una guerra termina y se guarda en `data/raw`, Discord recibe un **mensaje
 - Un solo embed por guerra terminada recién guardada.
 - Contenido, en este orden:
   1. **Resultado** — fecha corta · rival · Victoria/Derrota/Empate · estrellas `us-them`.
-  2. **MVP** — mayor impacto (`stats[0]`) en *esta* guerra; empate: más estrellas totales de sus ataques, luego nombre.
+  2. **MVP** — mayor impacto (`stats[0]`) en *esta* guerra. El impacto de un ataque perfecto satura en 100, así que el empate sigue: estrellas totales de sus ataques, luego estrellas nuevas (`stats[2]`), luego destrucción total de `attacks`, luego nombre.
   3. **Top 3 ataques** — todos los ataques del clan en la guerra (`members[].attacks` = `[estrellas, destrucción, order]`), orden: estrellas ↓, destrucción ↓, order ↑; mostrar hasta 3 con nombre del atacante.
   4. **No atacaron** — miembros de *esta* guerra con `unused === pos` (`stats[4] === stats[14]` y `pos > 0`); si ninguno: “Todos atacaron.”
 - Nombres con aislamiento LTR/FSI (mismo criterio que ban-zones / prospectos) para RTL.
@@ -28,9 +28,11 @@ Campos usados por miembro:
 
 ## Integración
 - Nuevo helper (p. ej. `scripts/lib/war-highlight.mjs`): `buildWarHighlightPayload(war, { clan })`.
-- En el camino `warEnded` de `discord-report`: por cada archivo en `saved`, postear un highlight (no el informe de 4 embeds). Actualizar `data/discord-report.json` (firma) solo si al menos un post OK, igual que hoy.
-- `force` / `DISCORD_SEND_REPORT` sin `warEnded`: sigue `buildReportPayload` (informe largo).
-- Secreto: `DISCORD_WEBHOOK_URL`. Sin URL → skip. HTTP no OK → no marcar ese ítem (reintento luego).
+- En `discord-report`, por cada archivo en `saved` (y los que sigan en `pendingHighlights`) se postea un highlight. El informe de 4 embeds no sale por un cambio de firma.
+- Cada archivo se marca en `highlights` solo si su post fue OK. Un fallo deja ese archivo en `pendingHighlights` para la corrida siguiente. Un OK no cubre a los demás.
+- `force` / `DISCORD_SEND_REPORT` manda el informe largo y, si hay highlights pendientes, también esos highlights.
+- La lista «No atacaron» se corta por líneas, con «…y N más», para no pasar el límite de 1024 del campo.
+- Secreto: `DISCORD_WEBHOOK_URL`. Sin URL → skip. HTTP no OK o error de red → no marcar ese ítem (reintento luego). El paso de Discord en Actions es `continue-on-error` para que un fallo no impida commitear `data/raw`.
 
 ## Fallos
 - Guerra sin miembros / sin ataques: MVP y Top 3 ataques muestran vacío razonable (`_Sin datos_`); resultado igual se publica si hay rival/estrellas.

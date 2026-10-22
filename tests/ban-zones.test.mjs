@@ -24,7 +24,7 @@ test('1 guerra sin atacar → zona gris', () => {
     { date: '2026-10-11', members: [member('kssto', 0, 2, 90)] },
     { date: '2026-10-13', members: [member('ADES', 2, 2, 0), member('kssto', 0, 2, 90)] },
   ];
-  const z = banZones(wars, []);
+  const z = banZones(wars, [['ADES', 'M', 15, 1, 0, 0, 0], ['kssto', 'M', 15, 1, 0, 0, 0]]);
   assert.equal(z.red.some((x) => x.n === 'ADES'), false);
   assert.ok(z.grey.some((x) => x.n === 'ADES' && x.lastFull));
 });
@@ -35,7 +35,7 @@ test('fuera con rachas cortas queda en gris, no roja', () => {
     { date: '2026-10-04', members: [member('KOLET', 0, 1, 50)] },
     { date: '2026-10-13', members: [member('KOLET', 2, 2, 0)] },
   ];
-  const z = banZones(wars, []);
+  const z = banZones(wars, [['KOLET', 'M', 15, 1, 0, 0, 0]]);
   assert.equal(z.red.some((x) => x.n === 'KOLET'), false);
   assert.ok(z.grey.some((x) => x.n === 'KOLET'));
 });
@@ -43,7 +43,7 @@ test('fuera con rachas cortas queda en gris, no roja', () => {
 test('payload Discord trae aviso y zonas', () => {
   const site = {
     clan: { name: 'clandestinos' },
-    roster: [],
+    roster: [['A', 'M', 15, 1, 0, 0, 0], ['B', 'M', 15, 1, 0, 0, 0]],
     wars: [
       { date: '2026-10-11', members: [member('A', 2, 2, 0)] },
       { date: '2026-10-13', members: [member('A', 2, 2, 0), member('B', 2, 2, 0)] },
@@ -63,12 +63,40 @@ test('payload Discord trae aviso y zonas', () => {
 test('nombres RTL van aislados en LTR', () => {
   const site = {
     clan: { name: 'clandestinos' },
-    roster: [],
+    roster: [['اوراس', 'M', 15, 1, 0, 0, 0]],
     wars: [{ date: '2026-10-13', members: [['اوراس', 'M', [0, 0, 0, 100, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2], 15, 1, []]] }],
   };
   const { payload } = buildBanZonesPayload(site);
   const text = payload.embeds[0].fields.map((f) => f.value).join('\n');
   assert.ok(text.includes('\u200E• **\u2068اوراس\u2069**'));
+});
+
+test('quien ya no está en el roster no entra en zonas de ban', () => {
+  const wars = [
+    { date: '2026-10-11', members: [member('fuera', 2, 2, 0), member('dentro', 2, 2, 0)] },
+    { date: '2026-10-13', members: [member('fuera', 2, 2, 0), member('dentro', 2, 2, 0)] },
+  ];
+  const z = banZones(wars, [['dentro', 'M', 15, 1, 0, 0, 0]]);
+  assert.equal(z.red.some((x) => x.n === 'fuera'), false);
+  assert.ok(z.red.some((x) => x.n === 'dentro'));
+});
+
+test('la zona roja no revienta el límite de un campo', () => {
+  const members = Array.from({ length: 60 }, (_, i) => member(`Rojo${String(i).padStart(2, '0')}`, 2, 2, 0));
+  const roster = members.map((m) => [m[0], 'M', 15, 1, 0, 0, 0]);
+  const site = {
+    clan: { name: 'c' },
+    roster,
+    wars: [
+      { date: '2026-10-11', members },
+      { date: '2026-10-13', members },
+    ],
+  };
+  const { payload } = buildBanZonesPayload(site);
+  const field = payload.embeds[0].fields[0];
+  assert.ok(field.value.length <= 1024);
+  assert.match(field.value, /más/);
+  assert.match(field.value, /Rojo00/);
 });
 
 test('runDiscordBanZones solo postea con force', async () => {

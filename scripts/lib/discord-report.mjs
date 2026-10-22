@@ -1,3 +1,4 @@
+import { clipLines, postWebhook } from './discord-text.mjs';
 import { buildBriefing } from './site-metrics.mjs';
 import { buildWarHighlightPayload, resolveWarsFromSaved } from './war-highlight.mjs';
 
@@ -17,14 +18,8 @@ function fshort(date) {
   return `${+p[2]} ${m[+p[1] - 1]}`;
 }
 
-function clip(text, max = 1024) {
-  const s = String(text || '');
-  if (s.length <= max) return s;
-  return `${s.slice(0, max - 1)}…`;
-}
-
-function listOr(empty, rows) {
-  return rows.length ? rows.join('\n') : empty;
+function listOr(empty, rows, max = 1024) {
+  return rows.length ? clipLines(rows, max) : empty;
 }
 
 function prospectsColumns(briefing) {
@@ -46,12 +41,12 @@ function prospectsEmbed(briefing, { kickoff = false } = {}) {
     ? [
       {
         name: 'Alineación',
-        value: clip(listOr('_—_', prosLeft)),
+        value: listOr('_—_', prosLeft),
         inline: true,
       },
       {
         name: '\u200b',
-        value: clip(listOr('_—_', prosRight.length ? prosRight : ['\u200b'])),
+        value: listOr('_—_', prosRight.length ? prosRight : ['\u200b']),
         inline: true,
       },
     ]
@@ -59,7 +54,7 @@ function prospectsEmbed(briefing, { kickoff = false } = {}) {
   if (kickoff && briefing.trend.out.length) {
     fields.push({
       name: `✕ Fuera · ${briefing.trend.out.length}`,
-      value: clip(listOr('_—_', outLines)),
+      value: listOr('_—_', outLines),
       inline: false,
     });
   }
@@ -107,13 +102,9 @@ export async function runDiscordProspects({
     log('Discord prospectos: falta DISCORD_WEBHOOK_URL.');
     return { posted: false, reason: 'no-webhook', briefing };
   }
-  const res = await fetchImpl(webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
+  const res = await postWebhook(fetchImpl, webhookUrl, payload);
   if (!res.ok) {
-    log(`Discord prospectos: webhook ${res.status}.`);
+    log(`Discord prospectos: webhook ${res.status || res.error}.`);
     return { posted: false, reason: 'http', status: res.status, briefing };
   }
   log(`Discord prospectos: enviada alineación (${briefing.prospects.length}).`);
@@ -145,6 +136,7 @@ export function buildReportPayload(site) {
   const upLines = b.trend.up.slice(0, 8).map((x) => `• **${x.n}** · \`+${x.d}\` · ${x.from} → ${x.to}`);
   const downLines = b.trend.down.slice(0, 8).map((x) => `• **${x.n}** · \`${x.d}\` · ${x.from} → ${x.to}`);
   const outLines = b.trend.out.slice(0, 10).map((x) => `• **${x.n}** · \`${x.miss}/${x.pos}\` sin usar`);
+  const outRule = '\n\n_Regla: ≥2 ataques sin usar y ≥50%._';
 
   const embeds = [
     {
@@ -171,17 +163,17 @@ export function buildReportPayload(site) {
       fields: [
         {
           name: `▲ Mejoraron · ${b.trend.up.length}`,
-          value: clip(listOr('_Nadie subió de forma clara._', upLines)),
+          value: listOr('_Nadie subió de forma clara._', upLines),
           inline: false,
         },
         {
           name: `▼ Bajaron · ${b.trend.down.length}`,
-          value: clip(listOr('_Nadie bajó de forma clara._', downLines)),
+          value: listOr('_Nadie bajó de forma clara._', downLines),
           inline: false,
         },
         {
           name: `✕ Fuera de guerra · ${b.trend.out.length}`,
-          value: clip(listOr('_Todos cumplen con sus ataques._', outLines) + '\n\n_Regla: ≥2 ataques sin usar y ≥50%._'),
+          value: `${listOr('_Todos cumplen con sus ataques._', outLines, 1024 - outRule.length)}${outRule}`,
           inline: false,
         },
       ],
@@ -198,13 +190,25 @@ export function buildReportPayload(site) {
   };
 }
 
-export function shouldSendReport(state, signature, { force = false, warEnded = false } = {}) {
+export function shouldSendReport(state, signature, { force = false } = {}) {
   if (force) return { send: true, reason: 'force' };
-  if (warEnded) return { send: true, reason: 'war-ended' };
   if (!state?.bootstrapped) return { send: false, reason: 'bootstrap' };
   if (!signature) return { send: false, reason: 'empty' };
   if (state.signature === signature) return { send: false, reason: 'unchanged' };
-  return { send: true, reason: 'updated' };
+  return { send: false, reason: 'updated' };
+}
+
+export function highlightQueue(state, saved = []) {
+  const done = state?.highlights || {};
+  const seen = new Set();
+  const out = [];
+  for (const file of [...(state?.pendingHighlights || []), ...(saved || [])]) {
+    const key = String(file || '');
+    if (!/^\d{8}-.+\.json$/i.test(key) || seen.has(key) || done[key]) continue;
+    seen.add(key);
+    out.push(key);
+  }
+  return out.slice(-40);
 }
 
 export async function runDiscordReport({
@@ -217,69 +221,134 @@ export async function runDiscordReport({
   fetchImpl = fetch,
   log = console.log,
 }) {
+  void warEnded;
   const briefing = buildBriefing(site);
-  const highlightMode = warEnded && saved.length > 0 && !force;
-  const decision = shouldSendReport(state, briefing.signature, { force, warEnded: highlightMode });
+  const decision = shouldSendReport(state, briefing.signature, { force });
+  const queue = highlightQueue(state, saved);
+  const highlights = { ...(state?.highlights || {}) };
+  const stillPending = [];
+  let postedN = 0;
+  let failedN = 0;
+  let unresolvedN = 0;
+  let lastStatus;
 
-  if (decision.reason === 'bootstrap' && !highlightMode && !force) {
-    const next = { bootstrapped: true, signature: briefing.signature, postedAt: null };
+  if (queue.length && !webhookUrl) {
+    stillPending.push(...queue);
+    log('Discord highlight: falta DISCORD_WEBHOOK_URL; queda pendiente.');
+  } else {
+    for (const file of queue) {
+      const war = resolveWarsFromSaved(site, [file])[0];
+      if (!war) {
+        unresolvedN += 1;
+        stillPending.push(file);
+        log(`Discord highlight: sin guerra para ${file}; se reintenta luego.`);
+        continue;
+      }
+      if (war.id && Object.values(highlights).some((h) => h?.warId === war.id)) {
+        highlights[file] = { postedAt: new Date().toISOString(), warId: war.id };
+        continue;
+      }
+      const { payload } = buildWarHighlightPayload(war, { clan: site.clan });
+      const res = await postWebhook(fetchImpl, webhookUrl, payload);
+      if (!res.ok) {
+        failedN += 1;
+        lastStatus = res.status;
+        stillPending.push(file);
+        log(`Discord highlight: webhook ${res.status || res.error || 'error'} en ${file}; se reintenta luego.`);
+        continue;
+      }
+      highlights[file] = { postedAt: new Date().toISOString(), warId: war.id || null };
+      postedN += 1;
+    }
+  }
+
+  const pendingHighlights = stillPending.slice(-40);
+  const pack = (extra = {}) => ({
+    bootstrapped: true,
+    signature: pendingHighlights.length ? (state?.signature || '') : briefing.signature,
+    postedAt: state?.postedAt ?? null,
+    highlights,
+    pendingHighlights,
+    ...extra,
+  });
+
+  if (decision.reason === 'bootstrap' && !queue.length && !force) {
+    const next = {
+      bootstrapped: true,
+      signature: briefing.signature,
+      postedAt: null,
+      highlights: state?.highlights || {},
+      pendingHighlights: [],
+    };
     log(`Discord informe: bootstrap (${briefing.warsCount} guerras, sin enviar).`);
     return { posted: false, state: next, reason: 'bootstrap', briefing };
   }
 
-  if (!decision.send) {
+  let reportPosted = false;
+  if (force) {
+    if (!webhookUrl) {
+      log('Discord informe: falta DISCORD_WEBHOOK_URL.');
+      return { posted: postedN > 0, state: pack(), reason: 'no-webhook', briefing, highlightPosted: postedN };
+    }
+    const { payload } = buildReportPayload(site);
+    const res = await postWebhook(fetchImpl, webhookUrl, payload);
+    if (!res.ok) {
+      log(`Discord informe: webhook ${res.status || res.error}; no se marca.`);
+      return {
+        posted: postedN > 0,
+        state: pack(postedN > 0 ? { postedAt: new Date().toISOString() } : {}),
+        reason: 'http',
+        status: res.status,
+        briefing,
+        highlightPosted: postedN,
+      };
+    }
+    reportPosted = true;
+  }
+
+  if (!force && !queue.length) {
+    if (decision.reason === 'updated') {
+      log('Discord informe: la firma cambió pero no hay highlight pendiente; no se envía el informe largo.');
+      return {
+        posted: false,
+        reason: 'updated',
+        briefing,
+        state: {
+          bootstrapped: true,
+          signature: briefing.signature,
+          postedAt: state?.postedAt ?? null,
+          highlights: state?.highlights || {},
+          pendingHighlights: state?.pendingHighlights || [],
+        },
+      };
+    }
     log(`Discord informe: omitido (${decision.reason}).`);
     return { posted: false, state, reason: decision.reason, briefing };
   }
 
-  if (!webhookUrl) {
-    log('Discord informe: falta DISCORD_WEBHOOK_URL.');
-    return { posted: false, state, reason: 'no-webhook', briefing };
-  }
-
-  if (highlightMode) {
-    const wars = resolveWarsFromSaved(site, saved);
-    let anyOk = false;
-    let lastStatus;
-    for (const war of wars) {
-      const { payload } = buildWarHighlightPayload(war, { clan: site.clan });
-      const res = await fetchImpl(webhookUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-      if (res.ok) anyOk = true;
-      else lastStatus = res.status;
-    }
-    if (!anyOk) {
-      log(`Discord highlight: webhook ${lastStatus ?? 'sin guerras'}; no se marca.`);
-      return { posted: false, state, reason: 'http', status: lastStatus, briefing };
-    }
-    const next = {
-      bootstrapped: true,
-      signature: briefing.signature,
-      postedAt: new Date().toISOString(),
+  if (!force && queue.length && !postedN && pendingHighlights.length) {
+    const reason = !webhookUrl ? 'no-webhook' : (failedN ? 'http' : 'pending');
+    log(`Discord highlight: nada enviado (${reason}, sin resolver ${unresolvedN}).`);
+    return {
+      posted: false,
+      state: pack(),
+      reason,
+      status: lastStatus,
+      briefing,
+      highlightPosted: 0,
     };
-    log(`Discord highlight: enviado (${wars.length} guerra(s)).`);
-    return { posted: true, state: next, reason: 'war-ended', briefing };
   }
 
-  const { payload } = buildReportPayload(site);
-  const res = await fetchImpl(webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
-  if (!res.ok) {
-    log(`Discord informe: webhook ${res.status}; no se marca.`);
-    return { posted: false, state, reason: 'http', status: res.status, briefing };
+  const next = pack((postedN > 0 || reportPosted) ? { postedAt: new Date().toISOString() } : {});
+  if (reportPosted) {
+    if (postedN) log(`Discord highlight: enviado (${postedN} guerra(s)).`);
+    log(`Discord informe: enviado (force; Top 3, análisis, ${briefing.prospects.length} prospectos).`);
+    return { posted: true, state: next, reason: 'force', briefing, highlightPosted: postedN };
   }
-
-  const next = {
-    bootstrapped: true,
-    signature: briefing.signature,
-    postedAt: new Date().toISOString(),
-  };
-  log(`Discord informe: enviado (${decision.reason}; Top 3, análisis, ${briefing.prospects.length} prospectos).`);
-  return { posted: true, state: next, reason: decision.reason, briefing };
+  if (!postedN) {
+    log('Discord highlight: archivos ya cubiertos; no se reenvía.');
+    return { posted: false, state: next, reason: 'unchanged', briefing, highlightPosted: 0 };
+  }
+  log(`Discord highlight: enviado (${postedN} guerra(s)).`);
+  return { posted: true, state: next, reason: 'war-ended', briefing, highlightPosted: postedN };
 }

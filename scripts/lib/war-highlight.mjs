@@ -1,3 +1,5 @@
+import { clipLines } from './discord-text.mjs';
+
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
 const LTR = '\u200E';
 const FSI = '\u2068';
@@ -71,18 +73,26 @@ export function topAttacks(war, limit = 3) {
   return rows.slice(0, limit);
 }
 
+function mvpBetter(row, best) {
+  if (row.impact !== best.impact) return row.impact > best.impact;
+  if (row.attackStars !== best.attackStars) return row.attackStars > best.attackStars;
+  if (row.nuevas !== best.nuevas) return row.nuevas > best.nuevas;
+  if (row.destruction !== best.destruction) return row.destruction > best.destruction;
+  return row.n.localeCompare(best.n, 'es') < 0;
+}
+
 export function warMvp(war) {
   let best = null;
   for (const m of war?.members || []) {
-    const impact = m[2]?.[0] ?? -1;
-    const attackStars = (m[5] || []).reduce((s, a) => s + (a[0] || 0), 0);
-    const row = { n: m[0], impact, attackStars };
-    if (!best
-      || row.impact > best.impact
-      || (row.impact === best.impact && row.attackStars > best.attackStars)
-      || (row.impact === best.impact && row.attackStars === best.attackStars && row.n.localeCompare(best.n, 'es') < 0)) {
-      best = row;
-    }
+    const attacks = m[5] || [];
+    const row = {
+      n: m[0],
+      impact: m[2]?.[0] ?? -1,
+      attackStars: attacks.reduce((s, a) => s + (a[0] || 0), 0),
+      nuevas: m[2]?.[2] ?? -1,
+      destruction: attacks.reduce((s, a) => s + (a[1] || 0), 0),
+    };
+    if (!best || mvpBetter(row, best)) best = row;
   }
   return best;
 }
@@ -109,12 +119,8 @@ export function buildWarHighlightPayload(war, { clan } = {}) {
   const res = RES[war?.res] || war?.res || '—';
   const score = (war?.stars || [0, 0]).join('-');
 
-  const attackLines = attacks.length
-    ? attacks.map((a, i) => `${LTR}${i + 1}. **${nameOf(a.n)}** · ${starsGlyph(a.stars)} ${a.destruction}%`)
-    : ['_Sin ataques._'];
-  const skipLines = skipped.length
-    ? skipped.map((n) => `${LTR}• **${nameOf(n)}**`)
-    : ['_Todos atacaron._'];
+  const attackLines = attacks.map((a, i) => `${LTR}${i + 1}. **${nameOf(a.n)}** · ${starsGlyph(a.stars)} ${a.destruction}%`);
+  const skipLines = skipped.map((n) => `${LTR}• **${nameOf(n)}**`);
 
   const embed = {
     title: `⚔️ Guerra terminada · ${clanName}`,
@@ -129,12 +135,12 @@ export function buildWarHighlightPayload(war, { clan } = {}) {
     fields: [
       {
         name: '⚔️ Mejores ataques',
-        value: attackLines.join('\n'),
+        value: attackLines.length ? clipLines(attackLines) : '_Sin ataques._',
         inline: false,
       },
       {
         name: skipped.length ? `✕ No atacaron · ${skipped.length}` : '✕ No atacaron',
-        value: skipLines.join('\n'),
+        value: skipLines.length ? clipLines(skipLines) : '_Todos atacaron._',
         inline: false,
       },
     ],

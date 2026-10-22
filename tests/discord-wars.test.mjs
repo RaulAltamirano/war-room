@@ -57,6 +57,7 @@ test('guerra nueva se anuncia una vez', async () => {
   assert.equal(out.posted, 1);
   assert.equal(posts, 1);
   assert.match(bodies[0].content, /BUILT 2 WAR/);
+  assert.deepEqual(bodies[0].allowed_mentions, { parse: [] });
   assert.ok(out.state.wars.w20261011);
 
   const again = await runDiscordWars({
@@ -94,4 +95,42 @@ test('runDiscordBitacora postea el resumen', async () => {
   });
   assert.equal(out.posted, true);
   assert.equal(posts, 1);
+});
+
+test('bitácora larga se parte en mensajes de 2000 y no puede mencionar a todos', async () => {
+  const wars = Array.from({ length: 40 }, (_, i) => ({
+    ...sample,
+    id: `w${i}`,
+    date: `2026-10-${String((i % 28) + 1).padStart(2, '0')}`,
+    rival: '@everyone',
+  }));
+  const bodies = [];
+  const out = await runDiscordBitacora({
+    wars,
+    clanName: 'clandestinos',
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async (_u, opts) => {
+      const body = JSON.parse(opts.body);
+      bodies.push(body);
+      assert.ok(body.content.length <= 2000);
+      assert.deepEqual(body.allowed_mentions, { parse: [] });
+      return { ok: true };
+    },
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.ok(bodies.length >= 2);
+});
+
+test('un fallo de red no tira el anunciador y no marca la guerra', async () => {
+  const out = await runDiscordWars({
+    wars: [sample],
+    state: { bootstrapped: true, wars: {} },
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async () => { throw new Error('network'); },
+    log: () => {},
+  });
+  assert.equal(out.posted, 0);
+  assert.equal(out.reason, 'http');
+  assert.equal(out.state.wars.w20261011, undefined);
 });

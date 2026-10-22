@@ -1,11 +1,14 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { postWebhook } from './lib/discord-text.mjs';
 import {
   closedMonthKey,
   discordMonthlyPayload,
   discordPassRulesPayload,
+  donationsForMonth,
   monthKeyInZone,
+  recordDonationSnapshot,
   scoreMonth,
   shouldPost,
   warsInMonth,
@@ -21,6 +24,7 @@ export async function runDiscordMonthly({
   now = new Date(),
   webhookUrl,
   force = false,
+  snapshots = null,
   fetchImpl = fetch,
   log = console.log,
 }) {
@@ -32,11 +36,7 @@ export async function runDiscordMonthly({
   if (force) {
     const monthKey = monthKeyInZone(now);
     const payload = discordPassRulesPayload(monthKey);
-    const res = await fetchImpl(webhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
+    const res = await postWebhook(fetchImpl, webhookUrl, payload);
     if (!res.ok) {
       log(`Discord: webhook respondió ${res.status} al enviar reglas del pase.`);
       return { posted: false, monthKey, reason: 'http', status: res.status, rules: true };
@@ -51,20 +51,24 @@ export async function runDiscordMonthly({
     return { posted: false, monthKey, reason: 'already' };
   }
   const monthWars = warsInMonth(site.wars || [], monthKey);
-  const result = scoreMonth(monthWars, site.roster || []);
+  let donations;
+  if (snapshots) {
+    donations = donationsForMonth(snapshots, monthKey);
+    if (!donations) {
+      log(`Discord: sin snapshot de donaciones para ${monthKey}; no se anuncia ganador.`);
+      return { posted: false, monthKey, reason: 'no-snapshot' };
+    }
+  }
+  const result = scoreMonth(monthWars, site.roster || [], donations);
   if (!result) {
     log(`Discord: sin guerras en ${monthKey}; no se anuncia ganador.`);
     return { posted: false, monthKey, reason: 'empty' };
   }
 
   const payload = discordMonthlyPayload(result, monthKey);
-  const res = await fetchImpl(webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
+  const res = await postWebhook(fetchImpl, webhookUrl, payload);
   if (!res.ok) {
-    log(`Discord: webhook respondió ${res.status}; no se marca el mes.`);
+    log(`Discord: webhook respondió ${res.status || res.error}; no se marca el mes.`);
     return { posted: false, monthKey, reason: 'http', status: res.status };
   }
 
@@ -88,9 +92,19 @@ async function main() {
   } catch {
     awards = {};
   }
+  const snapPath = path.join(root, 'data/donation-snapshots.json');
+  let snapshots = { days: {} };
+  try {
+    snapshots = JSON.parse(await readFile(snapPath, 'utf8'));
+  } catch {
+    snapshots = { days: {} };
+  }
+  snapshots = recordDonationSnapshot(snapshots, site.roster || []);
+  await writeFile(snapPath, `${JSON.stringify(snapshots, null, 2)}\n`);
   const out = await runDiscordMonthly({
     site,
     awards,
+    snapshots,
     webhookUrl: process.env.DISCORD_WEBHOOK_URL || '',
     force: truthy(process.env.DISCORD_SEND_MONTHLY),
   });

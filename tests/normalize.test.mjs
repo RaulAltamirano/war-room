@@ -144,6 +144,22 @@ test('nuevas estrellas respetan el orden y el empate se rompe por destrucción',
   assert.deepEqual(by.A, [35, 1, 1, 50, 1, 2, 0, 50, 0, 0, 0, 0, 0, 0, 2]);
   assert.deepEqual(by.B, [50, 1.5, 0.5, 50, 1, -2, 50, 0, 0, 0, 100, 0, 0, 0, 2]);
   assert.equal(site.wars[0].res, 'V');
+  assert.equal(site.wars[0].rivalTag, 'X');
+  const other = {
+    ...war,
+    opponent: { tag: '#Y', name: 'Other', stars: 0, destructionPercentage: 0, members: [] },
+  };
+  const both = buildSite({
+    clanJson: { name: 'x', tag: CLAN, memberList: [] },
+    rawWars: [war, other],
+    generatedAt: '2026-10-01T00:00:00Z',
+    clanTag: CLAN,
+  });
+  const byRival = Object.fromEntries(both.wars.map((w) => [w.rival, w]));
+  assert.equal(byRival.Rival.rivalTag, 'X');
+  assert.equal(byRival.Other.rivalTag, 'Y');
+  assert.equal(byRival.Rival.id, 'w20261001');
+  assert.equal(byRival.Other.id, 'w20261001-Y');
   const rowA = site.wars[0].members.find((m) => m[0] === 'A');
   assert.equal(rowA[3], 12);
   assert.equal(rowA[4], 1);

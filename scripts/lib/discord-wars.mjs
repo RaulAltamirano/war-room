@@ -1,4 +1,17 @@
+import { chunkContent, postWebhook } from './discord-text.mjs';
+
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
+const MENTIONS_OFF = { parse: [] };
+
+async function postContent(fetchImpl, webhookUrl, content) {
+  const chunks = chunkContent(content);
+  let last = { ok: true, status: 204 };
+  for (const part of chunks) {
+    last = await postWebhook(fetchImpl, webhookUrl, { content: part, allowed_mentions: MENTIONS_OFF });
+    if (!last.ok) return last;
+  }
+  return last;
+}
 
 function fshort(date) {
   if (!date) return 'Sin fecha';
@@ -62,13 +75,9 @@ export async function runDiscordBitacora({
     return { posted: false, reason: 'empty' };
   }
   const content = formatBitacoraDiscord(wars, clanName);
-  const res = await fetchImpl(webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ content }),
-  });
+  const res = await postContent(fetchImpl, webhookUrl, content);
   if (!res.ok) {
-    log(`Discord bitácora: fallo ${res.status}.`);
+    log(`Discord bitácora: fallo ${res.status || res.error}.`);
     return { posted: false, reason: 'http', status: res.status };
   }
   log(`Discord bitácora: enviadas ${wars.length} guerras.`);
@@ -120,13 +129,9 @@ export async function runDiscordWars({
   let posted = 0;
   for (const war of plan.pending) {
     const content = formatWarDiscord(war);
-    const res = await fetchImpl(webhookUrl, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ content }),
-    });
+    const res = await postContent(fetchImpl, webhookUrl, content);
     if (!res.ok) {
-      log(`Discord guerras: fallo ${res.status} en ${war.id}; se reintenta luego.`);
+      log(`Discord guerras: fallo ${res.status || res.error} en ${war.id}; se reintenta luego.`);
       return { state: next, posted, reason: 'http', status: res.status };
     }
     next = markWars(next, [war.id]);

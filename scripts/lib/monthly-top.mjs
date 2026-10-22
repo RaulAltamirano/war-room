@@ -1,15 +1,7 @@
+import { scoredList } from './site-metrics.mjs';
+
 const TZ = 'America/Mexico_City';
-
-function rec(s) {
-  const miss = s[4];
-  const mp = s[3];
-  const pos = s[14] || (mp > 0 ? Math.max(1, Math.round((miss * 100) / mp)) : 2);
-  return { impact: s[0], miss, pos, stars: Math.round(s[1] * pos), net: s[5] };
-}
-
-function cmpOff(x, y) {
-  return (y.imp - x.imp) || (y.stars - x.stars) || (y.net - x.net) || (x.miss - y.miss) || x.n.localeCompare(y.n, 'es');
-}
+const SNAPSHOT_KEEP_DAYS = 120;
 
 export function monthKeyInZone(date = new Date(), timeZone = TZ) {
   const parts = Object.fromEntries(
@@ -32,42 +24,59 @@ export function warsInMonth(wars, monthKey) {
   return (wars || []).filter((w) => (w.date || '').startsWith(monthKey));
 }
 
-const LIGA_WEIGHT = 2;
+export function dayKeyInZone(date = new Date(), timeZone = TZ) {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-US', { timeZone, year: 'numeric', month: '2-digit', day: '2-digit' })
+      .formatToParts(date)
+      .filter((p) => p.type !== 'literal')
+      .map((p) => [p.type, p.value]),
+  );
+  return `${parts.year}-${parts.month}-${parts.day}`;
+}
 
-export function scoreMonth(wars, roster) {
-  const P = {};
-  const order = [];
-  for (const w of wars || []) {
-    const weight = w.liga ? LIGA_WEIGHT : 1;
-    for (const m of w.members || []) {
-      let p = P[m[0]];
-      if (!p) {
-        p = P[m[0]] = { n: m[0], g: 0, pos: 0, stars: 0, miss: 0, net: 0, impSum: 0, wSum: 0 };
-        order.push(m[0]);
-      }
-      if (!m[2]) continue;
-      const r = rec(m[2]);
-      p.g += 1;
-      p.pos += r.pos;
-      p.stars += r.stars;
-      p.miss += r.miss;
-      p.net += r.net;
-      p.impSum += r.impact * weight;
-      p.wSum += weight;
-    }
+function shiftDayKey(day, delta) {
+  const [y, m, d] = day.split('-').map(Number);
+  const dt = new Date(Date.UTC(y, m - 1, d + delta));
+  return dt.toISOString().slice(0, 10);
+}
+
+export function recordDonationSnapshot(snapshots, roster, now = new Date(), timeZone = TZ) {
+  const day = dayKeyInZone(now, timeZone);
+  const days = { ...(snapshots?.days || {}) };
+  if ((roster || []).length) {
+    const row = {};
+    for (const m of roster) row[m[0]] = m[4] || 0;
+    days[day] = row;
   }
-  const don = {};
-  for (const m of roster || []) don[m[0]] = m[4] || 0;
-  const list = order.map((k) => {
-    const p = P[k];
-    p.imp = p.wSum ? p.impSum / p.wSum : 0;
-    p.don = don[k] || 0;
-    return p;
-  }).filter((p) => p.g);
-  let maxDon = 0;
-  for (const p of list) if ((p.don || 0) > maxDon) maxDon = p.don;
-  for (const p of list) p.score = 0.7 * p.imp + 0.3 * (maxDon ? (p.don / maxDon) * 100 : 0);
-  list.sort((a, b) => (b.score - a.score) || cmpOff(a, b) || a.n.localeCompare(b.n, 'es'));
+  const cutoff = shiftDayKey(day, -SNAPSHOT_KEEP_DAYS);
+  for (const key of Object.keys(days)) {
+    if (key < cutoff) delete days[key];
+  }
+  return { days };
+}
+
+/** Último snapshot del mes antes de un reset de temporada (la suma cae a menos de la mitad). */
+export function donationsForMonth(snapshots, monthKey) {
+  const days = snapshots?.days || {};
+  const keys = Object.keys(days).filter((d) => d.startsWith(`${monthKey}-`)).sort();
+  if (!keys.length) return null;
+  let prevSum = null;
+  let last = null;
+  let preReset = null;
+  for (const key of keys) {
+    const row = days[key] || {};
+    const sum = Object.values(row).reduce((acc, v) => acc + (Number(v) || 0), 0);
+    if (preReset == null && prevSum != null && prevSum >= 100 && sum < prevSum * 0.5) {
+      preReset = last;
+    }
+    last = row;
+    prevSum = sum;
+  }
+  return preReset || last;
+}
+
+export function scoreMonth(wars, roster, donationsOverride = undefined) {
+  const list = scoredList(wars, roster, donationsOverride);
   const top3 = list.slice(0, 3).map((x) => [x.n, Math.round(x.score)]);
   if (!top3.length) return null;
   return { winner: top3[0][0], score: top3[0][1], top3 };
@@ -100,17 +109,6 @@ export function monthCloseDate(monthKey) {
       year: 'numeric',
     }).format(close),
   };
-}
-
-export function discordContent(result, monthKey) {
-  const label = monthLabelEs(monthKey);
-  const lines = [
-    `🏆 **Top 1 ${label}: ${result.winner}** (${result.score} pts) — se gana el pase del mes.`,
-  ];
-  if (result.top3 && result.top3.length > 1) {
-    lines.push(result.top3.map(([n, s], i) => `${i + 1}. ${n} — ${s}`).join('\n'));
-  }
-  return lines.join('\n');
 }
 
 const MEDAL = ['🥇', '🥈', '🥉'];

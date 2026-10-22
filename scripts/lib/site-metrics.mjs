@@ -16,7 +16,7 @@ export function warsSorted(wars) {
 /** Liga de clanes (CWL) pesa el doble en el promedio de impacto. */
 export const LIGA_WEIGHT = 2;
 
-export function scoredList(wars, roster) {
+export function scoredList(wars, roster, donationsOverride = undefined) {
   const P = {};
   const order = [];
   for (const w of warsSorted(wars)) {
@@ -39,7 +39,11 @@ export function scoredList(wars, roster) {
     }
   }
   const don = {};
-  for (const m of roster || []) don[m[0]] = m[4] || 0;
+  if (donationsOverride != null) {
+    for (const [n, v] of Object.entries(donationsOverride)) don[n] = Number(v) || 0;
+  } else {
+    for (const m of roster || []) don[m[0]] = m[4] || 0;
+  }
   const list = order.map((k) => {
     const p = P[k];
     p.imp = p.wSum ? p.impSum / p.wSum : 0;
@@ -104,7 +108,8 @@ export function buildBriefing(site) {
   const scored = scoredList(wars, site.roster || []);
   const trend = trendOf(wars);
   const outNames = new Set(trend.out.map((x) => x.n));
-  const prospects = scored.filter((p) => !outNames.has(p.n));
+  const rosterNames = new Set((site.roster || []).map((m) => m[0]));
+  const prospects = scored.filter((p) => !outNames.has(p.n) && rosterNames.has(p.n));
   const top3 = scored.slice(0, 3).map((p) => ({
     n: p.n,
     score: Math.round(p.score),

@@ -1,3 +1,4 @@
+import { clipLines, postWebhook } from './discord-text.mjs';
 import { warsSorted } from './site-metrics.mjs';
 
 function rec(s) {
@@ -26,7 +27,11 @@ function trailingFullMiss(rows) {
  */
 export function banZones(wars, roster = []) {
   const don = {};
-  for (const m of roster || []) don[m[0]] = m[4] || 0;
+  const rosterNames = new Set();
+  for (const m of roster || []) {
+    don[m[0]] = m[4] || 0;
+    rosterNames.add(m[0]);
+  }
 
   const by = new Map();
   for (const w of warsSorted(wars)) {
@@ -54,6 +59,7 @@ export function banZones(wars, roster = []) {
   const red = [];
   const grey = [];
   for (const p of by.values()) {
+    if (!rosterNames.has(p.n)) continue;
     const streak = trailingFullMiss(p.rows);
     const neverHit = p.g >= 2 && p.miss === p.pos && p.pos > 0;
     const lastFull = p.rows.length ? p.rows[p.rows.length - 1].full : false;
@@ -84,12 +90,6 @@ const LTR = '\u200E';
 const FSI = '\u2068'; // first strong isolate — nombres árabes no voltean la línea
 const PDI = '\u2069';
 
-function clip(text, max = 1024) {
-  const s = String(text || '');
-  if (s.length <= max) return s;
-  return `${s.slice(0, max - 1)}…`;
-}
-
 function nameOf(n) {
   return `${FSI}${n}${PDI}`;
 }
@@ -109,7 +109,7 @@ function whyGrey(x) {
 
 function lines(rows, whyFn, empty) {
   if (!rows.length) return empty;
-  return rows.map((x) => `${LTR}• **${nameOf(x.n)}** — ${whyFn(x)}`).join('\n');
+  return clipLines(rows.map((x) => `${LTR}• **${nameOf(x.n)}** — ${whyFn(x)}`));
 }
 
 export function buildBanZonesPayload(site) {
@@ -140,12 +140,12 @@ export function buildBanZonesPayload(site) {
           fields: [
             {
               name: nRed ? `🔴 Zona roja · kick / ban (${nRed})` : '🔴 Zona roja · nadie',
-              value: clip(lines(zones.red, whyRed, '_Nadie con 2 guerras seguidas sin atacar._')),
+              value: lines(zones.red, whyRed, '_Nadie con 2 guerras seguidas sin atacar._'),
               inline: false,
             },
             {
               name: nGrey ? `⚪ Zona gris · aviso (${nGrey})` : '⚪ Zona gris · nadie',
-              value: clip(lines(zones.grey, whyGrey, '_Nadie en aviso._')),
+              value: lines(zones.grey, whyGrey, '_Nadie en aviso._'),
               inline: false,
             },
           ],
@@ -173,13 +173,9 @@ export async function runDiscordBanZones({
     log('Discord ban zones: falta DISCORD_WEBHOOK_URL.');
     return { posted: false, reason: 'no-webhook', zones };
   }
-  const res = await fetchImpl(webhookUrl, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
+  const res = await postWebhook(fetchImpl, webhookUrl, payload);
   if (!res.ok) {
-    log(`Discord ban zones: webhook ${res.status}.`);
+    log(`Discord ban zones: webhook ${res.status || res.error}.`);
     return { posted: false, reason: 'http', status: res.status, zones };
   }
   log(`Discord ban zones: aviso enviado (roja ${zones.red.length}, gris ${zones.grey.length}).`);

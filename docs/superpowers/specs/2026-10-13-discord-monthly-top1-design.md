@@ -34,9 +34,12 @@ Clave = `YYYY-MM` del mes premiado (zona Mexico City).
 ## Cálculo
 1. Determinar “mes cerrado” = mes calendario anterior en `America/Mexico_City`.
 2. Filtrar `site.wars` (o rebuild desde raw) con `war.date` en ese mes.
-3. Agregar miembros como en la página; score = `0.7 * impacto + 0.3 * (don/maxDon)*100`.
-4. Orden: score ↓, luego estrellas ↓, neto ↓, sin usar ↑, nombre.
-5. Si no hay guerras ese mes: no postear (o mensaje “sin guerras”); no escribir award.
+3. Agregar miembros como en la página (`scoredList`); score = `0.7 * impacto + 0.3 * (don/maxDon)*100`.
+4. Donaciones del mes: no usar el contador vivo del roster (se reinicia con la temporada de CoC). Cada corrida guarda `data/donation-snapshots.json` (día en Mexico City → donaciones del roster, se conservan 120 días). Para el mes cerrado se usa el último snapshot anterior a un reset (la suma del clan cae por debajo de la mitad, y la suma previa era ≥ 100). Si no hubo reset dentro del mes, el último snapshot de ese mes.
+5. Orden: score ↓, luego estrellas ↓, neto ↓, sin usar ↑, nombre.
+6. Si no hay guerras ese mes, o no hay ningún snapshot de ese mes: no postear y no escribir award.
+
+Limitación: si el único snapshot del mes es posterior al reset, el 30% cuenta las donaciones ya reiniciadas. Los días anteriores al primer snapshot no se pueden reconstruir.
 
 ## Integración
 - Secreto: `DISCORD_WEBHOOK_URL`.

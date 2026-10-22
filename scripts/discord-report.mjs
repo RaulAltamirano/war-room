@@ -39,7 +39,7 @@ async function main() {
     saved,
   });
 
-  if (out.reason === 'bootstrap' || out.posted) {
+  if (out.state && JSON.stringify(out.state) !== JSON.stringify(state)) {
     await writeFile(statePath, `${JSON.stringify(out.state, null, 2)}\n`);
   }
 }

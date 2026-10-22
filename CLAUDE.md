@@ -29,9 +29,9 @@ No subas el token. En el estandarte sí va el `badge` del clan (API). Sigue sin 
 
 Secreto `DISCORD_WEBHOOK_URL`. Tras el build:
 
-- `scripts/discord-report.mjs` → con `warEnded` y guerras en `saved` (`data/last-fetch.json`, no se commitea), highlight corto (MVP + top ataques + no atacaron) por cada archivo guardado. Informe completo (Top 3 + análisis + prospectos) solo con `DISCORD_SEND_REPORT` / input `enviar_informe`. Estado en `data/discord-report.json`.
-- `scripts/discord-monthly.mjs` → Top 1 del mes cerrado Mexico City (`data/discord-awards.json`).
+- `scripts/discord-report.mjs` → highlight corto (MVP + top ataques + no atacaron) por cada archivo en `saved` (`data/last-fetch.json`, no se commitea) y por los que sigan en `pendingHighlights`. Un post fallido se reintenta; no dispara el informe de 4 embeds. Informe completo solo con `DISCORD_SEND_REPORT` / `enviar_informe` (si ese día también hay highlight pendiente, se mandan los dos). Estado en `data/discord-report.json`.
+- `scripts/discord-monthly.mjs` → Top 1 del mes cerrado Mexico City (`data/discord-awards.json`). Donaciones: snapshot diario en `data/donation-snapshots.json` (último valor del mes antes de un reset de temporada). Sin snapshot de ese mes no se anuncia ganador.
 - `scripts/prospects.mjs` → alineación para iniciar guerra; Discord solo con `DISCORD_SEND_PROSPECTS` / input `enviar_prospectos`.
 - `scripts/ban-zones.mjs` → aviso zona roja (≥2 guerras seguidas sin atacar) / zona gris (1 falla o “fuera”); Discord con `DISCORD_SEND_BAN_ZONES` / `enviar_zonas_ban`.
 
-Sin URL → skip. Fallo HTTP → no marca ese ítem (reintento luego). No spamear una guerra por mensaje.
+Sin URL → skip. Fallo HTTP o de red → no marca ese ítem (reintento luego). Los pasos de Discord en Actions llevan `continue-on-error` para no perder el commit de `data/`. No spamear una guerra por mensaje. Prospectos y zonas de ban solo incluyen gente que sigue en el roster.

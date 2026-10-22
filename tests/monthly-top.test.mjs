@@ -2,8 +2,9 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
   closedMonthKey,
-  discordContent,
   discordMonthlyPayload,
+  donationsForMonth,
+  recordDonationSnapshot,
   discordPassRulesPayload,
   monthCloseDate,
   scoreMonth,
@@ -74,11 +75,47 @@ test('shouldPost es idempotente por mes', () => {
   assert.equal(shouldPost({ '2026-10': { winner: 'Alpha' } }, '2026-10'), false);
 });
 
-test('discordContent menciona pase y ganador', () => {
-  const text = discordContent({ winner: 'Alpha', score: 100, top3: [['Alpha', 100], ['Beta', 71]] }, '2026-10');
+test('el anuncio del ganador menciona pase y mes', () => {
+  const payload = discordMonthlyPayload(
+    { winner: 'Alpha', score: 100, top3: [['Alpha', 100], ['Beta', 71]] },
+    '2026-10',
+  );
+  const text = `${payload.embeds[0].title}\n${payload.embeds[0].description}`;
   assert.match(text, /Alpha/);
   assert.match(text, /pase/i);
   assert.match(text, /octubre/i);
+});
+
+test('donationsForMonth usa el último valor antes del reset', () => {
+  const snapshots = {
+    days: {
+      '2026-10-20': { Alpha: 500, Beta: 100 },
+      '2026-10-25': { Alpha: 800, Beta: 200 },
+      '2026-10-27': { Alpha: 10, Beta: 5 },
+      '2026-10-31': { Alpha: 40, Beta: 20 },
+    },
+  };
+  assert.deepEqual(donationsForMonth(snapshots, '2026-10'), { Alpha: 800, Beta: 200 });
+  assert.equal(donationsForMonth(snapshots, '2026-09'), null);
+});
+
+test('scoreMonth con snapshot no usa las donaciones vivas del roster', () => {
+  const month = warsInMonth(octWars, '2026-10');
+  const live = scoreMonth(month, roster);
+  const snap = scoreMonth(month, roster, { Alpha: 0, Beta: 0, Gamma: 0 });
+  assert.equal(live.winner, 'Alpha');
+  assert.equal(live.score, 100);
+  assert.equal(snap.winner, 'Alpha');
+  assert.notEqual(snap.score, live.score);
+});
+
+test('recordDonationSnapshot guarda el día y poda lo viejo', () => {
+  const roster = [['Alpha', 'M', 15, 1, 40, 0, 0]];
+  const old = { days: { '2020-01-01': { Alpha: 9 }, '2026-10-21': { Alpha: 10 } } };
+  const next = recordDonationSnapshot(old, roster, new Date('2026-10-22T18:00:00-06:00'));
+  assert.equal(next.days['2026-10-22'].Alpha, 40);
+  assert.equal(next.days['2020-01-01'], undefined);
+  assert.equal(next.days['2026-10-21'].Alpha, 10);
 });
 
 test('monthCloseDate es el 1 del mes siguiente', () => {
@@ -200,6 +237,72 @@ test('runDiscordMonthly no guarda award si Discord falla', async () => {
     log: () => {},
   });
   assert.equal(out.posted, false);
+  assert.equal(awards['2026-10'], undefined);
+});
+
+test('runDiscordMonthly puntúa con el snapshot del mes, no con el roster vivo', async () => {
+  const wars = [{
+    id: 'a',
+    date: '2026-10-05',
+    members: [
+      member('Alpha', 80, 2, 0, 2, 1, 0),
+      member('Beta', 80, 2, 0, 2, 1, 0),
+    ],
+  }];
+  const liveRoster = [
+    ['Alpha', 'M', 15, 1, 1000, 0, 0],
+    ['Beta', 'M', 15, 1, 0, 0, 0],
+  ];
+  const snapshots = {
+    days: {
+      '2026-10-25': { Alpha: 0, Beta: 1000 },
+      '2026-10-27': { Alpha: 5, Beta: 5 },
+    },
+  };
+  const awards = {};
+  const out = await runDiscordMonthly({
+    site: { wars, roster: liveRoster },
+    awards,
+    snapshots,
+    now: new Date('2026-11-01T12:00:00-06:00'),
+    webhookUrl: 'https://discord.example/webhook',
+    fetchImpl: async () => ({ ok: true, status: 204 }),
+    log: () => {},
+  });
+  assert.equal(out.posted, true);
+  assert.equal(out.result.winner, 'Beta');
+});
+
+test('runDiscordMonthly no anuncia si el mes no tiene snapshot', async () => {
+  const awards = {};
+  let posts = 0;
+  const out = await runDiscordMonthly({
+    site: { wars: octWars, roster },
+    awards,
+    snapshots: { days: {} },
+    now: new Date('2026-11-01T12:00:00-06:00'),
+    webhookUrl: 'https://discord.example/webhook',
+    fetchImpl: async () => { posts += 1; return { ok: true, status: 204 }; },
+    log: () => {},
+  });
+  assert.equal(out.posted, false);
+  assert.equal(out.reason, 'no-snapshot');
+  assert.equal(posts, 0);
+  assert.equal(awards['2026-10'], undefined);
+});
+
+test('runDiscordMonthly no marca el mes si el webhook revienta', async () => {
+  const awards = {};
+  const out = await runDiscordMonthly({
+    site: { wars: octWars, roster },
+    awards,
+    now: new Date('2026-11-01T12:00:00-06:00'),
+    webhookUrl: 'https://discord.example/webhook',
+    fetchImpl: async () => { throw new Error('network'); },
+    log: () => {},
+  });
+  assert.equal(out.posted, false);
+  assert.equal(out.reason, 'http');
   assert.equal(awards['2026-10'], undefined);
 });
 

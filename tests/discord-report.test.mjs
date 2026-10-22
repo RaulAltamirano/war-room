@@ -51,12 +51,108 @@ const site = {
   ],
 };
 
+test('un cambio de firma sin highlight pendiente no manda el informe', async () => {
+  let posts = 0;
+  const out = await runDiscordReport({
+    site,
+    state: { bootstrapped: true, signature: 'vieja', postedAt: null },
+    saved: [],
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async () => { posts += 1; return { ok: true }; },
+    log: () => {},
+  });
+  assert.equal(out.posted, false);
+  assert.equal(out.reason, 'updated');
+  assert.equal(posts, 0);
+  assert.equal(out.state.signature, buildBriefing(site).signature);
+});
+
+test('highlight fallido queda pendiente y no cae al informe de 4 embeds', async () => {
+  const highlightSite = {
+    ...site,
+    wars: [
+      ...site.wars,
+        {
+        id: 'w20261013',
+        date: '2026-10-13',
+        rival: 'SAVAGE',
+        res: 'V',
+        stars: [54, 0],
+        members: [member('Alpha', 100, 3, 0, 2, 4)],
+      },
+      {
+        id: 'w20261015',
+        date: '2026-10-15',
+        rival: 'OTHER',
+        res: 'D',
+        stars: [10, 20],
+        members: [member('Beta', 40, 1, 0, 2, 0)],
+      },
+    ],
+  };
+  const failed = await runDiscordReport({
+    site: highlightSite,
+    state: { bootstrapped: true, signature: 'w1|w2', postedAt: null },
+    saved: ['20261013-AAAA.json', '20261015-BBBB.json'],
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async () => { throw new Error('network'); },
+    log: () => {},
+  });
+  assert.equal(failed.posted, false);
+  assert.equal(failed.reason, 'http');
+  assert.deepEqual(failed.state.pendingHighlights, ['20261013-AAAA.json', '20261015-BBBB.json']);
+  assert.equal(failed.state.signature, 'w1|w2');
+
+  const bodies = [];
+  let n = 0;
+  const retry = await runDiscordReport({
+    site: highlightSite,
+    state: failed.state,
+    saved: [],
+    webhookUrl: 'https://discord.example/hook',
+    fetchImpl: async (_u, opts) => {
+      n += 1;
+      if (n === 1) return { ok: false, status: 500 };
+      bodies.push(JSON.parse(opts.body));
+      return { ok: true };
+    },
+    log: () => {},
+  });
+  assert.equal(retry.posted, true);
+  assert.equal(retry.reason, 'war-ended');
+  assert.equal(bodies.length, 1);
+  assert.equal(bodies[0].embeds.length, 1);
+  assert.deepEqual(retry.state.pendingHighlights, ['20261013-AAAA.json']);
+  assert.equal(retry.state.highlights['20261015-BBBB.json'].warId, 'w20261015');
+  assert.equal(retry.state.signature, 'w1|w2');
+});
+
 test('buildBriefing arma top3, análisis y prospectos', () => {
   const b = buildBriefing(site);
   assert.equal(b.top3.length, 3);
   assert.equal(b.top3[0].n, 'Alpha');
   assert.ok(b.trend.out.some((x) => x.n === 'Delta'));
   assert.equal(b.prospects.some((p) => p.n === 'Delta'), false);
+  assert.ok(b.prospects.some((p) => p.n === 'Alpha'));
+});
+
+test('prospectos no incluyen a quien ya no está en el roster', () => {
+  const ghostSite = {
+    ...site,
+    wars: [
+      ...site.wars,
+      {
+        id: 'w3',
+        date: '2026-10-15',
+        rival: 'X',
+        res: 'V',
+        stars: [10, 0],
+        members: [member('Ghost', 90, 3, 0, 2, 2)],
+      },
+    ],
+  };
+  const b = buildBriefing(ghostSite);
+  assert.equal(b.prospects.some((p) => p.n === 'Ghost'), false);
   assert.ok(b.prospects.some((p) => p.n === 'Alpha'));
 });
 
@@ -71,12 +167,12 @@ test('buildReportPayload usa embeds Discord', () => {
   assert.ok(payload.embeds.every((e) => typeof e.color === 'number'));
 });
 
-test('shouldSendReport respeta bootstrap, force y war-ended', () => {
+test('shouldSendReport solo envía el informe largo con force', () => {
   assert.equal(shouldSendReport({ bootstrapped: false }, 'a|b').send, false);
   assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b').send, false);
-  assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a' }, 'a|b').send, true);
+  assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a' }, 'a|b').send, false);
+  assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a' }, 'a|b').reason, 'updated');
   assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b', { force: true }).send, true);
-  assert.equal(shouldSendReport({ bootstrapped: true, signature: 'a|b' }, 'a|b', { warEnded: true }).reason, 'war-ended');
 });
 
 test('warEnded envía highlight aunque la firma no cambie', async () => {
@@ -119,8 +215,8 @@ test('warEnded envía highlight aunque la firma no cambie', async () => {
   assert.equal(posts, 1);
 });
 
-test('force con warEnded y saved envía informe de 4 embeds, no highlight', async () => {
-  let posts = 0;
+test('force con saved envía el highlight y después el informe', async () => {
+  const bodies = [];
   const highlightSite = {
     ...site,
     wars: [
@@ -143,17 +239,19 @@ test('force con warEnded y saved envía informe de 4 embeds, no highlight', asyn
     saved: ['20261013-AAAA.json'],
     webhookUrl: 'https://discord.example/hook',
     fetchImpl: async (_u, opts) => {
-      posts += 1;
-      const body = JSON.parse(opts.body);
-      assert.equal(body.embeds.length, 4);
-      assert.match(body.embeds[0].title, /Informe/);
+      bodies.push(JSON.parse(opts.body));
       return { ok: true };
     },
     log: () => {},
   });
   assert.equal(out.posted, true);
   assert.equal(out.reason, 'force');
-  assert.equal(posts, 1);
+  assert.equal(bodies.length, 2);
+  assert.equal(bodies[0].embeds.length, 1);
+  assert.match(bodies[0].embeds[0].title, /Guerra terminada/);
+  assert.equal(bodies[1].embeds.length, 4);
+  assert.match(bodies[1].embeds[0].title, /Informe/);
+  assert.equal(out.state.highlights['20261013-AAAA.json'].warId, 'w20261013');
 });
 
 test('force sin warEnded sigue enviando informe de 4 embeds', async () => {
