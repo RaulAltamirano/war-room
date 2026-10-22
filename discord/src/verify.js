@@ -1,15 +1,15 @@
 /**
  * Discord HTTP interaction signature verification (Ed25519).
- * Uses Web Crypto so the same code runs in Node 22+ and Cloudflare Workers.
+ * Uses tweetnacl — the same approach as Discord's docs / discord-interactions.
  */
+import nacl from 'tweetnacl';
 
 function hexToBytes(hex) {
-  if (typeof hex !== 'string' || hex.length % 2 !== 0) return null;
-  const out = new Uint8Array(hex.length / 2);
+  const clean = String(hex || '').trim();
+  if (!/^[0-9a-fA-F]+$/.test(clean) || clean.length % 2 !== 0) return null;
+  const out = new Uint8Array(clean.length / 2);
   for (let i = 0; i < out.length; i++) {
-    const n = Number.parseInt(hex.slice(i * 2, i * 2 + 2), 16);
-    if (Number.isNaN(n)) return null;
-    out[i] = n;
+    out[i] = Number.parseInt(clean.slice(i * 2, i * 2 + 2), 16);
   }
   return out;
 }
@@ -18,13 +18,6 @@ function toBytes(value) {
   if (value instanceof Uint8Array) return value;
   if (value instanceof ArrayBuffer) return new Uint8Array(value);
   return new TextEncoder().encode(String(value));
-}
-
-function concat(a, b) {
-  const out = new Uint8Array(a.length + b.length);
-  out.set(a, 0);
-  out.set(b, a.length);
-  return out;
 }
 
 /**
@@ -37,23 +30,12 @@ function concat(a, b) {
 export async function verifyDiscordRequest(rawBody, signatureHex, timestamp, publicKeyHex) {
   try {
     const signature = hexToBytes(signatureHex);
-    const keyBytes = hexToBytes(publicKeyHex);
-    if (!signature || !keyBytes || !timestamp) return false;
-
-    const key = await crypto.subtle.importKey(
-      'raw',
-      keyBytes,
-      { name: 'Ed25519' },
-      false,
-      ['verify'],
-    );
-
-    return crypto.subtle.verify(
-      'Ed25519',
-      key,
-      signature,
-      concat(toBytes(timestamp), toBytes(rawBody)),
-    );
+    const key = hexToBytes(publicKeyHex);
+    if (!signature || !key || signature.length !== 64 || key.length !== 32 || !timestamp) {
+      return false;
+    }
+    const message = toBytes(String(timestamp) + (typeof rawBody === 'string' ? rawBody : new TextDecoder().decode(toBytes(rawBody))));
+    return nacl.sign.detached.verify(message, signature, key);
   } catch {
     return false;
   }

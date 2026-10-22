@@ -23,7 +23,10 @@ function jsonResponse(body, status = 200) {
 
 export async function loadSite(siteJsonUrl, fetchImpl = fetch) {
   const res = await fetchImpl(siteJsonUrl, {
-    headers: { Accept: 'application/json' },
+    headers: {
+      Accept: 'application/json',
+      'User-Agent': 'clandestinos-ops (war-room slash commands)',
+    },
   });
   if (!res.ok) {
     const err = new Error(`site.json HTTP ${res.status}`);
@@ -40,7 +43,15 @@ export async function patchOriginal(applicationId, token, body, fetchImpl = fetc
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   });
-  return { ok: res.ok, status: res.status };
+  let detail = '';
+  if (!res.ok) {
+    try {
+      detail = (await res.text()).slice(0, 180);
+    } catch {
+      detail = '';
+    }
+  }
+  return { ok: res.ok, status: res.status, detail };
 }
 
 /**
@@ -61,8 +72,8 @@ export async function handleInteractionRequest(request, env, runtime = {}) {
   const timestamp = request.headers.get('X-Signature-Timestamp') || '';
   const rawBody = await request.text();
 
-  const publicKey = env.DISCORD_PUBLIC_KEY || '';
-  const valid = await verifyDiscordRequest(rawBody, signature, timestamp, publicKey);
+  const publicKey = String(env.DISCORD_PUBLIC_KEY || '').trim();
+  const valid = await verifyDiscordRequest(rawBody, signature.trim(), timestamp.trim(), publicKey);
   if (!valid) {
     return new Response('invalid request signature', { status: 401 });
   }
@@ -97,14 +108,15 @@ export async function handleInteractionRequest(request, env, runtime = {}) {
   }
 
   const name = interaction.data?.name;
-  const applicationId = env.DISCORD_APPLICATION_ID;
+  // Prefer the id Discord sent on the interaction (avoids a wrong Worker secret).
+  const applicationId = String(interaction.application_id || env.DISCORD_APPLICATION_ID || '').trim();
   const siteUrl = env.SITE_JSON_URL;
 
   if (!applicationId || !siteUrl) {
     return jsonResponse({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
       data: {
-        content: 'Bot misconfigured: missing APPLICATION_ID or SITE_JSON_URL.',
+        content: 'Bot misconfigured: missing application_id or SITE_JSON_URL.',
         flags: EPHEMERAL,
       },
     });
@@ -122,7 +134,10 @@ export async function handleInteractionRequest(request, env, runtime = {}) {
         await patchOriginal(
           applicationId,
           interaction.token,
-          { content: `Failed to post embeds (Discord HTTP ${res.status}).`, flags: EPHEMERAL },
+          {
+            content: `Failed to post embeds (Discord HTTP ${res.status}). ${res.detail || ''}`.trim(),
+            flags: EPHEMERAL,
+          },
           fetchImpl,
         );
       }
