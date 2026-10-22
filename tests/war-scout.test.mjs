@@ -125,7 +125,10 @@ test('buildScoutPayload embeds plan or empty state', () => {
   const { payload } = buildScoutPayload(site);
   assert.match(payload.embeds[0].title, /Scout.*Rivales/);
   assert.match(payload.embeds[0].description, /en batalla/);
-  assert.ok(payload.embeds[0].fields.some((f) => /Plan/i.test(f.name)));
-  assert.match(payload.embeds[0].fields.map((f) => f.value).join('\n'), /Alice/);
-  assert.match(payload.embeds[0].fields.map((f) => f.value).join('\n'), /🪞/);
+  assert.ok(payload.embeds[0].fields.some((f) => /Plan|Ataques/i.test(f.name)));
+  assert.ok(payload.embeds[0].fields.some((f) => /Ejércitos/i.test(f.name)));
+  const body = payload.embeds[0].fields.map((f) => f.value).join('\n');
+  assert.match(body, /Alice/);
+  assert.match(body, /🪞/);
+  assert.match(body, /↳/);
 });

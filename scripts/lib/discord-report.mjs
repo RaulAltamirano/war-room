@@ -122,31 +122,47 @@ export function buildScoutPayload(site) {
 
   const stateLabel = active.state === 'preparation' ? 'preparación' : 'en batalla';
   const size = active.teamSize || plan.rows.length;
-  const lines = plan.rows.map((r) => {
+
+  // One card per attacker, blank line between — chunked so fields stay under 1024.
+  const cards = plan.rows.map((r) => {
     const a = r.attacker;
     const t = r.target;
     const badge = r.mode === 'espejo' ? '🪞' : '↪️';
-    const tgt = t ? `#${t.pos} ${t.name} TH${t.th}` : '¿sin rival?';
-    return `**#${a.pos}** ${a.name} TH${a.th} ${badge} **${tgt}** · ${r.army.label}`;
+    const who = t ? `**#${t.pos}** ${t.name} · TH${t.th}` : '_¿sin rival?_';
+    return [
+      `**#${a.pos}** ${a.name} · TH${a.th}`,
+      `${badge} ${who}`,
+      `↳ _${r.army.label}_`,
+    ].join('\n');
   });
 
-  const mid = Math.ceil(lines.length / 2) || 0;
-  const left = lines.slice(0, mid);
-  const right = lines.slice(mid);
-  const fields = left.length
-    ? [
-      { name: 'Plan de ataque', value: listOr('_—_', left), inline: true },
-      { name: '\u200b', value: listOr('_—_', right.length ? right : ['\u200b']), inline: true },
-      {
-        name: 'Composiciones (por TH del atacante)',
-        value: clipLines(
-          [...new Map(plan.rows.map((r) => [r.army.label, `• **${r.army.label}** — ${r.army.detail}`])).values()],
-          1024,
-        ),
-        inline: false,
-      },
-    ]
-    : [{ name: 'Plan', value: '_Sin miembros._', inline: false }];
+  const CHUNK = 5;
+  const fields = [];
+  for (let i = 0; i < cards.length; i += CHUNK) {
+    const slice = cards.slice(i, i + CHUNK);
+    const from = plan.rows[i].attacker.pos;
+    const to = plan.rows[Math.min(i + CHUNK - 1, plan.rows.length - 1)].attacker.pos;
+    fields.push({
+      name: cards.length <= CHUNK ? 'Plan de ataque' : `Ataques #${from}–#${to}`,
+      value: slice.join('\n\n'),
+      inline: false,
+    });
+  }
+
+  const comps = [...new Map(
+    plan.rows.map((r) => [r.army.label, `**${r.army.label}** — ${r.army.detail}`]),
+  ).values()];
+  if (comps.length) {
+    fields.push({
+      name: 'Ejércitos sugeridos',
+      value: clipLines(comps.map((c) => `• ${c}`), 1024),
+      inline: false,
+    });
+  }
+
+  if (!fields.length) {
+    fields.push({ name: 'Plan', value: '_Sin miembros._', inline: false });
+  }
 
   return {
     payload: {
@@ -155,10 +171,9 @@ export function buildScoutPayload(site) {
         {
           title: `🧭 Scout · vs ${active.rival || 'rival'}`,
           description: [
-            `Guerra **${stateLabel}** · **${size}v${size}** · ${plan.summary}.`,
-            '🪞 espejo viable · ↪️ otro objetivo (TH / disponibilidad).',
-            '',
-            '_Sin layouts de aldea en la API — es guía por TH y posición, no garantía de 3★._',
+            `**${stateLabel}** · **${size}v${size}** · ${plan.summary}`,
+            '🪞 espejo · ↪️ otro objetivo',
+            '_Guía por TH/posición (sin layouts de aldea)._',
           ].join('\n'),
           color: COLOR.prospects,
           fields,
