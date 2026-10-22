@@ -54,7 +54,7 @@ const site = {
 test('command definitions are guild-safe English slash commands', () => {
   assert.deepEqual(
     COMMAND_DEFINITIONS.map((c) => c.name),
-    ['war', 'clan', 'top', 'report', 'discipline', 'pass'],
+    ['war', 'scout', 'clan', 'top', 'report', 'discipline', 'pass'],
   );
   for (const cmd of COMMAND_DEFINITIONS) {
     assert.equal(cmd.dm_permission, false);
@@ -67,6 +67,19 @@ test('resolveCommand maps to existing embed builders', () => {
   const war = resolveCommand('war', site);
   assert.equal(war.embeds.length, 1);
   assert.match(war.embeds[0].title, /Próxima guerra|Alineación/);
+  const scout = resolveCommand('scout', {
+    ...site,
+    activeWar: {
+      state: 'inWar',
+      teamSize: 1,
+      rival: 'Rivals',
+      us: [{ tag: '#A', name: 'Alpha', th: 15, pos: 1 }],
+      them: [{ tag: '#R', name: 'R1', th: 15, pos: 1 }],
+    },
+  });
+  assert.equal(scout.embeds.length, 1);
+  assert.match(scout.embeds[0].title, /Scout/);
+  assert.match(scout.embeds[0].fields.map((f) => f.value).join('\n'), /Alpha/);
   const clan = resolveCommand('clan', {
     ...site,
     clan: {

@@ -4,6 +4,7 @@ import {
   buildClanPayload,
   buildProspectsPayload,
   buildReportPayload,
+  buildScoutPayload,
   buildTop3Payload,
 } from '../../scripts/lib/discord-report.mjs';
 import { discordPassRulesPayload, monthKeyInZone } from '../../scripts/lib/monthly-top.mjs';
@@ -20,6 +21,13 @@ export const COMMAND_DEFINITIONS = [
   {
     name: 'war',
     description: 'Post who should join the next war (suggested lineup).',
+    type: 1,
+    default_member_permissions: MANAGE_GUILD,
+    dm_permission: false,
+  },
+  {
+    name: 'scout',
+    description: 'Suggest attack targets (mirror or alt) and TH army comps for the active war.',
     type: 1,
     default_member_permissions: MANAGE_GUILD,
     dm_permission: false,
@@ -73,6 +81,8 @@ export function resolveCommand(name, site, { now = new Date() } = {}) {
     case 'war':
     case 'lineup': // legacy alias if an old registration remains
       return { embeds: buildProspectsPayload(site).payload.embeds };
+    case 'scout':
+      return { embeds: buildScoutPayload(site).payload.embeds };
     case 'clan':
       return { embeds: buildClanPayload(site).payload.embeds };
     case 'top':

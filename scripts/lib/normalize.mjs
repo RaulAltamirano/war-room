@@ -249,6 +249,7 @@ export function buildSite({
   rawWars = [],
   generatedAt,
   clanTag = CLAN_TAG,
+  activeWar = null,
 }) {
   const { clan, roster } = fromApi(clanJson || {});
   const byTag = new Map();
@@ -265,7 +266,13 @@ export function buildSite({
     wars.push({ ...war, id });
   }
   wars.sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
-  return { generatedAt, clan, roster, wars };
+  return {
+    generatedAt,
+    clan,
+    roster,
+    wars,
+    activeWar: activeWar || { state: 'notInWar' },
+  };
 }
 
 const IMAGE_KEYS = new Set(['badgeUrls', 'iconUrls']);

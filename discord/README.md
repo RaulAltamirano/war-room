@@ -5,11 +5,14 @@ HTTP interactions endpoint for guild slash commands. Replaces manual GitHub Acti
 | Command        | Result                                      |
 |----------------|---------------------------------------------|
 | `/war`         | Who should join the next war (lineup)       |
-| `/clan`        | War record, streak, league, bitácora snapshot |
+| `/scout`       | Active-war attack plan (mirror/alt + army)  |
+| `/clan`        | War record, streak, league                  |
 | `/top`         | Cumulative bitácora Top 3                   |
 | `/report`      | General clan status pulse (trends only)     |
 | `/discipline`  | Red / grey discipline zones                 |
 | `/pass`        | Battle-pass rules (current Mexico City month) |
+
+`/scout` reads `activeWar` from the latest `fetch` snapshot in `site.json` (preparation / inWar). It does **not** see base layouts — only TH + map position.
 
 Command **names and descriptions are English**. Embed **copy stays Spanish** for the clan channel.
 

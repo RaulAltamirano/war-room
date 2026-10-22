@@ -2,6 +2,7 @@ import { mkdir, writeFile, access } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { CLAN_TAG, pickSides, rawFileName, stripImages } from './lib/normalize.mjs';
+import { snapshotActiveWar } from './lib/war-scout.mjs';
 
 const rootDefault = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -101,6 +102,13 @@ export async function run(opts = {}) {
 
   await mkdir(path.join(dir, 'data', 'raw'), { recursive: true });
   await writeFile(path.join(dir, 'data/clan.json'), JSON.stringify(stripImages(clanRes.json, { keepBadge: true }), null, 2) + '\n');
+  const activeWar = snapshotActiveWar(currentRes.json, clanTag, { pickSides });
+  await writeFile(path.join(dir, 'data/active-war.json'), `${JSON.stringify(activeWar, null, 2)}\n`);
+  if (activeWar.state === 'preparation' || activeWar.state === 'inWar') {
+    log(`Guerra activa (${activeWar.state}) vs ${activeWar.rival || '?'}: scout snapshot guardado.`);
+  } else {
+    log('Sin guerra en preparación/batalla: scout snapshot en notInWar.');
+  }
   const saved = [];
   const skipped = [];
   for (const war of pending) {

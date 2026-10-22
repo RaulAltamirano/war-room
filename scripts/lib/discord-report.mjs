@@ -1,5 +1,6 @@
 import { clipLines, postWebhook } from './discord-text.mjs';
 import { buildBriefing } from './site-metrics.mjs';
+import { buildScoutPlan } from './war-scout.mjs';
 import { buildWarHighlightPayload, resolveWarsFromSaved } from './war-highlight.mjs';
 
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
@@ -80,6 +81,83 @@ export function buildProspectsPayload(site) {
           ...prospectsEmbed(b, { kickoff: true }),
           timestamp: new Date().toISOString(),
           footer: { text: `${clan} · Alineación sugerida` },
+        },
+      ],
+    },
+  };
+}
+
+/** Live war attack plan: mirror-or-alt target + TH army hint (from `site.activeWar`). */
+export function buildScoutPayload(site) {
+  const clan = site?.clan?.name || 'clandestinos';
+  const active = site?.activeWar;
+  const plan = buildScoutPlan(active);
+
+  if (plan.error) {
+    return {
+      payload: {
+        username: 'clandestinos.ops',
+        embeds: [
+          {
+            title: '🧭 Scout · sin guerra activa',
+            description: [
+              'No hay snapshot de guerra en **preparación** o **en batalla**.',
+              '',
+              '_Se actualiza en cada `fetch` de la API. Espera el próximo sync o corre el workflow._',
+            ].join('\n'),
+            color: COLOR.prospects,
+            timestamp: new Date().toISOString(),
+            footer: { text: `${clan} · Scout` },
+          },
+        ],
+      },
+    };
+  }
+
+  const stateLabel = active.state === 'preparation' ? 'preparación' : 'en batalla';
+  const size = active.teamSize || plan.rows.length;
+  const lines = plan.rows.map((r) => {
+    const a = r.attacker;
+    const t = r.target;
+    const badge = r.mode === 'espejo' ? '🪞' : '↪️';
+    const tgt = t ? `#${t.pos} ${t.name} TH${t.th}` : '¿sin rival?';
+    return `**#${a.pos}** ${a.name} TH${a.th} ${badge} **${tgt}** · ${r.army.label}`;
+  });
+
+  const mid = Math.ceil(lines.length / 2) || 0;
+  const left = lines.slice(0, mid);
+  const right = lines.slice(mid);
+  const fields = left.length
+    ? [
+      { name: 'Plan de ataque', value: listOr('_—_', left), inline: true },
+      { name: '\u200b', value: listOr('_—_', right.length ? right : ['\u200b']), inline: true },
+      {
+        name: 'Composiciones (por TH del atacante)',
+        value: clipLines(
+          [...new Map(plan.rows.map((r) => [r.army.label, `• **${r.army.label}** — ${r.army.detail}`])).values()],
+          1024,
+        ),
+        inline: false,
+      },
+    ]
+    : [{ name: 'Plan', value: '_Sin miembros._', inline: false }];
+
+  return {
+    payload: {
+      username: 'clandestinos.ops',
+      embeds: [
+        {
+          title: `🧭 Scout · vs ${active.rival || 'rival'}`,
+          description: [
+            `Guerra **${stateLabel}** · **${size}v${size}** · ${plan.summary}.`,
+            '🪞 espejo viable · ↪️ otro objetivo (TH / disponibilidad).',
+            '',
+            '_Sin layouts de aldea en la API — es guía por TH y posición, no garantía de 3★._',
+          ].join('\n'),
+          color: COLOR.prospects,
+          fields,
+          timestamp: new Date().toISOString(),
+          footer: { text: `${clan} · Scout · sync ${String(active.at || '').slice(0, 16).replace('T', ' ') || '—'}` },
         },
       ],
     },
