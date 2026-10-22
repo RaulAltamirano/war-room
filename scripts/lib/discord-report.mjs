@@ -11,6 +11,9 @@ const COLOR = {
   prospects: 0x5ee08a,
   clan: 0xb07cff,
 };
+/** Custom trophy art (not the clan badge). Served from the repo for Discord embeds. */
+const TOP3_THUMB =
+  'https://raw.githubusercontent.com/RaulAltamirano/war-room/main/discord/assets/top3.jpg';
 
 function fshort(date) {
   if (!date) return 'Sin fecha';
@@ -153,6 +156,7 @@ export function buildTop3Payload(site) {
             `**${b.warsCount}** guerras · 70% impacto (liga ×2) + 30% donaciones · ≥1 guerra.`,
           ].join('\n'),
           color: COLOR.top,
+          thumbnail: { url: TOP3_THUMB },
           fields: top3Fields(b.top3),
           timestamp: new Date().toISOString(),
           footer: { text: `${clan} · Ranking acumulado` },
