@@ -1,6 +1,6 @@
 import { clipLines, postWebhook } from './discord-text.mjs';
-import { buildBriefing } from './site-metrics.mjs';
-import { buildWarHighlightPayload, resolveWarsFromSaved, warTop3 } from './war-highlight.mjs';
+import { buildBriefing, warsSorted } from './site-metrics.mjs';
+import { buildWarHighlightPayload, resolveWarsFromSaved } from './war-highlight.mjs';
 
 const RES = { V: 'Victoria', D: 'Derrota', E: 'Empate' };
 const MEDAL = ['🥇', '🥈', '🥉'];
@@ -9,6 +9,7 @@ const COLOR = {
   top: 0xffc83d,
   analysis: 0x5aa7ff,
   prospects: 0x5ee08a,
+  clan: 0xb07cff,
 };
 
 function fshort(date) {
@@ -59,9 +60,9 @@ function prospectsEmbed(briefing, { kickoff = false } = {}) {
     });
   }
   return {
-    title: kickoff ? '⚔️ Alineación · iniciar guerra' : '⚔️ Prospectos · próxima guerra',
+    title: kickoff ? '⚔️ Próxima guerra · alineación' : '⚔️ Prospectos · próxima guerra',
     description: kickoff
-      ? `Sugeridos para la **próxima guerra**: **${briefing.prospects.length}** · pelearon ≥1 y no están fuera.`
+      ? `Quién metemos a la **próxima guerra**: **${briefing.prospects.length}** sugeridos · pelearon ≥1 y no están fuera.`
       : `Sugeridos: **${briefing.prospects.length}** · pelearon ≥1 guerra y no están fuera.`,
     color: COLOR.prospects,
     fields,
@@ -127,7 +128,7 @@ function top3Fields(top3) {
   return fields;
 }
 
-/** Cumulative bitácora Top 3 (not a single-war podium — that belongs on `/war` / highlight). */
+/** Cumulative bitácora Top 3 (not a single-war podium — that belongs on the war-ended highlight). */
 export function buildTop3Payload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';
@@ -159,7 +160,79 @@ export function buildTop3Payload(site) {
   };
 }
 
-/** Clan-wide status pulse — no last-war card, no Top 3 (use `/top`), no full lineup (use `/lineup`). */
+/** Clan card: API war record + bitácora snapshot (slash `/clan`). */
+export function buildClanPayload(site) {
+  const clan = site?.clan || {};
+  const name = clan.name || 'clandestinos';
+  const wars = warsSorted(site?.wars || []);
+  const last = wars.slice(-1)[0] || null;
+  const log = { V: 0, D: 0, E: 0 };
+  for (const w of wars) {
+    if (log[w.res] != null) log[w.res] += 1;
+  }
+  const apiW = clan.w || 0;
+  const apiL = clan.l || 0;
+  const apiT = clan.t || 0;
+  const apiTotal = apiW + apiL + apiT;
+  const lastLine = last
+    ? `**${fshort(last.date)}** vs **${last.rival || '—'}** · ${RES[last.res] || last.res || '—'} · ${(last.stars || [0, 0]).join('-')}`
+    : '_Sin guerras en bitácora._';
+
+  return {
+    payload: {
+      username: 'clandestinos.ops',
+      embeds: [
+        {
+          title: `🏰 Clan · ${name}`,
+          description: [
+            clan.tag ? `\`${clan.tag}\` · nivel **${clan.level ?? '—'}** · **${clan.members ?? '—'}** miembros` : `Nivel **${clan.level ?? '—'}**`,
+            '',
+            `Liga: **${clan.league || '—'}** · Capital: **${clan.capLeague || '—'}**`,
+            `Frecuencia de guerra: **${clan.freq || '—'}**`,
+          ].join('\n'),
+          color: COLOR.clan,
+          fields: [
+            {
+              name: '⚔️ Record (API)',
+              value: [
+                `**${apiW}** V · **${apiL}** D · **${apiT}** E`,
+                apiTotal ? `_Total ${apiTotal} guerras_` : '_Sin datos_',
+                `Racha de victorias: **${clan.streak ?? 0}**`,
+              ].join('\n'),
+              inline: true,
+            },
+            {
+              name: '📒 En bitácora',
+              value: [
+                `**${log.V}** V · **${log.D}** D · **${log.E}** E`,
+                `_ ${wars.length} guerras guardadas_`,
+              ].join('\n'),
+              inline: true,
+            },
+            {
+              name: '📊 Clan',
+              value: [
+                `Trofeos \`${clan.trophies ?? 0}\``,
+                `Builder \`${clan.builder ?? 0}\``,
+                `Capital \`${clan.capital ?? 0}\``,
+              ].join('\n'),
+              inline: true,
+            },
+            {
+              name: 'Última en bitácora',
+              value: lastLine,
+              inline: false,
+            },
+          ],
+          timestamp: new Date().toISOString(),
+          footer: { text: `${name} · Ficha del clan` },
+        },
+      ],
+    },
+  };
+}
+
+/** Clan-wide status pulse — no last-war card, no Top 3 (use `/top`), no full lineup (use `/war`). */
 export function buildReportPayload(site) {
   const b = buildBriefing(site);
   const clan = b.clan.name || 'clandestinos';

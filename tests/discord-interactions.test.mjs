@@ -54,7 +54,7 @@ const site = {
 test('command definitions are guild-safe English slash commands', () => {
   assert.deepEqual(
     COMMAND_DEFINITIONS.map((c) => c.name),
-    ['top', 'report', 'lineup', 'discipline', 'pass'],
+    ['war', 'clan', 'top', 'report', 'discipline', 'pass'],
   );
   for (const cmd of COMMAND_DEFINITIONS) {
     assert.equal(cmd.dm_permission, false);
@@ -64,6 +64,17 @@ test('command definitions are guild-safe English slash commands', () => {
 });
 
 test('resolveCommand maps to existing embed builders', () => {
+  const war = resolveCommand('war', site);
+  assert.equal(war.embeds.length, 1);
+  assert.match(war.embeds[0].title, /Próxima guerra|Alineación/);
+  const clan = resolveCommand('clan', {
+    ...site,
+    clan: { ...site.clan, w: 11, l: 22, t: 0, streak: 3, league: 'Plata I', members: 35, trophies: 1, builder: 2, capital: 3, freq: 'Siempre' },
+  });
+  assert.equal(clan.embeds.length, 1);
+  assert.match(clan.embeds[0].title, /Clan/);
+  assert.match(clan.embeds[0].fields[0].name, /Record/);
+  assert.match(clan.embeds[0].fields[0].value, /11/);
   const top = resolveCommand('top', site);
   assert.equal(top.embeds.length, 1);
   assert.match(top.embeds[0].title, /Top 3/);
@@ -71,7 +82,6 @@ test('resolveCommand maps to existing embed builders', () => {
   assert.equal(top.embeds[0].fields.length, 3);
   assert.equal(resolveCommand('report', site).embeds.length, 1);
   assert.match(resolveCommand('report', site).embeds[0].title, /Estado del clan/);
-  assert.equal(resolveCommand('lineup', site).embeds.length, 1);
   assert.equal(resolveCommand('discipline', site).embeds.length, 1);
   assert.equal(resolveCommand('pass', site, { now: new Date('2026-10-22T12:00:00-06:00') }).embeds.length, 1);
   assert.match(resolveCommand('nope', site).content, /Unknown/);

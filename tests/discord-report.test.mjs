@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import {
+  buildClanPayload,
   buildProspectsPayload,
   buildReportPayload,
   buildTop3Payload,
@@ -297,8 +298,37 @@ test('force sin warEnded sigue enviando el informe general', async () => {
 test('buildProspectsPayload es alineación para iniciar guerra', () => {
   const { payload } = buildProspectsPayload(site);
   assert.equal(payload.embeds.length, 1);
-  assert.match(payload.embeds[0].title, /iniciar guerra|Alineación/);
+  assert.match(payload.embeds[0].title, /próxima guerra|Alineación/i);
   assert.ok(payload.embeds[0].fields.some((f) => f.name === 'Alineación'));
+});
+
+test('buildClanPayload muestra record API y bitácora', () => {
+  const siteClan = {
+    ...site,
+    clan: {
+      name: 'clandestinos',
+      tag: '#2RGC02RYC',
+      level: 6,
+      w: 11,
+      l: 22,
+      t: 0,
+      streak: 3,
+      league: 'Plata I',
+      capLeague: 'Bronce',
+      members: 35,
+      trophies: 100,
+      builder: 50,
+      capital: 10,
+      freq: 'Siempre',
+    },
+  };
+  const { payload } = buildClanPayload(siteClan);
+  assert.equal(payload.embeds.length, 1);
+  assert.match(payload.embeds[0].title, /Clan/);
+  assert.match(payload.embeds[0].fields.map((f) => f.name).join(' '), /Record/);
+  assert.match(payload.embeds[0].fields[0].value, /\*\*11\*\* V/);
+  assert.match(payload.embeds[0].fields[0].value, /Racha/);
+  assert.match(payload.embeds[0].fields[1].name, /bitácora/i);
 });
 
 test('alineación lista todos los prospectos, sin “…y N más”', () => {
@@ -342,7 +372,7 @@ test('runDiscordProspects solo postea con force', async () => {
     fetchImpl: async (_u, opts) => {
       posts += 1;
       const body = JSON.parse(opts.body);
-      assert.match(body.embeds[0].title, /Alineación|iniciar/);
+      assert.match(body.embeds[0].title, /próxima guerra|Alineación/i);
       return { ok: true };
     },
     log: () => {},

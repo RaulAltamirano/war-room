@@ -1,5 +1,6 @@
 import { buildBanZonesPayload } from '../../scripts/lib/ban-zones.mjs';
 import {
+  buildClanPayload,
   buildProspectsPayload,
   buildReportPayload,
   buildTop3Payload,
@@ -15,6 +16,20 @@ export const MANAGE_GUILD = String(1n << 5n);
  */
 export const COMMAND_DEFINITIONS = [
   {
+    name: 'war',
+    description: 'Post who should join the next war (suggested lineup).',
+    type: 1,
+    default_member_permissions: MANAGE_GUILD,
+    dm_permission: false,
+  },
+  {
+    name: 'clan',
+    description: 'Post clan war record, streak, league, and bitácora snapshot.',
+    type: 1,
+    default_member_permissions: MANAGE_GUILD,
+    dm_permission: false,
+  },
+  {
     name: 'top',
     description: 'Post the cumulative bitácora Top 3 (all wars; not last war only).',
     type: 1,
@@ -24,13 +39,6 @@ export const COMMAND_DEFINITIONS = [
   {
     name: 'report',
     description: 'Post a general clan status pulse (trends; no war card).',
-    type: 1,
-    default_member_permissions: MANAGE_GUILD,
-    dm_permission: false,
-  },
-  {
-    name: 'lineup',
-    description: 'Post the suggested war lineup for the next war.',
     type: 1,
     default_member_permissions: MANAGE_GUILD,
     dm_permission: false,
@@ -60,12 +68,15 @@ export const COMMAND_DEFINITIONS = [
  */
 export function resolveCommand(name, site, { now = new Date() } = {}) {
   switch (name) {
+    case 'war':
+    case 'lineup': // legacy alias if an old registration remains
+      return { embeds: buildProspectsPayload(site).payload.embeds };
+    case 'clan':
+      return { embeds: buildClanPayload(site).payload.embeds };
     case 'top':
       return { embeds: buildTop3Payload(site).payload.embeds };
     case 'report':
       return { embeds: buildReportPayload(site).payload.embeds };
-    case 'lineup':
-      return { embeds: buildProspectsPayload(site).payload.embeds };
     case 'discipline':
       return { embeds: buildBanZonesPayload(site).payload.embeds };
     case 'pass':

@@ -33,9 +33,10 @@ Discord  --POST signed interaction-->  Cloudflare Worker
 
 | Command       | Effect                                      | Mirrors workflow input      |
 |---------------|---------------------------------------------|-----------------------------|
-| `/top`        | Live Top 3 podium embed                     | _(slash only)_              |
+| `/war`        | Next-war suggested lineup                   | `enviar_prospectos`         |
+| `/clan`       | Clan war record, streak, league, snapshot   | _(slash only)_              |
+| `/top`        | Cumulative bitácora Top 3                   | _(slash only)_              |
 | `/report`     | General clan status (trends; no war card)   | `enviar_informe`            |
-| `/lineup`     | Kickoff alignment embed                     | `enviar_prospectos`         |
 | `/discipline` | Red / grey discipline embed                 | `enviar_zonas_ban`          |
 | `/pass`       | Battle-pass rules for the current MX month  | `enviar_pase`               |
 
