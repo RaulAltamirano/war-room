@@ -8,14 +8,19 @@ import { TOP3_FILENAME, TOP3_MIME, top3Bytes } from './top3-thumb.js';
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
-    if (request.method === 'GET' && url.pathname === `/assets/${TOP3_FILENAME}`) {
-      return new Response(top3Bytes(), {
-        headers: {
-          'Content-Type': TOP3_MIME,
-          'Cache-Control': 'public, max-age=86400',
-          'Access-Control-Allow-Origin': '*',
-        },
-      });
+    if (
+      (request.method === 'GET' || request.method === 'HEAD')
+      && url.pathname === `/assets/${TOP3_FILENAME}`
+    ) {
+      const headers = {
+        'Content-Type': TOP3_MIME,
+        'Cache-Control': 'public, max-age=86400',
+        'Access-Control-Allow-Origin': '*',
+      };
+      if (request.method === 'HEAD') {
+        return new Response(null, { status: 200, headers });
+      }
+      return new Response(top3Bytes(), { headers });
     }
     return handleInteractionRequest(request, env, {
       waitUntil: (promise) => ctx.waitUntil(promise),
