@@ -17,7 +17,7 @@ Los 15 números se calculan solo con los ataques del clan, en orden de `order`.
 ## Página
 
 - **Top 3 / ranking / prospectos:** 70% impacto de guerra + 30% donaciones (normalizadas al máximo del grupo); la liga de clanes (`liga` / 1 ataque) pesa el doble en el promedio de impacto; empate: estrellas ↓, neto ↓, sin usar ↑.
-- **Próxima guerra:** quienes pelearon ≥1 guerra y no están «Fuera de guerra» (≥2 ataques sin usar y ≥50%).
+- **Próxima guerra:** quienes pelearon ≥1 guerra, atacaron en su última guerra y no están «Fuera de guerra» (≥2 ataques sin usar y ≥50%).
 - **Análisis:** ±10 de impacto (últimas 2 vs anteriores) con motivo corto `+12 · 70 → 95`; fuera con `X de Y sin usar`.
 - No rediseñes el layout de `index.html`.
 

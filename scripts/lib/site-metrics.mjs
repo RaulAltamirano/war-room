@@ -103,13 +103,27 @@ export function warSignature(wars) {
   return warsSorted(wars).map((w) => w.id).filter(Boolean).join('|');
 }
 
+/** Nombres cuya última guerra registrada quedó entera sin atacar. */
+export function lastWarBlank(wars) {
+  const last = new Map();
+  for (const w of warsSorted(wars)) {
+    for (const m of w.members || []) {
+      if (!m[2]) continue;
+      const r = rec(m[2]);
+      last.set(m[0], r.pos > 0 && r.miss === r.pos);
+    }
+  }
+  return [...last].filter(([, blank]) => blank).map(([n]) => n);
+}
+
 export function buildBriefing(site) {
   const wars = site.wars || [];
   const scored = scoredList(wars, site.roster || []);
   const trend = trendOf(wars);
   const outNames = new Set(trend.out.map((x) => x.n));
+  const blankNames = new Set(lastWarBlank(wars));
   const rosterNames = new Set((site.roster || []).map((m) => m[0]));
-  const prospects = scored.filter((p) => !outNames.has(p.n) && rosterNames.has(p.n));
+  const prospects = scored.filter((p) => !outNames.has(p.n) && !blankNames.has(p.n) && rosterNames.has(p.n));
   const top3 = scored.slice(0, 3).map((p) => ({
     n: p.n,
     score: Math.round(p.score),

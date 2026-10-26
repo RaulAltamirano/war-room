@@ -158,6 +158,50 @@ test('prospectos no incluyen a quien ya no está en el roster', () => {
   assert.ok(b.prospects.some((p) => p.n === 'Alpha'));
 });
 
+test('prospectos sientan a quien dejó la última guerra sin atacar y lo devuelven si vuelve', () => {
+  const blank = {
+    ...site,
+    wars: [
+      ...site.wars,
+      {
+        id: 'w3',
+        date: '2026-10-15',
+        rival: 'Sit',
+        res: 'V',
+        stars: [20, 10],
+        members: [
+          member('Alpha', 90, 3, 0, 2, 2),
+          member('Beta', 0, 0, 2, 2, 0),
+        ],
+      },
+    ],
+  };
+  const sat = buildBriefing(blank);
+  assert.equal(sat.prospects.some((p) => p.n === 'Beta'), false);
+  assert.ok(sat.prospects.some((p) => p.n === 'Alpha'));
+  assert.equal(sat.trend.out.some((x) => x.n === 'Beta'), false);
+
+  const back = {
+    ...blank,
+    wars: [
+      ...blank.wars,
+      {
+        id: 'w4',
+        date: '2026-10-20',
+        rival: 'Back',
+        res: 'V',
+        stars: [30, 0],
+        members: [
+          member('Alpha', 100, 3, 0, 2, 3),
+          member('Beta', 80, 2, 0, 2, 1),
+        ],
+      },
+    ],
+  };
+  const returned = buildBriefing(back);
+  assert.ok(returned.prospects.some((p) => p.n === 'Beta'));
+});
+
 test('buildReportPayload es un informe general sin guerra ni Top 3', () => {
   const { payload } = buildReportPayload(site);
   assert.equal(payload.embeds.length, 1);

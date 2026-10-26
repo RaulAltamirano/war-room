@@ -62,8 +62,8 @@ function prospectsEmbed(briefing, { kickoff = false } = {}) {
   return {
     title: kickoff ? '⚔️ Próxima guerra' : '⚔️ Prospectos · próxima guerra',
     description: kickoff
-      ? `**${briefing.prospects.length}** para meter a la guerra.`
-      : `Sugeridos: **${briefing.prospects.length}** · pelearon ≥1 guerra y no están fuera.`,
+      ? `**${briefing.prospects.length}** para meter a la guerra. Quien dejó la última guerra sin atacar no entra.`
+      : `Sugeridos: **${briefing.prospects.length}** · atacaron en su última guerra y no están fuera.`,
     color: COLOR.prospects,
     fields,
   };

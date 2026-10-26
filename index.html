@@ -679,12 +679,19 @@ function warLog(){
  return '<section id="registro" aria-labelledby="h-log">'+head+tabs+sorts+'<div class="plist">'+rows+'</div></section>';
 }
 
+function lastWarBlank(){
+ var last={};
+ warsSorted().forEach(function(w){w.members.forEach(function(m){if(!m[2])return;var r=rec(m[2]);last[m[0]]=r.pos>0&&r.miss===r.pos})});
+ return Object.keys(last).filter(function(n){return last[n]});
+}
 function lineup(){
- var OUT=trend().out.map(function(x){return x.n}),pros=scored().filter(function(x){return OUT.indexOf(x.n)<0});
+ var OUT=trend().out.map(function(x){return x.n}),SAT=lastWarBlank();
+ var pros=scored().filter(function(x){return OUT.indexOf(x.n)<0&&SAT.indexOf(x.n)<0});
  function card(x,i){var p=x.p;var st=p?(p.miss?'warn':'ok'):'idle';
   return '<div class="pro '+st+'"><span class="pro-n tnum">'+(i+1)+'</span><b class="pro-name">'+esc(x.n)+'</b></div>'}
  return '<section id="sugerencia" aria-labelledby="h-line"><div class="sec-head"><h2 id="h-line" class="toon">Próxima guerra</h2><span class="hint">'+pros.length+' sugeridos</span></div>'+
  '<div class="legend lg-top"><span><i style="background:var(--green)"></i>Cumplió</span><span><i style="background:var(--red)"></i>Dejó ataques</span></div>'+
+ '<p class="note">No entra quien dejó la última guerra entera sin atacar.</p>'+
  '<div class="pros">'+pros.map(card).join('')+'</div></section>';
 }
 
