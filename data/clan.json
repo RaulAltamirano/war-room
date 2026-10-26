@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 30200,
-  "clanBuilderBasePoints": 18076,
+  "clanBuilderBasePoints": 18100,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3066,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 867,
+      "donations": 909,
       "donationsReceived": 60,
       "playerHouse": {
         "elements": [
@@ -525,14 +525,14 @@
         "name": "Wizard League 11"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1515,
+      "builderBaseTrophies": 1642,
       "clanRank": 12,
       "previousClanRank": 9,
       "donations": 594,
-      "donationsReceived": 890,
+      "donationsReceived": 932,
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -800,7 +800,7 @@
         "name": "Archer League 7"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1343,
+      "builderBaseTrophies": 1308,
       "clanRank": 19,
       "previousClanRank": 19,
       "donations": 234,
