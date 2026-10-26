@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T15:25:36Z",
+  "generatedAt": "2026-10-26T15:43:36Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -7492,8 +7492,8 @@
     }
   ],
   "activeWar": {
-    "state": "warEnded",
-    "at": "2026-10-26T15:25:36.703Z",
+    "state": "notInWar",
+    "at": "2026-10-26T15:43:36.540Z",
     "source": "none"
   }
 }
