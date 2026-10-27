@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 30200,
-  "clanBuilderBasePoints": 18191,
+  "clanBuilderBasePoints": 18183,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -310,7 +310,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 94,
+      "expLevel": 95,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -319,7 +319,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 21,
+      "trophies": 101,
       "builderBaseTrophies": 1738,
       "clanRank": 7,
       "previousClanRank": 12,
@@ -390,7 +390,7 @@
         "name": "Wizard League 11"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2299,
+      "builderBaseTrophies": 2303,
       "clanRank": 9,
       "previousClanRank": 8,
       "donations": 142,
@@ -619,7 +619,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 73,
+      "trophies": 248,
       "builderBaseTrophies": 1146,
       "clanRank": 15,
       "previousClanRank": 15,
@@ -665,7 +665,7 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1859,
+      "builderBaseTrophies": 1821,
       "clanRank": 16,
       "previousClanRank": 16,
       "donations": 61,
@@ -889,7 +889,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 179,
+      "trophies": 191,
       "builderBaseTrophies": 1480,
       "clanRank": 21,
       "previousClanRank": 21,
@@ -980,7 +980,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 13,
-      "builderBaseTrophies": 2362,
+      "builderBaseTrophies": 2360,
       "clanRank": 23,
       "previousClanRank": 22,
       "donations": 0,

@@ -115,7 +115,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -288,6 +288,6 @@
       "attacks": 2
     }
   ],
-  "at": "2026-10-27T18:48:27.958Z",
+  "at": "2026-10-27T22:45:09.601Z",
   "source": "currentwar"
 }
