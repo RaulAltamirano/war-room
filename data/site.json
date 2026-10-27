@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:25:28Z",
+  "generatedAt": "2026-10-27T18:48:28Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 30200,
-    "builder": 18161,
+    "builder": 18191,
     "capital": 1097,
     "members": 34,
     "freq": "Siempre",
@@ -118,9 +118,9 @@
       "C",
       13,
       94,
-      629,
+      632,
       932,
-      1642
+      1738
     ],
     [
       "يسوري❤️❤️",
@@ -138,13 +138,13 @@
       146,
       142,
       154,
-      2287
+      2299
     ],
     [
       "ⓟⓐⓒⓜⓐⓝ",
       "C",
       11,
-      134,
+      135,
       1182,
       2961,
       1984
@@ -200,8 +200,8 @@
       11,
       81,
       61,
-      881,
-      1829
+      884,
+      1859
     ],
     [
       "joshua",
@@ -234,7 +234,7 @@
       "jhon cna",
       "M",
       9,
-      66,
+      67,
       0,
       0,
       1393
@@ -246,7 +246,7 @@
       63,
       0,
       128,
-      1511
+      1480
     ],
     [
       "demiur",
@@ -7492,7 +7492,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 20,
     "attacksPerMember": 2,
     "rival": "گندی خوری",
@@ -7608,7 +7608,7 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#Y9GU8QYYG",
@@ -7764,24 +7764,24 @@
         "name": "Loor",
         "th": 13,
         "pos": 4,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8YRQLY0GU",
         "name": "♠️tirad wolf♠️",
         "th": 16,
         "pos": 2,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8RU2VCJJR",
         "name": "⚜️king ragnar⚜️",
         "th": 18,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       }
     ],
-    "at": "2026-10-27T13:25:28.635Z",
+    "at": "2026-10-27T18:48:27.958Z",
     "source": "currentwar"
   }
 }

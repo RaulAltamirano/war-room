@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 30200,
-  "clanBuilderBasePoints": 18161,
+  "clanBuilderBasePoints": 18191,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -320,14 +320,14 @@
         "name": "Wizard League 11"
       },
       "trophies": 21,
-      "builderBaseTrophies": 1642,
+      "builderBaseTrophies": 1738,
       "clanRank": 7,
       "previousClanRank": 12,
-      "donations": 629,
+      "donations": 632,
       "donationsReceived": 932,
       "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
+        "id": 44000017,
+        "name": "Copper League III"
       }
     },
     {
@@ -390,7 +390,7 @@
         "name": "Wizard League 11"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2287,
+      "builderBaseTrophies": 2299,
       "clanRank": 9,
       "previousClanRank": 8,
       "donations": 142,
@@ -425,7 +425,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 11,
-      "expLevel": 134,
+      "expLevel": 135,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -665,11 +665,11 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1829,
+      "builderBaseTrophies": 1859,
       "clanRank": 16,
       "previousClanRank": 16,
       "donations": 61,
-      "donationsReceived": 881,
+      "donationsReceived": 884,
       "playerHouse": {
         "elements": [
           {
@@ -835,7 +835,7 @@
       "name": "jhon cna",
       "role": "member",
       "townHallLevel": 9,
-      "expLevel": 66,
+      "expLevel": 67,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 179,
-      "builderBaseTrophies": 1511,
+      "builderBaseTrophies": 1480,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 0,
@@ -916,8 +916,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000014,
+        "name": "Stone League I"
       }
     },
     {

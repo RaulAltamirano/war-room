@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 20,
   "attacksPerMember": 2,
   "rival": "گندی خوری",
@@ -115,7 +115,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -271,23 +271,23 @@
       "name": "Loor",
       "th": 13,
       "pos": 4,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8YRQLY0GU",
       "name": "♠️tirad wolf♠️",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8RU2VCJJR",
       "name": "⚜️king ragnar⚜️",
       "th": 18,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     }
   ],
-  "at": "2026-10-27T13:25:28.635Z",
+  "at": "2026-10-27T18:48:27.958Z",
   "source": "currentwar"
 }
