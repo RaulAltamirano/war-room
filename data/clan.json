@@ -880,7 +880,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 62,
+      "expLevel": 63,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -889,7 +889,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 106,
+      "trophies": 179,
       "builderBaseTrophies": 1511,
       "clanRank": 21,
       "previousClanRank": 25,
