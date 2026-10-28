@@ -45,7 +45,7 @@
       "name": "Shiba",
       "th": 10,
       "pos": 13,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LY9J99L9G",
@@ -143,7 +143,7 @@
       "name": "VORTEX",
       "th": 10,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     }
   ],
   "them": [
@@ -194,7 +194,7 @@
       "name": "Fati bano",
       "th": 12,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GCYVLRRP8",
@@ -215,7 +215,7 @@
       "name": "MR WOLF",
       "th": 10,
       "pos": 16,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GYJPPU9G2",
@@ -288,6 +288,6 @@
       "attacks": 2
     }
   ],
-  "at": "2026-10-28T07:43:41.229Z",
+  "at": "2026-10-28T14:41:07.023Z",
   "source": "currentwar"
 }
