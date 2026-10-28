@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 30200,
-  "clanBuilderBasePoints": 18187,
+  "clanBuilderBasePoints": 18194,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 1,
-  "warWins": 12,
+  "warWinStreak": 2,
+  "warWins": 13,
   "warTies": 0,
   "warLosses": 23,
   "isWarLogPublic": true,
@@ -265,7 +265,7 @@
       "name": "jaimerrdd",
       "role": "member",
       "townHallLevel": 13,
-      "expLevel": 128,
+      "expLevel": 129,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -889,7 +889,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 280,
+      "trophies": 303,
       "builderBaseTrophies": 1717,
       "clanRank": 21,
       "previousClanRank": 22,
@@ -935,7 +935,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 191,
-      "builderBaseTrophies": 1480,
+      "builderBaseTrophies": 1510,
       "clanRank": 22,
       "previousClanRank": 21,
       "donations": 0,
@@ -961,53 +961,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000014,
-        "name": "Stone League I"
-      }
-    },
-    {
-      "tag": "#R9GR9QC9C",
-      "name": "kerrykopito",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 67,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000006,
-        "name": "Barbarian League 6"
-      },
-      "trophies": 23,
-      "builderBaseTrophies": 1618,
-      "clanRank": 23,
-      "previousClanRank": 28,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
+        "id": 44000015,
+        "name": "Copper League V"
       }
     },
     {
@@ -1024,9 +979,9 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 13,
+      "trophies": 53,
       "builderBaseTrophies": 2361,
-      "clanRank": 24,
+      "clanRank": 23,
       "previousClanRank": 23,
       "donations": 25,
       "donationsReceived": 0,
@@ -1053,6 +1008,51 @@
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
+      }
+    },
+    {
+      "tag": "#R9GR9QC9C",
+      "name": "kerrykopito",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 67,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 23,
+      "builderBaseTrophies": 1618,
+      "clanRank": 24,
+      "previousClanRank": 28,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {

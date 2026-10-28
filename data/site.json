@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-28T14:41:07Z",
+  "generatedAt": "2026-10-28T19:59:25Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
     "tag": "#2RGC02RYC",
     "badge": "https://api-assets.clashofclans.com/badges/200/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png",
-    "w": 12,
+    "w": 13,
     "t": 0,
     "l": 23,
-    "streak": 1,
+    "streak": 2,
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 30200,
-    "builder": 18187,
+    "builder": 18194,
     "capital": 1097,
     "members": 34,
     "freq": "Siempre",
@@ -108,7 +108,7 @@
       "jaimerrdd",
       "M",
       13,
-      128,
+      129,
       0,
       72,
       2455
@@ -255,16 +255,7 @@
       64,
       0,
       128,
-      1480
-    ],
-    [
-      "kerrykopito",
-      "M",
-      10,
-      67,
-      0,
-      0,
-      1618
+      1510
     ],
     [
       "minch",
@@ -274,6 +265,15 @@
       25,
       0,
       2361
+    ],
+    [
+      "kerrykopito",
+      "M",
+      10,
+      67,
+      0,
+      0,
+      1618
     ],
     [
       "Diego503",
@@ -7492,31 +7492,31 @@
     }
   ],
   "activeWar": {
-    "state": "inWar",
-    "teamSize": 20,
+    "state": "preparation",
+    "teamSize": 15,
     "attacksPerMember": 2,
-    "rival": "گندی خوری",
-    "rivalTag": "#28VCLYLJY",
+    "rival": "Vozitel team",
+    "rivalTag": "#2CC0J0VQQ",
     "us": [
       {
         "tag": "#Y0PPGVQL2",
         "name": "xlMURDOClx",
         "th": 13,
         "pos": 5,
-        "attacks": 2
+        "attacks": 0
       },
       {
         "tag": "#2VL98GPGU",
         "name": "ⓟⓐⓒⓜⓐⓝ",
         "th": 11,
         "pos": 9,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#R820CCYQ0",
         "name": "jhon cna",
         "th": 9,
-        "pos": 19,
+        "pos": 14,
         "attacks": 0
       },
       {
@@ -7524,83 +7524,62 @@
         "name": "Pete Zahut",
         "th": 13,
         "pos": 6,
-        "attacks": 2
-      },
-      {
-        "tag": "#R8P80GGGR",
-        "name": "Diego503",
-        "th": 11,
-        "pos": 18,
         "attacks": 0
       },
       {
-        "tag": "#G09LQLJV0",
-        "name": "Shiba",
-        "th": 10,
-        "pos": 13,
-        "attacks": 1
-      },
-      {
-        "tag": "#LY9J99L9G",
-        "name": "cozo 2000",
-        "th": 11,
-        "pos": 12,
-        "attacks": 1
-      },
-      {
-        "tag": "#8VJYRRGQ",
-        "name": "..::MURDOC::..",
-        "th": 14,
-        "pos": 3,
-        "attacks": 2
-      },
-      {
-        "tag": "#8VCYYPVLU",
-        "name": "Nicolás",
+        "tag": "#QCCVGR9P0",
+        "name": "al 100%",
         "th": 14,
         "pos": 4,
         "attacks": 0
       },
       {
-        "tag": "#R282UJLVJ",
-        "name": "ElTiti",
-        "th": 10,
-        "pos": 17,
+        "tag": "#LY9J99L9G",
+        "name": "cozo 2000",
+        "th": 11,
+        "pos": 11,
+        "attacks": 0
+      },
+      {
+        "tag": "#8VJYRRGQ",
+        "name": "..::MURDOC::..",
+        "th": 14,
+        "pos": 2,
+        "attacks": 0
+      },
+      {
+        "tag": "#8VCYYPVLU",
+        "name": "Nicolás",
+        "th": 14,
+        "pos": 3,
         "attacks": 0
       },
       {
         "tag": "#R2PLC2008",
         "name": "clandes",
         "th": 9,
-        "pos": 20,
+        "pos": 15,
         "attacks": 0
       },
       {
         "tag": "#R2ULCJ0J8",
         "name": "demiur",
         "th": 10,
-        "pos": 14,
-        "attacks": 2
+        "pos": 13,
+        "attacks": 0
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
-        "th": 10,
-        "pos": 16,
-        "attacks": 2
+        "th": 11,
+        "pos": 12,
+        "attacks": 0
       },
       {
         "tag": "#R8CVPGJQC",
         "name": "JOSHUA",
         "th": 12,
         "pos": 8,
-        "attacks": 2
-      },
-      {
-        "tag": "#GGUV8U2LQ",
-        "name": "joshua",
-        "th": 11,
-        "pos": 11,
         "attacks": 0
       },
       {
@@ -7608,180 +7587,131 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 2
+        "attacks": 0
       },
       {
         "tag": "#Y9GU8QYYG",
         "name": "kssto",
         "th": 15,
-        "pos": 2,
-        "attacks": 2
+        "pos": 1,
+        "attacks": 0
       },
       {
         "tag": "#GC9ULU80G",
         "name": "TaP",
         "th": 11,
         "pos": 10,
-        "attacks": 2
-      },
-      {
-        "tag": "#GPRY08G8G",
-        "name": "Joshua",
-        "th": 18,
-        "pos": 1,
-        "attacks": 2
-      },
-      {
-        "tag": "#G92R92J98",
-        "name": "VORTEX",
-        "th": 10,
-        "pos": 15,
-        "attacks": 1
+        "attacks": 0
       }
     ],
     "them": [
       {
-        "tag": "#2CJ02J208",
-        "name": "Shahriar",
-        "th": 13,
-        "pos": 6,
-        "attacks": 0
-      },
-      {
-        "tag": "#GLQPPYR0C",
-        "name": "تینار",
-        "th": 13,
-        "pos": 7,
-        "attacks": 0
-      },
-      {
-        "tag": "#GGQCUC002",
-        "name": "Loor",
-        "th": 9,
-        "pos": 19,
-        "attacks": 0
-      },
-      {
-        "tag": "#LUCY2YJCP",
-        "name": "Mahdi",
+        "tag": "#88QGLJL2V",
+        "name": "ByJose93;)",
         "th": 11,
-        "pos": 11,
-        "attacks": 0
-      },
-      {
-        "tag": "#Y9QGCPVYQ",
-        "name": "Sara",
-        "th": 11,
-        "pos": 12,
-        "attacks": 0
-      },
-      {
-        "tag": "#GQVL9R988",
-        "name": "mayall",
-        "th": 12,
         "pos": 10,
         "attacks": 0
       },
       {
-        "tag": "#GULL0CYJV",
-        "name": "Fati bano",
-        "th": 12,
-        "pos": 9,
-        "attacks": 2
-      },
-      {
-        "tag": "#GCYVLRRP8",
-        "name": "ES1412",
-        "th": 14,
-        "pos": 5,
+        "tag": "#8QRYYJPL2",
+        "name": "soymongolo",
+        "th": 5,
+        "pos": 15,
         "attacks": 0
       },
       {
-        "tag": "#GVP8G2PJQ",
-        "name": "نگار",
-        "th": 9,
-        "pos": 20,
+        "tag": "#L0QP89YUJ",
+        "name": "FuLaNo",
+        "th": 17,
+        "pos": 1,
         "attacks": 0
       },
       {
-        "tag": "#R0YYC2P0P",
-        "name": "MR WOLF",
-        "th": 10,
-        "pos": 16,
-        "attacks": 2
-      },
-      {
-        "tag": "#GYJPPU9G2",
-        "name": "⚜️Shado loor⚜️",
-        "th": 14,
-        "pos": 3,
-        "attacks": 0
-      },
-      {
-        "tag": "#GCLYU22RJ",
-        "name": "m.o.h.a.m.m.a.d",
-        "th": 11,
-        "pos": 13,
-        "attacks": 0
-      },
-      {
-        "tag": "#GUPCGQ9UG",
-        "name": "سینا غفوری فرد",
+        "tag": "#GJG2UQ98L",
+        "name": "thGod",
         "th": 10,
         "pos": 14,
         "attacks": 0
       },
       {
-        "tag": "#GVJ899JG9",
-        "name": "alfa50",
+        "tag": "#GCJCC2QVQ",
+        "name": "DonIgnacio",
         "th": 9,
-        "pos": 18,
+        "pos": 13,
         "attacks": 0
       },
       {
-        "tag": "#R2YPQPL29",
-        "name": "شایان شیبانی",
-        "th": 10,
-        "pos": 17,
-        "attacks": 0
-      },
-      {
-        "tag": "#GJY2UVY9P",
-        "name": "《لیوع》",
-        "th": 10,
-        "pos": 15,
-        "attacks": 0
-      },
-      {
-        "tag": "#GGL90YPGY",
-        "name": "mahi",
-        "th": 12,
+        "tag": "#GJ9VVUU8",
+        "name": "Jose",
+        "th": 11,
         "pos": 8,
         "attacks": 0
       },
       {
-        "tag": "#R2Q29U2JJ",
-        "name": "Loor",
-        "th": 13,
+        "tag": "#98QJYCGYY",
+        "name": "dark",
+        "th": 10,
+        "pos": 11,
+        "attacks": 0
+      },
+      {
+        "tag": "#QJ2V9RY28",
+        "name": "jeisantamari4",
+        "th": 14,
+        "pos": 3,
+        "attacks": 0
+      },
+      {
+        "tag": "#JPLRQ90U",
+        "name": "kevinn.1717",
+        "th": 14,
         "pos": 4,
-        "attacks": 2
+        "attacks": 0
       },
       {
-        "tag": "#8YRQLY0GU",
-        "name": "♠️tirad wolf♠️",
-        "th": 16,
+        "tag": "#CJYVC8JP",
+        "name": "Pikachu⚡️",
+        "th": 14,
         "pos": 2,
-        "attacks": 2
+        "attacks": 0
       },
       {
-        "tag": "#8RU2VCJJR",
-        "name": "⚜️king ragnar⚜️",
-        "th": 18,
-        "pos": 1,
-        "attacks": 2
+        "tag": "#2GJUVR02",
+        "name": "DESTROYER",
+        "th": 10,
+        "pos": 12,
+        "attacks": 0
+      },
+      {
+        "tag": "#GPRYP9P8C",
+        "name": "Nacho",
+        "th": 13,
+        "pos": 6,
+        "attacks": 0
+      },
+      {
+        "tag": "#202290U9",
+        "name": "iDARK",
+        "th": 14,
+        "pos": 5,
+        "attacks": 0
+      },
+      {
+        "tag": "#L9L898GY",
+        "name": "RyD",
+        "th": 13,
+        "pos": 7,
+        "attacks": 0
+      },
+      {
+        "tag": "#QPYL9R09J",
+        "name": "jei",
+        "th": 11,
+        "pos": 9,
+        "attacks": 0
       }
     ],
-    "at": "2026-10-28T14:41:07.023Z",
+    "at": "2026-10-28T19:59:25.345Z",
     "source": "currentwar"
   }
 }
