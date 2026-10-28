@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 30200,
-  "clanBuilderBasePoints": 18194,
+  "clanBuilderBasePoints": 18228,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 3038,
+      "donations": 3105,
       "donationsReceived": 1063,
       "playerHouse": {
         "elements": [
@@ -233,7 +233,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 934,
+      "donations": 974,
       "donationsReceived": 96,
       "playerHouse": {
         "elements": [
@@ -319,15 +319,60 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 181,
-      "builderBaseTrophies": 1738,
+      "trophies": 319,
+      "builderBaseTrophies": 1779,
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 698,
-      "donationsReceived": 1004,
+      "donationsReceived": 1044,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
+      }
+    },
+    {
+      "tag": "#R8CVPGJQC",
+      "name": "JOSHUA",
+      "role": "coLeader",
+      "townHallLevel": 12,
+      "expLevel": 81,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000011,
+        "name": "Wizard League 11"
+      },
+      "trophies": 28,
+      "builderBaseTrophies": 1258,
+      "clanRank": 8,
+      "previousClanRank": 12,
+      "donations": 391,
+      "donationsReceived": 196,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000012,
+        "name": "Stone League III"
       }
     },
     {
@@ -346,7 +391,7 @@
       },
       "trophies": 23,
       "builderBaseTrophies": 1593,
-      "clanRank": 8,
+      "clanRank": 9,
       "previousClanRank": 8,
       "donations": 66,
       "donationsReceived": 0,
@@ -391,10 +436,10 @@
       },
       "trophies": 8,
       "builderBaseTrophies": 1984,
-      "clanRank": 9,
+      "clanRank": 10,
       "previousClanRank": 10,
       "donations": 1182,
-      "donationsReceived": 3095,
+      "donationsReceived": 3162,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -416,7 +461,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2334,
-      "clanRank": 10,
+      "clanRank": 11,
       "previousClanRank": 9,
       "donations": 267,
       "donationsReceived": 186,
@@ -461,7 +506,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2204,
-      "clanRank": 11,
+      "clanRank": 12,
       "previousClanRank": 11,
       "donations": 1276,
       "donationsReceived": 1159,
@@ -488,51 +533,6 @@
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
-      }
-    },
-    {
-      "tag": "#R8CVPGJQC",
-      "name": "JOSHUA",
-      "role": "coLeader",
-      "townHallLevel": 12,
-      "expLevel": 81,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000011,
-        "name": "Wizard League 11"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1258,
-      "clanRank": 12,
-      "previousClanRank": 12,
-      "donations": 391,
-      "donationsReceived": 196,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000012,
-        "name": "Stone League III"
       }
     },
     {
@@ -790,7 +790,7 @@
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 64,
+      "expLevel": 65,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -845,7 +845,7 @@
         "name": "Archer League 7"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1393,
+      "builderBaseTrophies": 1501,
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 0,
@@ -871,8 +871,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000013,
-        "name": "Stone League II"
+        "id": 44000015,
+        "name": "Copper League V"
       }
     },
     {
@@ -935,7 +935,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 191,
-      "builderBaseTrophies": 1510,
+      "builderBaseTrophies": 1498,
       "clanRank": 22,
       "previousClanRank": 21,
       "donations": 0,
@@ -961,8 +961,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000014,
+        "name": "Stone League I"
       }
     },
     {
@@ -1399,7 +1399,7 @@
         "elements": [
           {
             "type": "ground",
-            "id": 82000000
+            "id": 82000001
           },
           {
             "type": "walls",
@@ -1407,11 +1407,11 @@
           },
           {
             "type": "roof",
-            "id": 82000013
+            "id": 82000015
           },
           {
             "type": "decoration",
-            "id": 82000060
+            "id": 82000063
           }
         ]
       },
