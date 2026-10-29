@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T17:11:36Z",
+  "generatedAt": "2026-10-29T21:53:50Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25700,
-    "builder": 17236,
+    "builder": 17196,
     "capital": 1097,
     "members": 32,
     "freq": "Siempre",
@@ -91,7 +91,7 @@
       "M",
       14,
       208,
-      974,
+      1041,
       96,
       2993
     ],
@@ -109,7 +109,7 @@
       "C",
       13,
       96,
-      698,
+      765,
       1116,
       1779
     ],
@@ -128,8 +128,8 @@
       11,
       135,
       1249,
-      3166,
-      1984
+      3300,
+      1999
     ],
     [
       "xlMURDOClx",
@@ -246,7 +246,7 @@
       80,
       25,
       0,
-      2361
+      2267
     ],
     [
       "kerrykopito",
@@ -7474,7 +7474,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 15,
     "attacksPerMember": 2,
     "rival": "Vozitel team",
@@ -7555,7 +7555,7 @@
         "name": "Casdo",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R8CVPGJQC",
@@ -7569,7 +7569,7 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#Y9GU8QYYG",
@@ -7620,7 +7620,7 @@
         "name": "DonIgnacio",
         "th": 9,
         "pos": 13,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GJ9VVUU8",
@@ -7634,7 +7634,7 @@
         "name": "dark",
         "th": 10,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QJ2V9RY28",
@@ -7676,14 +7676,14 @@
         "name": "iDARK",
         "th": 14,
         "pos": 5,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#L9L898GY",
         "name": "RyD",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QPYL9R09J",
@@ -7693,7 +7693,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-10-29T17:11:36.259Z",
+    "at": "2026-10-29T21:53:50.828Z",
     "source": "currentwar"
   }
 }

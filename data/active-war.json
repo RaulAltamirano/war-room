@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 15,
   "attacksPerMember": 2,
   "rival": "Vozitel team",
@@ -80,7 +80,7 @@
       "name": "Casdo",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R8CVPGJQC",
@@ -94,7 +94,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -145,7 +145,7 @@
       "name": "DonIgnacio",
       "th": 9,
       "pos": 13,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GJ9VVUU8",
@@ -159,7 +159,7 @@
       "name": "dark",
       "th": 10,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QJ2V9RY28",
@@ -201,14 +201,14 @@
       "name": "iDARK",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#L9L898GY",
       "name": "RyD",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QPYL9R09J",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-10-29T17:11:36.259Z",
+  "at": "2026-10-29T21:53:50.828Z",
   "source": "currentwar"
 }
