@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17232,
+  "clanBuilderBasePoints": 17236,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -299,10 +299,10 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 23,
+      "trophies": 63,
       "builderBaseTrophies": 1593,
       "clanRank": 7,
-      "previousClanRank": 8,
+      "previousClanRank": 9,
       "donations": 66,
       "donationsReceived": 0,
       "playerHouse": {
@@ -344,12 +344,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 8,
+      "trophies": 30,
       "builderBaseTrophies": 1984,
       "clanRank": 8,
-      "previousClanRank": 9,
+      "previousClanRank": 10,
       "donations": 1249,
-      "donationsReceived": 3162,
+      "donationsReceived": 3166,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -372,8 +372,8 @@
       "trophies": 0,
       "builderBaseTrophies": 2334,
       "clanRank": 9,
-      "previousClanRank": 10,
-      "donations": 297,
+      "previousClanRank": 11,
+      "donations": 299,
       "donationsReceived": 186,
       "playerHouse": {
         "elements": [
@@ -417,7 +417,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2204,
       "clanRank": 10,
-      "previousClanRank": 11,
+      "previousClanRank": 12,
       "donations": 1276,
       "donationsReceived": 1159,
       "playerHouse": {
@@ -799,11 +799,11 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 303,
+      "trophies": 343,
       "builderBaseTrophies": 1717,
       "clanRank": 19,
       "previousClanRank": 21,
-      "donations": 193,
+      "donations": 195,
       "donationsReceived": 133,
       "playerHouse": {
         "elements": [
@@ -845,7 +845,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 191,
-      "builderBaseTrophies": 1498,
+      "builderBaseTrophies": 1512,
       "clanRank": 20,
       "previousClanRank": 22,
       "donations": 0,
@@ -871,8 +871,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000014,
-        "name": "Stone League I"
+        "id": 44000015,
+        "name": "Copper League V"
       }
     },
     {
@@ -937,7 +937,7 @@
       "trophies": 23,
       "builderBaseTrophies": 1618,
       "clanRank": 22,
-      "previousClanRank": 28,
+      "previousClanRank": 24,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -982,7 +982,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1276,
       "clanRank": 23,
-      "previousClanRank": 24,
+      "previousClanRank": 25,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1027,7 +1027,7 @@
       "trophies": 0,
       "builderBaseTrophies": 455,
       "clanRank": 24,
-      "previousClanRank": 25,
+      "previousClanRank": 26,
       "donations": 40,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1072,7 +1072,7 @@
       "trophies": 0,
       "builderBaseTrophies": 802,
       "clanRank": 25,
-      "previousClanRank": 26,
+      "previousClanRank": 27,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1117,7 +1117,7 @@
       "trophies": 0,
       "builderBaseTrophies": 656,
       "clanRank": 26,
-      "previousClanRank": 27,
+      "previousClanRank": 28,
       "donations": 159,
       "donationsReceived": 131,
       "builderBaseLeague": {
