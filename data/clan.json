@@ -310,7 +310,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 95,
+      "expLevel": 96,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -437,7 +437,7 @@
       "trophies": 8,
       "builderBaseTrophies": 1984,
       "clanRank": 10,
-      "previousClanRank": 10,
+      "previousClanRank": 9,
       "donations": 1182,
       "donationsReceived": 3162,
       "builderBaseLeague": {
@@ -462,7 +462,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2334,
       "clanRank": 11,
-      "previousClanRank": 9,
+      "previousClanRank": 10,
       "donations": 267,
       "donationsReceived": 186,
       "playerHouse": {
@@ -892,7 +892,7 @@
       "trophies": 303,
       "builderBaseTrophies": 1717,
       "clanRank": 21,
-      "previousClanRank": 22,
+      "previousClanRank": 21,
       "donations": 193,
       "donationsReceived": 133,
       "playerHouse": {
@@ -937,7 +937,7 @@
       "trophies": 191,
       "builderBaseTrophies": 1498,
       "clanRank": 22,
-      "previousClanRank": 21,
+      "previousClanRank": 22,
       "donations": 0,
       "donationsReceived": 128,
       "playerHouse": {
@@ -1015,7 +1015,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 67,
+      "expLevel": 68,
       "league": {
         "id": 29000000,
         "name": "Unranked"
