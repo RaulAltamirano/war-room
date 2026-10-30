@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17239,
+  "clanBuilderBasePoints": 17256,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -49,12 +49,12 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 114,
+      "trophies": 154,
       "builderBaseTrophies": 2400,
       "clanRank": 1,
       "previousClanRank": 1,
       "donations": 276,
-      "donationsReceived": 323,
+      "donationsReceived": 400,
       "playerHouse": {
         "elements": [
           {
@@ -98,8 +98,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 3105,
-      "donationsReceived": 1063,
+      "donations": 3244,
+      "donationsReceived": 1229,
       "playerHouse": {
         "elements": [
           {
@@ -188,7 +188,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 4,
       "previousClanRank": 4,
-      "donations": 1041,
+      "donations": 1466,
       "donationsReceived": 96,
       "playerHouse": {
         "elements": [
@@ -278,8 +278,8 @@
       "builderBaseTrophies": 1851,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 765,
-      "donationsReceived": 1188,
+      "donations": 767,
+      "donationsReceived": 1260,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -348,8 +348,8 @@
       "builderBaseTrophies": 1999,
       "clanRank": 8,
       "previousClanRank": 8,
-      "donations": 1249,
-      "donationsReceived": 3300,
+      "donations": 1251,
+      "donationsReceived": 3500,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -418,8 +418,8 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 1348,
-      "donationsReceived": 1159,
+      "donations": 1410,
+      "donationsReceived": 1283,
       "playerHouse": {
         "elements": [
           {
@@ -835,7 +835,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 64,
+      "expLevel": 65,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -845,10 +845,10 @@
         "name": "Barbarian League 6"
       },
       "trophies": 191,
-      "builderBaseTrophies": 1538,
+      "builderBaseTrophies": 1570,
       "clanRank": 20,
       "previousClanRank": 20,
-      "donations": 0,
+      "donations": 40,
       "donationsReceived": 128,
       "playerHouse": {
         "elements": [
@@ -880,7 +880,7 @@
       "name": "minch",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 80,
+      "expLevel": 81,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -889,8 +889,8 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 117,
-      "builderBaseTrophies": 2305,
+      "trophies": 157,
+      "builderBaseTrophies": 2323,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 25,
@@ -1175,7 +1175,7 @@
       "name": "luisval",
       "role": "member",
       "townHallLevel": 9,
-      "expLevel": 62,
+      "expLevel": 63,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1189,7 +1189,7 @@
       "clanRank": 28,
       "previousClanRank": 28,
       "donations": 0,
-      "donationsReceived": 62,
+      "donationsReceived": 93,
       "playerHouse": {
         "elements": [
           {

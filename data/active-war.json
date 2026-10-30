@@ -10,14 +10,14 @@
       "name": "xlMURDOClx",
       "th": 13,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2VL98GPGU",
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 11,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R820CCYQ0",
@@ -31,7 +31,7 @@
       "name": "Pete Zahut",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QCCVGR9P0",
@@ -52,7 +52,7 @@
       "name": "..::MURDOC::..",
       "th": 14,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VCYYPVLU",
@@ -73,7 +73,7 @@
       "name": "demiur",
       "th": 10,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
@@ -101,14 +101,14 @@
       "name": "kssto",
       "th": 15,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GC9ULU80G",
       "name": "TaP",
       "th": 11,
       "pos": 10,
-      "attacks": 0
+      "attacks": 1
     }
   ],
   "them": [
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-10-30T01:26:20.715Z",
+  "at": "2026-10-30T07:26:28.444Z",
   "source": "currentwar"
 }
