@@ -1,5 +1,223 @@
 {
-  "state": "warEnded",
-  "at": "2026-10-30T20:42:47.137Z",
-  "source": "none"
+  "state": "preparation",
+  "teamSize": 15,
+  "attacksPerMember": 2,
+  "rival": "THE GOJO CLAN",
+  "rivalTag": "#2RV82GVVJ",
+  "us": [
+    {
+      "tag": "#Y0PPGVQL2",
+      "name": "xlMURDOClx",
+      "th": 13,
+      "pos": 4,
+      "attacks": 0
+    },
+    {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "th": 11,
+      "pos": 7,
+      "attacks": 0
+    },
+    {
+      "tag": "#GP2PGPUVJ",
+      "name": "Pete Zahut",
+      "th": 13,
+      "pos": 5,
+      "attacks": 0
+    },
+    {
+      "tag": "#R08LUU9CV",
+      "name": "J-J POPEYE",
+      "th": 10,
+      "pos": 11,
+      "attacks": 0
+    },
+    {
+      "tag": "#QLJRGP2C9",
+      "name": "ZackyB",
+      "th": 8,
+      "pos": 15,
+      "attacks": 0
+    },
+    {
+      "tag": "#LY9J99L9G",
+      "name": "cozo 2000",
+      "th": 11,
+      "pos": 9,
+      "attacks": 0
+    },
+    {
+      "tag": "#8VJYRRGQ",
+      "name": "..::MURDOC::..",
+      "th": 14,
+      "pos": 2,
+      "attacks": 0
+    },
+    {
+      "tag": "#8VCYYPVLU",
+      "name": "Nicolás",
+      "th": 14,
+      "pos": 3,
+      "attacks": 0
+    },
+    {
+      "tag": "#R2PLC2008",
+      "name": "clandes",
+      "th": 9,
+      "pos": 14,
+      "attacks": 0
+    },
+    {
+      "tag": "#R2ULCJ0J8",
+      "name": "demiur",
+      "th": 10,
+      "pos": 12,
+      "attacks": 0
+    },
+    {
+      "tag": "#QV20QPJGR",
+      "name": "Casdo",
+      "th": 11,
+      "pos": 10,
+      "attacks": 0
+    },
+    {
+      "tag": "#Q02JR2JYV",
+      "name": "Abrasive7X",
+      "th": 13,
+      "pos": 6,
+      "attacks": 0
+    },
+    {
+      "tag": "#Y9GU8QYYG",
+      "name": "kssto",
+      "th": 15,
+      "pos": 1,
+      "attacks": 0
+    },
+    {
+      "tag": "#GC9ULU80G",
+      "name": "TaP",
+      "th": 11,
+      "pos": 8,
+      "attacks": 0
+    },
+    {
+      "tag": "#G92R92J98",
+      "name": "VORTEX",
+      "th": 10,
+      "pos": 13,
+      "attacks": 0
+    }
+  ],
+  "them": [
+    {
+      "tag": "#GUGLJ98G",
+      "name": "charlie",
+      "th": 12,
+      "pos": 7,
+      "attacks": 0
+    },
+    {
+      "tag": "#9RQJYL0QQ",
+      "name": "Elaw51",
+      "th": 14,
+      "pos": 2,
+      "attacks": 0
+    },
+    {
+      "tag": "#PJJJ0PCR8",
+      "name": "keoni14",
+      "th": 15,
+      "pos": 1,
+      "attacks": 0
+    },
+    {
+      "tag": "#G0VRVVPV8",
+      "name": "Avi das",
+      "th": 11,
+      "pos": 11,
+      "attacks": 0
+    },
+    {
+      "tag": "#GVQVJUVPU",
+      "name": "Mr. LavaLava",
+      "th": 11,
+      "pos": 8,
+      "attacks": 0
+    },
+    {
+      "tag": "#PVUL8VGVV",
+      "name": "Star",
+      "th": 11,
+      "pos": 10,
+      "attacks": 0
+    },
+    {
+      "tag": "#G2YV98RGR",
+      "name": "hrithik",
+      "th": 13,
+      "pos": 6,
+      "attacks": 0
+    },
+    {
+      "tag": "#2C00G80UR",
+      "name": "Kalan_808_",
+      "th": 13,
+      "pos": 4,
+      "attacks": 0
+    },
+    {
+      "tag": "#R2CQ880P0",
+      "name": "Ahmed",
+      "th": 10,
+      "pos": 13,
+      "attacks": 0
+    },
+    {
+      "tag": "#RPRL0L0Q8",
+      "name": "Baby Law",
+      "th": 9,
+      "pos": 14,
+      "attacks": 0
+    },
+    {
+      "tag": "#QLL0GJCC0",
+      "name": "Harrison",
+      "th": 11,
+      "pos": 9,
+      "attacks": 0
+    },
+    {
+      "tag": "#P2YV8C2YQ",
+      "name": "TashiDorje",
+      "th": 14,
+      "pos": 3,
+      "attacks": 0
+    },
+    {
+      "tag": "#RYPRYJ0LU",
+      "name": "Fabia",
+      "th": 9,
+      "pos": 15,
+      "attacks": 0
+    },
+    {
+      "tag": "#R0QCGRUVL",
+      "name": "M4Eyes",
+      "th": 11,
+      "pos": 12,
+      "attacks": 0
+    },
+    {
+      "tag": "#LLGV0G2QG",
+      "name": "Big Kahuna",
+      "th": 13,
+      "pos": 5,
+      "attacks": 0
+    }
+  ],
+  "at": "2026-10-30T23:22:53.586Z",
+  "source": "currentwar"
 }

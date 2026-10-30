@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17190,
+  "clanBuilderBasePoints": 17192,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 61,
-      "builderBaseTrophies": 744,
+      "builderBaseTrophies": 766,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 37,
