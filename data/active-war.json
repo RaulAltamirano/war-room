@@ -59,7 +59,7 @@
       "name": "Nicolás",
       "th": 14,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2PLC2008",
@@ -166,7 +166,7 @@
       "name": "jeisantamari4",
       "th": 14,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#JPLRQ90U",
@@ -194,7 +194,7 @@
       "name": "Nacho",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#202290U9",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-10-30T07:26:28.444Z",
+  "at": "2026-10-30T14:25:23.204Z",
   "source": "currentwar"
 }

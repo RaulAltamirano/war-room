@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17256,
+  "clanBuilderBasePoints": 17220,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -265,7 +265,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 96,
+      "expLevel": 97,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -275,14 +275,14 @@
         "name": "Wizard League 11"
       },
       "trophies": 319,
-      "builderBaseTrophies": 1851,
+      "builderBaseTrophies": 1726,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 767,
       "donationsReceived": 1260,
       "builderBaseLeague": {
-        "id": 44000018,
-        "name": "Copper League II"
+        "id": 44000017,
+        "name": "Copper League III"
       }
     },
     {
@@ -889,8 +889,8 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 157,
-      "builderBaseTrophies": 2323,
+      "trophies": 169,
+      "builderBaseTrophies": 2313,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 25,

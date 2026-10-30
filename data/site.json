@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T07:26:28Z",
+  "generatedAt": "2026-10-30T14:25:23Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25700,
-    "builder": 17256,
+    "builder": 17220,
     "capital": 1097,
     "members": 32,
     "freq": "Siempre",
@@ -108,10 +108,10 @@
       "Abrasive7X",
       "C",
       13,
-      96,
+      97,
       767,
       1260,
-      1851
+      1726
     ],
     [
       "يسوري❤️❤️",
@@ -246,7 +246,7 @@
       81,
       25,
       0,
-      2323
+      2313
     ],
     [
       "kerrykopito",
@@ -7534,7 +7534,7 @@
         "name": "Nicolás",
         "th": 14,
         "pos": 3,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R2PLC2008",
@@ -7641,7 +7641,7 @@
         "name": "jeisantamari4",
         "th": 14,
         "pos": 3,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#JPLRQ90U",
@@ -7669,7 +7669,7 @@
         "name": "Nacho",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#202290U9",
@@ -7693,7 +7693,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-10-30T07:26:28.444Z",
+    "at": "2026-10-30T14:25:23.204Z",
     "source": "currentwar"
   }
 }
