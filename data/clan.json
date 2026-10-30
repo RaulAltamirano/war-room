@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17222,
+  "clanBuilderBasePoints": 17190,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -335,7 +335,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 11,
-      "expLevel": 135,
+      "expLevel": 136,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -373,7 +373,7 @@
       "builderBaseTrophies": 2334,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 299,
+      "donations": 308,
       "donationsReceived": 186,
       "playerHouse": {
         "elements": [
@@ -845,7 +845,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 209,
-      "builderBaseTrophies": 2313,
+      "builderBaseTrophies": 2236,
       "clanRank": 20,
       "previousClanRank": 21,
       "donations": 25,
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 191,
-      "builderBaseTrophies": 1570,
+      "builderBaseTrophies": 1595,
       "clanRank": 21,
       "previousClanRank": 20,
       "donations": 40,
@@ -1234,7 +1234,7 @@
       "clanRank": 29,
       "previousClanRank": 29,
       "donations": 0,
-      "donationsReceived": 469,
+      "donationsReceived": 478,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
