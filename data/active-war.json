@@ -45,7 +45,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VJYRRGQ",
@@ -80,7 +80,7 @@
       "name": "Casdo",
       "th": 11,
       "pos": 12,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R8CVPGJQC",
@@ -117,7 +117,7 @@
       "name": "ByJose93;)",
       "th": 11,
       "pos": 10,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8QRYYJPL2",
@@ -131,14 +131,14 @@
       "name": "FuLaNo",
       "th": 17,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GJG2UQ98L",
       "name": "thGod",
       "th": 10,
       "pos": 14,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GCJCC2QVQ",
@@ -152,7 +152,7 @@
       "name": "Jose",
       "th": 11,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#98QJYCGYY",
@@ -173,7 +173,7 @@
       "name": "kevinn.1717",
       "th": 14,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#CJYVC8JP",
@@ -187,7 +187,7 @@
       "name": "DESTROYER",
       "th": 10,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GPRYP9P8C",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-10-29T21:53:50.828Z",
+  "at": "2026-10-30T01:26:20.715Z",
   "source": "currentwar"
 }

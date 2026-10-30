@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T21:53:50Z",
+  "generatedAt": "2026-10-30T01:26:20Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25700,
-    "builder": 17196,
+    "builder": 17239,
     "capital": 1097,
     "members": 32,
     "freq": "Siempre",
@@ -110,8 +110,8 @@
       13,
       96,
       765,
-      1116,
-      1779
+      1188,
+      1851
     ],
     [
       "يسوري❤️❤️",
@@ -145,7 +145,7 @@
       "E",
       13,
       125,
-      1276,
+      1348,
       1159,
       2204
     ],
@@ -237,7 +237,7 @@
       64,
       0,
       128,
-      1512
+      1538
     ],
     [
       "minch",
@@ -246,7 +246,7 @@
       80,
       25,
       0,
-      2267
+      2305
     ],
     [
       "kerrykopito",
@@ -7520,7 +7520,7 @@
         "name": "cozo 2000",
         "th": 11,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8VJYRRGQ",
@@ -7555,7 +7555,7 @@
         "name": "Casdo",
         "th": 11,
         "pos": 12,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#R8CVPGJQC",
@@ -7592,7 +7592,7 @@
         "name": "ByJose93;)",
         "th": 11,
         "pos": 10,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#8QRYYJPL2",
@@ -7606,14 +7606,14 @@
         "name": "FuLaNo",
         "th": 17,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GJG2UQ98L",
         "name": "thGod",
         "th": 10,
         "pos": 14,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GCJCC2QVQ",
@@ -7627,7 +7627,7 @@
         "name": "Jose",
         "th": 11,
         "pos": 8,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#98QJYCGYY",
@@ -7648,7 +7648,7 @@
         "name": "kevinn.1717",
         "th": 14,
         "pos": 4,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#CJYVC8JP",
@@ -7662,7 +7662,7 @@
         "name": "DESTROYER",
         "th": 10,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GPRYP9P8C",
@@ -7693,7 +7693,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-10-29T21:53:50.828Z",
+    "at": "2026-10-30T01:26:20.715Z",
     "source": "currentwar"
   }
 }
