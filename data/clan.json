@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17220,
+  "clanBuilderBasePoints": 17222,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 2,
-  "warWins": 13,
+  "warWinStreak": 3,
+  "warWins": 14,
   "warTies": 0,
   "warLosses": 23,
   "isWarLogPublic": true,
@@ -49,7 +49,7 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 154,
+      "trophies": 168,
       "builderBaseTrophies": 2400,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 3244,
+      "donations": 3311,
       "donationsReceived": 1229,
       "playerHouse": {
         "elements": [
@@ -348,8 +348,8 @@
       "builderBaseTrophies": 1999,
       "clanRank": 8,
       "previousClanRank": 8,
-      "donations": 1251,
-      "donationsReceived": 3500,
+      "donations": 1286,
+      "donationsReceived": 3567,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -529,7 +529,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 248,
+      "trophies": 278,
       "builderBaseTrophies": 1146,
       "clanRank": 13,
       "previousClanRank": 13,
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1854,
+      "builderBaseTrophies": 1860,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,
@@ -804,7 +804,7 @@
       "clanRank": 19,
       "previousClanRank": 19,
       "donations": 195,
-      "donationsReceived": 133,
+      "donationsReceived": 168,
       "playerHouse": {
         "elements": [
           {
@@ -831,51 +831,6 @@
       }
     },
     {
-      "tag": "#QV20QPJGR",
-      "name": "Casdo",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 65,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000006,
-        "name": "Barbarian League 6"
-      },
-      "trophies": 191,
-      "builderBaseTrophies": 1570,
-      "clanRank": 20,
-      "previousClanRank": 20,
-      "donations": 40,
-      "donationsReceived": 128,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000011
-          },
-          {
-            "type": "decoration",
-            "id": 82000059
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
-      }
-    },
-    {
       "tag": "#GVQL0892Y",
       "name": "minch",
       "role": "member",
@@ -889,9 +844,9 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 169,
+      "trophies": 209,
       "builderBaseTrophies": 2313,
-      "clanRank": 21,
+      "clanRank": 20,
       "previousClanRank": 21,
       "donations": 25,
       "donationsReceived": 0,
@@ -918,6 +873,51 @@
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
+      }
+    },
+    {
+      "tag": "#QV20QPJGR",
+      "name": "Casdo",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 65,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 191,
+      "builderBaseTrophies": 1570,
+      "clanRank": 21,
+      "previousClanRank": 20,
+      "donations": 40,
+      "donationsReceived": 128,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000011
+          },
+          {
+            "type": "decoration",
+            "id": 82000059
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000015,
+        "name": "Copper League V"
       }
     },
     {
