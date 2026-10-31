@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17217,
+  "clanBuilderBasePoints": 17218,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -275,14 +275,14 @@
         "name": "Wizard League 11"
       },
       "trophies": 319,
-      "builderBaseTrophies": 1726,
+      "builderBaseTrophies": 1647,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 767,
       "donationsReceived": 1260,
       "builderBaseLeague": {
-        "id": 44000017,
-        "name": "Copper League III"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -845,7 +845,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 209,
-      "builderBaseTrophies": 2286,
+      "builderBaseTrophies": 2329,
       "clanRank": 20,
       "previousClanRank": 21,
       "donations": 25,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T02:34:44Z",
+  "generatedAt": "2026-10-31T09:04:19Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25700,
-    "builder": 17217,
+    "builder": 17218,
     "capital": 1097,
     "members": 32,
     "freq": "Siempre",
@@ -111,7 +111,7 @@
       97,
       767,
       1260,
-      1726
+      1647
     ],
     [
       "يسوري❤️❤️",
@@ -237,7 +237,7 @@
       81,
       25,
       0,
-      2286
+      2329
     ],
     [
       "Casdo",
@@ -8183,7 +8183,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-10-31T02:34:44.149Z",
+    "at": "2026-10-31T09:04:19.827Z",
     "source": "currentwar"
   }
 }
