@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17218,
+  "clanBuilderBasePoints": 17239,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -173,7 +173,7 @@
     {
       "tag": "#8VJYRRGQ",
       "name": "..::MURDOC::..",
-      "role": "member",
+      "role": "coLeader",
       "townHallLevel": 14,
       "expLevel": 208,
       "league": {
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 1647,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 767,
+      "donations": 850,
       "donationsReceived": 1260,
       "builderBaseLeague": {
         "id": 44000016,
@@ -358,7 +358,7 @@
     {
       "tag": "#Y0PPGVQL2",
       "name": "xlMURDOClx",
-      "role": "member",
+      "role": "coLeader",
       "townHallLevel": 13,
       "expLevel": 147,
       "league": {
@@ -579,7 +579,7 @@
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 61,
-      "donationsReceived": 1016,
+      "donationsReceived": 1051,
       "playerHouse": {
         "elements": [
           {
@@ -664,7 +664,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 88,
+      "trophies": 104,
       "builderBaseTrophies": 1308,
       "clanRank": 16,
       "previousClanRank": 16,
@@ -709,7 +709,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 61,
+      "trophies": 79,
       "builderBaseTrophies": 760,
       "clanRank": 17,
       "previousClanRank": 17,
@@ -755,7 +755,7 @@
         "name": "Archer League 7"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1501,
+      "builderBaseTrophies": 1585,
       "clanRank": 18,
       "previousClanRank": 18,
       "donations": 0,
@@ -847,7 +847,7 @@
       "trophies": 209,
       "builderBaseTrophies": 2329,
       "clanRank": 20,
-      "previousClanRank": 21,
+      "previousClanRank": 20,
       "donations": 25,
       "donationsReceived": 0,
       "playerHouse": {
@@ -880,7 +880,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 65,
+      "expLevel": 66,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -892,7 +892,7 @@
       "trophies": 191,
       "builderBaseTrophies": 1595,
       "clanRank": 21,
-      "previousClanRank": 20,
+      "previousClanRank": 21,
       "donations": 40,
       "donationsReceived": 128,
       "playerHouse": {
@@ -1349,7 +1349,7 @@
       "clanRank": 32,
       "previousClanRank": 32,
       "donations": 978,
-      "donationsReceived": 570,
+      "donationsReceived": 618,
       "playerHouse": {
         "elements": [
           {
