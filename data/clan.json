@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17239,
+  "clanBuilderBasePoints": 17249,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -85,7 +85,7 @@
       "name": "kssto",
       "role": "coLeader",
       "townHallLevel": 15,
-      "expLevel": 179,
+      "expLevel": 180,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 1647,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 850,
+      "donations": 875,
       "donationsReceived": 1260,
       "builderBaseLeague": {
         "id": 44000016,
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 191,
-      "builderBaseTrophies": 1595,
+      "builderBaseTrophies": 1635,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 40,
@@ -916,8 +916,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -1219,7 +1219,7 @@
       "tag": "#QLJRGP2C9",
       "name": "ZackyB",
       "role": "admin",
-      "townHallLevel": 8,
+      "townHallLevel": 9,
       "expLevel": 47,
       "league": {
         "id": 29000000,
@@ -1234,7 +1234,7 @@
       "clanRank": 29,
       "previousClanRank": 29,
       "donations": 0,
-      "donationsReceived": 478,
+      "donationsReceived": 503,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
