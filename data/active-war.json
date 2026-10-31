@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 15,
   "attacksPerMember": 2,
   "rival": "THE GOJO CLAN",
@@ -24,7 +24,7 @@
       "name": "Pete Zahut",
       "th": 13,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R08LUU9CV",
@@ -36,7 +36,7 @@
     {
       "tag": "#QLJRGP2C9",
       "name": "ZackyB",
-      "th": 8,
+      "th": 9,
       "pos": 15,
       "attacks": 0
     },
@@ -45,7 +45,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 9,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -71,7 +71,7 @@
     {
       "tag": "#R2ULCJ0J8",
       "name": "demiur",
-      "th": 10,
+      "th": 11,
       "pos": 12,
       "attacks": 0
     },
@@ -94,7 +94,7 @@
       "name": "kssto",
       "th": 15,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GC9ULU80G",
@@ -201,7 +201,7 @@
       "name": "Fabia",
       "th": 9,
       "pos": 15,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R0QCGRUVL",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-10-31T19:24:53.265Z",
+  "at": "2026-10-31T22:38:15.661Z",
   "source": "currentwar"
 }
