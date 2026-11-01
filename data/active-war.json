@@ -45,7 +45,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 9,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#8VJYRRGQ",
@@ -87,7 +87,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -101,7 +101,7 @@
       "name": "TaP",
       "th": 11,
       "pos": 8,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#G92R92J98",
@@ -159,7 +159,7 @@
       "name": "hrithik",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#2C00G80UR",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-01T08:24:43.667Z",
+  "at": "2026-11-01T15:21:25.587Z",
   "source": "currentwar"
 }

@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17240,
+  "clanBuilderBasePoints": 17246,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 3465,
+      "donations": 3496,
       "donationsReceived": 1365,
       "playerHouse": {
         "elements": [
@@ -174,7 +174,7 @@
       "tag": "#8VJYRRGQ",
       "name": "..::MURDOC::..",
       "role": "coLeader",
-      "townHallLevel": 14,
+      "townHallLevel": 15,
       "expLevel": 208,
       "league": {
         "id": 29000000,
@@ -188,7 +188,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 4,
       "previousClanRank": 4,
-      "donations": 1554,
+      "donations": 1636,
       "donationsReceived": 96,
       "playerHouse": {
         "elements": [
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 1647,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 912,
+      "donations": 932,
       "donationsReceived": 1384,
       "builderBaseLeague": {
         "id": 44000016,
@@ -349,7 +349,7 @@
       "clanRank": 8,
       "previousClanRank": 8,
       "donations": 1286,
-      "donationsReceived": 3636,
+      "donationsReceived": 3703,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -475,7 +475,7 @@
       "name": "ONEL2.0",
       "role": "member",
       "townHallLevel": 12,
-      "expLevel": 92,
+      "expLevel": 93,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -624,7 +624,7 @@
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 57,
-      "donationsReceived": 66,
+      "donationsReceived": 133,
       "playerHouse": {
         "elements": [
           {
@@ -664,11 +664,11 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 104,
+      "trophies": 269,
       "builderBaseTrophies": 1308,
       "clanRank": 16,
       "previousClanRank": 16,
-      "donations": 234,
+      "donations": 235,
       "donationsReceived": 199,
       "playerHouse": {
         "elements": [
@@ -835,7 +835,7 @@
       "name": "minch",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 81,
+      "expLevel": 82,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -845,7 +845,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 209,
-      "builderBaseTrophies": 2310,
+      "builderBaseTrophies": 2322,
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 25,
