@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26200,
-  "clanBuilderBasePoints": 17394,
+  "clanBuilderBasePoints": 17388,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 3,
-  "warWins": 14,
+  "warWinStreak": 4,
+  "warWins": 15,
   "warTies": 0,
   "warLosses": 23,
   "isWarLogPublic": true,
@@ -405,7 +405,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 13,
-      "expLevel": 126,
+      "expLevel": 127,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1837,
+      "builderBaseTrophies": 1803,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 103,
@@ -845,7 +845,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 209,
-      "builderBaseTrophies": 2262,
+      "builderBaseTrophies": 2269,
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 25,
