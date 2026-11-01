@@ -173,7 +173,7 @@
       "name": "Ahmed",
       "th": 10,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#RPRL0L0Q8",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-01T15:21:25.587Z",
+  "at": "2026-11-01T19:49:12.482Z",
   "source": "currentwar"
 }
