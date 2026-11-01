@@ -610,7 +610,7 @@
       "name": "joshua",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 77,
+      "expLevel": 78,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -789,7 +789,7 @@
       "tag": "#R2ULCJ0J8",
       "name": "demiur",
       "role": "member",
-      "townHallLevel": 10,
+      "townHallLevel": 11,
       "expLevel": 76,
       "league": {
         "id": 29000000,
@@ -925,7 +925,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 68,
+      "expLevel": 69,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -934,7 +934,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 23,
+      "trophies": 63,
       "builderBaseTrophies": 1618,
       "clanRank": 22,
       "previousClanRank": 22,

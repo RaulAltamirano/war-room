@@ -59,7 +59,7 @@
       "name": "Nicolás",
       "th": 14,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R2PLC2008",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-10-31T22:38:15.661Z",
+  "at": "2026-11-01T01:40:00.225Z",
   "source": "currentwar"
 }
