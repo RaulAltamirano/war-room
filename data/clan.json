@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25700,
-  "clanBuilderBasePoints": 17250,
+  "clanBuilderBasePoints": 17240,
   "clanCapitalPoints": 1097,
   "capitalLeague": {
     "id": 85000005,
@@ -188,7 +188,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 4,
       "previousClanRank": 4,
-      "donations": 1466,
+      "donations": 1554,
       "donationsReceived": 96,
       "playerHouse": {
         "elements": [
@@ -278,8 +278,8 @@
       "builderBaseTrophies": 1647,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 875,
-      "donationsReceived": 1344,
+      "donations": 912,
+      "donationsReceived": 1384,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -334,7 +334,7 @@
       "tag": "#2VL98GPGU",
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
-      "townHallLevel": 11,
+      "townHallLevel": 12,
       "expLevel": 136,
       "league": {
         "id": 29000000,
@@ -344,12 +344,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 40,
+      "trophies": 80,
       "builderBaseTrophies": 1999,
       "clanRank": 8,
       "previousClanRank": 8,
       "donations": 1286,
-      "donationsReceived": 3567,
+      "donationsReceived": 3636,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -373,7 +373,7 @@
       "builderBaseTrophies": 2334,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 392,
+      "donations": 424,
       "donationsReceived": 186,
       "playerHouse": {
         "elements": [
@@ -845,7 +845,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 209,
-      "builderBaseTrophies": 2330,
+      "builderBaseTrophies": 2310,
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 25,
@@ -934,7 +934,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 63,
+      "trophies": 87,
       "builderBaseTrophies": 1618,
       "clanRank": 22,
       "previousClanRank": 22,
@@ -1349,7 +1349,7 @@
       "clanRank": 32,
       "previousClanRank": 32,
       "donations": 978,
-      "donationsReceived": 618,
+      "donationsReceived": 666,
       "playerHouse": {
         "elements": [
           {

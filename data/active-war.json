@@ -10,14 +10,14 @@
       "name": "xlMURDOClx",
       "th": 13,
       "pos": 4,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2VL98GPGU",
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 11,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GP2PGPUVJ",
@@ -52,7 +52,7 @@
       "name": "..::MURDOC::..",
       "th": 14,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VCYYPVLU",
@@ -73,7 +73,7 @@
       "name": "demiur",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
@@ -131,7 +131,7 @@
       "name": "keoni14",
       "th": 15,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G0VRVVPV8",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-01T01:40:00.225Z",
+  "at": "2026-11-01T08:24:43.667Z",
   "source": "currentwar"
 }

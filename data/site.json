@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T01:40:00Z",
+  "generatedAt": "2026-11-01T08:24:43Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25700,
-    "builder": 17250,
+    "builder": 17240,
     "capital": 1097,
     "members": 32,
     "freq": "Siempre",
@@ -91,7 +91,7 @@
       "C",
       14,
       208,
-      1466,
+      1554,
       96,
       2993
     ],
@@ -109,8 +109,8 @@
       "C",
       13,
       97,
-      875,
-      1344,
+      912,
+      1384,
       1647
     ],
     [
@@ -125,10 +125,10 @@
     [
       "ⓟⓐⓒⓜⓐⓝ",
       "C",
-      11,
+      12,
       136,
       1286,
-      3567,
+      3636,
       1999
     ],
     [
@@ -136,7 +136,7 @@
       "C",
       13,
       147,
-      392,
+      424,
       186,
       2334
     ],
@@ -237,7 +237,7 @@
       81,
       25,
       0,
-      2330
+      2310
     ],
     [
       "Casdo",
@@ -344,7 +344,7 @@
       14,
       154,
       978,
-      618,
+      666,
       2131
     ]
   ],
@@ -7975,14 +7975,14 @@
         "name": "xlMURDOClx",
         "th": 13,
         "pos": 4,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2VL98GPGU",
         "name": "ⓟⓐⓒⓜⓐⓝ",
         "th": 11,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GP2PGPUVJ",
@@ -8017,7 +8017,7 @@
         "name": "..::MURDOC::..",
         "th": 14,
         "pos": 2,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8VCYYPVLU",
@@ -8038,7 +8038,7 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QV20QPJGR",
@@ -8096,7 +8096,7 @@
         "name": "keoni14",
         "th": 15,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G0VRVVPV8",
@@ -8183,7 +8183,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-01T01:40:00.225Z",
+    "at": "2026-11-01T08:24:43.667Z",
     "source": "currentwar"
   }
 }
