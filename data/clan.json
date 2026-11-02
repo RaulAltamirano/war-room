@@ -15,8 +15,8 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png"
   },
   "clanLevel": 6,
-  "clanPoints": 26900,
-  "clanBuilderBasePoints": 17419,
+  "clanPoints": 26800,
+  "clanBuilderBasePoints": 17401,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -85,7 +85,7 @@
       "name": "..::MURDOC::..",
       "role": "coLeader",
       "townHallLevel": 15,
-      "expLevel": 208,
+      "expLevel": 209,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 0,
+      "donations": 25,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -265,7 +265,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 97,
+      "expLevel": 98,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -279,7 +279,7 @@
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 40,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -347,7 +347,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2334,
       "clanRank": 8,
-      "previousClanRank": 9,
+      "previousClanRank": 8,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -380,7 +380,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 12,
-      "expLevel": 136,
+      "expLevel": 137,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -392,7 +392,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1999,
       "clanRank": 9,
-      "previousClanRank": 8,
+      "previousClanRank": 9,
       "donations": 0,
       "donationsReceived": 0,
       "builderBaseLeague": {
@@ -450,7 +450,7 @@
       "name": "KOLET",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 73,
+      "expLevel": 74,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -462,7 +462,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1146,
       "clanRank": 11,
-      "previousClanRank": 13,
+      "previousClanRank": 11,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -507,7 +507,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1110,
       "clanRank": 12,
-      "previousClanRank": 11,
+      "previousClanRank": 12,
       "donations": 0,
       "donationsReceived": 0,
       "builderBaseLeague": {
@@ -532,7 +532,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1105,
       "clanRank": 13,
-      "previousClanRank": 12,
+      "previousClanRank": 13,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -696,51 +696,6 @@
       }
     },
     {
-      "tag": "#R820CCYQ0",
-      "name": "jhon cna",
-      "role": "member",
-      "townHallLevel": 9,
-      "expLevel": 67,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000007,
-        "name": "Archer League 7"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1585,
-      "clanRank": 17,
-      "previousClanRank": 18,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000008
-          },
-          {
-            "type": "decoration",
-            "id": 82000063
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
-      }
-    },
-    {
       "tag": "#R2ULCJ0J8",
       "name": "demiur",
       "role": "member",
@@ -756,8 +711,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1717,
-      "clanRank": 18,
-      "previousClanRank": 19,
+      "clanRank": 17,
+      "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -790,7 +745,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 66,
+      "expLevel": 67,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -801,8 +756,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1635,
-      "clanRank": 19,
-      "previousClanRank": 21,
+      "clanRank": 18,
+      "previousClanRank": 19,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -845,8 +800,8 @@
         "name": "Archer League 7"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2313,
-      "clanRank": 20,
+      "builderBaseTrophies": 2276,
+      "clanRank": 19,
       "previousClanRank": 20,
       "donations": 0,
       "donationsReceived": 0,
@@ -891,8 +846,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 760,
-      "clanRank": 21,
-      "previousClanRank": 17,
+      "clanRank": 20,
+      "previousClanRank": 21,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -921,6 +876,96 @@
       }
     },
     {
+      "tag": "#R9GR9QC9C",
+      "name": "kerrykopito",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 69,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 33,
+      "builderBaseTrophies": 1618,
+      "clanRank": 21,
+      "previousClanRank": 27,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000016,
+        "name": "Copper League IV"
+      }
+    },
+    {
+      "tag": "#R820CCYQ0",
+      "name": "jhon cna",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 68,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 1585,
+      "clanRank": 22,
+      "previousClanRank": 17,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000008
+          },
+          {
+            "type": "decoration",
+            "id": 82000063
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000015,
+        "name": "Copper League V"
+      }
+    },
+    {
       "tag": "#R8P80GGGR",
       "name": "Diego503",
       "role": "member",
@@ -936,8 +981,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1276,
-      "clanRank": 22,
-      "previousClanRank": 23,
+      "clanRank": 23,
+      "previousClanRank": 22,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -981,8 +1026,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 455,
-      "clanRank": 23,
-      "previousClanRank": 24,
+      "clanRank": 24,
+      "previousClanRank": 23,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1026,8 +1071,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 802,
-      "clanRank": 24,
-      "previousClanRank": 25,
+      "clanRank": 25,
+      "previousClanRank": 24,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1071,8 +1116,8 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 656,
-      "clanRank": 25,
-      "previousClanRank": 26,
+      "clanRank": 26,
+      "previousClanRank": 25,
       "donations": 0,
       "donationsReceived": 0,
       "builderBaseLeague": {
@@ -1096,58 +1141,13 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1451,
-      "clanRank": 26,
-      "previousClanRank": 27,
-      "donations": 0,
+      "clanRank": 27,
+      "previousClanRank": 26,
+      "donations": 40,
       "donationsReceived": 0,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
-      }
-    },
-    {
-      "tag": "#R9GR9QC9C",
-      "name": "kerrykopito",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 69,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000006,
-        "name": "Barbarian League 6"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1618,
-      "clanRank": 27,
-      "previousClanRank": 22,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
       }
     },
     {
@@ -1245,7 +1245,7 @@
       "name": "ZackyB",
       "role": "admin",
       "townHallLevel": 9,
-      "expLevel": 47,
+      "expLevel": 48,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1259,7 +1259,7 @@
       "clanRank": 30,
       "previousClanRank": 30,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 25,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
@@ -1315,7 +1315,7 @@
       "name": "J-J POPEYE",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 71,
+      "expLevel": 72,
       "league": {
         "id": 29000000,
         "name": "Unranked"
