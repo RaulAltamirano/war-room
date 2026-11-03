@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26800,
-  "clanBuilderBasePoints": 17362,
+  "clanBuilderBasePoints": 17376,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 148,
+      "donations": 178,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -229,7 +229,7 @@
         "id": 105000012,
         "name": "Wizard League 12"
       },
-      "trophies": 48,
+      "trophies": 75,
       "builderBaseTrophies": 1647,
       "clanRank": 5,
       "previousClanRank": 6,
@@ -393,8 +393,8 @@
       "builderBaseTrophies": 1999,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 0,
-      "donationsReceived": 0,
+      "donations": 36,
+      "donationsReceived": 35,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -610,7 +610,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 83,
+      "expLevel": 84,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -620,11 +620,11 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1839,
+      "builderBaseTrophies": 1930,
       "clanRank": 15,
       "previousClanRank": 14,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 36,
       "playerHouse": {
         "elements": [
           {
@@ -646,8 +646,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000018,
-        "name": "Copper League II"
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -700,7 +700,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 67,
+      "expLevel": 68,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 34,
-      "builderBaseTrophies": 1635,
+      "builderBaseTrophies": 1623,
       "clanRank": 17,
       "previousClanRank": 19,
       "donations": 0,
@@ -758,7 +758,7 @@
       "builderBaseTrophies": 760,
       "clanRank": 18,
       "previousClanRank": 21,
-      "donations": 0,
+      "donations": 5,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -790,7 +790,7 @@
       "name": "demiur",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 76,
+      "expLevel": 77,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -845,7 +845,7 @@
         "name": "Archer League 7"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2186,
+      "builderBaseTrophies": 2174,
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 0,
@@ -1254,7 +1254,7 @@
         "id": 105000003,
         "name": "Skeleton League 3"
       },
-      "trophies": 0,
+      "trophies": 122,
       "builderBaseTrophies": 109,
       "clanRank": 30,
       "previousClanRank": 30,
