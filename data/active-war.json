@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 15,
   "attacksPerMember": 1,
   "rival": "I HAT YOU",
@@ -66,14 +66,14 @@
       "name": "demiur",
       "th": 11,
       "pos": 13,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#QV20QPJGR",
       "name": "Casdo",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#YJ8VRVPY",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-02T20:26:14.146Z",
+  "at": "2026-11-03T02:30:08.958Z",
   "source": "cwl"
 }

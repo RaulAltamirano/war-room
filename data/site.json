@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T20:26:14Z",
+  "generatedAt": "2026-11-03T02:30:09Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26800,
-    "builder": 17401,
+    "builder": 17355,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -82,7 +82,7 @@
       "C",
       15,
       181,
-      0,
+      77,
       0,
       3204
     ],
@@ -146,7 +146,7 @@
       13,
       127,
       0,
-      0,
+      77,
       2204
     ],
     [
@@ -228,7 +228,7 @@
       82,
       0,
       0,
-      2276
+      2185
     ],
     [
       "VORTEX",
@@ -8447,7 +8447,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 15,
     "attacksPerMember": 1,
     "rival": "I HAT YOU",
@@ -8514,14 +8514,14 @@
         "name": "demiur",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#YJ8VRVPY",
@@ -8666,7 +8666,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-02T20:26:14.146Z",
+    "at": "2026-11-03T02:30:08.958Z",
     "source": "cwl"
   }
 }
