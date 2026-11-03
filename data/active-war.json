@@ -31,7 +31,7 @@
       "name": "jhon cna",
       "th": 9,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GP2PGPUVJ",
@@ -80,7 +80,7 @@
       "name": "Brandon2.0 07",
       "th": 11,
       "pos": 11,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Q02JR2JYV",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-03T17:26:13.169Z",
+  "at": "2026-11-03T22:25:39.417Z",
   "source": "cwl"
 }
