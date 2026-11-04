@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26800,
-  "clanBuilderBasePoints": 17388,
+  "clanBuilderBasePoints": 17355,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -94,11 +94,11 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 27,
+      "trophies": 156,
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 208,
+      "donations": 280,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 326,
+      "donations": 398,
       "donationsReceived": 216,
       "playerHouse": {
         "elements": [
@@ -220,7 +220,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 98,
+      "expLevel": 99,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 1647,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 0,
-      "donationsReceived": 82,
+      "donations": 72,
+      "donationsReceived": 123,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -286,6 +286,31 @@
       }
     },
     {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "role": "coLeader",
+      "townHallLevel": 12,
+      "expLevel": 138,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000011,
+        "name": "Wizard League 11"
+      },
+      "trophies": 83,
+      "builderBaseTrophies": 1999,
+      "clanRank": 7,
+      "previousClanRank": 9,
+      "donations": 158,
+      "donationsReceived": 610,
+      "builderBaseLeague": {
+        "id": 44000019,
+        "name": "Copper League I"
+      }
+    },
+    {
       "tag": "#L8Q82PUQ0",
       "name": "يسوري❤️❤️",
       "role": "member",
@@ -301,7 +326,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1593,
-      "clanRank": 7,
+      "clanRank": 8,
       "previousClanRank": 7,
       "donations": 0,
       "donationsReceived": 0,
@@ -346,9 +371,9 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2334,
-      "clanRank": 8,
+      "clanRank": 9,
       "previousClanRank": 8,
-      "donations": 0,
+      "donations": 72,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -376,31 +401,6 @@
       }
     },
     {
-      "tag": "#2VL98GPGU",
-      "name": "ⓟⓐⓒⓜⓐⓝ",
-      "role": "coLeader",
-      "townHallLevel": 12,
-      "expLevel": 137,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000011,
-        "name": "Wizard League 11"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1999,
-      "clanRank": 9,
-      "previousClanRank": 9,
-      "donations": 117,
-      "donationsReceived": 250,
-      "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
-      }
-    },
-    {
       "tag": "#GP2PGPUVJ",
       "name": "Pete Zahut",
       "role": "admin",
@@ -418,7 +418,7 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 272,
+      "donations": 344,
       "donationsReceived": 231,
       "playerHouse": {
         "elements": [
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 81,
+      "trophies": 92,
       "builderBaseTrophies": 1333,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 27,
-      "builderBaseTrophies": 1983,
+      "builderBaseTrophies": 1949,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
@@ -709,8 +709,8 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 356,
-      "builderBaseTrophies": 1611,
+      "trophies": 396,
+      "builderBaseTrophies": 1628,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -741,51 +741,6 @@
       }
     },
     {
-      "tag": "#G92R92J98",
-      "name": "VORTEX",
-      "role": "member",
-      "townHallLevel": 10,
-      "expLevel": 66,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000007,
-        "name": "Archer League 7"
-      },
-      "trophies": 31,
-      "builderBaseTrophies": 760,
-      "clanRank": 18,
-      "previousClanRank": 18,
-      "donations": 46,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000011
-          },
-          {
-            "type": "decoration",
-            "id": 82000058
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000007,
-        "name": "Clay League III"
-      }
-    },
-    {
       "tag": "#GVQL0892Y",
       "name": "minch",
       "role": "member",
@@ -799,9 +754,9 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 19,
-      "builderBaseTrophies": 2181,
-      "clanRank": 19,
+      "trophies": 59,
+      "builderBaseTrophies": 2120,
+      "clanRank": 18,
       "previousClanRank": 19,
       "donations": 0,
       "donationsReceived": 0,
@@ -828,6 +783,51 @@
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
+      }
+    },
+    {
+      "tag": "#G92R92J98",
+      "name": "VORTEX",
+      "role": "member",
+      "townHallLevel": 10,
+      "expLevel": 66,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000007,
+        "name": "Archer League 7"
+      },
+      "trophies": 31,
+      "builderBaseTrophies": 760,
+      "clanRank": 19,
+      "previousClanRank": 18,
+      "donations": 46,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000011
+          },
+          {
+            "type": "decoration",
+            "id": 82000058
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000007,
+        "name": "Clay League III"
       }
     },
     {
@@ -1155,7 +1155,7 @@
       "name": "ElTiti",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 44,
+      "expLevel": 45,
       "league": {
         "id": 29000000,
         "name": "Unranked"
