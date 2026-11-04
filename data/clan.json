@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26800,
-  "clanBuilderBasePoints": 17383,
+  "clanBuilderBasePoints": 17398,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 77,
-      "donationsReceived": 83,
+      "donations": 184,
+      "donationsReceived": 133,
       "playerHouse": {
         "elements": [
           {
@@ -393,8 +393,8 @@
       "builderBaseTrophies": 1999,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 38,
-      "donationsReceived": 107,
+      "donations": 74,
+      "donationsReceived": 178,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -418,8 +418,8 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 0,
-      "donationsReceived": 77,
+      "donations": 50,
+      "donationsReceived": 154,
       "playerHouse": {
         "elements": [
           {
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 27,
+      "trophies": 67,
       "builderBaseTrophies": 1333,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -620,11 +620,11 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1930,
+      "builderBaseTrophies": 1983,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
-      "donationsReceived": 36,
+      "donationsReceived": 72,
       "playerHouse": {
         "elements": [
           {
@@ -655,7 +655,7 @@
       "name": "joshua",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 78,
+      "expLevel": 79,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -665,10 +665,10 @@
         "name": "Archer League 8"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1164,
+      "builderBaseTrophies": 1166,
       "clanRank": 16,
       "previousClanRank": 16,
-      "donations": 0,
+      "donations": 48,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -709,7 +709,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 34,
+      "trophies": 327,
       "builderBaseTrophies": 1623,
       "clanRank": 17,
       "previousClanRank": 17,
@@ -754,11 +754,11 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 29,
+      "trophies": 31,
       "builderBaseTrophies": 760,
       "clanRank": 18,
       "previousClanRank": 18,
-      "donations": 5,
+      "donations": 46,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -790,7 +790,7 @@
       "name": "minch",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 82,
+      "expLevel": 83,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -800,7 +800,7 @@
         "name": "Archer League 7"
       },
       "trophies": 19,
-      "builderBaseTrophies": 2174,
+      "builderBaseTrophies": 2178,
       "clanRank": 19,
       "previousClanRank": 20,
       "donations": 0,
@@ -1374,7 +1374,7 @@
       "clanRank": 33,
       "previousClanRank": 33,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 48,
       "playerHouse": {
         "elements": [
           {
