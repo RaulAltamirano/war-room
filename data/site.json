@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T10:09:56Z",
+  "generatedAt": "2026-11-04T18:08:09Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26800,
-    "builder": 17398,
+    "builder": 17388,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -82,8 +82,8 @@
       "C",
       15,
       181,
-      184,
-      133,
+      326,
+      216,
       3204
     ],
     [
@@ -137,7 +137,7 @@
       12,
       137,
       117,
-      178,
+      250,
       1999
     ],
     [
@@ -145,8 +145,8 @@
       "E",
       13,
       128,
-      117,
-      154,
+      272,
+      231,
       2204
     ],
     [
@@ -207,10 +207,10 @@
       "Casdo",
       "M",
       11,
-      68,
+      69,
       0,
       0,
-      1623
+      1611
     ],
     [
       "VORTEX",
@@ -228,7 +228,7 @@
       83,
       0,
       0,
-      2178
+      2181
     ],
     [
       "demiur",
@@ -236,8 +236,8 @@
       11,
       77,
       0,
-      0,
-      1717
+      65,
+      1686
     ],
     [
       "Brandon2.0 07",
@@ -324,7 +324,7 @@
       "ZackyB",
       "E",
       9,
-      48,
+      49,
       0,
       25,
       109
@@ -8932,7 +8932,7 @@
         "name": "Pete Zahut",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#LY9J99L9G",
@@ -8960,14 +8960,14 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#YJ8VRVPY",
@@ -8988,7 +8988,7 @@
         "name": "kssto",
         "th": 15,
         "pos": 1,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GC9ULU80G",
@@ -9018,7 +9018,7 @@
         "name": "TwOFaCE",
         "th": 18,
         "pos": 4,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#G0LQRR92C",
@@ -9039,7 +9039,7 @@
         "name": "DAREIDEVIL",
         "th": 14,
         "pos": 17,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QYPLLYQ8",
@@ -9060,7 +9060,7 @@
         "name": "| Frosty |",
         "th": 18,
         "pos": 5,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#G89RYVR0R",
@@ -9074,14 +9074,14 @@
         "name": "Dr Gersh",
         "th": 15,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GLGC0L2J0",
         "name": "Little Eddie",
         "th": 14,
         "pos": 18,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#Q0VJ8LQRG",
@@ -9112,7 +9112,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-04T10:09:56.412Z",
+    "at": "2026-11-04T18:08:09.907Z",
     "source": "cwl"
   }
 }

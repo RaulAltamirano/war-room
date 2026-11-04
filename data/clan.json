@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26800,
-  "clanBuilderBasePoints": 17398,
+  "clanBuilderBasePoints": 17388,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -94,7 +94,7 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 0,
+      "trophies": 27,
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 184,
-      "donationsReceived": 133,
+      "donations": 326,
+      "donationsReceived": 216,
       "playerHouse": {
         "elements": [
           {
@@ -394,7 +394,7 @@
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 117,
-      "donationsReceived": 178,
+      "donationsReceived": 250,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -418,8 +418,8 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 117,
-      "donationsReceived": 154,
+      "donations": 272,
+      "donationsReceived": 231,
       "playerHouse": {
         "elements": [
           {
@@ -619,7 +619,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 0,
+      "trophies": 27,
       "builderBaseTrophies": 1983,
       "clanRank": 15,
       "previousClanRank": 15,
@@ -700,7 +700,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 68,
+      "expLevel": 69,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 356,
-      "builderBaseTrophies": 1623,
+      "builderBaseTrophies": 1611,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -800,7 +800,7 @@
         "name": "Archer League 7"
       },
       "trophies": 19,
-      "builderBaseTrophies": 2178,
+      "builderBaseTrophies": 2181,
       "clanRank": 19,
       "previousClanRank": 19,
       "donations": 0,
@@ -845,11 +845,11 @@
         "name": "Archer League 7"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1717,
+      "builderBaseTrophies": 1686,
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 65,
       "playerHouse": {
         "elements": [
           {
@@ -871,8 +871,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000017,
-        "name": "Copper League III"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -1245,7 +1245,7 @@
       "name": "ZackyB",
       "role": "admin",
       "townHallLevel": 9,
-      "expLevel": 48,
+      "expLevel": 49,
       "league": {
         "id": 29000000,
         "name": "Unranked"
