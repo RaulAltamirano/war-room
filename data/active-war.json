@@ -10,14 +10,14 @@
       "name": "imparable",
       "th": 13,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Y0PPGVQL2",
       "name": "xlMURDOClx",
       "th": 13,
       "pos": 5,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#2VL98GPGU",
@@ -52,7 +52,7 @@
       "name": "..::MURDOC::..",
       "th": 15,
       "pos": 2,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VCYYPVLU",
@@ -87,7 +87,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -108,7 +108,7 @@
       "name": "VORTEX",
       "th": 10,
       "pos": 14,
-      "attacks": 0
+      "attacks": 1
     }
   ],
   "them": [
@@ -173,7 +173,7 @@
       "name": "Body_bags1997",
       "th": 14,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GL2R9V0J9",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-04T02:30:13.157Z",
+  "at": "2026-11-04T10:09:56.412Z",
   "source": "cwl"
 }

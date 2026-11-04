@@ -175,7 +175,7 @@
       "name": "al 100%",
       "role": "admin",
       "townHallLevel": 14,
-      "expLevel": 142,
+      "expLevel": 143,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -189,7 +189,7 @@
       "clanRank": 4,
       "previousClanRank": 4,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 48,
       "playerHouse": {
         "elements": [
           {
@@ -335,7 +335,7 @@
       "name": "xlMURDOClx",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 147,
+      "expLevel": 148,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -393,7 +393,7 @@
       "builderBaseTrophies": 1999,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 74,
+      "donations": 117,
       "donationsReceived": 178,
       "builderBaseLeague": {
         "id": 44000019,
@@ -418,7 +418,7 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 50,
+      "donations": 117,
       "donationsReceived": 154,
       "playerHouse": {
         "elements": [
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 67,
+      "trophies": 81,
       "builderBaseTrophies": 1333,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -709,7 +709,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 327,
+      "trophies": 356,
       "builderBaseTrophies": 1623,
       "clanRank": 17,
       "previousClanRank": 17,
@@ -802,7 +802,7 @@
       "trophies": 19,
       "builderBaseTrophies": 2178,
       "clanRank": 19,
-      "previousClanRank": 20,
+      "previousClanRank": 19,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -847,7 +847,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1717,
       "clanRank": 20,
-      "previousClanRank": 19,
+      "previousClanRank": 20,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -880,7 +880,7 @@
       "name": "Brandon2.0 07",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 120,
+      "expLevel": 121,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -892,9 +892,9 @@
       "trophies": 40,
       "builderBaseTrophies": 1451,
       "clanRank": 21,
-      "previousClanRank": 27,
+      "previousClanRank": 21,
       "donations": 82,
-      "donationsReceived": 0,
+      "donationsReceived": 67,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -917,7 +917,7 @@
       "trophies": 33,
       "builderBaseTrophies": 1618,
       "clanRank": 22,
-      "previousClanRank": 21,
+      "previousClanRank": 22,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -962,7 +962,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1615,
       "clanRank": 23,
-      "previousClanRank": 22,
+      "previousClanRank": 23,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1007,7 +1007,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1276,
       "clanRank": 24,
-      "previousClanRank": 23,
+      "previousClanRank": 24,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1052,7 +1052,7 @@
       "trophies": 0,
       "builderBaseTrophies": 455,
       "clanRank": 25,
-      "previousClanRank": 24,
+      "previousClanRank": 25,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1097,7 +1097,7 @@
       "trophies": 0,
       "builderBaseTrophies": 802,
       "clanRank": 26,
-      "previousClanRank": 25,
+      "previousClanRank": 26,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1142,7 +1142,7 @@
       "trophies": 0,
       "builderBaseTrophies": 656,
       "clanRank": 27,
-      "previousClanRank": 26,
+      "previousClanRank": 27,
       "donations": 0,
       "donationsReceived": 0,
       "builderBaseLeague": {
@@ -1283,8 +1283,8 @@
       "builderBaseTrophies": 1102,
       "clanRank": 31,
       "previousClanRank": 31,
-      "donations": 0,
-      "donationsReceived": 0,
+      "donations": 35,
+      "donationsReceived": 30,
       "playerHouse": {
         "elements": [
           {
