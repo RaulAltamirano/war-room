@@ -17,7 +17,7 @@
       "name": "xlMURDOClx",
       "th": 13,
       "pos": 5,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#2VL98GPGU",
@@ -52,7 +52,7 @@
       "name": "..::MURDOC::..",
       "th": 15,
       "pos": 2,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VCYYPVLU",
@@ -138,7 +138,7 @@
       "name": "Raehan",
       "th": 14,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Q0LPRGQG0",
@@ -159,14 +159,14 @@
       "name": "jonzz",
       "th": 14,
       "pos": 10,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#L28U0VPP9",
       "name": "esa",
       "th": 15,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#2Q0QPVU0",
@@ -194,7 +194,7 @@
       "name": "samurai",
       "th": 17,
       "pos": 2,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GGYUVVGP2",
@@ -218,6 +218,6 @@
       "attacks": 1
     }
   ],
-  "at": "2026-11-05T04:15:23.158Z",
+  "at": "2026-11-05T12:35:43.982Z",
   "source": "cwl"
 }

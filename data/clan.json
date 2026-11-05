@@ -229,7 +229,7 @@
         "id": 105000012,
         "name": "Wizard League 12"
       },
-      "trophies": 75,
+      "trophies": 104,
       "builderBaseTrophies": 1647,
       "clanRank": 5,
       "previousClanRank": 5,
@@ -302,7 +302,7 @@
       "trophies": 83,
       "builderBaseTrophies": 1999,
       "clanRank": 7,
-      "previousClanRank": 9,
+      "previousClanRank": 7,
       "donations": 158,
       "donationsReceived": 610,
       "builderBaseLeague": {
@@ -327,7 +327,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1593,
       "clanRank": 8,
-      "previousClanRank": 7,
+      "previousClanRank": 8,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -372,7 +372,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2334,
       "clanRank": 9,
-      "previousClanRank": 8,
+      "previousClanRank": 9,
       "donations": 72,
       "donationsReceived": 0,
       "playerHouse": {
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 92,
+      "trophies": 110,
       "builderBaseTrophies": 1333,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -610,7 +610,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 84,
+      "expLevel": 85,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -754,10 +754,10 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 59,
+      "trophies": 99,
       "builderBaseTrophies": 2152,
       "clanRank": 18,
-      "previousClanRank": 19,
+      "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -802,7 +802,7 @@
       "trophies": 31,
       "builderBaseTrophies": 790,
       "clanRank": 19,
-      "previousClanRank": 18,
+      "previousClanRank": 19,
       "donations": 46,
       "donationsReceived": 0,
       "playerHouse": {
