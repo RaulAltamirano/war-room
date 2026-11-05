@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 280,
+      "donations": 376,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 398,
-      "donationsReceived": 216,
+      "donations": 475,
+      "donationsReceived": 299,
       "playerHouse": {
         "elements": [
           {
@@ -229,12 +229,12 @@
         "id": 105000012,
         "name": "Wizard League 12"
       },
-      "trophies": 104,
+      "trophies": 126,
       "builderBaseTrophies": 1647,
       "clanRank": 5,
       "previousClanRank": 5,
       "donations": 72,
-      "donationsReceived": 123,
+      "donationsReceived": 163,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -299,12 +299,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 83,
+      "trophies": 96,
       "builderBaseTrophies": 1999,
       "clanRank": 7,
       "previousClanRank": 7,
-      "donations": 158,
-      "donationsReceived": 610,
+      "donations": 163,
+      "donationsReceived": 752,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -373,7 +373,7 @@
       "builderBaseTrophies": 2334,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 72,
+      "donations": 143,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -405,7 +405,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 13,
-      "expLevel": 129,
+      "expLevel": 130,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -418,8 +418,8 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 379,
-      "donationsReceived": 231,
+      "donations": 457,
+      "donationsReceived": 308,
       "playerHouse": {
         "elements": [
           {
@@ -495,7 +495,7 @@
       "name": "اوراس",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 75,
+      "expLevel": 76,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -889,11 +889,11 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 40,
+      "trophies": 160,
       "builderBaseTrophies": 1451,
       "clanRank": 21,
       "previousClanRank": 21,
-      "donations": 82,
+      "donations": 122,
       "donationsReceived": 102,
       "builderBaseLeague": {
         "id": 44000014,
@@ -949,8 +949,8 @@
       "tag": "#R820CCYQ0",
       "name": "jhon cna",
       "role": "member",
-      "townHallLevel": 9,
-      "expLevel": 68,
+      "townHallLevel": 10,
+      "expLevel": 69,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1259,7 +1259,7 @@
       "clanRank": 30,
       "previousClanRank": 30,
       "donations": 0,
-      "donationsReceived": 25,
+      "donationsReceived": 50,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"

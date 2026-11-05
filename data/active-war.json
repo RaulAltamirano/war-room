@@ -31,21 +31,21 @@
       "name": "jhon cna",
       "th": 10,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GP2PGPUVJ",
       "name": "Pete Zahut",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LY9J99L9G",
       "name": "cozo 2000",
       "th": 11,
       "pos": 11,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -66,7 +66,7 @@
       "name": "demiur",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#QV20QPJGR",
@@ -87,14 +87,14 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Y9GU8QYYG",
       "name": "kssto",
       "th": 15,
       "pos": 1,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GC9ULU80G",
@@ -145,7 +145,7 @@
       "name": "Riko efendy",
       "th": 14,
       "pos": 9,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#9UR900G88",
@@ -180,14 +180,14 @@
       "name": "putr",
       "th": 16,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LRP9PC292",
       "name": "BTK∆NABABAN",
       "th": 14,
       "pos": 11,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R0YRUGQPQ",
@@ -218,6 +218,6 @@
       "attacks": 1
     }
   ],
-  "at": "2026-11-05T12:35:43.982Z",
+  "at": "2026-11-05T20:24:19.314Z",
   "source": "cwl"
 }
