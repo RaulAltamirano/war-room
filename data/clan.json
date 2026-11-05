@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26800,
-  "clanBuilderBasePoints": 17355,
+  "clanBuilderBasePoints": 17382,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -405,7 +405,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 13,
-      "expLevel": 128,
+      "expLevel": 129,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -418,7 +418,7 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 344,
+      "donations": 379,
       "donationsReceived": 231,
       "playerHouse": {
         "elements": [
@@ -565,7 +565,7 @@
       "name": "TaP",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 76,
+      "expLevel": 77,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 396,
-      "builderBaseTrophies": 1628,
+      "builderBaseTrophies": 1661,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -755,7 +755,7 @@
         "name": "Archer League 7"
       },
       "trophies": 59,
-      "builderBaseTrophies": 2120,
+      "builderBaseTrophies": 2152,
       "clanRank": 18,
       "previousClanRank": 19,
       "donations": 0,
@@ -790,7 +790,7 @@
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 66,
+      "expLevel": 67,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -800,7 +800,7 @@
         "name": "Archer League 7"
       },
       "trophies": 31,
-      "builderBaseTrophies": 760,
+      "builderBaseTrophies": 790,
       "clanRank": 19,
       "previousClanRank": 18,
       "donations": 46,
@@ -894,7 +894,7 @@
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 82,
-      "donationsReceived": 67,
+      "donationsReceived": 102,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -1040,7 +1040,7 @@
       "name": "Shiba",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 69,
+      "expLevel": 70,
       "league": {
         "id": 29000000,
         "name": "Unranked"

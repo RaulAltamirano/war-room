@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T23:49:18Z",
+  "generatedAt": "2026-11-05T04:15:23Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26800,
-    "builder": 17355,
+    "builder": 17382,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -144,8 +144,8 @@
       "Pete Zahut",
       "E",
       13,
-      128,
-      344,
+      129,
+      379,
       231,
       2204
     ],
@@ -180,7 +180,7 @@
       "TaP",
       "M",
       11,
-      76,
+      77,
       0,
       0,
       1333
@@ -210,7 +210,7 @@
       69,
       0,
       0,
-      1628
+      1661
     ],
     [
       "minch",
@@ -219,16 +219,16 @@
       83,
       0,
       0,
-      2120
+      2152
     ],
     [
       "VORTEX",
       "M",
       10,
-      66,
+      67,
       46,
       0,
-      760
+      790
     ],
     [
       "demiur",
@@ -245,7 +245,7 @@
       11,
       121,
       82,
-      67,
+      102,
       1451
     ],
     [
@@ -279,7 +279,7 @@
       "Shiba",
       "M",
       10,
-      69,
+      70,
       0,
       0,
       455
@@ -8890,40 +8890,480 @@
           ]
         ]
       ]
+    },
+    {
+      "id": "w20261104",
+      "date": "2026-11-04",
+      "rival": "Group 935",
+      "res": "D",
+      "stars": [
+        16,
+        30
+      ],
+      "liga": true,
+      "rivalTag": "2QCU8VY9C",
+      "members": [
+        [
+          "kssto",
+          "C",
+          [
+            13,
+            0,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            100,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          15,
+          1,
+          [
+            [
+              0,
+              42,
+              18
+            ]
+          ]
+        ],
+        [
+          "..::MURDOC::..",
+          "C",
+          [
+            75,
+            2,
+            2,
+            0,
+            0,
+            -1,
+            0,
+            100,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          15,
+          2,
+          [
+            [
+              2,
+              93,
+              11
+            ]
+          ]
+        ],
+        [
+          "Nicolás",
+          "E",
+          [
+            0,
+            0,
+            0,
+            100,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          14,
+          3,
+          []
+        ],
+        [
+          "imparable",
+          "L",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          13,
+          4,
+          [
+            [
+              3,
+              100,
+              8
+            ]
+          ]
+        ],
+        [
+          "xlMURDOClx",
+          "C",
+          [
+            100,
+            3,
+            2,
+            0,
+            0,
+            -1,
+            100,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          13,
+          5,
+          [
+            [
+              3,
+              100,
+              10
+            ]
+          ]
+        ],
+        [
+          "Pete Zahut",
+          "E",
+          [
+            69,
+            2,
+            2,
+            0,
+            0,
+            2,
+            0,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          13,
+          6,
+          [
+            [
+              2,
+              75,
+              19
+            ]
+          ]
+        ],
+        [
+          "Abrasive7X",
+          "C",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          13,
+          7,
+          [
+            [
+              3,
+              100,
+              6
+            ]
+          ]
+        ],
+        [
+          "ⓟⓐⓒⓜⓐⓝ",
+          "C",
+          [
+            37,
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          12,
+          8,
+          [
+            [
+              1,
+              45,
+              21
+            ]
+          ]
+        ],
+        [
+          "TaP",
+          "M",
+          [
+            0,
+            0,
+            0,
+            100,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          9,
+          []
+        ],
+        [
+          "Brandon2.0 07",
+          "E",
+          [
+            0,
+            0,
+            0,
+            100,
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          10,
+          []
+        ],
+        [
+          "cozo 2000",
+          "E",
+          [
+            35,
+            1,
+            1,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            100,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          11,
+          [
+            [
+              1,
+              39,
+              2
+            ]
+          ]
+        ],
+        [
+          "demiur",
+          "M",
+          [
+            64,
+            2,
+            2,
+            0,
+            0,
+            -1,
+            0,
+            100,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          12,
+          [
+            [
+              2,
+              57,
+              17
+            ]
+          ]
+        ],
+        [
+          "Casdo",
+          "M",
+          [
+            8,
+            0,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            100,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          13,
+          [
+            [
+              0,
+              28,
+              20
+            ]
+          ]
+        ],
+        [
+          "VORTEX",
+          "M",
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            -3,
+            0,
+            0,
+            0,
+            100,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          10,
+          14,
+          [
+            [
+              0,
+              14,
+              9
+            ]
+          ]
+        ],
+        [
+          "jhon cna",
+          "M",
+          [
+            0,
+            0,
+            0,
+            100,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          9,
+          15,
+          []
+        ]
+      ]
     }
   ],
   "activeWar": {
     "state": "inWar",
     "teamSize": 15,
     "attacksPerMember": 1,
-    "rival": "Group 935",
-    "rivalTag": "#2QCU8VY9C",
+    "rival": "BLACK STAR",
+    "rivalTag": "#2J8U8PU0R",
     "us": [
       {
         "tag": "#QL2V8CYRU",
         "name": "imparable",
         "th": 13,
         "pos": 4,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#Y0PPGVQL2",
         "name": "xlMURDOClx",
         "th": 13,
         "pos": 5,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#2VL98GPGU",
         "name": "ⓟⓐⓒⓜⓐⓝ",
         "th": 12,
         "pos": 8,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#R820CCYQ0",
         "name": "jhon cna",
-        "th": 9,
+        "th": 10,
         "pos": 15,
         "attacks": 0
       },
@@ -8932,21 +9372,21 @@
         "name": "Pete Zahut",
         "th": 13,
         "pos": 6,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#LY9J99L9G",
         "name": "cozo 2000",
         "th": 11,
         "pos": 11,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#8VJYRRGQ",
         "name": "..::MURDOC::..",
         "th": 15,
         "pos": 2,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#8VCYYPVLU",
@@ -8960,14 +9400,14 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#YJ8VRVPY",
@@ -8981,14 +9421,14 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#Y9GU8QYYG",
         "name": "kssto",
         "th": 15,
         "pos": 1,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#GC9ULU80G",
@@ -9002,117 +9442,117 @@
         "name": "VORTEX",
         "th": 10,
         "pos": 14,
-        "attacks": 1
+        "attacks": 0
       }
     ],
     "them": [
       {
-        "tag": "#G00U2VP0V",
-        "name": "Mini Karl",
-        "th": 13,
-        "pos": 29,
-        "attacks": 1
-      },
-      {
-        "tag": "#QUVR9V2C8",
-        "name": "TwOFaCE",
-        "th": 18,
-        "pos": 4,
-        "attacks": 1
-      },
-      {
-        "tag": "#G0LQRR92C",
-        "name": "BeTTaPacKaPuNcH",
-        "th": 18,
-        "pos": 6,
-        "attacks": 0
-      },
-      {
-        "tag": "#R8RUJPY",
-        "name": "IAMNOTAPRO",
-        "th": 13,
-        "pos": 32,
-        "attacks": 0
-      },
-      {
-        "tag": "#GP0L0JL20",
-        "name": "DAREIDEVIL",
-        "th": 14,
-        "pos": 17,
-        "attacks": 1
-      },
-      {
-        "tag": "#QYPLLYQ8",
-        "name": "LuNcH",
-        "th": 18,
-        "pos": 1,
-        "attacks": 1
-      },
-      {
-        "tag": "#PUYCUC29",
-        "name": "mike cdxx",
-        "th": 18,
-        "pos": 2,
-        "attacks": 1
-      },
-      {
-        "tag": "#PQLV8YV8Y",
-        "name": "| Frosty |",
-        "th": 18,
-        "pos": 5,
-        "attacks": 1
-      },
-      {
-        "tag": "#G89RYVR0R",
-        "name": "Body_bags1997",
+        "tag": "#GLJ80QGC2",
+        "name": "putri",
         "th": 14,
         "pos": 15,
-        "attacks": 1
+        "attacks": 0
       },
       {
-        "tag": "#GL2R9V0J9",
-        "name": "Dr Gersh",
-        "th": 15,
-        "pos": 12,
-        "attacks": 1
-      },
-      {
-        "tag": "#GLGC0L2J0",
-        "name": "Little Eddie",
+        "tag": "#QV8JL0JPP",
+        "name": "Arry",
         "th": 14,
-        "pos": 18,
-        "attacks": 1
+        "pos": 13,
+        "attacks": 0
       },
       {
-        "tag": "#Q0VJ8LQRG",
-        "name": "dev mini",
-        "th": 16,
+        "tag": "#GLPGUP0QP",
+        "name": "kang~komar",
+        "th": 15,
         "pos": 8,
         "attacks": 0
       },
       {
-        "tag": "#LULU8UC8V",
-        "name": "Darkel",
-        "th": 17,
+        "tag": "#LC8L8L2C9",
+        "name": "Raehan",
+        "th": 14,
+        "pos": 12,
+        "attacks": 0
+      },
+      {
+        "tag": "#Q0LPRGQG0",
+        "name": "Riko efendy",
+        "th": 14,
         "pos": 9,
         "attacks": 0
       },
       {
-        "tag": "#Q9V00CCPU",
-        "name": "firekarl4ace",
-        "th": 16,
-        "pos": 7,
-        "attacks": 1
+        "tag": "#9UR900G88",
+        "name": "My Friend",
+        "th": 14,
+        "pos": 14,
+        "attacks": 0
       },
       {
-        "tag": "#9LJ00V0RQ",
-        "name": "devon",
-        "th": 18,
+        "tag": "#LC2YULY82",
+        "name": "jonzz",
+        "th": 14,
+        "pos": 10,
+        "attacks": 0
+      },
+      {
+        "tag": "#L28U0VPP9",
+        "name": "esa",
+        "th": 15,
         "pos": 3,
         "attacks": 0
+      },
+      {
+        "tag": "#2Q0QPVU0",
+        "name": "Rizhan",
+        "th": 15,
+        "pos": 5,
+        "attacks": 0
+      },
+      {
+        "tag": "#Y9V8Q9YPJ",
+        "name": "putr",
+        "th": 16,
+        "pos": 4,
+        "attacks": 0
+      },
+      {
+        "tag": "#LRP9PC292",
+        "name": "BTK∆NABABAN",
+        "th": 14,
+        "pos": 11,
+        "attacks": 0
+      },
+      {
+        "tag": "#R0YRUGQPQ",
+        "name": "samurai",
+        "th": 17,
+        "pos": 2,
+        "attacks": 0
+      },
+      {
+        "tag": "#GGYUVVGP2",
+        "name": "SusilaKancil144",
+        "th": 15,
+        "pos": 7,
+        "attacks": 0
+      },
+      {
+        "tag": "#G92CUYGQV",
+        "name": "buditabuti",
+        "th": 15,
+        "pos": 6,
+        "attacks": 0
+      },
+      {
+        "tag": "#QCRL2LRR",
+        "name": "Yusuf",
+        "th": 14,
+        "pos": 17,
+        "attacks": 1
       }
     ],
-    "at": "2026-11-04T23:49:18.065Z",
+    "at": "2026-11-05T04:15:23.158Z",
     "source": "cwl"
   }
 }
