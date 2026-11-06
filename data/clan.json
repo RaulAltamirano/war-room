@@ -54,7 +54,7 @@
       "clanRank": 1,
       "previousClanRank": 1,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 77,
       "playerHouse": {
         "elements": [
           {
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 376,
+      "donations": 526,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 506,
+      "donations": 550,
       "donationsReceived": 299,
       "playerHouse": {
         "elements": [
@@ -189,7 +189,7 @@
       "clanRank": 4,
       "previousClanRank": 4,
       "donations": 0,
-      "donationsReceived": 48,
+      "donationsReceived": 93,
       "playerHouse": {
         "elements": [
           {
@@ -233,7 +233,7 @@
       "builderBaseTrophies": 1647,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 72,
+      "donations": 77,
       "donationsReceived": 163,
       "builderBaseLeague": {
         "id": 44000016,
@@ -299,12 +299,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 96,
+      "trophies": 122,
       "builderBaseTrophies": 1999,
       "clanRank": 7,
       "previousClanRank": 7,
-      "donations": 197,
-      "donationsReceived": 752,
+      "donations": 227,
+      "donationsReceived": 973,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -418,7 +418,7 @@
       "builderBaseTrophies": 2204,
       "clanRank": 10,
       "previousClanRank": 10,
-      "donations": 457,
+      "donations": 601,
       "donationsReceived": 308,
       "playerHouse": {
         "elements": [
@@ -624,7 +624,7 @@
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
-      "donationsReceived": 72,
+      "donationsReceived": 138,
       "playerHouse": {
         "elements": [
           {
@@ -723,15 +723,15 @@
           },
           {
             "type": "walls",
-            "id": 82000048
+            "id": 82000053
           },
           {
             "type": "roof",
-            "id": 82000011
+            "id": 82000013
           },
           {
             "type": "decoration",
-            "id": 82000059
+            "id": 82000060
           }
         ]
       },
@@ -799,7 +799,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 31,
+      "trophies": 71,
       "builderBaseTrophies": 790,
       "clanRank": 19,
       "previousClanRank": 19,
@@ -880,7 +880,7 @@
       "name": "Brandon2.0 07",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 121,
+      "expLevel": 122,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1270,7 +1270,7 @@
       "name": "clandes",
       "role": "member",
       "townHallLevel": 9,
-      "expLevel": 53,
+      "expLevel": 54,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1284,7 +1284,7 @@
       "clanRank": 31,
       "previousClanRank": 31,
       "donations": 35,
-      "donationsReceived": 30,
+      "donationsReceived": 60,
       "playerHouse": {
         "elements": [
           {
@@ -1373,7 +1373,7 @@
       "builderBaseTrophies": 2131,
       "clanRank": 33,
       "previousClanRank": 33,
-      "donations": 0,
+      "donations": 66,
       "donationsReceived": 48,
       "playerHouse": {
         "elements": [
