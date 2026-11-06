@@ -173,7 +173,7 @@
       "name": "emanuel",
       "th": 17,
       "pos": 5,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GRRJQGC0Y",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-06T15:28:14.693Z",
+  "at": "2026-11-06T20:58:54.005Z",
   "source": "cwl"
 }
