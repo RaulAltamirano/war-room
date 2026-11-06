@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T07:46:24Z",
+  "generatedAt": "2026-11-06T15:28:14Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26800,
-    "builder": 17383,
+    "builder": 17375,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -81,9 +81,9 @@
       "kssto",
       "C",
       15,
-      181,
-      550,
-      299,
+      182,
+      628,
+      382,
       3204
     ],
     [
@@ -118,7 +118,7 @@
       "C",
       12,
       138,
-      227,
+      261,
       973,
       1999
     ],
@@ -145,8 +145,8 @@
       "E",
       13,
       130,
-      601,
-      308,
+      684,
+      385,
       2204
     ],
     [
@@ -192,7 +192,7 @@
       85,
       0,
       138,
-      1952
+      1977
     ],
     [
       "joshua",
@@ -236,7 +236,7 @@
       11,
       78,
       0,
-      130,
+      165,
       1686
     ],
     [
@@ -264,7 +264,7 @@
       69,
       0,
       0,
-      1615
+      1558
     ],
     [
       "Diego503",
@@ -9818,7 +9818,7 @@
         "name": "Pete Zahut",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#LY9J99L9G",
@@ -9846,14 +9846,14 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#YJ8VRVPY",
@@ -9874,7 +9874,7 @@
         "name": "kssto",
         "th": 15,
         "pos": 1,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GC9ULU80G",
@@ -9911,7 +9911,7 @@
         "name": "Yander",
         "th": 16,
         "pos": 4,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#PRQLLGRRU",
@@ -9939,7 +9939,7 @@
         "name": "Nelson",
         "th": 18,
         "pos": 1,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#L2PUPL0RJ",
@@ -9974,7 +9974,7 @@
         "name": "dudu81",
         "th": 15,
         "pos": 6,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#LCU2QQ2UV",
@@ -9998,7 +9998,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-06T07:46:24.459Z",
+    "at": "2026-11-06T15:28:14.693Z",
     "source": "cwl"
   }
 }
