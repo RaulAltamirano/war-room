@@ -59,7 +59,7 @@
       "name": "Nicolás",
       "th": 14,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R2ULCJ0J8",
@@ -108,7 +108,7 @@
       "name": "VORTEX",
       "th": 10,
       "pos": 14,
-      "attacks": 0
+      "attacks": 1
     }
   ],
   "them": [
@@ -218,6 +218,6 @@
       "attacks": 1
     }
   ],
-  "at": "2026-11-05T20:24:19.314Z",
+  "at": "2026-11-06T00:59:59.734Z",
   "source": "cwl"
 }

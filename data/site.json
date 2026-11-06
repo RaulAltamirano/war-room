@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T20:24:19Z",
+  "generatedAt": "2026-11-06T00:59:59Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26800,
-    "builder": 17382,
+    "builder": 17383,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -82,7 +82,7 @@
       "C",
       15,
       181,
-      475,
+      506,
       299,
       3204
     ],
@@ -118,7 +118,7 @@
       "C",
       12,
       138,
-      163,
+      197,
       752,
       1999
     ],
@@ -192,7 +192,7 @@
       85,
       0,
       72,
-      1949
+      1952
     ],
     [
       "joshua",
@@ -234,9 +234,9 @@
       "demiur",
       "M",
       11,
-      77,
+      78,
       0,
-      65,
+      130,
       1686
     ],
     [
@@ -9393,7 +9393,7 @@
         "name": "Nicolás",
         "th": 14,
         "pos": 3,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R2ULCJ0J8",
@@ -9442,7 +9442,7 @@
         "name": "VORTEX",
         "th": 10,
         "pos": 14,
-        "attacks": 0
+        "attacks": 1
       }
     ],
     "them": [
@@ -9552,7 +9552,7 @@
         "attacks": 1
       }
     ],
-    "at": "2026-11-05T20:24:19.314Z",
+    "at": "2026-11-06T00:59:59.734Z",
     "source": "cwl"
   }
 }

@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 26800,
-  "clanBuilderBasePoints": 17382,
+  "clanBuilderBasePoints": 17383,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 475,
+      "donations": 506,
       "donationsReceived": 299,
       "playerHouse": {
         "elements": [
@@ -229,7 +229,7 @@
         "id": 105000012,
         "name": "Wizard League 12"
       },
-      "trophies": 126,
+      "trophies": 246,
       "builderBaseTrophies": 1647,
       "clanRank": 5,
       "previousClanRank": 5,
@@ -303,7 +303,7 @@
       "builderBaseTrophies": 1999,
       "clanRank": 7,
       "previousClanRank": 7,
-      "donations": 163,
+      "donations": 197,
       "donationsReceived": 752,
       "builderBaseLeague": {
         "id": 44000019,
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 27,
-      "builderBaseTrophies": 1949,
+      "builderBaseTrophies": 1952,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
@@ -835,7 +835,7 @@
       "name": "demiur",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 77,
+      "expLevel": 78,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -849,7 +849,7 @@
       "clanRank": 20,
       "previousClanRank": 20,
       "donations": 0,
-      "donationsReceived": 65,
+      "donationsReceived": 130,
       "playerHouse": {
         "elements": [
           {
