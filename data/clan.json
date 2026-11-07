@@ -232,7 +232,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2407,
       "clanRank": 5,
-      "previousClanRank": 10,
+      "previousClanRank": 5,
       "donations": 872,
       "donationsReceived": 462,
       "playerHouse": {
@@ -277,7 +277,7 @@
       "trophies": 377,
       "builderBaseTrophies": 1647,
       "clanRank": 6,
-      "previousClanRank": 5,
+      "previousClanRank": 6,
       "donations": 77,
       "donationsReceived": 235,
       "builderBaseLeague": {
@@ -302,7 +302,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2455,
       "clanRank": 7,
-      "previousClanRank": 6,
+      "previousClanRank": 7,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -335,7 +335,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 12,
-      "expLevel": 138,
+      "expLevel": 139,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -347,7 +347,7 @@
       "trophies": 154,
       "builderBaseTrophies": 1963,
       "clanRank": 8,
-      "previousClanRank": 7,
+      "previousClanRank": 8,
       "donations": 298,
       "donationsReceived": 1257,
       "builderBaseLeague": {
@@ -372,7 +372,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1593,
       "clanRank": 9,
-      "previousClanRank": 8,
+      "previousClanRank": 9,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -417,7 +417,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2334,
       "clanRank": 10,
-      "previousClanRank": 9,
+      "previousClanRank": 10,
       "donations": 143,
       "donationsReceived": 0,
       "playerHouse": {

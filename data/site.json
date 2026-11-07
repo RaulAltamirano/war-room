@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T06:43:08Z",
+  "generatedAt": "2026-11-07T13:39:24Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -126,7 +126,7 @@
       "ⓟⓐⓒⓜⓐⓝ",
       "C",
       12,
-      138,
+      139,
       298,
       1257,
       1963
@@ -10259,7 +10259,7 @@
         "name": "cozo 2000",
         "th": 11,
         "pos": 10,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#8VJYRRGQ",
@@ -10280,14 +10280,14 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#YJ8VRVPY",
@@ -10394,7 +10394,7 @@
         "name": "mbahmu salto",
         "th": 11,
         "pos": 8,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#LCCRY2P2J",
@@ -10408,21 +10408,21 @@
         "name": "bolang",
         "th": 11,
         "pos": 9,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QGY0RVRYL",
         "name": "Omg",
         "th": 14,
         "pos": 1,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QGURR80GG",
         "name": "maling ya",
         "th": 12,
         "pos": 4,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GQ09PQQJV",
@@ -10432,7 +10432,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-07T06:43:08.109Z",
+    "at": "2026-11-07T13:39:24.529Z",
     "source": "cwl"
   }
 }
