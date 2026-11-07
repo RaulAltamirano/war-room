@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T20:58:54Z",
+  "generatedAt": "2026-11-07T00:39:15Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27100,
-    "builder": 17491,
+    "builder": 17518,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -100,7 +100,7 @@
       "E",
       14,
       131,
-      719,
+      749,
       385,
       2407
     ],
@@ -110,7 +110,7 @@
       13,
       99,
       77,
-      163,
+      235,
       1647
     ],
     [
@@ -127,7 +127,7 @@
       "C",
       12,
       138,
-      261,
+      286,
       973,
       1999
     ],
@@ -219,7 +219,7 @@
       83,
       0,
       0,
-      2163
+      2216
     ],
     [
       "VORTEX",
@@ -244,7 +244,7 @@
       "E",
       11,
       122,
-      122,
+      164,
       102,
       1451
     ],
@@ -252,7 +252,7 @@
       "kerrykopito",
       "M",
       10,
-      70,
+      71,
       0,
       0,
       1618
@@ -326,7 +326,7 @@
       9,
       49,
       0,
-      50,
+      75,
       109
     ],
     [
@@ -9825,7 +9825,7 @@
         "name": "cozo 2000",
         "th": 11,
         "pos": 10,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#8VJYRRGQ",
@@ -9860,14 +9860,14 @@
         "name": "Brandon2.0 07",
         "th": 11,
         "pos": 11,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#Q02JR2JYV",
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#Y9GU8QYYG",
@@ -9904,7 +9904,7 @@
         "name": "BlackMonky",
         "th": 16,
         "pos": 3,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QJPGQ2CGY",
@@ -9960,7 +9960,7 @@
         "name": "escorpio",
         "th": 15,
         "pos": 9,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#2UUVJ0YYG",
@@ -9995,10 +9995,10 @@
         "name": "skorpion2",
         "th": 13,
         "pos": 14,
-        "attacks": 0
+        "attacks": 1
       }
     ],
-    "at": "2026-11-06T20:58:54.005Z",
+    "at": "2026-11-07T00:39:15.323Z",
     "source": "cwl"
   }
 }

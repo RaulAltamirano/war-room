@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27100,
-  "clanBuilderBasePoints": 17491,
+  "clanBuilderBasePoints": 17518,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -233,7 +233,7 @@
       "builderBaseTrophies": 2407,
       "clanRank": 5,
       "previousClanRank": 10,
-      "donations": 719,
+      "donations": 749,
       "donationsReceived": 385,
       "playerHouse": {
         "elements": [
@@ -274,12 +274,12 @@
         "id": 105000012,
         "name": "Wizard League 12"
       },
-      "trophies": 257,
+      "trophies": 377,
       "builderBaseTrophies": 1647,
       "clanRank": 6,
       "previousClanRank": 5,
       "donations": 77,
-      "donationsReceived": 163,
+      "donationsReceived": 235,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -348,7 +348,7 @@
       "builderBaseTrophies": 1999,
       "clanRank": 8,
       "previousClanRank": 7,
-      "donations": 261,
+      "donations": 286,
       "donationsReceived": 973,
       "builderBaseLeague": {
         "id": 44000019,
@@ -755,7 +755,7 @@
         "name": "Archer League 7"
       },
       "trophies": 99,
-      "builderBaseTrophies": 2163,
+      "builderBaseTrophies": 2216,
       "clanRank": 18,
       "previousClanRank": 18,
       "donations": 0,
@@ -781,8 +781,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
+        "id": 44000021,
+        "name": "Brass League II"
       }
     },
     {
@@ -893,7 +893,7 @@
       "builderBaseTrophies": 1451,
       "clanRank": 21,
       "previousClanRank": 21,
-      "donations": 122,
+      "donations": 164,
       "donationsReceived": 102,
       "builderBaseLeague": {
         "id": 44000014,
@@ -905,7 +905,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 70,
+      "expLevel": 71,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -914,7 +914,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 33,
+      "trophies": 113,
       "builderBaseTrophies": 1618,
       "clanRank": 22,
       "previousClanRank": 22,
@@ -1259,7 +1259,7 @@
       "clanRank": 30,
       "previousClanRank": 30,
       "donations": 0,
-      "donationsReceived": 50,
+      "donationsReceived": 75,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"

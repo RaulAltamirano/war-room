@@ -45,7 +45,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 10,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -80,14 +80,14 @@
       "name": "Brandon2.0 07",
       "th": 11,
       "pos": 11,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Q02JR2JYV",
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -124,7 +124,7 @@
       "name": "BlackMonky",
       "th": 16,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#QJPGQ2CGY",
@@ -180,7 +180,7 @@
       "name": "escorpio",
       "th": 15,
       "pos": 9,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#2UUVJ0YYG",
@@ -215,9 +215,9 @@
       "name": "skorpion2",
       "th": 13,
       "pos": 14,
-      "attacks": 0
+      "attacks": 1
     }
   ],
-  "at": "2026-11-06T20:58:54.005Z",
+  "at": "2026-11-07T00:39:15.323Z",
   "source": "cwl"
 }
