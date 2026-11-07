@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T18:24:27Z",
+  "generatedAt": "2026-11-07T22:07:30Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27400,
-    "builder": 17514,
+    "builder": 17481,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -207,10 +207,10 @@
       "Casdo",
       "M",
       11,
-      70,
+      71,
       0,
       0,
-      1608
+      1660
     ],
     [
       "minch",
@@ -264,7 +264,7 @@
       69,
       0,
       0,
-      1558
+      1373
     ],
     [
       "Diego503",
@@ -10245,7 +10245,7 @@
         "name": "jhon cna",
         "th": 10,
         "pos": 15,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GP2PGPUVJ",
@@ -10432,7 +10432,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-07T18:24:27.418Z",
+    "at": "2026-11-07T22:07:30.622Z",
     "source": "cwl"
   }
 }

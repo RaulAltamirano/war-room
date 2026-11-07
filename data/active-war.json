@@ -31,7 +31,7 @@
       "name": "jhon cna",
       "th": 10,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GP2PGPUVJ",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-07T18:24:27.418Z",
+  "at": "2026-11-07T22:07:30.622Z",
   "source": "cwl"
 }

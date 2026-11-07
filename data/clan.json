@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27400,
-  "clanBuilderBasePoints": 17514,
+  "clanBuilderBasePoints": 17481,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -700,7 +700,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 70,
+      "expLevel": 71,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 396,
-      "builderBaseTrophies": 1608,
+      "builderBaseTrophies": 1660,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -960,7 +960,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1558,
+      "builderBaseTrophies": 1373,
       "clanRank": 23,
       "previousClanRank": 23,
       "donations": 0,
@@ -986,8 +986,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000013,
+        "name": "Stone League II"
       }
     },
     {
