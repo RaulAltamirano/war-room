@@ -15,8 +15,8 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png"
   },
   "clanLevel": 6,
-  "clanPoints": 27100,
-  "clanBuilderBasePoints": 17518,
+  "clanPoints": 27400,
+  "clanBuilderBasePoints": 17495,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -36,6 +36,51 @@
   "members": 33,
   "memberList": [
     {
+      "tag": "#Y9GU8QYYG",
+      "name": "kssto",
+      "role": "coLeader",
+      "townHallLevel": 16,
+      "expLevel": 182,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000020,
+        "name": "Golem League 20"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 3204,
+      "clanRank": 1,
+      "previousClanRank": 3,
+      "donations": 775,
+      "donationsReceived": 465,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000002
+          },
+          {
+            "type": "walls",
+            "id": 82000052
+          },
+          {
+            "type": "roof",
+            "id": 82000031
+          },
+          {
+            "type": "decoration",
+            "id": 82000060
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000026,
+        "name": "Steel League III"
+      }
+    },
+    {
       "tag": "#QL2V8CYRU",
       "name": "imparable",
       "role": "leader",
@@ -51,7 +96,7 @@
       },
       "trophies": 51,
       "builderBaseTrophies": 2400,
-      "clanRank": 1,
+      "clanRank": 2,
       "previousClanRank": 1,
       "donations": 0,
       "donationsReceived": 77,
@@ -96,9 +141,9 @@
       },
       "trophies": 177,
       "builderBaseTrophies": 2993,
-      "clanRank": 2,
+      "clanRank": 3,
       "previousClanRank": 2,
-      "donations": 526,
+      "donations": 688,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -123,51 +168,6 @@
       "builderBaseLeague": {
         "id": 44000024,
         "name": "Iron League II"
-      }
-    },
-    {
-      "tag": "#Y9GU8QYYG",
-      "name": "kssto",
-      "role": "coLeader",
-      "townHallLevel": 16,
-      "expLevel": 182,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000017,
-        "name": "Witch League 17"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 3204,
-      "clanRank": 3,
-      "previousClanRank": 3,
-      "donations": 628,
-      "donationsReceived": 382,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000002
-          },
-          {
-            "type": "walls",
-            "id": 82000052
-          },
-          {
-            "type": "roof",
-            "id": 82000031
-          },
-          {
-            "type": "decoration",
-            "id": 82000060
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000026,
-        "name": "Steel League III"
       }
     },
     {
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 2407,
       "clanRank": 5,
       "previousClanRank": 10,
-      "donations": 749,
-      "donationsReceived": 385,
+      "donations": 872,
+      "donationsReceived": 462,
       "playerHouse": {
         "elements": [
           {
@@ -344,12 +344,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 136,
-      "builderBaseTrophies": 1999,
+      "trophies": 154,
+      "builderBaseTrophies": 1963,
       "clanRank": 8,
       "previousClanRank": 7,
-      "donations": 286,
-      "donationsReceived": 973,
+      "donations": 298,
+      "donationsReceived": 1257,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -565,7 +565,7 @@
       "name": "TaP",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 77,
+      "expLevel": 78,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 110,
-      "builderBaseTrophies": 1333,
+      "builderBaseTrophies": 1361,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 0,
@@ -619,8 +619,8 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 27,
-      "builderBaseTrophies": 2008,
+      "trophies": 53,
+      "builderBaseTrophies": 1992,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
@@ -646,8 +646,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 396,
-      "builderBaseTrophies": 1661,
+      "builderBaseTrophies": 1608,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
