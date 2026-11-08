@@ -38,7 +38,7 @@
       "name": "Pete Zahut",
       "th": 14,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LY9J99L9G",
@@ -73,7 +73,7 @@
       "name": "Casdo",
       "th": 11,
       "pos": 13,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#YJ8VRVPY",
@@ -87,14 +87,14 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Y9GU8QYYG",
       "name": "kssto",
       "th": 16,
       "pos": 1,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GC9ULU80G",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-08T15:26:30.252Z",
+  "at": "2026-11-08T19:50:57.729Z",
   "source": "cwl"
 }

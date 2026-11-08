@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27400,
-  "clanBuilderBasePoints": 17468,
+  "clanBuilderBasePoints": 17499,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 847,
+      "donations": 960,
       "donationsReceived": 465,
       "playerHouse": {
         "elements": [
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 2407,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 872,
-      "donationsReceived": 462,
+      "donations": 974,
+      "donationsReceived": 509,
       "playerHouse": {
         "elements": [
           {
@@ -279,7 +279,7 @@
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 149,
-      "donationsReceived": 277,
+      "donationsReceived": 354,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -348,8 +348,8 @@
       "builderBaseTrophies": 1963,
       "clanRank": 8,
       "previousClanRank": 8,
-      "donations": 345,
-      "donationsReceived": 1401,
+      "donations": 392,
+      "donationsReceived": 1473,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -450,7 +450,7 @@
       "name": "KOLET",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 74,
+      "expLevel": 75,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -575,7 +575,7 @@
         "name": "Archer League 8"
       },
       "trophies": 190,
-      "builderBaseTrophies": 1992,
+      "builderBaseTrophies": 2030,
       "clanRank": 14,
       "previousClanRank": 15,
       "donations": 0,
@@ -601,8 +601,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
@@ -610,7 +610,7 @@
       "name": "TaP",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 78,
+      "expLevel": 79,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 396,
-      "builderBaseTrophies": 1597,
+      "builderBaseTrophies": 1608,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -736,8 +736,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -754,8 +754,8 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 108,
-      "builderBaseTrophies": 2255,
+      "trophies": 120,
+      "builderBaseTrophies": 2266,
       "clanRank": 18,
       "previousClanRank": 18,
       "donations": 0,
@@ -894,7 +894,7 @@
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 164,
-      "donationsReceived": 102,
+      "donationsReceived": 168,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -950,7 +950,7 @@
       "name": "jhon cna",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 69,
+      "expLevel": 70,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -960,7 +960,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1373,
+      "builderBaseTrophies": 1384,
       "clanRank": 23,
       "previousClanRank": 23,
       "donations": 0,
