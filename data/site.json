@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T22:07:30Z",
+  "generatedAt": "2026-11-08T01:37:46Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27400,
-    "builder": 17481,
+    "builder": 17459,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -210,7 +210,7 @@
       71,
       0,
       0,
-      1660
+      1573
     ],
     [
       "minch",
@@ -225,7 +225,7 @@
       "VORTEX",
       "M",
       10,
-      67,
+      68,
       46,
       0,
       790
@@ -10432,7 +10432,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-07T22:07:30.622Z",
+    "at": "2026-11-08T01:37:46.573Z",
     "source": "cwl"
   }
 }

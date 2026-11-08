@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27400,
-  "clanBuilderBasePoints": 17481,
+  "clanBuilderBasePoints": 17459,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -52,7 +52,7 @@
       "trophies": 0,
       "builderBaseTrophies": 3204,
       "clanRank": 1,
-      "previousClanRank": 3,
+      "previousClanRank": 1,
       "donations": 775,
       "donationsReceived": 465,
       "playerHouse": {
@@ -97,7 +97,7 @@
       "trophies": 51,
       "builderBaseTrophies": 2400,
       "clanRank": 2,
-      "previousClanRank": 1,
+      "previousClanRank": 2,
       "donations": 0,
       "donationsReceived": 77,
       "playerHouse": {
@@ -142,7 +142,7 @@
       "trophies": 196,
       "builderBaseTrophies": 2993,
       "clanRank": 3,
-      "previousClanRank": 2,
+      "previousClanRank": 3,
       "donations": 688,
       "donationsReceived": 0,
       "playerHouse": {
@@ -344,7 +344,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 154,
+      "trophies": 158,
       "builderBaseTrophies": 1963,
       "clanRank": 8,
       "previousClanRank": 8,
@@ -619,7 +619,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 53,
+      "trophies": 88,
       "builderBaseTrophies": 1992,
       "clanRank": 15,
       "previousClanRank": 15,
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 396,
-      "builderBaseTrophies": 1660,
+      "builderBaseTrophies": 1573,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -736,8 +736,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
+        "id": 44000015,
+        "name": "Copper League V"
       }
     },
     {
@@ -790,7 +790,7 @@
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 67,
+      "expLevel": 68,
       "league": {
         "id": 29000000,
         "name": "Unranked"
