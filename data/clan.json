@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 775,
+      "donations": 847,
       "donationsReceived": 465,
       "playerHouse": {
         "elements": [
@@ -265,7 +265,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 99,
+      "expLevel": 100,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -344,12 +344,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 158,
+      "trophies": 198,
       "builderBaseTrophies": 1963,
       "clanRank": 8,
       "previousClanRank": 8,
-      "donations": 340,
-      "donationsReceived": 1329,
+      "donations": 345,
+      "donationsReceived": 1401,
       "builderBaseLeague": {
         "id": 44000019,
         "name": "Copper League I"
@@ -574,7 +574,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 110,
+      "trophies": 165,
       "builderBaseTrophies": 1361,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -835,7 +835,7 @@
       "name": "demiur",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 78,
+      "expLevel": 79,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1039,7 +1039,7 @@
       "tag": "#G09LQLJV0",
       "name": "Shiba",
       "role": "member",
-      "townHallLevel": 10,
+      "townHallLevel": 11,
       "expLevel": 70,
       "league": {
         "id": 29000000,
@@ -1245,7 +1245,7 @@
       "name": "ZackyB",
       "role": "admin",
       "townHallLevel": 9,
-      "expLevel": 49,
+      "expLevel": 50,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1254,12 +1254,12 @@
         "id": 105000003,
         "name": "Skeleton League 3"
       },
-      "trophies": 122,
+      "trophies": 135,
       "builderBaseTrophies": 109,
       "clanRank": 30,
       "previousClanRank": 30,
       "donations": 0,
-      "donationsReceived": 75,
+      "donationsReceived": 80,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"

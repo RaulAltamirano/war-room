@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:37:46Z",
+  "generatedAt": "2026-11-08T08:18:33Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -64,7 +64,7 @@
       "C",
       16,
       182,
-      775,
+      847,
       465,
       3204
     ],
@@ -108,7 +108,7 @@
       "Abrasive7X",
       "C",
       13,
-      99,
+      100,
       149,
       277,
       1647
@@ -127,8 +127,8 @@
       "C",
       12,
       139,
-      340,
-      1329,
+      345,
+      1401,
       1963
     ],
     [
@@ -234,7 +234,7 @@
       "demiur",
       "M",
       11,
-      78,
+      79,
       0,
       165,
       1686
@@ -278,7 +278,7 @@
     [
       "Shiba",
       "M",
-      10,
+      11,
       70,
       0,
       0,
@@ -324,9 +324,9 @@
       "ZackyB",
       "E",
       9,
-      49,
+      50,
       0,
-      75,
+      80,
       109
     ],
     [
@@ -10210,63 +10210,515 @@
           []
         ]
       ]
+    },
+    {
+      "id": "w20261107",
+      "date": "2026-11-07",
+      "rival": "War lane",
+      "res": "V",
+      "stars": [
+        36,
+        22
+      ],
+      "liga": true,
+      "rivalTag": "2CC9PRC2Y",
+      "members": [
+        [
+          "kssto",
+          "C",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          16,
+          1,
+          [
+            [
+              3,
+              100,
+              1
+            ]
+          ]
+        ],
+        [
+          "..::MURDOC::..",
+          "C",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          15,
+          2,
+          [
+            [
+              3,
+              100,
+              4
+            ]
+          ]
+        ],
+        [
+          "Nicolás",
+          "E",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          14,
+          3,
+          [
+            [
+              3,
+              100,
+              20
+            ]
+          ]
+        ],
+        [
+          "imparable",
+          "L",
+          [
+            0,
+            0,
+            0,
+            100,
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          13,
+          4,
+          []
+        ],
+        [
+          "xlMURDOClx",
+          "C",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            100,
+            1
+          ],
+          13,
+          5,
+          [
+            [
+              3,
+              100,
+              3
+            ]
+          ]
+        ],
+        [
+          "Pete Zahut",
+          "E",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          14,
+          6,
+          [
+            [
+              3,
+              100,
+              2
+            ]
+          ]
+        ],
+        [
+          "Abrasive7X",
+          "C",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            2,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            100,
+            0,
+            1
+          ],
+          13,
+          7,
+          [
+            [
+              3,
+              100,
+              6
+            ]
+          ]
+        ],
+        [
+          "ⓟⓐⓒⓜⓐⓝ",
+          "C",
+          [
+            70,
+            2,
+            2,
+            0,
+            0,
+            -1,
+            0,
+            100,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          12,
+          8,
+          [
+            [
+              2,
+              79,
+              5
+            ]
+          ]
+        ],
+        [
+          "TaP",
+          "M",
+          [
+            0,
+            0,
+            0,
+            100,
+            1,
+            -3,
+            0,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          9,
+          []
+        ],
+        [
+          "cozo 2000",
+          "E",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          10,
+          [
+            [
+              3,
+              100,
+              12
+            ]
+          ]
+        ],
+        [
+          "Brandon2.0 07",
+          "E",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          11,
+          [
+            [
+              3,
+              100,
+              23
+            ]
+          ]
+        ],
+        [
+          "demiur",
+          "M",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            3,
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          12,
+          [
+            [
+              3,
+              100,
+              9
+            ]
+          ]
+        ],
+        [
+          "Casdo",
+          "M",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          11,
+          13,
+          [
+            [
+              3,
+              100,
+              13
+            ]
+          ]
+        ],
+        [
+          "VORTEX",
+          "M",
+          [
+            39,
+            1,
+            1,
+            0,
+            0,
+            -2,
+            0,
+            0,
+            100,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          10,
+          14,
+          [
+            [
+              1,
+              52,
+              14
+            ]
+          ]
+        ],
+        [
+          "jhon cna",
+          "M",
+          [
+            100,
+            3,
+            3,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            100,
+            0,
+            0,
+            0,
+            1
+          ],
+          10,
+          15,
+          [
+            [
+              3,
+              100,
+              17
+            ]
+          ]
+        ]
+      ]
     }
   ],
   "activeWar": {
     "state": "inWar",
     "teamSize": 15,
     "attacksPerMember": 1,
-    "rival": "War lane",
-    "rivalTag": "#2CC9PRC2Y",
+    "rival": "PANPIN",
+    "rivalTag": "#2C2U9J2V0",
     "us": [
       {
         "tag": "#QL2V8CYRU",
         "name": "imparable",
         "th": 13,
-        "pos": 4,
+        "pos": 5,
         "attacks": 0
       },
       {
         "tag": "#Y0PPGVQL2",
         "name": "xlMURDOClx",
         "th": 13,
-        "pos": 5,
-        "attacks": 1
+        "pos": 6,
+        "attacks": 0
       },
       {
         "tag": "#2VL98GPGU",
         "name": "ⓟⓐⓒⓜⓐⓝ",
         "th": 12,
         "pos": 8,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#R820CCYQ0",
         "name": "jhon cna",
         "th": 10,
         "pos": 15,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#GP2PGPUVJ",
         "name": "Pete Zahut",
         "th": 14,
-        "pos": 6,
-        "attacks": 1
+        "pos": 4,
+        "attacks": 0
       },
       {
         "tag": "#LY9J99L9G",
         "name": "cozo 2000",
         "th": 11,
-        "pos": 10,
-        "attacks": 1
+        "pos": 11,
+        "attacks": 0
       },
       {
         "tag": "#8VJYRRGQ",
         "name": "..::MURDOC::..",
         "th": 15,
         "pos": 2,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#8VCYYPVLU",
@@ -10280,20 +10732,20 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#YJ8VRVPY",
         "name": "Brandon2.0 07",
         "th": 11,
-        "pos": 11,
+        "pos": 10,
         "attacks": 0
       },
       {
@@ -10301,14 +10753,14 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#Y9GU8QYYG",
         "name": "kssto",
         "th": 16,
         "pos": 1,
-        "attacks": 1
+        "attacks": 0
       },
       {
         "tag": "#GC9ULU80G",
@@ -10322,117 +10774,117 @@
         "name": "VORTEX",
         "th": 10,
         "pos": 14,
-        "attacks": 1
+        "attacks": 0
       }
     ],
     "them": [
       {
-        "tag": "#GJ8YGUJLJ",
-        "name": "Amir Ganteng",
-        "th": 10,
+        "tag": "#LGPUG9LPR",
+        "name": "Dim",
+        "th": 14,
+        "pos": 7,
+        "attacks": 0
+      },
+      {
+        "tag": "#QLC92UQJR",
+        "name": "ezzun",
+        "th": 12,
+        "pos": 9,
+        "attacks": 0
+      },
+      {
+        "tag": "#GLVQQVUUQ",
+        "name": "XBANDIT",
+        "th": 12,
+        "pos": 8,
+        "attacks": 0
+      },
+      {
+        "tag": "#QLQ9PYCQP",
+        "name": "XBANDIT",
+        "th": 13,
+        "pos": 5,
+        "attacks": 0
+      },
+      {
+        "tag": "#GCYCYUJ2P",
+        "name": "asekwejek",
+        "th": 11,
+        "pos": 12,
+        "attacks": 1
+      },
+      {
+        "tag": "#GC20VVV9C",
+        "name": "Aizawathegoat",
+        "th": 15,
+        "pos": 6,
+        "attacks": 0
+      },
+      {
+        "tag": "#R2YLLJULG",
+        "name": "noer",
+        "th": 12,
         "pos": 10,
         "attacks": 0
       },
       {
-        "tag": "#88U2LYYLJ",
-        "name": "wawo",
+        "tag": "#QPCVYUJQG",
+        "name": "Hii.Adib¹⁷",
         "th": 12,
-        "pos": 3,
-        "attacks": 0
-      },
-      {
-        "tag": "#R9PRJCRPJ",
-        "name": "Kàenshø",
-        "th": 9,
-        "pos": 13,
-        "attacks": 0
-      },
-      {
-        "tag": "#R8Y9UVP0Q",
-        "name": "Athar",
-        "th": 12,
-        "pos": 6,
-        "attacks": 1
-      },
-      {
-        "tag": "#R2L0Q82G8",
-        "name": "Dinar Cantik",
-        "th": 9,
         "pos": 11,
         "attacks": 0
       },
       {
-        "tag": "#R2GQ802C9",
-        "name": "hs cinta",
-        "th": 12,
-        "pos": 5,
-        "attacks": 1
-      },
-      {
-        "tag": "#R8PLQV8JJ",
-        "name": "Uswa Cantik",
-        "th": 9,
-        "pos": 12,
-        "attacks": 0
-      },
-      {
-        "tag": "#R9LPP88QU",
-        "name": "deymm broo",
-        "th": 7,
+        "tag": "#QRYJR2VQJ",
+        "name": "DarkHanzz",
+        "th": 11,
         "pos": 15,
         "attacks": 0
       },
       {
-        "tag": "#R8VPVPJ8G",
-        "name": "kil",
-        "th": 8,
-        "pos": 14,
-        "attacks": 0
-      },
-      {
-        "tag": "#GYPL20GLJ",
-        "name": "mbahmu salto",
-        "th": 11,
-        "pos": 8,
-        "attacks": 1
-      },
-      {
-        "tag": "#LCCRY2P2J",
-        "name": "Dark Dragon",
-        "th": 12,
+        "tag": "#R00CQ2VGQ",
+        "name": "arjuna",
+        "th": 16,
         "pos": 2,
         "attacks": 0
       },
       {
-        "tag": "#R09U022JU",
-        "name": "bolang",
-        "th": 11,
-        "pos": 9,
-        "attacks": 1
+        "tag": "#G2JL9YRY8",
+        "name": "BT°BINZZZ",
+        "th": 10,
+        "pos": 16,
+        "attacks": 0
       },
       {
-        "tag": "#QGY0RVRYL",
-        "name": "Omg",
-        "th": 14,
+        "tag": "#Y2QRULV29",
+        "name": "HanzJR",
+        "th": 15,
+        "pos": 3,
+        "attacks": 0
+      },
+      {
+        "tag": "#GCLYL9LVR",
+        "name": "sak",
+        "th": 11,
+        "pos": 13,
+        "attacks": 0
+      },
+      {
+        "tag": "#QY2QY08RV",
+        "name": "Aizawa Tomo",
+        "th": 18,
         "pos": 1,
-        "attacks": 1
+        "attacks": 0
       },
       {
-        "tag": "#QGURR80GG",
-        "name": "maling ya",
-        "th": 12,
+        "tag": "#GV9JRQPC2",
+        "name": "あいざわ",
+        "th": 16,
         "pos": 4,
-        "attacks": 1
-      },
-      {
-        "tag": "#GQ09PQQJV",
-        "name": "WG25",
-        "th": 11,
-        "pos": 7,
         "attacks": 0
       }
     ],
-    "at": "2026-11-08T01:37:46.573Z",
+    "at": "2026-11-08T08:18:33.558Z",
     "source": "cwl"
   }
 }
