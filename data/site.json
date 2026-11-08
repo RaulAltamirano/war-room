@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T19:50:57Z",
+  "generatedAt": "2026-11-08T23:17:58Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27400,
-    "builder": 17499,
+    "builder": 17540,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -183,7 +183,7 @@
       86,
       0,
       173,
-      2030
+      2062
     ],
     [
       "TaP",
@@ -192,7 +192,7 @@
       79,
       0,
       0,
-      1361
+      1432
     ],
     [
       "joshua",
@@ -210,7 +210,7 @@
       71,
       0,
       0,
-      1608
+      1638
     ],
     [
       "minch",
@@ -10711,7 +10711,7 @@
         "name": "cozo 2000",
         "th": 11,
         "pos": 11,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#8VJYRRGQ",
@@ -10732,7 +10732,7 @@
         "name": "demiur",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QV20QPJGR",
@@ -10767,7 +10767,7 @@
         "name": "TaP",
         "th": 11,
         "pos": 9,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#G92R92J98",
@@ -10839,7 +10839,7 @@
         "name": "DarkHanzz",
         "th": 11,
         "pos": 15,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R00CQ2VGQ",
@@ -10884,7 +10884,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-08T19:50:57.729Z",
+    "at": "2026-11-08T23:17:58.866Z",
     "source": "cwl"
   }
 }

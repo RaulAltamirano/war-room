@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27400,
-  "clanBuilderBasePoints": 17499,
+  "clanBuilderBasePoints": 17540,
   "clanCapitalPoints": 1096,
   "capitalLeague": {
     "id": 85000005,
@@ -94,7 +94,7 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 51,
+      "trophies": 80,
       "builderBaseTrophies": 2400,
       "clanRank": 2,
       "previousClanRank": 2,
@@ -574,8 +574,8 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 190,
-      "builderBaseTrophies": 2030,
+      "trophies": 211,
+      "builderBaseTrophies": 2062,
       "clanRank": 14,
       "previousClanRank": 15,
       "donations": 0,
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 165,
-      "builderBaseTrophies": 1361,
+      "builderBaseTrophies": 1432,
       "clanRank": 15,
       "previousClanRank": 14,
       "donations": 0,
@@ -646,8 +646,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000013,
-        "name": "Stone League II"
+        "id": 44000014,
+        "name": "Stone League I"
       }
     },
     {
@@ -710,7 +710,7 @@
         "name": "Archer League 7"
       },
       "trophies": 396,
-      "builderBaseTrophies": 1608,
+      "builderBaseTrophies": 1638,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
