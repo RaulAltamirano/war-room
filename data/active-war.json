@@ -2,8 +2,8 @@
   "state": "inWar",
   "teamSize": 15,
   "attacksPerMember": 1,
-  "rival": "PANPIN",
-  "rivalTag": "#2C2U9J2V0",
+  "rival": "1320",
+  "rivalTag": "#2Q8JQY8VG",
   "us": [
     {
       "tag": "#QL2V8CYRU",
@@ -24,7 +24,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 12,
       "pos": 8,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R820CCYQ0",
@@ -44,8 +44,8 @@
       "tag": "#LY9J99L9G",
       "name": "cozo 2000",
       "th": 11,
-      "pos": 11,
-      "attacks": 1
+      "pos": 10,
+      "attacks": 0
     },
     {
       "tag": "#8VJYRRGQ",
@@ -66,21 +66,21 @@
       "name": "demiur",
       "th": 11,
       "pos": 12,
-      "attacks": 1
+      "attacks": 0
     },
     {
       "tag": "#QV20QPJGR",
       "name": "Casdo",
       "th": 11,
       "pos": 13,
-      "attacks": 1
+      "attacks": 0
     },
     {
       "tag": "#YJ8VRVPY",
       "name": "Brandon2.0 07",
       "th": 11,
-      "pos": 10,
-      "attacks": 0
+      "pos": 11,
+      "attacks": 1
     },
     {
       "tag": "#Q02JR2JYV",
@@ -101,123 +101,123 @@
       "name": "TaP",
       "th": 11,
       "pos": 9,
-      "attacks": 1
+      "attacks": 0
     },
     {
       "tag": "#G92R92J98",
       "name": "VORTEX",
       "th": 10,
       "pos": 14,
-      "attacks": 0
+      "attacks": 1
     }
   ],
   "them": [
     {
-      "tag": "#LGPUG9LPR",
-      "name": "Dim",
-      "th": 14,
-      "pos": 7,
-      "attacks": 0
-    },
-    {
-      "tag": "#QLC92UQJR",
-      "name": "ezzun",
+      "tag": "#QPLYYQ20J",
+      "name": "EZ4LB",
       "th": 12,
-      "pos": 9,
+      "pos": 14,
       "attacks": 1
     },
     {
-      "tag": "#GLVQQVUUQ",
-      "name": "XBANDIT",
-      "th": 12,
-      "pos": 8,
-      "attacks": 0
-    },
-    {
-      "tag": "#QLQ9PYCQP",
-      "name": "XBANDIT",
+      "tag": "#9VC9RLG9J",
+      "name": "Devon",
       "th": 13,
-      "pos": 5,
+      "pos": 9,
       "attacks": 0
     },
     {
-      "tag": "#GCYCYUJ2P",
-      "name": "asekwejek",
-      "th": 11,
-      "pos": 12,
-      "attacks": 1
-    },
-    {
-      "tag": "#GC20VVV9C",
-      "name": "Aizawathegoat",
-      "th": 15,
-      "pos": 6,
-      "attacks": 0
-    },
-    {
-      "tag": "#R2YLLJULG",
-      "name": "noer",
-      "th": 12,
-      "pos": 10,
-      "attacks": 0
-    },
-    {
-      "tag": "#QPCVYUJQG",
-      "name": "Hii.Adib¹⁷",
-      "th": 12,
-      "pos": 11,
-      "attacks": 0
-    },
-    {
-      "tag": "#QRYJR2VQJ",
-      "name": "DarkHanzz",
-      "th": 11,
-      "pos": 15,
-      "attacks": 1
-    },
-    {
-      "tag": "#R00CQ2VGQ",
-      "name": "arjuna",
+      "tag": "#P8LJ82V20",
+      "name": "MYO",
       "th": 16,
-      "pos": 2,
+      "pos": 4,
       "attacks": 0
     },
     {
-      "tag": "#G2JL9YRY8",
-      "name": "BT°BINZZZ",
-      "th": 10,
-      "pos": 16,
-      "attacks": 0
-    },
-    {
-      "tag": "#Y2QRULV29",
-      "name": "HanzJR",
-      "th": 15,
+      "tag": "#88UPYGYVC",
+      "name": "branden11",
+      "th": 16,
       "pos": 3,
       "attacks": 0
     },
     {
-      "tag": "#GCLYL9LVR",
-      "name": "sak",
-      "th": 11,
-      "pos": 13,
+      "tag": "#QQ8C9QVQV",
+      "name": "felix2",
+      "th": 15,
+      "pos": 5,
+      "attacks": 1
+    },
+    {
+      "tag": "#9JV8V8QCL",
+      "name": "JorgeM1320",
+      "th": 14,
+      "pos": 8,
       "attacks": 0
     },
     {
-      "tag": "#QY2QY08RV",
-      "name": "Aizawa Tomo",
+      "tag": "#GUJRGJG20",
+      "name": "Los",
+      "th": 10,
+      "pos": 20,
+      "attacks": 0
+    },
+    {
+      "tag": "#YP8QRV0VL",
+      "name": "AngelM1320",
+      "th": 13,
+      "pos": 11,
+      "attacks": 0
+    },
+    {
+      "tag": "#QYCJLURLU",
+      "name": "Felix",
       "th": 18,
       "pos": 1,
       "attacks": 0
     },
     {
-      "tag": "#GV9JRQPC2",
-      "name": "あいざわ",
+      "tag": "#QUCLJVG9P",
+      "name": "daviDam",
+      "th": 12,
+      "pos": 15,
+      "attacks": 0
+    },
+    {
+      "tag": "#Q8LJPLVRQ",
+      "name": "Horizxn",
+      "th": 13,
+      "pos": 10,
+      "attacks": 0
+    },
+    {
+      "tag": "#YVG9CC0JL",
+      "name": "asgard",
+      "th": 11,
+      "pos": 17,
+      "attacks": 0
+    },
+    {
+      "tag": "#L28JVC9RU",
+      "name": "christian247",
+      "th": 10,
+      "pos": 21,
+      "attacks": 0
+    },
+    {
+      "tag": "#99V8R0U2P",
+      "name": "DJ SALAD",
       "th": 16,
-      "pos": 4,
+      "pos": 2,
+      "attacks": 0
+    },
+    {
+      "tag": "#29Y2QGQ9Q",
+      "name": "CzaR Frost",
+      "th": 15,
+      "pos": 6,
       "attacks": 0
     }
   ],
-  "at": "2026-11-09T02:48:59.264Z",
+  "at": "2026-11-09T10:38:05.768Z",
   "source": "cwl"
 }
