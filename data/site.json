@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T23:17:58Z",
+  "generatedAt": "2026-11-09T02:48:59Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27400,
-    "builder": 17540,
+    "builder": 17590,
     "capital": 1096,
     "members": 33,
     "freq": "Siempre",
@@ -65,7 +65,7 @@
       16,
       182,
       960,
-      465,
+      518,
       3204
     ],
     [
@@ -100,9 +100,9 @@
       "E",
       14,
       131,
-      974,
+      1027,
       509,
-      2407
+      2520
     ],
     [
       "Abrasive7X",
@@ -210,7 +210,7 @@
       71,
       0,
       0,
-      1638
+      1609
     ],
     [
       "minch",
@@ -10683,7 +10683,7 @@
         "name": "xlMURDOClx",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#2VL98GPGU",
@@ -10718,7 +10718,7 @@
         "name": "..::MURDOC::..",
         "th": 15,
         "pos": 2,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#8VCYYPVLU",
@@ -10790,7 +10790,7 @@
         "name": "ezzun",
         "th": 12,
         "pos": 9,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GLVQQVUUQ",
@@ -10884,7 +10884,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-08T23:17:58.866Z",
+    "at": "2026-11-09T02:48:59.264Z",
     "source": "cwl"
   }
 }
