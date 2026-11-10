@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 28000,
-  "clanBuilderBasePoints": 17835,
+  "clanBuilderBasePoints": 17829,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000020,
         "name": "Golem League 20"
       },
-      "trophies": 0,
+      "trophies": 29,
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2993,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1011,
+      "donations": 1183,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -229,7 +229,7 @@
         "id": 105000014,
         "name": "Valkyrie League 14"
       },
-      "trophies": 40,
+      "trophies": 51,
       "builderBaseTrophies": 2520,
       "clanRank": 5,
       "previousClanRank": 5,
@@ -349,7 +349,7 @@
       "clanRank": 8,
       "previousClanRank": 10,
       "donations": 642,
-      "donationsReceived": 1820,
+      "donationsReceived": 1860,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 215,
-      "builderBaseTrophies": 1587,
+      "builderBaseTrophies": 1562,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
@@ -1214,7 +1214,7 @@
       "clanRank": 29,
       "previousClanRank": 0,
       "donations": 0,
-      "donationsReceived": 66,
+      "donationsReceived": 198,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -1304,7 +1304,7 @@
         "id": 105000003,
         "name": "Skeleton League 3"
       },
-      "trophies": 40,
+      "trophies": 61,
       "builderBaseTrophies": 109,
       "clanRank": 32,
       "previousClanRank": 30,
