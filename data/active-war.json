@@ -66,7 +66,7 @@
       "name": "demiur",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#QV20QPJGR",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-09T21:12:05.215Z",
+  "at": "2026-11-10T03:40:21.409Z",
   "source": "cwl"
 }
