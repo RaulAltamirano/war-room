@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T06:51:37Z",
+  "generatedAt": "2026-11-11T14:48:48Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -11,10 +11,10 @@
     "streak": 4,
     "league": "Plata I",
     "capLeague": "Plata II",
-    "trophies": 33100,
-    "builder": 19387,
+    "trophies": 28500,
+    "builder": 17858,
     "capital": 1107,
-    "members": 36,
+    "members": 35,
     "freq": "Siempre",
     "location": "Internacional",
     "join": "Abierto a todos",
@@ -60,21 +60,12 @@
   },
   "roster": [
     [
-      "PpSilva91",
-      "M",
-      18,
-      272,
-      0,
-      0,
-      4377
-    ],
-    [
       "kssto",
       "C",
       16,
       183,
-      1071,
-      601,
+      1227,
+      767,
       3204
     ],
     [
@@ -109,8 +100,8 @@
       "E",
       15,
       132,
-      1037,
-      556,
+      1203,
+      712,
       2520
     ],
     [
@@ -174,7 +165,7 @@
       87,
       42,
       240,
-      2034
+      1950
     ],
     [
       "اوراس",
@@ -198,10 +189,10 @@
       "Casdo",
       "M",
       11,
-      72,
+      73,
       0,
       0,
-      1558
+      1522
     ],
     [
       "TaP",
@@ -231,6 +222,15 @@
       1166
     ],
     [
+      "minch",
+      "M",
+      11,
+      85,
+      0,
+      0,
+      2220
+    ],
+    [
       "Brandon2.0 07",
       "E",
       11,
@@ -238,15 +238,6 @@
       181,
       235,
       1451
-    ],
-    [
-      "minch",
-      "M",
-      11,
-      85,
-      0,
-      0,
-      2224
     ],
     [
       "VORTEX",
@@ -273,7 +264,7 @@
       71,
       0,
       0,
-      1556
+      1347
     ],
     [
       "Diego503",
@@ -11566,7 +11557,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 15,
     "attacksPerMember": 2,
     "rival": "VOIDBORN",
@@ -11575,7 +11566,7 @@
       {
         "tag": "#Y0PPGVQL2",
         "name": "xlMURDOClx",
-        "th": 13,
+        "th": 14,
         "pos": 5,
         "attacks": 0
       },
@@ -11617,7 +11608,7 @@
       {
         "tag": "#8VJYRRGQ",
         "name": "..::MURDOC::..",
-        "th": 15,
+        "th": 16,
         "pos": 2,
         "attacks": 0
       },
@@ -11666,14 +11657,14 @@
       {
         "tag": "#G0CQCCQR9",
         "name": "murdoc",
-        "th": 10,
+        "th": 11,
         "pos": 14,
         "attacks": 0
       },
       {
         "tag": "#G92R92J98",
         "name": "VORTEX",
-        "th": 10,
+        "th": 11,
         "pos": 12,
         "attacks": 0
       }
@@ -11696,7 +11687,7 @@
       {
         "tag": "#LVUJ2PGVG",
         "name": "PENDEKAR",
-        "th": 13,
+        "th": 14,
         "pos": 5,
         "attacks": 0
       },
@@ -11785,7 +11776,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-11T06:51:36.950Z",
+    "at": "2026-11-11T14:48:48.740Z",
     "source": "currentwar"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 15,
   "attacksPerMember": 2,
   "rival": "VOIDBORN",
@@ -8,7 +8,7 @@
     {
       "tag": "#Y0PPGVQL2",
       "name": "xlMURDOClx",
-      "th": 13,
+      "th": 14,
       "pos": 5,
       "attacks": 0
     },
@@ -50,7 +50,7 @@
     {
       "tag": "#8VJYRRGQ",
       "name": "..::MURDOC::..",
-      "th": 15,
+      "th": 16,
       "pos": 2,
       "attacks": 0
     },
@@ -99,14 +99,14 @@
     {
       "tag": "#G0CQCCQR9",
       "name": "murdoc",
-      "th": 10,
+      "th": 11,
       "pos": 14,
       "attacks": 0
     },
     {
       "tag": "#G92R92J98",
       "name": "VORTEX",
-      "th": 10,
+      "th": 11,
       "pos": 12,
       "attacks": 0
     }
@@ -129,7 +129,7 @@
     {
       "tag": "#LVUJ2PGVG",
       "name": "PENDEKAR",
-      "th": 13,
+      "th": 14,
       "pos": 5,
       "attacks": 0
     },
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-11T06:51:36.950Z",
+  "at": "2026-11-11T14:48:48.740Z",
   "source": "currentwar"
 }
