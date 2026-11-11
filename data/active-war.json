@@ -38,14 +38,14 @@
       "name": "ZackyB",
       "th": 9,
       "pos": 15,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LY9J99L9G",
       "name": "cozo 2000",
       "th": 11,
       "pos": 10,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -66,14 +66,14 @@
       "name": "Casdo",
       "th": 11,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#YJ8VRVPY",
       "name": "Brandon2.0 07",
       "th": 11,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Q02JR2JYV",
@@ -138,7 +138,7 @@
       "name": "Hayang Jukut",
       "th": 11,
       "pos": 9,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Q9RQVYUUY",
@@ -152,7 +152,7 @@
       "name": "bagas",
       "th": 10,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2CR0CURPL",
@@ -166,14 +166,14 @@
       "name": "Monyetkutu",
       "th": 10,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#RYL9YQLU8",
       "name": "Noctshade",
       "th": 9,
       "pos": 15,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LCGC00RP8",
@@ -208,7 +208,7 @@
       "name": "Quick Eror",
       "th": 11,
       "pos": 8,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#G2JLR2UCR",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-11T14:48:48.740Z",
+  "at": "2026-11-11T21:39:15.696Z",
   "source": "currentwar"
 }

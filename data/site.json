@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T14:48:48Z",
+  "generatedAt": "2026-11-11T21:39:15Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 28500,
-    "builder": 17858,
+    "builder": 17864,
     "capital": 1107,
     "members": 35,
     "freq": "Siempre",
@@ -64,8 +64,8 @@
       "C",
       16,
       183,
-      1227,
-      767,
+      1537,
+      1763,
       3204
     ],
     [
@@ -73,7 +73,7 @@
       "C",
       16,
       211,
-      1397,
+      1427,
       0,
       3029
     ],
@@ -99,9 +99,9 @@
       "Pete Zahut",
       "E",
       15,
-      132,
-      1203,
-      712,
+      133,
+      2174,
+      1022,
       2520
     ],
     [
@@ -136,9 +136,9 @@
       "C",
       13,
       141,
-      1149,
-      2014,
-      2113
+      1439,
+      2091,
+      2111
     ],
     [
       "يسوري❤️❤️",
@@ -164,7 +164,7 @@
       11,
       87,
       42,
-      240,
+      307,
       1950
     ],
     [
@@ -192,7 +192,7 @@
       73,
       0,
       0,
-      1522
+      1550
     ],
     [
       "TaP",
@@ -222,15 +222,6 @@
       1166
     ],
     [
-      "minch",
-      "M",
-      11,
-      85,
-      0,
-      0,
-      2220
-    ],
-    [
       "Brandon2.0 07",
       "E",
       11,
@@ -238,6 +229,15 @@
       181,
       235,
       1451
+    ],
+    [
+      "minch",
+      "M",
+      11,
+      85,
+      0,
+      0,
+      2221
     ],
     [
       "VORTEX",
@@ -324,9 +324,9 @@
       "..::RAMIRO::..",
       "M",
       10,
-      117,
-      5,
-      660,
+      118,
+      52,
+      858,
       1791
     ],
     [
@@ -11596,14 +11596,14 @@
         "name": "ZackyB",
         "th": 9,
         "pos": 15,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LY9J99L9G",
         "name": "cozo 2000",
         "th": 11,
         "pos": 10,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#8VJYRRGQ",
@@ -11624,14 +11624,14 @@
         "name": "Casdo",
         "th": 11,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#YJ8VRVPY",
         "name": "Brandon2.0 07",
         "th": 11,
         "pos": 9,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#Q02JR2JYV",
@@ -11696,7 +11696,7 @@
         "name": "Hayang Jukut",
         "th": 11,
         "pos": 9,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#Q9RQVYUUY",
@@ -11710,7 +11710,7 @@
         "name": "bagas",
         "th": 10,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2CR0CURPL",
@@ -11724,14 +11724,14 @@
         "name": "Monyetkutu",
         "th": 10,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#RYL9YQLU8",
         "name": "Noctshade",
         "th": 9,
         "pos": 15,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LCGC00RP8",
@@ -11766,7 +11766,7 @@
         "name": "Quick Eror",
         "th": 11,
         "pos": 8,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#G2JLR2UCR",
@@ -11776,7 +11776,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-11T14:48:48.740Z",
+    "at": "2026-11-11T21:39:15.696Z",
     "source": "currentwar"
   }
 }

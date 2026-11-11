@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 28500,
-  "clanBuilderBasePoints": 17858,
+  "clanBuilderBasePoints": 17864,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -53,8 +53,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 1227,
-      "donationsReceived": 767,
+      "donations": 1537,
+      "donationsReceived": 1763,
       "playerHouse": {
         "elements": [
           {
@@ -94,11 +94,11 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 396,
+      "trophies": 417,
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1397,
+      "donations": 1427,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -220,7 +220,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 15,
-      "expLevel": 132,
+      "expLevel": 133,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 2520,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 1203,
-      "donationsReceived": 712,
+      "donations": 2174,
+      "donationsReceived": 1022,
       "playerHouse": {
         "elements": [
           {
@@ -277,7 +277,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2334,
       "clanRank": 6,
-      "previousClanRank": 10,
+      "previousClanRank": 6,
       "donations": 215,
       "donationsReceived": 0,
       "playerHouse": {
@@ -322,7 +322,7 @@
       "trophies": 453,
       "builderBaseTrophies": 1697,
       "clanRank": 7,
-      "previousClanRank": 6,
+      "previousClanRank": 7,
       "donations": 278,
       "donationsReceived": 737,
       "builderBaseLeague": {
@@ -347,7 +347,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2455,
       "clanRank": 8,
-      "previousClanRank": 7,
+      "previousClanRank": 8,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -390,11 +390,11 @@
         "name": "Wizard League 11"
       },
       "trophies": 17,
-      "builderBaseTrophies": 2113,
+      "builderBaseTrophies": 2111,
       "clanRank": 9,
-      "previousClanRank": 8,
-      "donations": 1149,
-      "donationsReceived": 2014,
+      "previousClanRank": 9,
+      "donations": 1439,
+      "donationsReceived": 2091,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -417,7 +417,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1593,
       "clanRank": 10,
-      "previousClanRank": 9,
+      "previousClanRank": 10,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -509,7 +509,7 @@
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 42,
-      "donationsReceived": 240,
+      "donationsReceived": 307,
       "playerHouse": {
         "elements": [
           {
@@ -620,7 +620,7 @@
         "name": "Archer League 8"
       },
       "trophies": 215,
-      "builderBaseTrophies": 1522,
+      "builderBaseTrophies": 1550,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 0,
@@ -786,6 +786,31 @@
       }
     },
     {
+      "tag": "#YJ8VRVPY",
+      "name": "Brandon2.0 07",
+      "role": "admin",
+      "townHallLevel": 11,
+      "expLevel": 123,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000007,
+        "name": "Archer League 7"
+      },
+      "trophies": 134,
+      "builderBaseTrophies": 1451,
+      "clanRank": 19,
+      "previousClanRank": 20,
+      "donations": 181,
+      "donationsReceived": 235,
+      "builderBaseLeague": {
+        "id": 44000014,
+        "name": "Stone League I"
+      }
+    },
+    {
       "tag": "#GVQL0892Y",
       "name": "minch",
       "role": "member",
@@ -800,8 +825,8 @@
         "name": "Archer League 7"
       },
       "trophies": 101,
-      "builderBaseTrophies": 2220,
-      "clanRank": 19,
+      "builderBaseTrophies": 2221,
+      "clanRank": 20,
       "previousClanRank": 19,
       "donations": 0,
       "donationsReceived": 0,
@@ -828,31 +853,6 @@
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
-      }
-    },
-    {
-      "tag": "#YJ8VRVPY",
-      "name": "Brandon2.0 07",
-      "role": "admin",
-      "townHallLevel": 11,
-      "expLevel": 123,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000007,
-        "name": "Archer League 7"
-      },
-      "trophies": 94,
-      "builderBaseTrophies": 1451,
-      "clanRank": 20,
-      "previousClanRank": 20,
-      "donations": 181,
-      "donationsReceived": 235,
-      "builderBaseLeague": {
-        "id": 44000014,
-        "name": "Stone League I"
       }
     },
     {
@@ -1225,7 +1225,7 @@
       "name": "..::RAMIRO::..",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 117,
+      "expLevel": 118,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1238,8 +1238,8 @@
       "builderBaseTrophies": 1791,
       "clanRank": 30,
       "previousClanRank": 29,
-      "donations": 5,
-      "donationsReceived": 660,
+      "donations": 52,
+      "donationsReceived": 858,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -1304,7 +1304,7 @@
         "id": 105000003,
         "name": "Skeleton League 3"
       },
-      "trophies": 101,
+      "trophies": 141,
       "builderBaseTrophies": 109,
       "clanRank": 32,
       "previousClanRank": 32,
