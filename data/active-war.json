@@ -45,7 +45,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 10,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#8VJYRRGQ",
@@ -80,7 +80,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#2PJGU2YGJ",
@@ -218,6 +218,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-11T21:39:15.696Z",
+  "at": "2026-11-12T02:36:14.063Z",
   "source": "currentwar"
 }
