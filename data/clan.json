@@ -53,8 +53,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 1537,
-      "donationsReceived": 1763,
+      "donations": 1617,
+      "donationsReceived": 2012,
       "playerHouse": {
         "elements": [
           {
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1493,
+      "donations": 1659,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -129,7 +129,7 @@
       "tag": "#QL2V8CYRU",
       "name": "imparable",
       "role": "leader",
-      "townHallLevel": 13,
+      "townHallLevel": 14,
       "expLevel": 146,
       "league": {
         "id": 29000011,
@@ -144,7 +144,7 @@
       "clanRank": 3,
       "previousClanRank": 3,
       "donations": 0,
-      "donationsReceived": 77,
+      "donationsReceived": 122,
       "playerHouse": {
         "elements": [
           {
@@ -175,7 +175,7 @@
       "name": "al 100%",
       "role": "admin",
       "townHallLevel": 14,
-      "expLevel": 143,
+      "expLevel": 144,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -189,7 +189,7 @@
       "clanRank": 4,
       "previousClanRank": 4,
       "donations": 0,
-      "donationsReceived": 93,
+      "donationsReceived": 141,
       "playerHouse": {
         "elements": [
           {
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 2520,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 2174,
-      "donationsReceived": 1022,
+      "donations": 2468,
+      "donationsReceived": 1100,
       "playerHouse": {
         "elements": [
           {
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 2334,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 215,
+      "donations": 260,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -323,8 +323,8 @@
       "builderBaseTrophies": 1697,
       "clanRank": 7,
       "previousClanRank": 7,
-      "donations": 308,
-      "donationsReceived": 784,
+      "donations": 338,
+      "donationsReceived": 877,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -380,7 +380,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 141,
+      "expLevel": 142,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -393,8 +393,8 @@
       "builderBaseTrophies": 2111,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 1439,
-      "donationsReceived": 2168,
+      "donations": 1574,
+      "donationsReceived": 2289,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -630,7 +630,7 @@
       "name": "demiur",
       "role": "member",
       "townHallLevel": 12,
-      "expLevel": 79,
+      "expLevel": 80,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -643,7 +643,7 @@
       "builderBaseTrophies": 1686,
       "clanRank": 15,
       "previousClanRank": 17,
-      "donations": 0,
+      "donations": 48,
       "donationsReceived": 165,
       "playerHouse": {
         "elements": [
@@ -732,7 +732,7 @@
       "trophies": 221,
       "builderBaseTrophies": 2227,
       "clanRank": 17,
-      "previousClanRank": 19,
+      "previousClanRank": 20,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -777,7 +777,7 @@
       "trophies": 134,
       "builderBaseTrophies": 1451,
       "clanRank": 18,
-      "previousClanRank": 20,
+      "previousClanRank": 19,
       "donations": 228,
       "donationsReceived": 235,
       "builderBaseLeague": {
@@ -790,7 +790,7 @@
       "name": "VORTEX",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 68,
+      "expLevel": 69,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -982,7 +982,7 @@
       "trophies": 0,
       "builderBaseTrophies": 111,
       "clanRank": 23,
-      "previousClanRank": 30,
+      "previousClanRank": 28,
       "donations": 0,
       "donationsReceived": 0,
       "builderBaseLeague": {
@@ -1007,7 +1007,7 @@
       "trophies": 0,
       "builderBaseTrophies": 586,
       "clanRank": 24,
-      "previousClanRank": 28,
+      "previousClanRank": 29,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1052,9 +1052,9 @@
       "trophies": 138,
       "builderBaseTrophies": 1791,
       "clanRank": 25,
-      "previousClanRank": 29,
+      "previousClanRank": 30,
       "donations": 99,
-      "donationsReceived": 924,
+      "donationsReceived": 1058,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -1149,7 +1149,7 @@
       "clanRank": 28,
       "previousClanRank": 33,
       "donations": 35,
-      "donationsReceived": 60,
+      "donationsReceived": 90,
       "playerHouse": {
         "elements": [
           {

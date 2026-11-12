@@ -10,28 +10,28 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2VL98GPGU",
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GP2PGPUVJ",
       "name": "Pete Zahut",
       "th": 15,
       "pos": 4,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QCCVGR9P0",
       "name": "al 100%",
       "th": 14,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QLJRGP2C9",
@@ -52,14 +52,14 @@
       "name": "..::MURDOC::..",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2ULCJ0J8",
       "name": "demiur",
       "th": 12,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
@@ -80,35 +80,35 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 7,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#2PJGU2YGJ",
       "name": "..::RAMIRO::..",
       "th": 10,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
       "name": "kssto",
       "th": 16,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G0CQCCQR9",
       "name": "murdoc",
       "th": 11,
       "pos": 14,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
       "name": "VORTEX",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     }
   ],
   "them": [
@@ -124,14 +124,14 @@
       "name": "-=♡WAHYU♡=-",
       "th": 15,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LVUJ2PGVG",
       "name": "PENDEKAR",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QRCPLPLRY",
@@ -180,7 +180,7 @@
       "name": "SAWAIDIKAP",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LY28GGRCY",
@@ -194,7 +194,7 @@
       "name": "WAHYU",
       "th": 12,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R0UU82R2Y",
@@ -215,9 +215,9 @@
       "name": "4nnas1st_",
       "th": 15,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     }
   ],
-  "at": "2026-11-12T02:36:14.063Z",
+  "at": "2026-11-12T10:28:10.214Z",
   "source": "currentwar"
 }
