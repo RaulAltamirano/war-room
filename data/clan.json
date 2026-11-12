@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25900,
-  "clanBuilderBasePoints": 17315,
+  "clanBuilderBasePoints": 17358,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -24,10 +24,10 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 4,
+  "warWinStreak": 0,
   "warWins": 15,
   "warTies": 0,
-  "warLosses": 23,
+  "warLosses": 24,
   "isWarLogPublic": true,
   "warLeague": {
     "id": 48000006,
@@ -94,7 +94,7 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 417,
+      "trophies": 457,
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
@@ -390,7 +390,7 @@
         "name": "Wizard League 11"
       },
       "trophies": 17,
-      "builderBaseTrophies": 2111,
+      "builderBaseTrophies": 2081,
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 1574,
@@ -505,7 +505,7 @@
         "name": "Archer League 9"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1953,
+      "builderBaseTrophies": 2001,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 42,
@@ -531,8 +531,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
@@ -550,7 +550,7 @@
         "name": "Archer League 8"
       },
       "trophies": 215,
-      "builderBaseTrophies": 1550,
+      "builderBaseTrophies": 1564,
       "clanRank": 13,
       "previousClanRank": 15,
       "donations": 0,
@@ -729,8 +729,8 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 221,
-      "builderBaseTrophies": 2227,
+      "trophies": 261,
+      "builderBaseTrophies": 2295,
       "clanRank": 17,
       "previousClanRank": 20,
       "donations": 0,
@@ -880,7 +880,7 @@
       "name": "jhon cna",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 71,
+      "expLevel": 72,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 12,
-      "builderBaseTrophies": 1347,
+      "builderBaseTrophies": 1414,
       "clanRank": 21,
       "previousClanRank": 23,
       "donations": 0,
@@ -916,8 +916,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000013,
-        "name": "Stone League II"
+        "id": 44000014,
+        "name": "Stone League I"
       }
     },
     {
@@ -970,7 +970,7 @@
       "name": "murdoc",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 58,
+      "expLevel": 59,
       "league": {
         "id": 29000000,
         "name": "Unranked"
