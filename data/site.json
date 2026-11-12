@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T18:29:50Z",
+  "generatedAt": "2026-11-12T23:46:54Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25900,
-    "builder": 17358,
+    "builder": 17365,
     "capital": 1107,
     "members": 30,
     "freq": "Siempre",
@@ -118,7 +118,7 @@
       "C",
       13,
       101,
-      338,
+      405,
       877,
       1697
     ],
@@ -165,7 +165,7 @@
       87,
       42,
       307,
-      2001
+      2031
     ],
     [
       "Casdo",
@@ -215,10 +215,10 @@
     [
       "Brandon2.0 07",
       "E",
-      11,
-      123,
+      12,
+      124,
       228,
-      235,
+      302,
       1451
     ],
     [
@@ -279,7 +279,7 @@
       "..::RAMIRO::..",
       "M",
       11,
-      118,
+      119,
       99,
       1058,
       1791
@@ -12046,8 +12046,296 @@
     }
   ],
   "activeWar": {
-    "state": "warEnded",
-    "at": "2026-11-12T18:29:50.445Z",
-    "source": "none"
+    "state": "preparation",
+    "teamSize": 20,
+    "attacksPerMember": 2,
+    "rival": "حبايب",
+    "rivalTag": "#2RRYGVU8C",
+    "us": [
+      {
+        "tag": "#Y0PPGVQL2",
+        "name": "xlMURDOClx",
+        "th": 14,
+        "pos": 5,
+        "attacks": 0
+      },
+      {
+        "tag": "#2VL98GPGU",
+        "name": "ⓟⓐⓒⓜⓐⓝ",
+        "th": 13,
+        "pos": 6,
+        "attacks": 0
+      },
+      {
+        "tag": "#R820CCYQ0",
+        "name": "jhon cna",
+        "th": 10,
+        "pos": 18,
+        "attacks": 0
+      },
+      {
+        "tag": "#GP2PGPUVJ",
+        "name": "Pete Zahut",
+        "th": 15,
+        "pos": 3,
+        "attacks": 0
+      },
+      {
+        "tag": "#QCCVGR9P0",
+        "name": "al 100%",
+        "th": 14,
+        "pos": 4,
+        "attacks": 0
+      },
+      {
+        "tag": "#QLJRGP2C9",
+        "name": "ZackyB",
+        "th": 9,
+        "pos": 19,
+        "attacks": 0
+      },
+      {
+        "tag": "#LY9J99L9G",
+        "name": "cozo 2000",
+        "th": 11,
+        "pos": 10,
+        "attacks": 0
+      },
+      {
+        "tag": "#8VJYRRGQ",
+        "name": "..::MURDOC::..",
+        "th": 16,
+        "pos": 1,
+        "attacks": 0
+      },
+      {
+        "tag": "#R2PLC2008",
+        "name": "clandes",
+        "th": 9,
+        "pos": 20,
+        "attacks": 0
+      },
+      {
+        "tag": "#R2ULCJ0J8",
+        "name": "demiur",
+        "th": 12,
+        "pos": 9,
+        "attacks": 0
+      },
+      {
+        "tag": "#QV20QPJGR",
+        "name": "Casdo",
+        "th": 11,
+        "pos": 13,
+        "attacks": 0
+      },
+      {
+        "tag": "#YJ8VRVPY",
+        "name": "Brandon2.0 07",
+        "th": 12,
+        "pos": 8,
+        "attacks": 0
+      },
+      {
+        "tag": "#R9GR9QC9C",
+        "name": "kerrykopito",
+        "th": 10,
+        "pos": 17,
+        "attacks": 0
+      },
+      {
+        "tag": "#Q02JR2JYV",
+        "name": "Abrasive7X",
+        "th": 13,
+        "pos": 7,
+        "attacks": 0
+      },
+      {
+        "tag": "#2PJGU2YGJ",
+        "name": "..::RAMIRO::..",
+        "th": 11,
+        "pos": 14,
+        "attacks": 0
+      },
+      {
+        "tag": "#Y9GU8QYYG",
+        "name": "kssto",
+        "th": 16,
+        "pos": 2,
+        "attacks": 0
+      },
+      {
+        "tag": "#GVQL0892Y",
+        "name": "minch",
+        "th": 11,
+        "pos": 12,
+        "attacks": 0
+      },
+      {
+        "tag": "#GC9ULU80G",
+        "name": "TaP",
+        "th": 11,
+        "pos": 11,
+        "attacks": 0
+      },
+      {
+        "tag": "#G0CQCCQR9",
+        "name": "murdoc",
+        "th": 11,
+        "pos": 16,
+        "attacks": 0
+      },
+      {
+        "tag": "#G92R92J98",
+        "name": "VORTEX",
+        "th": 11,
+        "pos": 15,
+        "attacks": 0
+      }
+    ],
+    "them": [
+      {
+        "tag": "#G9C88V9PR",
+        "name": "الكفيل",
+        "th": 11,
+        "pos": 12,
+        "attacks": 0
+      },
+      {
+        "tag": "#G022CY82G",
+        "name": "ابن حمص",
+        "th": 11,
+        "pos": 15,
+        "attacks": 0
+      },
+      {
+        "tag": "#GJUYRLQG8",
+        "name": "AHMED",
+        "th": 11,
+        "pos": 11,
+        "attacks": 0
+      },
+      {
+        "tag": "#R22RQPV9Y",
+        "name": "hashem",
+        "th": 10,
+        "pos": 18,
+        "attacks": 0
+      },
+      {
+        "tag": "#GUJQUYLRJ",
+        "name": "موسى ابو الفقرة",
+        "th": 10,
+        "pos": 20,
+        "attacks": 0
+      },
+      {
+        "tag": "#R8RLLC2J8",
+        "name": "JLN555",
+        "th": 11,
+        "pos": 16,
+        "attacks": 0
+      },
+      {
+        "tag": "#R2C2CP0QJ",
+        "name": "tinda",
+        "th": 10,
+        "pos": 19,
+        "attacks": 0
+      },
+      {
+        "tag": "#GJL9QCQYC",
+        "name": "الهَاْشِمِيّ³¹³",
+        "th": 14,
+        "pos": 4,
+        "attacks": 0
+      },
+      {
+        "tag": "#R2U0QGQ80",
+        "name": "طه",
+        "th": 11,
+        "pos": 14,
+        "attacks": 0
+      },
+      {
+        "tag": "#GVJYLY22Q",
+        "name": "بو آيه",
+        "th": 16,
+        "pos": 2,
+        "attacks": 0
+      },
+      {
+        "tag": "#R8GGVQVQP",
+        "name": "SUN TOP",
+        "th": 13,
+        "pos": 6,
+        "attacks": 0
+      },
+      {
+        "tag": "#R2UR0QLPC",
+        "name": "الفرعآس",
+        "th": 11,
+        "pos": 17,
+        "attacks": 0
+      },
+      {
+        "tag": "#GVPVVCQYJ",
+        "name": "★彡 Ahmed 彡★",
+        "th": 11,
+        "pos": 10,
+        "attacks": 0
+      },
+      {
+        "tag": "#RPLLVJGQ8",
+        "name": "ahmed",
+        "th": 12,
+        "pos": 9,
+        "attacks": 0
+      },
+      {
+        "tag": "#GYG8P2LGY",
+        "name": "rawad a.z",
+        "th": 13,
+        "pos": 5,
+        "attacks": 0
+      },
+      {
+        "tag": "#LU0GYQ8QY",
+        "name": "S. bukharl",
+        "th": 17,
+        "pos": 1,
+        "attacks": 0
+      },
+      {
+        "tag": "#GJJP808CR",
+        "name": "tinda",
+        "th": 12,
+        "pos": 7,
+        "attacks": 0
+      },
+      {
+        "tag": "#LJRQULLPV",
+        "name": "salih3",
+        "th": 11,
+        "pos": 13,
+        "attacks": 0
+      },
+      {
+        "tag": "#R0RG22JCL",
+        "name": "ابو ترتيل",
+        "th": 12,
+        "pos": 8,
+        "attacks": 0
+      },
+      {
+        "tag": "#QC28YLU0J",
+        "name": "محمد^_^",
+        "th": 16,
+        "pos": 3,
+        "attacks": 0
+      }
+    ],
+    "at": "2026-11-12T23:46:54.868Z",
+    "source": "currentwar"
   }
 }
