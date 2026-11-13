@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25600,
-  "clanBuilderBasePoints": 17362,
+  "clanBuilderBasePoints": 17412,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -310,7 +310,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 101,
+      "expLevel": 102,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -505,7 +505,7 @@
         "name": "Archer League 9"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2031,
+      "builderBaseTrophies": 2071,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 42,
@@ -540,7 +540,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 73,
+      "expLevel": 74,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -550,7 +550,7 @@
         "name": "Archer League 8"
       },
       "trophies": 215,
-      "builderBaseTrophies": 1564,
+      "builderBaseTrophies": 1604,
       "clanRank": 13,
       "previousClanRank": 13,
       "donations": 0,
@@ -576,8 +576,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -730,7 +730,7 @@
         "name": "Archer League 7"
       },
       "trophies": 261,
-      "builderBaseTrophies": 2281,
+      "builderBaseTrophies": 2303,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -844,7 +844,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 42,
+      "trophies": 70,
       "builderBaseTrophies": 1618,
       "clanRank": 20,
       "previousClanRank": 20,
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 12,
-      "builderBaseTrophies": 1414,
+      "builderBaseTrophies": 1501,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 0,
@@ -916,8 +916,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000014,
-        "name": "Stone League I"
+        "id": 44000015,
+        "name": "Copper League V"
       }
     },
     {
@@ -970,7 +970,7 @@
       "name": "murdoc",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 59,
+      "expLevel": 60,
       "league": {
         "id": 29000000,
         "name": "Unranked"
