@@ -15,8 +15,8 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png"
   },
   "clanLevel": 6,
-  "clanPoints": 25900,
-  "clanBuilderBasePoints": 17369,
+  "clanPoints": 25600,
+  "clanBuilderBasePoints": 17362,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1726,
+      "donations": 1771,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -144,7 +144,7 @@
       "clanRank": 3,
       "previousClanRank": 3,
       "donations": 0,
-      "donationsReceived": 122,
+      "donationsReceived": 167,
       "playerHouse": {
         "elements": [
           {
@@ -404,7 +404,7 @@
       "tag": "#L8Q82PUQ0",
       "name": "يسوري❤️❤️",
       "role": "member",
-      "townHallLevel": 12,
+      "townHallLevel": 13,
       "expLevel": 106,
       "league": {
         "id": 29000000,
@@ -730,7 +730,7 @@
         "name": "Archer League 7"
       },
       "trophies": 261,
-      "builderBaseTrophies": 2295,
+      "builderBaseTrophies": 2281,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
