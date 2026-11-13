@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25900,
-  "clanBuilderBasePoints": 17365,
+  "clanBuilderBasePoints": 17369,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1659,
+      "donations": 1726,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -319,7 +319,7 @@
         "id": 105000013,
         "name": "Valkyrie League 13"
       },
-      "trophies": 453,
+      "trophies": 466,
       "builderBaseTrophies": 1697,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -495,7 +495,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 87,
+      "expLevel": 88,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -720,7 +720,7 @@
       "name": "minch",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 85,
+      "expLevel": 86,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -779,7 +779,7 @@
       "clanRank": 18,
       "previousClanRank": 18,
       "donations": 228,
-      "donationsReceived": 302,
+      "donationsReceived": 369,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -799,8 +799,8 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 69,
-      "builderBaseTrophies": 812,
+      "trophies": 120,
+      "builderBaseTrophies": 842,
       "clanRank": 19,
       "previousClanRank": 19,
       "donations": 46,
@@ -1131,51 +1131,6 @@
       }
     },
     {
-      "tag": "#R2PLC2008",
-      "name": "clandes",
-      "role": "member",
-      "townHallLevel": 9,
-      "expLevel": 54,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000003,
-        "name": "Skeleton League 3"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1102,
-      "clanRank": 28,
-      "previousClanRank": 28,
-      "donations": 35,
-      "donationsReceived": 90,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000053
-          },
-          {
-            "type": "roof",
-            "id": 82000014
-          },
-          {
-            "type": "decoration",
-            "id": 82000063
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
-      }
-    },
-    {
       "tag": "#R08LUU9CV",
       "name": "J-J POPEYE",
       "role": "member",
@@ -1191,7 +1146,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1114,
-      "clanRank": 29,
+      "clanRank": 28,
       "previousClanRank": 29,
       "donations": 0,
       "donationsReceived": 0,
@@ -1236,7 +1191,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2131,
-      "clanRank": 30,
+      "clanRank": 29,
       "previousClanRank": 30,
       "donations": 66,
       "donationsReceived": 48,
@@ -1263,6 +1218,51 @@
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
+      }
+    },
+    {
+      "tag": "#R2PLC2008",
+      "name": "clandes",
+      "role": "member",
+      "townHallLevel": 9,
+      "expLevel": 54,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000000,
+        "name": "Unranked"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 1102,
+      "clanRank": 30,
+      "previousClanRank": 28,
+      "donations": 35,
+      "donationsReceived": 90,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000053
+          },
+          {
+            "type": "roof",
+            "id": 82000014
+          },
+          {
+            "type": "decoration",
+            "id": 82000063
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
       }
     }
   ],
