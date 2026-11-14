@@ -27,7 +27,7 @@
   "warWinStreak": 0,
   "warWins": 15,
   "warTies": 0,
-  "warLosses": 24,
+  "warLosses": 25,
   "isWarLogPublic": true,
   "warLeague": {
     "id": 48000006,
@@ -220,7 +220,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 15,
-      "expLevel": 133,
+      "expLevel": 134,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -630,7 +630,7 @@
       "name": "demiur",
       "role": "member",
       "townHallLevel": 12,
-      "expLevel": 80,
+      "expLevel": 81,
       "league": {
         "id": 29000000,
         "name": "Unranked"
