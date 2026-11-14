@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 20,
   "attacksPerMember": 2,
   "rival": "حبايب",
@@ -166,14 +166,14 @@
       "name": "AHMED",
       "th": 11,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R22RQPV9Y",
       "name": "hashem",
       "th": 10,
       "pos": 18,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GUJQUYLRJ",
@@ -208,14 +208,14 @@
       "name": "طه",
       "th": 11,
       "pos": 14,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GVJYLY22Q",
       "name": "بو آيه",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R8GGVQVQP",
@@ -257,7 +257,7 @@
       "name": "S. bukharl",
       "th": 17,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GJJP808CR",
@@ -278,7 +278,7 @@
       "name": "ابو ترتيل",
       "th": 12,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QC28YLU0J",
@@ -288,6 +288,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-13T19:55:35.655Z",
+  "at": "2026-11-14T00:34:19.231Z",
   "source": "currentwar"
 }

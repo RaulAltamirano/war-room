@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25600,
-  "clanBuilderBasePoints": 17412,
+  "clanBuilderBasePoints": 17413,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 1617,
+      "donations": 1618,
       "donationsReceived": 2012,
       "playerHouse": {
         "elements": [
@@ -319,12 +319,12 @@
         "id": 105000013,
         "name": "Valkyrie League 13"
       },
-      "trophies": 466,
+      "trophies": 493,
       "builderBaseTrophies": 1697,
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 405,
-      "donationsReceived": 877,
+      "donationsReceived": 924,
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
@@ -390,10 +390,10 @@
         "name": "Wizard League 11"
       },
       "trophies": 17,
-      "builderBaseTrophies": 2081,
+      "builderBaseTrophies": 2083,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 1574,
+      "donations": 1620,
       "donationsReceived": 2289,
       "builderBaseLeague": {
         "id": 44000020,
@@ -774,7 +774,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 134,
+      "trophies": 174,
       "builderBaseTrophies": 1451,
       "clanRank": 18,
       "previousClanRank": 18,
@@ -799,7 +799,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 120,
+      "trophies": 160,
       "builderBaseTrophies": 842,
       "clanRank": 19,
       "previousClanRank": 19,
@@ -1147,7 +1147,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1114,
       "clanRank": 28,
-      "previousClanRank": 29,
+      "previousClanRank": 28,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -1192,7 +1192,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2131,
       "clanRank": 29,
-      "previousClanRank": 30,
+      "previousClanRank": 29,
       "donations": 66,
       "donationsReceived": 48,
       "playerHouse": {
@@ -1237,7 +1237,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1102,
       "clanRank": 30,
-      "previousClanRank": 28,
+      "previousClanRank": 30,
       "donations": 35,
       "donationsReceived": 90,
       "playerHouse": {
