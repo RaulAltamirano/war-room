@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25600,
-  "clanBuilderBasePoints": 17424,
+  "clanBuilderBasePoints": 17457,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -53,8 +53,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 1618,
-      "donationsReceived": 2012,
+      "donations": 1774,
+      "donationsReceived": 2178,
       "playerHouse": {
         "elements": [
           {
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 2520,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 2468,
-      "donationsReceived": 1100,
+      "donations": 2700,
+      "donationsReceived": 1256,
       "playerHouse": {
         "elements": [
           {
@@ -265,7 +265,7 @@
       "name": "xlMURDOClx",
       "role": "coLeader",
       "townHallLevel": 14,
-      "expLevel": 149,
+      "expLevel": 150,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -459,7 +459,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 184,
+      "trophies": 214,
       "builderBaseTrophies": 1146,
       "clanRank": 11,
       "previousClanRank": 11,
@@ -505,11 +505,11 @@
         "name": "Archer League 9"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2071,
+      "builderBaseTrophies": 2100,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 42,
-      "donationsReceived": 307,
+      "donationsReceived": 373,
       "playerHouse": {
         "elements": [
           {
@@ -890,7 +890,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 12,
-      "builderBaseTrophies": 1501,
+      "builderBaseTrophies": 1587,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 0,
@@ -1049,7 +1049,7 @@
         "id": 105000004,
         "name": "Barbarian League 4"
       },
-      "trophies": 138,
+      "trophies": 162,
       "builderBaseTrophies": 1791,
       "clanRank": 25,
       "previousClanRank": 25,

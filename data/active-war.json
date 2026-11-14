@@ -10,7 +10,7 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2VL98GPGU",
@@ -24,14 +24,14 @@
       "name": "jhon cna",
       "th": 10,
       "pos": 18,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GP2PGPUVJ",
       "name": "Pete Zahut",
       "th": 15,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QCCVGR9P0",
@@ -52,7 +52,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 10,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -115,7 +115,7 @@
       "name": "kssto",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GVQL0892Y",
@@ -136,7 +136,7 @@
       "name": "murdoc",
       "th": 11,
       "pos": 16,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
@@ -194,7 +194,7 @@
       "name": "tinda",
       "th": 10,
       "pos": 19,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GJL9QCQYC",
@@ -208,7 +208,7 @@
       "name": "طه",
       "th": 11,
       "pos": 14,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#GVJYLY22Q",
@@ -250,7 +250,7 @@
       "name": "rawad a.z",
       "th": 13,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LU0GYQ8QY",
@@ -264,7 +264,7 @@
       "name": "tinda",
       "th": 12,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LJRQULLPV",
@@ -285,9 +285,9 @@
       "name": "محمد^_^",
       "th": 16,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     }
   ],
-  "at": "2026-11-14T07:11:40.523Z",
+  "at": "2026-11-14T14:22:14.728Z",
   "source": "currentwar"
 }
