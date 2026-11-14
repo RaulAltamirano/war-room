@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25600,
-  "clanBuilderBasePoints": 17413,
+  "clanBuilderBasePoints": 17424,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -85,7 +85,7 @@
       "name": "..::MURDOC::..",
       "role": "coLeader",
       "townHallLevel": 16,
-      "expLevel": 211,
+      "expLevel": 212,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -94,11 +94,11 @@
         "id": 105000018,
         "name": "Witch League 18"
       },
-      "trophies": 457,
+      "trophies": 484,
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1771,
+      "donations": 1817,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -320,14 +320,14 @@
         "name": "Valkyrie League 13"
       },
       "trophies": 493,
-      "builderBaseTrophies": 1697,
+      "builderBaseTrophies": 1740,
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 405,
-      "donationsReceived": 924,
+      "donationsReceived": 970,
       "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
+        "id": 44000017,
+        "name": "Copper League III"
       }
     },
     {
@@ -594,7 +594,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 10,
+      "trophies": 127,
       "builderBaseTrophies": 1432,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -799,7 +799,7 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 160,
+      "trophies": 174,
       "builderBaseTrophies": 842,
       "clanRank": 19,
       "previousClanRank": 19,
@@ -835,7 +835,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 72,
+      "expLevel": 73,
       "league": {
         "id": 29000000,
         "name": "Unranked"

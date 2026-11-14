@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T00:34:19Z",
+  "generatedAt": "2026-11-14T07:11:40Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25600,
-    "builder": 17413,
+    "builder": 17424,
     "capital": 1107,
     "members": 30,
     "freq": "Siempre",
@@ -72,8 +72,8 @@
       "..::MURDOC::..",
       "C",
       16,
-      211,
-      1771,
+      212,
+      1817,
       0,
       3029
     ],
@@ -119,8 +119,8 @@
       13,
       102,
       405,
-      924,
-      1697
+      970,
+      1740
     ],
     [
       "jaimerrdd",
@@ -234,7 +234,7 @@
       "kerrykopito",
       "M",
       10,
-      72,
+      73,
       0,
       0,
       1618
@@ -12092,7 +12092,7 @@
         "name": "ZackyB",
         "th": 9,
         "pos": 19,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LY9J99L9G",
@@ -12120,21 +12120,21 @@
         "name": "demiur",
         "th": 12,
         "pos": 9,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#YJ8VRVPY",
         "name": "Brandon2.0 07",
         "th": 12,
         "pos": 8,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R9GR9QC9C",
@@ -12148,7 +12148,7 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2PJGU2YGJ",
@@ -12199,7 +12199,7 @@
         "name": "الكفيل",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G022CY82G",
@@ -12248,7 +12248,7 @@
         "name": "الهَاْشِمِيّ³¹³",
         "th": 14,
         "pos": 4,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R2U0QGQ80",
@@ -12283,7 +12283,7 @@
         "name": "★彡 Ahmed 彡★",
         "th": 11,
         "pos": 10,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#RPLLVJGQ8",
@@ -12335,7 +12335,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-14T00:34:19.231Z",
+    "at": "2026-11-14T07:11:40.523Z",
     "source": "currentwar"
   }
 }
