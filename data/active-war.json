@@ -17,7 +17,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R820CCYQ0",
@@ -59,7 +59,7 @@
       "name": "..::MURDOC::..",
       "th": 16,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2PLC2008",
@@ -108,7 +108,7 @@
       "name": "..::RAMIRO::..",
       "th": 11,
       "pos": 14,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -222,7 +222,7 @@
       "name": "SUN TOP",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2UR0QLPC",
@@ -243,7 +243,7 @@
       "name": "ahmed",
       "th": 12,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GYG8P2LGY",
@@ -288,6 +288,6 @@
       "attacks": 2
     }
   ],
-  "at": "2026-11-14T14:22:14.728Z",
+  "at": "2026-11-14T19:19:20.538Z",
   "source": "currentwar"
 }
