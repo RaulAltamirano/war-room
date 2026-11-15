@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 25600,
-  "clanBuilderBasePoints": 17495,
+  "clanBuilderBasePoints": 17535,
   "clanCapitalPoints": 1107,
   "capitalLeague": {
     "id": 85000005,
@@ -40,7 +40,7 @@
       "name": "kssto",
       "role": "coLeader",
       "townHallLevel": 16,
-      "expLevel": 183,
+      "expLevel": 184,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -393,7 +393,7 @@
       "builderBaseTrophies": 2083,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 1888,
+      "donations": 1918,
       "donationsReceived": 2289,
       "builderBaseLeague": {
         "id": 44000020,
@@ -594,7 +594,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 127,
+      "trophies": 178,
       "builderBaseTrophies": 1549,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -732,9 +732,9 @@
       "trophies": 454,
       "builderBaseTrophies": 1451,
       "clanRank": 17,
-      "previousClanRank": 18,
+      "previousClanRank": 17,
       "donations": 228,
-      "donationsReceived": 435,
+      "donationsReceived": 502,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -755,9 +755,9 @@
         "name": "Archer League 7"
       },
       "trophies": 261,
-      "builderBaseTrophies": 2303,
+      "builderBaseTrophies": 2349,
       "clanRank": 18,
-      "previousClanRank": 17,
+      "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -799,11 +799,11 @@
         "id": 105000007,
         "name": "Archer League 7"
       },
-      "trophies": 174,
+      "trophies": 214,
       "builderBaseTrophies": 842,
       "clanRank": 19,
       "previousClanRank": 19,
-      "donations": 46,
+      "donations": 83,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -889,8 +889,8 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 42,
-      "builderBaseTrophies": 1587,
+      "trophies": 54,
+      "builderBaseTrophies": 1654,
       "clanRank": 21,
       "previousClanRank": 21,
       "donations": 0,
@@ -916,8 +916,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
