@@ -1,5 +1,293 @@
 {
-  "state": "notInWar",
-  "at": "2026-11-14T23:11:27.152Z",
-  "source": "none"
+  "state": "preparation",
+  "teamSize": 20,
+  "attacksPerMember": 2,
+  "rival": "KORSAWEHA°",
+  "rivalTag": "#2JY9L9PCV",
+  "us": [
+    {
+      "tag": "#QL2V8CYRU",
+      "name": "imparable",
+      "th": 14,
+      "pos": 6,
+      "attacks": 0
+    },
+    {
+      "tag": "#Y0PPGVQL2",
+      "name": "xlMURDOClx",
+      "th": 14,
+      "pos": 5,
+      "attacks": 0
+    },
+    {
+      "tag": "#YG8LJLVQ9",
+      "name": "jaimerrdd",
+      "th": 13,
+      "pos": 7,
+      "attacks": 0
+    },
+    {
+      "tag": "#2VL98GPGU",
+      "name": "ⓟⓐⓒⓜⓐⓝ",
+      "th": 13,
+      "pos": 8,
+      "attacks": 0
+    },
+    {
+      "tag": "#R820CCYQ0",
+      "name": "jhon cna",
+      "th": 10,
+      "pos": 18,
+      "attacks": 0
+    },
+    {
+      "tag": "#GP2PGPUVJ",
+      "name": "Pete Zahut",
+      "th": 15,
+      "pos": 3,
+      "attacks": 0
+    },
+    {
+      "tag": "#QCCVGR9P0",
+      "name": "al 100%",
+      "th": 14,
+      "pos": 4,
+      "attacks": 0
+    },
+    {
+      "tag": "#QLJRGP2C9",
+      "name": "ZackyB",
+      "th": 9,
+      "pos": 19,
+      "attacks": 0
+    },
+    {
+      "tag": "#LY9J99L9G",
+      "name": "cozo 2000",
+      "th": 11,
+      "pos": 12,
+      "attacks": 0
+    },
+    {
+      "tag": "#8VJYRRGQ",
+      "name": "..::MURDOC::..",
+      "th": 16,
+      "pos": 1,
+      "attacks": 0
+    },
+    {
+      "tag": "#R2PLC2008",
+      "name": "clandes",
+      "th": 9,
+      "pos": 20,
+      "attacks": 0
+    },
+    {
+      "tag": "#R2ULCJ0J8",
+      "name": "demiur",
+      "th": 12,
+      "pos": 11,
+      "attacks": 0
+    },
+    {
+      "tag": "#QV20QPJGR",
+      "name": "Casdo",
+      "th": 11,
+      "pos": 13,
+      "attacks": 0
+    },
+    {
+      "tag": "#YJ8VRVPY",
+      "name": "Brandon2.0 07",
+      "th": 12,
+      "pos": 10,
+      "attacks": 0
+    },
+    {
+      "tag": "#R9GR9QC9C",
+      "name": "kerrykopito",
+      "th": 10,
+      "pos": 17,
+      "attacks": 0
+    },
+    {
+      "tag": "#Q02JR2JYV",
+      "name": "Abrasive7X",
+      "th": 13,
+      "pos": 9,
+      "attacks": 0
+    },
+    {
+      "tag": "#2PJGU2YGJ",
+      "name": "..::RAMIRO::..",
+      "th": 11,
+      "pos": 14,
+      "attacks": 0
+    },
+    {
+      "tag": "#Y9GU8QYYG",
+      "name": "kssto",
+      "th": 16,
+      "pos": 2,
+      "attacks": 0
+    },
+    {
+      "tag": "#G0CQCCQR9",
+      "name": "murdoc",
+      "th": 11,
+      "pos": 16,
+      "attacks": 0
+    },
+    {
+      "tag": "#G92R92J98",
+      "name": "VORTEX",
+      "th": 11,
+      "pos": 15,
+      "attacks": 0
+    }
+  ],
+  "them": [
+    {
+      "tag": "#2J9P0CLPV",
+      "name": "BLACKEVIL767",
+      "th": 13,
+      "pos": 7,
+      "attacks": 0
+    },
+    {
+      "tag": "#QYYP9VYGP",
+      "name": "ihdy",
+      "th": 12,
+      "pos": 11,
+      "attacks": 0
+    },
+    {
+      "tag": "#LCUC9QL8U",
+      "name": "LISA",
+      "th": 14,
+      "pos": 6,
+      "attacks": 0
+    },
+    {
+      "tag": "#GRPJQGQYJ",
+      "name": "apirendel",
+      "th": 11,
+      "pos": 15,
+      "attacks": 0
+    },
+    {
+      "tag": "#22G2YU220",
+      "name": "RhN",
+      "th": 12,
+      "pos": 10,
+      "attacks": 0
+    },
+    {
+      "tag": "#LGPUL0JCL",
+      "name": "AHMAD SUHERMANF",
+      "th": 16,
+      "pos": 3,
+      "attacks": 0
+    },
+    {
+      "tag": "#8J8U92RLR",
+      "name": "SEFA outsiders",
+      "th": 10,
+      "pos": 16,
+      "attacks": 0
+    },
+    {
+      "tag": "#QR8PVU0PP",
+      "name": "ᴋᴀᴢᴀᴍᴀ",
+      "th": 12,
+      "pos": 12,
+      "attacks": 0
+    },
+    {
+      "tag": "#QRYVJJ0PR",
+      "name": "Taz",
+      "th": 11,
+      "pos": 14,
+      "attacks": 0
+    },
+    {
+      "tag": "#LRCG0YJVY",
+      "name": "konohagakure",
+      "th": 17,
+      "pos": 1,
+      "attacks": 0
+    },
+    {
+      "tag": "#YGQR08LJV",
+      "name": "Heliss",
+      "th": 14,
+      "pos": 5,
+      "attacks": 0
+    },
+    {
+      "tag": "#2JCYQCGUY",
+      "name": "Ahmad zaky",
+      "th": 7,
+      "pos": 19,
+      "attacks": 0
+    },
+    {
+      "tag": "#G8PJCY8V0",
+      "name": "UwU",
+      "th": 9,
+      "pos": 17,
+      "attacks": 0
+    },
+    {
+      "tag": "#QQ8288J9C",
+      "name": "Russell",
+      "th": 15,
+      "pos": 4,
+      "attacks": 0
+    },
+    {
+      "tag": "#GCGCJVYQ0",
+      "name": "miawlia",
+      "th": 9,
+      "pos": 18,
+      "attacks": 0
+    },
+    {
+      "tag": "#LJ29JRRG9",
+      "name": "MUNYUKM86",
+      "th": 13,
+      "pos": 8,
+      "attacks": 0
+    },
+    {
+      "tag": "#GGVVU2U0J",
+      "name": "bembang",
+      "th": 7,
+      "pos": 20,
+      "attacks": 0
+    },
+    {
+      "tag": "#2V0GUC0R",
+      "name": "putry ayu",
+      "th": 16,
+      "pos": 2,
+      "attacks": 0
+    },
+    {
+      "tag": "#YLL22PLG9",
+      "name": "Keńtaro_",
+      "th": 11,
+      "pos": 13,
+      "attacks": 0
+    },
+    {
+      "tag": "#Y02J2PQ28",
+      "name": "kimm shuwan",
+      "th": 14,
+      "pos": 9,
+      "attacks": 0
+    }
+  ],
+  "at": "2026-11-15T02:54:15.536Z",
+  "source": "currentwar"
 }
