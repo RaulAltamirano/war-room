@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 1774,
+      "donations": 1775,
       "donationsReceived": 2178,
       "playerHouse": {
         "elements": [
@@ -278,7 +278,7 @@
       "builderBaseTrophies": 2334,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 260,
+      "donations": 306,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -324,7 +324,7 @@
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 471,
-      "donationsReceived": 970,
+      "donationsReceived": 1017,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -495,7 +495,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 88,
+      "expLevel": 89,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -880,7 +880,7 @@
       "name": "jhon cna",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 72,
+      "expLevel": 73,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -889,7 +889,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 12,
+      "trophies": 42,
       "builderBaseTrophies": 1587,
       "clanRank": 21,
       "previousClanRank": 21,
@@ -1119,7 +1119,7 @@
         "id": 105000003,
         "name": "Skeleton League 3"
       },
-      "trophies": 141,
+      "trophies": 181,
       "builderBaseTrophies": 109,
       "clanRank": 27,
       "previousClanRank": 27,
