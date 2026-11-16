@@ -66,7 +66,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -288,6 +288,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-16T08:24:51.254Z",
+  "at": "2026-11-16T18:44:13.832Z",
   "source": "currentwar"
 }
