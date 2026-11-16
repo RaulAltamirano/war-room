@@ -45,7 +45,7 @@
       "name": "Pete Zahut",
       "th": 15,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#QCCVGR9P0",
@@ -59,7 +59,7 @@
       "name": "ZackyB",
       "th": 9,
       "pos": 19,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LY9J99L9G",
@@ -73,7 +73,7 @@
       "name": "..::MURDOC::..",
       "th": 16,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2PLC2008",
@@ -87,21 +87,21 @@
       "name": "demiur",
       "th": 12,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
       "name": "Casdo",
       "th": 11,
       "pos": 13,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#YJ8VRVPY",
       "name": "Brandon2.0 07",
       "th": 12,
       "pos": 10,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R9GR9QC9C",
@@ -115,7 +115,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2PJGU2YGJ",
@@ -129,7 +129,7 @@
       "name": "kssto",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G0CQCCQR9",
@@ -288,6 +288,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-16T01:29:49.793Z",
+  "at": "2026-11-16T08:24:51.254Z",
   "source": "currentwar"
 }

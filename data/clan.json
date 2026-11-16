@@ -16,8 +16,8 @@
   },
   "clanLevel": 6,
   "clanPoints": 25600,
-  "clanBuilderBasePoints": 17561,
-  "clanCapitalPoints": 1107,
+  "clanBuilderBasePoints": 17577,
+  "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
     "name": "Silver League II"
@@ -53,8 +53,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 1775,
-      "donationsReceived": 2178,
+      "donations": 1901,
+      "donationsReceived": 2314,
       "playerHouse": {
         "elements": [
           {
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1897,
+      "donations": 1952,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -233,8 +233,8 @@
       "builderBaseTrophies": 2520,
       "clanRank": 5,
       "previousClanRank": 5,
-      "donations": 2700,
-      "donationsReceived": 1256,
+      "donations": 2859,
+      "donationsReceived": 1382,
       "playerHouse": {
         "elements": [
           {
@@ -310,7 +310,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 102,
+      "expLevel": 103,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -323,8 +323,8 @@
       "builderBaseTrophies": 1782,
       "clanRank": 7,
       "previousClanRank": 7,
-      "donations": 471,
-      "donationsReceived": 1062,
+      "donations": 503,
+      "donationsReceived": 1108,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -393,8 +393,8 @@
       "builderBaseTrophies": 2083,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 1985,
-      "donationsReceived": 2289,
+      "donations": 2288,
+      "donationsReceived": 2462,
       "builderBaseLeague": {
         "id": 44000020,
         "name": "Brass League III"
@@ -595,7 +595,7 @@
         "name": "Archer League 8"
       },
       "trophies": 178,
-      "builderBaseTrophies": 1549,
+      "builderBaseTrophies": 1614,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 0,
@@ -621,8 +621,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000015,
-        "name": "Copper League V"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -734,7 +734,7 @@
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 228,
-      "donationsReceived": 502,
+      "donationsReceived": 569,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -1053,8 +1053,8 @@
       "builderBaseTrophies": 1791,
       "clanRank": 25,
       "previousClanRank": 25,
-      "donations": 99,
-      "donationsReceived": 1326,
+      "donations": 240,
+      "donationsReceived": 1594,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"

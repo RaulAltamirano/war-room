@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:29:49Z",
+  "generatedAt": "2026-11-16T08:24:51Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,8 +12,8 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25600,
-    "builder": 17561,
-    "capital": 1107,
+    "builder": 17577,
+    "capital": 1078,
     "members": 30,
     "freq": "Siempre",
     "location": "Internacional",
@@ -64,8 +64,8 @@
       "C",
       16,
       184,
-      1775,
-      2178,
+      1901,
+      2314,
       3204
     ],
     [
@@ -73,7 +73,7 @@
       "C",
       16,
       212,
-      1897,
+      1952,
       0,
       3029
     ],
@@ -100,8 +100,8 @@
       "E",
       15,
       134,
-      2700,
-      1256,
+      2859,
+      1382,
       2520
     ],
     [
@@ -117,9 +117,9 @@
       "Abrasive7X",
       "C",
       13,
-      102,
-      471,
-      1062,
+      103,
+      503,
+      1108,
       1782
     ],
     [
@@ -136,8 +136,8 @@
       "C",
       13,
       142,
-      1985,
-      2289,
+      2288,
+      2462,
       2083
     ],
     [
@@ -183,7 +183,7 @@
       81,
       0,
       0,
-      1549
+      1614
     ],
     [
       "demiur",
@@ -209,7 +209,7 @@
       12,
       125,
       228,
-      502,
+      569,
       1451
     ],
     [
@@ -280,8 +280,8 @@
       "M",
       11,
       119,
-      99,
-      1326,
+      240,
+      1594,
       1791
     ],
     [
@@ -12092,7 +12092,7 @@
         "name": "Pete Zahut",
         "th": 15,
         "pos": 3,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#QCCVGR9P0",
@@ -12106,7 +12106,7 @@
         "name": "ZackyB",
         "th": 9,
         "pos": 19,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LY9J99L9G",
@@ -12120,7 +12120,7 @@
         "name": "..::MURDOC::..",
         "th": 16,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R2PLC2008",
@@ -12134,21 +12134,21 @@
         "name": "demiur",
         "th": 12,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 13,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#YJ8VRVPY",
         "name": "Brandon2.0 07",
         "th": 12,
         "pos": 10,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R9GR9QC9C",
@@ -12162,7 +12162,7 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 9,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2PJGU2YGJ",
@@ -12176,7 +12176,7 @@
         "name": "kssto",
         "th": 16,
         "pos": 2,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G0CQCCQR9",
@@ -12335,7 +12335,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-16T01:29:49.793Z",
+    "at": "2026-11-16T08:24:51.254Z",
     "source": "currentwar"
   }
 }
