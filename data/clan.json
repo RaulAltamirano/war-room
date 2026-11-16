@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 1852,
+      "donations": 1897,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -319,12 +319,12 @@
         "id": 105000013,
         "name": "Valkyrie League 13"
       },
-      "trophies": 493,
+      "trophies": 522,
       "builderBaseTrophies": 1782,
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 471,
-      "donationsReceived": 1017,
+      "donationsReceived": 1062,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -393,7 +393,7 @@
       "builderBaseTrophies": 2083,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 1918,
+      "donations": 1985,
       "donationsReceived": 2289,
       "builderBaseLeague": {
         "id": 44000020,
@@ -554,7 +554,7 @@
       "clanRank": 13,
       "previousClanRank": 13,
       "donations": 0,
-      "donationsReceived": 0,
+      "donationsReceived": 67,
       "playerHouse": {
         "elements": [
           {
@@ -720,7 +720,7 @@
       "name": "Brandon2.0 07",
       "role": "admin",
       "townHallLevel": 12,
-      "expLevel": 124,
+      "expLevel": 125,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -789,8 +789,8 @@
       "tag": "#G92R92J98",
       "name": "VORTEX",
       "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 69,
+      "townHallLevel": 12,
+      "expLevel": 70,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -970,7 +970,7 @@
       "name": "murdoc",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 60,
+      "expLevel": 61,
       "league": {
         "id": 29000000,
         "name": "Unranked"

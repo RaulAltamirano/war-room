@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 20,
   "attacksPerMember": 2,
   "rival": "KORSAWEHA°",
@@ -17,7 +17,7 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#YG8LJLVQ9",
@@ -94,7 +94,7 @@
       "name": "Casdo",
       "th": 11,
       "pos": 13,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#YJ8VRVPY",
@@ -136,7 +136,7 @@
       "name": "murdoc",
       "th": 11,
       "pos": 16,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
@@ -288,6 +288,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-15T21:55:39.812Z",
+  "at": "2026-11-16T01:29:49.793Z",
   "source": "currentwar"
 }
