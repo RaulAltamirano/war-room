@@ -24,7 +24,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R820CCYQ0",
@@ -38,7 +38,7 @@
       "name": "Pete Zahut",
       "th": 15,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GPYCLGLGG",
@@ -143,7 +143,7 @@
       "name": "kssto",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GVQL0892Y",
@@ -187,7 +187,7 @@
       "name": "orochimaru",
       "th": 12,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LYQJ9YYQU",
@@ -222,7 +222,7 @@
       "name": "frank dux",
       "th": 15,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QVG2J8QY0",
@@ -243,7 +243,7 @@
       "name": "rimuru tempes",
       "th": 11,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LLLJU0R9V",
@@ -257,14 +257,14 @@
       "name": "pro",
       "th": 13,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LUGLVRUQR",
       "name": "pablointelaband",
       "th": 16,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2UJ2CR0C8",
@@ -278,14 +278,14 @@
       "name": "deidara",
       "th": 12,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QQ9PPPU2R",
       "name": "xd",
       "th": 12,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LVL282UY9",
@@ -320,7 +320,7 @@
       "name": "myku",
       "th": 12,
       "pos": 10,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Q9CLYYR0P",
@@ -355,9 +355,9 @@
       "name": "rimuru",
       "th": 11,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     }
   ],
-  "at": "2026-11-18T09:28:53.053Z",
+  "at": "2026-11-18T18:18:30.053Z",
   "source": "currentwar"
 }

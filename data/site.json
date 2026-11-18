@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T09:28:53Z",
+  "generatedAt": "2026-11-18T18:18:30Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27000,
-    "builder": 17792,
+    "builder": 17813,
     "capital": 1078,
     "members": 30,
     "freq": "Siempre",
@@ -64,7 +64,7 @@
       "C",
       16,
       212,
-      2153,
+      2155,
       0,
       3029
     ],
@@ -73,17 +73,17 @@
       "C",
       16,
       184,
-      1968,
-      2314,
+      2092,
+      2450,
       3204
     ],
     [
       "Pete Zahut",
       "E",
       15,
-      134,
-      2859,
-      1382,
+      135,
+      2995,
+      1508,
       2520
     ],
     [
@@ -137,7 +137,7 @@
       13,
       143,
       2911,
-      2945,
+      2957,
       2274
     ],
     [
@@ -165,7 +165,7 @@
       76,
       0,
       67,
-      1648
+      1717
     ],
     [
       "cozo 2000",
@@ -174,7 +174,7 @@
       90,
       42,
       400,
-      2153
+      2161
     ],
     [
       "VORTEX",
@@ -195,15 +195,6 @@
       1451
     ],
     [
-      "minch",
-      "M",
-      11,
-      87,
-      0,
-      0,
-      2399
-    ],
-    [
       "TaP",
       "M",
       11,
@@ -211,6 +202,15 @@
       0,
       0,
       1697
+    ],
+    [
+      "minch",
+      "M",
+      11,
+      87,
+      0,
+      0,
+      2399
     ],
     [
       "demiur",
@@ -271,7 +271,7 @@
       "M",
       11,
       119,
-      475,
+      487,
       2128,
       1791
     ],
@@ -12071,7 +12071,7 @@
         "name": "ⓟⓐⓒⓜⓐⓝ",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R820CCYQ0",
@@ -12085,7 +12085,7 @@
         "name": "Pete Zahut",
         "th": 15,
         "pos": 3,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GPYCLGLGG",
@@ -12190,7 +12190,7 @@
         "name": "kssto",
         "th": 16,
         "pos": 2,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#GVQL0892Y",
@@ -12234,7 +12234,7 @@
         "name": "orochimaru",
         "th": 12,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LYQJ9YYQU",
@@ -12269,7 +12269,7 @@
         "name": "frank dux",
         "th": 15,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QVG2J8QY0",
@@ -12290,7 +12290,7 @@
         "name": "rimuru tempes",
         "th": 11,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LLLJU0R9V",
@@ -12304,14 +12304,14 @@
         "name": "pro",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LUGLVRUQR",
         "name": "pablointelaband",
         "th": 16,
         "pos": 3,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2UJ2CR0C8",
@@ -12325,14 +12325,14 @@
         "name": "deidara",
         "th": 12,
         "pos": 8,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QQ9PPPU2R",
         "name": "xd",
         "th": 12,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LVL282UY9",
@@ -12367,7 +12367,7 @@
         "name": "myku",
         "th": 12,
         "pos": 10,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#Q9CLYYR0P",
@@ -12402,10 +12402,10 @@
         "name": "rimuru",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 2
       }
     ],
-    "at": "2026-11-18T09:28:53.053Z",
+    "at": "2026-11-18T18:18:30.053Z",
     "source": "currentwar"
   }
 }
