@@ -16,7 +16,7 @@
   },
   "clanLevel": 6,
   "clanPoints": 27000,
-  "clanBuilderBasePoints": 17772,
+  "clanBuilderBasePoints": 17792,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -389,7 +389,7 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 43,
+      "trophies": 71,
       "builderBaseTrophies": 2274,
       "clanRank": 9,
       "previousClanRank": 9,
@@ -505,7 +505,7 @@
         "name": "Archer League 9"
       },
       "trophies": 247,
-      "builderBaseTrophies": 1652,
+      "builderBaseTrophies": 1648,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 0,
@@ -651,51 +651,6 @@
       }
     },
     {
-      "tag": "#GC9ULU80G",
-      "name": "TaP",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 82,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000008,
-        "name": "Archer League 8"
-      },
-      "trophies": 25,
-      "builderBaseTrophies": 1614,
-      "clanRank": 16,
-      "previousClanRank": 16,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000014
-          },
-          {
-            "type": "decoration",
-            "id": 82000063
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
-      }
-    },
-    {
       "tag": "#GVQL0892Y",
       "name": "minch",
       "role": "member",
@@ -709,9 +664,9 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 21,
+      "trophies": 32,
       "builderBaseTrophies": 2399,
-      "clanRank": 17,
+      "clanRank": 16,
       "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
@@ -738,6 +693,51 @@
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
+      }
+    },
+    {
+      "tag": "#GC9ULU80G",
+      "name": "TaP",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 82,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000008,
+        "name": "Archer League 8"
+      },
+      "trophies": 25,
+      "builderBaseTrophies": 1697,
+      "clanRank": 17,
+      "previousClanRank": 16,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000048
+          },
+          {
+            "type": "roof",
+            "id": 82000014
+          },
+          {
+            "type": "decoration",
+            "id": 82000063
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {

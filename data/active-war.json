@@ -10,7 +10,7 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#YG8LJLVQ9",
@@ -66,7 +66,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VJYRRGQ",
@@ -94,14 +94,14 @@
       "name": "demiur",
       "th": 12,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
       "name": "Casdo",
       "th": 11,
       "pos": 18,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#YJ8VRVPY",
@@ -164,7 +164,7 @@
       "name": "murdoc",
       "th": 11,
       "pos": 19,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
@@ -358,6 +358,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-18T01:47:20.533Z",
+  "at": "2026-11-18T09:28:53.053Z",
   "source": "currentwar"
 }
