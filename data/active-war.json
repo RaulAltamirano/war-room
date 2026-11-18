@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 25,
   "attacksPerMember": 2,
   "rival": "los valientes",
@@ -129,7 +129,7 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2PJGU2YGJ",
@@ -283,7 +283,7 @@
     {
       "tag": "#QQ9PPPU2R",
       "name": "xd",
-      "th": 11,
+      "th": 12,
       "pos": 11,
       "attacks": 0
     },
@@ -358,6 +358,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-17T19:28:51.688Z",
+  "at": "2026-11-18T01:47:20.533Z",
   "source": "currentwar"
 }
