@@ -38,7 +38,7 @@
       "name": "Pete Zahut",
       "th": 15,
       "pos": 3,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#GPYCLGLGG",
@@ -59,7 +59,7 @@
       "name": "ZackyB",
       "th": 9,
       "pos": 24,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LY9J99L9G",
@@ -108,7 +108,7 @@
       "name": "Brandon2.0 07",
       "th": 12,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R9GR9QC9C",
@@ -136,14 +136,14 @@
       "name": "..::RAMIRO::..",
       "th": 11,
       "pos": 17,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
       "name": "kssto",
       "th": 16,
       "pos": 2,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#GVQL0892Y",
@@ -358,6 +358,6 @@
       "attacks": 2
     }
   ],
-  "at": "2026-11-18T18:18:30.053Z",
+  "at": "2026-11-19T00:36:23.801Z",
   "source": "currentwar"
 }

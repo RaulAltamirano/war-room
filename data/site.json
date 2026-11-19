@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T18:18:30Z",
+  "generatedAt": "2026-11-19T00:36:23Z",
   "clan": {
     "name": "clandestinos",
     "level": 6,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27000,
-    "builder": 17813,
+    "builder": 17796,
     "capital": 1078,
     "members": 30,
     "freq": "Siempre",
@@ -73,7 +73,7 @@
       "C",
       16,
       184,
-      2092,
+      2139,
       2450,
       3204
     ],
@@ -110,7 +110,7 @@
       13,
       103,
       582,
-      1154,
+      1201,
       1960
     ],
     [
@@ -165,7 +165,7 @@
       76,
       0,
       67,
-      1717
+      1744
     ],
     [
       "cozo 2000",
@@ -177,15 +177,6 @@
       2161
     ],
     [
-      "VORTEX",
-      "M",
-      12,
-      70,
-      83,
-      0,
-      842
-    ],
-    [
       "Brandon2.0 07",
       "E",
       12,
@@ -193,6 +184,15 @@
       228,
       711,
       1451
+    ],
+    [
+      "VORTEX",
+      "M",
+      12,
+      70,
+      83,
+      0,
+      842
     ],
     [
       "TaP",
@@ -210,7 +210,7 @@
       87,
       0,
       0,
-      2399
+      2350
     ],
     [
       "demiur",
@@ -288,7 +288,7 @@
       "ZackyB",
       "E",
       9,
-      52,
+      53,
       0,
       80,
       109
@@ -12085,7 +12085,7 @@
         "name": "Pete Zahut",
         "th": 15,
         "pos": 3,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#GPYCLGLGG",
@@ -12106,7 +12106,7 @@
         "name": "ZackyB",
         "th": 9,
         "pos": 24,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LY9J99L9G",
@@ -12155,7 +12155,7 @@
         "name": "Brandon2.0 07",
         "th": 12,
         "pos": 9,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R9GR9QC9C",
@@ -12183,14 +12183,14 @@
         "name": "..::RAMIRO::..",
         "th": 11,
         "pos": 17,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#Y9GU8QYYG",
         "name": "kssto",
         "th": 16,
         "pos": 2,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#GVQL0892Y",
@@ -12405,7 +12405,7 @@
         "attacks": 2
       }
     ],
-    "at": "2026-11-18T18:18:30.053Z",
+    "at": "2026-11-19T00:36:23.801Z",
     "source": "currentwar"
   }
 }
