@@ -15,8 +15,8 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/3WD9AyeJMStQAh63HOjfWS90nA875oTgg1GWUO5-c8g.png"
   },
   "clanLevel": 7,
-  "clanPoints": 27000,
-  "clanBuilderBasePoints": 17796,
+  "clanPoints": 26900,
+  "clanBuilderBasePoints": 17816,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -265,7 +265,7 @@
       "name": "Abrasive7X",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 103,
+      "expLevel": 104,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -505,7 +505,7 @@
         "name": "Archer League 9"
       },
       "trophies": 265,
-      "builderBaseTrophies": 1744,
+      "builderBaseTrophies": 1729,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 0,
@@ -549,7 +549,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 0,
+      "trophies": 24,
       "builderBaseTrophies": 2161,
       "clanRank": 13,
       "previousClanRank": 13,
@@ -597,7 +597,7 @@
       "trophies": 127,
       "builderBaseTrophies": 1451,
       "clanRank": 14,
-      "previousClanRank": 15,
+      "previousClanRank": 14,
       "donations": 228,
       "donationsReceived": 711,
       "builderBaseLeague": {
@@ -622,7 +622,7 @@
       "trophies": 67,
       "builderBaseTrophies": 842,
       "clanRank": 15,
-      "previousClanRank": 14,
+      "previousClanRank": 15,
       "donations": 83,
       "donationsReceived": 0,
       "playerHouse": {
@@ -667,7 +667,7 @@
       "trophies": 53,
       "builderBaseTrophies": 1697,
       "clanRank": 16,
-      "previousClanRank": 17,
+      "previousClanRank": 16,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -712,7 +712,7 @@
       "trophies": 32,
       "builderBaseTrophies": 2350,
       "clanRank": 17,
-      "previousClanRank": 16,
+      "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -860,7 +860,7 @@
       "name": "kerrykopito",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 73,
+      "expLevel": 74,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -869,7 +869,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 37,
+      "trophies": 60,
       "builderBaseTrophies": 1618,
       "clanRank": 21,
       "previousClanRank": 21,
@@ -915,7 +915,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1768,
+      "builderBaseTrophies": 1881,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 0,
@@ -941,8 +941,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000017,
-        "name": "Copper League III"
+        "id": 44000018,
+        "name": "Copper League II"
       }
     },
     {
@@ -1096,11 +1096,11 @@
         "name": "Unranked"
       },
       "leagueTier": {
-        "id": 105000004,
-        "name": "Barbarian League 4"
+        "id": 105000003,
+        "name": "Skeleton League 3"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1623,
+      "builderBaseTrophies": 1604,
       "clanRank": 27,
       "previousClanRank": 27,
       "donations": 0,

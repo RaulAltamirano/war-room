@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T08:10:05Z",
+  "generatedAt": "2026-11-19T17:29:09Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -11,8 +11,8 @@
     "streak": 2,
     "league": "Plata I",
     "capLeague": "Plata II",
-    "trophies": 27000,
-    "builder": 17796,
+    "trophies": 26900,
+    "builder": 17816,
     "capital": 1078,
     "members": 30,
     "freq": "Siempre",
@@ -108,7 +108,7 @@
       "Abrasive7X",
       "C",
       13,
-      103,
+      104,
       582,
       1201,
       1960
@@ -165,7 +165,7 @@
       76,
       0,
       67,
-      1744
+      1729
     ],
     [
       "cozo 2000",
@@ -243,7 +243,7 @@
       "kerrykopito",
       "M",
       10,
-      73,
+      74,
       0,
       0,
       1618
@@ -255,7 +255,7 @@
       74,
       0,
       0,
-      1768
+      1881
     ],
     [
       "Shiba",
@@ -300,7 +300,7 @@
       63,
       0,
       0,
-      1623
+      1604
     ],
     [
       "J-J POPEYE",
@@ -12405,7 +12405,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-19T08:10:05.880Z",
+    "at": "2026-11-19T17:29:09.325Z",
     "source": "currentwar"
   }
 }
