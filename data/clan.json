@@ -40,7 +40,7 @@
       "name": "..::MURDOC::..",
       "role": "coLeader",
       "townHallLevel": 16,
-      "expLevel": 212,
+      "expLevel": 213,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -49,7 +49,7 @@
         "id": 105000020,
         "name": "Golem League 20"
       },
-      "trophies": 173,
+      "trophies": 321,
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -495,7 +495,7 @@
       "name": "Casdo",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 76,
+      "expLevel": 77,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -549,7 +549,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 24,
+      "trophies": 65,
       "builderBaseTrophies": 2161,
       "clanRank": 13,
       "previousClanRank": 13,
@@ -696,6 +696,51 @@
       }
     },
     {
+      "tag": "#GGUV8U2LQ",
+      "name": "joshua",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 81,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000008,
+        "name": "Archer League 8"
+      },
+      "trophies": 40,
+      "builderBaseTrophies": 1166,
+      "clanRank": 17,
+      "previousClanRank": 19,
+      "donations": 48,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000146
+          },
+          {
+            "type": "walls",
+            "id": 82000147
+          },
+          {
+            "type": "roof",
+            "id": 82000010
+          },
+          {
+            "type": "decoration",
+            "id": 82000061
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
+      }
+    },
+    {
       "tag": "#GVQL0892Y",
       "name": "minch",
       "role": "member",
@@ -711,7 +756,7 @@
       },
       "trophies": 32,
       "builderBaseTrophies": 2350,
-      "clanRank": 17,
+      "clanRank": 18,
       "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
@@ -756,7 +801,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1686,
-      "clanRank": 18,
+      "clanRank": 19,
       "previousClanRank": 18,
       "donations": 75,
       "donationsReceived": 200,
@@ -783,51 +828,6 @@
       "builderBaseLeague": {
         "id": 44000016,
         "name": "Copper League IV"
-      }
-    },
-    {
-      "tag": "#GGUV8U2LQ",
-      "name": "joshua",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 80,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000008,
-        "name": "Archer League 8"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1166,
-      "clanRank": 19,
-      "previousClanRank": 19,
-      "donations": 48,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000146
-          },
-          {
-            "type": "walls",
-            "id": 82000147
-          },
-          {
-            "type": "roof",
-            "id": 82000010
-          },
-          {
-            "type": "decoration",
-            "id": 82000061
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
       }
     },
     {
