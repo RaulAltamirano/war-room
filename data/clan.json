@@ -10,11 +10,11 @@
   },
   "isFamilyFriendly": true,
   "badgeUrls": {
-    "small": "https://api-assets.clashofclans.com/badges/70/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png",
-    "large": "https://api-assets.clashofclans.com/badges/512/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png",
-    "medium": "https://api-assets.clashofclans.com/badges/200/EW2puA71xSzunextv0nxZOHqkVG4tygVdGt36wNLN1s.png"
+    "small": "https://api-assets.clashofclans.com/badges/70/3WD9AyeJMStQAh63HOjfWS90nA875oTgg1GWUO5-c8g.png",
+    "large": "https://api-assets.clashofclans.com/badges/512/3WD9AyeJMStQAh63HOjfWS90nA875oTgg1GWUO5-c8g.png",
+    "medium": "https://api-assets.clashofclans.com/badges/200/3WD9AyeJMStQAh63HOjfWS90nA875oTgg1GWUO5-c8g.png"
   },
-  "clanLevel": 6,
+  "clanLevel": 7,
   "clanPoints": 27000,
   "clanBuilderBasePoints": 17796,
   "clanCapitalPoints": 1078,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 1,
-  "warWins": 16,
+  "warWinStreak": 2,
+  "warWins": 17,
   "warTies": 0,
   "warLosses": 25,
   "isWarLogPublic": true,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 2155,
+      "donations": 2232,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -274,7 +274,7 @@
         "id": 105000014,
         "name": "Valkyrie League 14"
       },
-      "trophies": 340,
+      "trophies": 369,
       "builderBaseTrophies": 1960,
       "clanRank": 6,
       "previousClanRank": 6,
@@ -389,12 +389,12 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 71,
+      "trophies": 94,
       "builderBaseTrophies": 2274,
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 2911,
-      "donationsReceived": 2957,
+      "donationsReceived": 3034,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -594,7 +594,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 97,
+      "trophies": 127,
       "builderBaseTrophies": 1451,
       "clanRank": 14,
       "previousClanRank": 15,
@@ -667,7 +667,7 @@
       "trophies": 53,
       "builderBaseTrophies": 1697,
       "clanRank": 16,
-      "previousClanRank": 16,
+      "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -712,7 +712,7 @@
       "trophies": 32,
       "builderBaseTrophies": 2350,
       "clanRank": 17,
-      "previousClanRank": 17,
+      "previousClanRank": 16,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -950,7 +950,7 @@
       "name": "Shiba",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 70,
+      "expLevel": 71,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1135,7 +1135,7 @@
       "name": "J-J POPEYE",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 72,
+      "expLevel": 73,
       "league": {
         "id": 29000000,
         "name": "Unranked"
