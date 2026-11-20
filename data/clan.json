@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 26900,
-  "clanBuilderBasePoints": 17784,
+  "clanBuilderBasePoints": 17791,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -49,11 +49,11 @@
         "id": 105000020,
         "name": "Golem League 20"
       },
-      "trophies": 321,
+      "trophies": 351,
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 2232,
+      "donations": 2233,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -139,7 +139,7 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 26,
+      "trophies": 39,
       "builderBaseTrophies": 2520,
       "clanRank": 3,
       "previousClanRank": 3,
@@ -389,11 +389,11 @@
         "id": 105000011,
         "name": "Wizard League 11"
       },
-      "trophies": 94,
+      "trophies": 106,
       "builderBaseTrophies": 2274,
       "clanRank": 9,
       "previousClanRank": 9,
-      "donations": 2911,
+      "donations": 2941,
       "donationsReceived": 3034,
       "builderBaseLeague": {
         "id": 44000021,
@@ -505,7 +505,7 @@
         "name": "Archer League 9"
       },
       "trophies": 265,
-      "builderBaseTrophies": 1729,
+      "builderBaseTrophies": 1656,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 0,
@@ -531,8 +531,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000017,
-        "name": "Copper League III"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -540,7 +540,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 90,
+      "expLevel": 91,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -550,7 +550,7 @@
         "name": "Archer League 9"
       },
       "trophies": 78,
-      "builderBaseTrophies": 2161,
+      "builderBaseTrophies": 2184,
       "clanRank": 13,
       "previousClanRank": 13,
       "donations": 42,
@@ -594,7 +594,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 157,
+      "trophies": 417,
       "builderBaseTrophies": 1451,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -712,7 +712,7 @@
       "trophies": 45,
       "builderBaseTrophies": 2350,
       "clanRank": 17,
-      "previousClanRank": 17,
+      "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -757,7 +757,7 @@
       "trophies": 40,
       "builderBaseTrophies": 1166,
       "clanRank": 18,
-      "previousClanRank": 19,
+      "previousClanRank": 17,
       "donations": 48,
       "donationsReceived": 0,
       "playerHouse": {
@@ -802,7 +802,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1686,
       "clanRank": 19,
-      "previousClanRank": 18,
+      "previousClanRank": 19,
       "donations": 75,
       "donationsReceived": 200,
       "playerHouse": {
@@ -835,7 +835,7 @@
       "name": "murdoc",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 62,
+      "expLevel": 63,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -915,7 +915,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1895,
+      "builderBaseTrophies": 1945,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 0,
@@ -941,8 +941,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000018,
-        "name": "Copper League II"
+        "id": 44000019,
+        "name": "Copper League I"
       }
     },
     {
@@ -995,7 +995,7 @@
       "name": "..::RAMIRO::..",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 119,
+      "expLevel": 120,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1079,7 +1079,7 @@
       "clanRank": 26,
       "previousClanRank": 26,
       "donations": 0,
-      "donationsReceived": 80,
+      "donationsReceived": 111,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
