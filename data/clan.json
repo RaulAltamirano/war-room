@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 26900,
-  "clanBuilderBasePoints": 17816,
+  "clanBuilderBasePoints": 17781,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -98,8 +98,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 2139,
-      "donationsReceived": 2450,
+      "donations": 2265,
+      "donationsReceived": 2586,
       "playerHouse": {
         "elements": [
           {
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 2520,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 2995,
-      "donationsReceived": 1508,
+      "donations": 3131,
+      "donationsReceived": 1634,
       "playerHouse": {
         "elements": [
           {
@@ -275,14 +275,14 @@
         "name": "Valkyrie League 14"
       },
       "trophies": 369,
-      "builderBaseTrophies": 1960,
+      "builderBaseTrophies": 1827,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 582,
       "donationsReceived": 1201,
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000018,
+        "name": "Copper League II"
       }
     },
     {
@@ -459,7 +459,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 0,
+      "trophies": 10,
       "builderBaseTrophies": 1146,
       "clanRank": 11,
       "previousClanRank": 11,
@@ -594,7 +594,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 127,
+      "trophies": 157,
       "builderBaseTrophies": 1451,
       "clanRank": 14,
       "previousClanRank": 14,
@@ -665,7 +665,7 @@
         "name": "Archer League 8"
       },
       "trophies": 53,
-      "builderBaseTrophies": 1697,
+      "builderBaseTrophies": 1693,
       "clanRank": 16,
       "previousClanRank": 16,
       "donations": 0,
@@ -844,7 +844,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 72,
+      "trophies": 102,
       "builderBaseTrophies": 111,
       "clanRank": 20,
       "previousClanRank": 20,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T23:42:34Z",
+  "generatedAt": "2026-11-20T04:53:10Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26900,
-    "builder": 17816,
+    "builder": 17781,
     "capital": 1078,
     "members": 30,
     "freq": "Siempre",
@@ -73,8 +73,8 @@
       "C",
       16,
       184,
-      2139,
-      2450,
+      2265,
+      2586,
       3204
     ],
     [
@@ -82,8 +82,8 @@
       "E",
       15,
       135,
-      2995,
-      1508,
+      3131,
+      1634,
       2520
     ],
     [
@@ -111,7 +111,7 @@
       104,
       582,
       1201,
-      1960
+      1827
     ],
     [
       "xlMURDOClx",
@@ -201,7 +201,7 @@
       82,
       0,
       0,
-      1697
+      1693
     ],
     [
       "joshua",
@@ -12046,7 +12046,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 25,
     "attacksPerMember": 2,
     "rival": "DAMM",
@@ -12085,7 +12085,7 @@
         "name": "Pete Zahut",
         "th": 15,
         "pos": 3,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GPYCLGLGG",
@@ -12190,7 +12190,7 @@
         "name": "kssto",
         "th": 16,
         "pos": 2,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GVQL0892Y",
@@ -12332,7 +12332,7 @@
         "name": "Harsh Gandhi",
         "th": 13,
         "pos": 10,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QR98092YL",
@@ -12353,7 +12353,7 @@
         "name": "shiro",
         "th": 11,
         "pos": 21,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R90LRLC9P",
@@ -12405,7 +12405,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-19T23:42:34.311Z",
+    "at": "2026-11-20T04:53:10.595Z",
     "source": "currentwar"
   }
 }
