@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 26900,
-  "clanBuilderBasePoints": 17781,
+  "clanBuilderBasePoints": 17784,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -279,7 +279,7 @@
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 582,
-      "donationsReceived": 1201,
+      "donationsReceived": 1246,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -549,7 +549,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 65,
+      "trophies": 78,
       "builderBaseTrophies": 2161,
       "clanRank": 13,
       "previousClanRank": 13,
@@ -598,7 +598,7 @@
       "builderBaseTrophies": 1451,
       "clanRank": 14,
       "previousClanRank": 14,
-      "donations": 228,
+      "donations": 273,
       "donationsReceived": 711,
       "builderBaseLeague": {
         "id": 44000014,
@@ -619,7 +619,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 67,
+      "trophies": 93,
       "builderBaseTrophies": 842,
       "clanRank": 15,
       "previousClanRank": 15,
@@ -696,51 +696,6 @@
       }
     },
     {
-      "tag": "#GGUV8U2LQ",
-      "name": "joshua",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 81,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000008,
-        "name": "Archer League 8"
-      },
-      "trophies": 40,
-      "builderBaseTrophies": 1166,
-      "clanRank": 17,
-      "previousClanRank": 19,
-      "donations": 48,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000146
-          },
-          {
-            "type": "walls",
-            "id": 82000147
-          },
-          {
-            "type": "roof",
-            "id": 82000010
-          },
-          {
-            "type": "decoration",
-            "id": 82000061
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000011,
-        "name": "Stone League IV"
-      }
-    },
-    {
       "tag": "#GVQL0892Y",
       "name": "minch",
       "role": "member",
@@ -754,9 +709,9 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 32,
+      "trophies": 45,
       "builderBaseTrophies": 2350,
-      "clanRank": 18,
+      "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
@@ -783,6 +738,51 @@
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
+      }
+    },
+    {
+      "tag": "#GGUV8U2LQ",
+      "name": "joshua",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 81,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000008,
+        "name": "Archer League 8"
+      },
+      "trophies": 40,
+      "builderBaseTrophies": 1166,
+      "clanRank": 18,
+      "previousClanRank": 19,
+      "donations": 48,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000146
+          },
+          {
+            "type": "walls",
+            "id": 82000147
+          },
+          {
+            "type": "roof",
+            "id": 82000010
+          },
+          {
+            "type": "decoration",
+            "id": 82000061
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000011,
+        "name": "Stone League IV"
       }
     },
     {
@@ -915,7 +915,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1881,
+      "builderBaseTrophies": 1895,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 0,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T04:53:10Z",
+  "generatedAt": "2026-11-20T13:43:33Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26900,
-    "builder": 17781,
+    "builder": 17784,
     "capital": 1078,
     "members": 30,
     "freq": "Siempre",
@@ -110,7 +110,7 @@
       13,
       104,
       582,
-      1201,
+      1246,
       1827
     ],
     [
@@ -181,7 +181,7 @@
       "E",
       12,
       125,
-      228,
+      273,
       711,
       1451
     ],
@@ -204,15 +204,6 @@
       1693
     ],
     [
-      "joshua",
-      "M",
-      11,
-      81,
-      48,
-      0,
-      1166
-    ],
-    [
       "minch",
       "M",
       11,
@@ -220,6 +211,15 @@
       0,
       0,
       2350
+    ],
+    [
+      "joshua",
+      "M",
+      11,
+      81,
+      48,
+      0,
+      1166
     ],
     [
       "demiur",
@@ -255,7 +255,7 @@
       74,
       0,
       0,
-      1881
+      1895
     ],
     [
       "Shiba",
@@ -12078,7 +12078,7 @@
         "name": "jhon cna",
         "th": 10,
         "pos": 22,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GP2PGPUVJ",
@@ -12148,7 +12148,7 @@
         "name": "Casdo",
         "th": 11,
         "pos": 17,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#YJ8VRVPY",
@@ -12176,7 +12176,7 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2PJGU2YGJ",
@@ -12248,7 +12248,7 @@
         "name": "Mordor",
         "th": 11,
         "pos": 20,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GJGUCG8J9",
@@ -12283,7 +12283,7 @@
         "name": "notSpooky",
         "th": 12,
         "pos": 8,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LPRL2Q99Q",
@@ -12304,7 +12304,7 @@
         "name": "imomiii",
         "th": 11,
         "pos": 22,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GV2L9CLQV",
@@ -12325,7 +12325,7 @@
         "name": "kid",
         "th": 13,
         "pos": 13,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LQU9LG9CJ",
@@ -12339,7 +12339,7 @@
         "name": "king arbaz",
         "th": 13,
         "pos": 6,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R99UGU90U",
@@ -12360,7 +12360,7 @@
         "name": "KING ARBAZTH5",
         "th": 12,
         "pos": 15,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#LVYLU2UJG",
@@ -12405,7 +12405,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-20T04:53:10.595Z",
+    "at": "2026-11-20T13:43:33.954Z",
     "source": "currentwar"
   }
 }
