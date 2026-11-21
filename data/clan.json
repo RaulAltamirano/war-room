@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 26900,
-  "clanBuilderBasePoints": 18263,
+  "clanBuilderBasePoints": 18298,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 2265,
+      "donations": 2342,
       "donationsReceived": 2586,
       "playerHouse": {
         "elements": [
@@ -380,7 +380,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 143,
+      "expLevel": 144,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -394,7 +394,7 @@
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 2941,
-      "donationsReceived": 3034,
+      "donationsReceived": 3111,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -459,7 +459,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 36,
+      "trophies": 39,
       "builderBaseTrophies": 1146,
       "clanRank": 11,
       "previousClanRank": 11,
@@ -664,7 +664,7 @@
         "id": 105000008,
         "name": "Archer League 8"
       },
-      "trophies": 67,
+      "trophies": 78,
       "builderBaseTrophies": 1166,
       "clanRank": 16,
       "previousClanRank": 18,
@@ -755,7 +755,7 @@
         "name": "Archer League 8"
       },
       "trophies": 45,
-      "builderBaseTrophies": 2350,
+      "builderBaseTrophies": 2394,
       "clanRank": 18,
       "previousClanRank": 17,
       "donations": 0,
@@ -831,31 +831,6 @@
       }
     },
     {
-      "tag": "#G0CQCCQR9",
-      "name": "murdoc",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 63,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000006,
-        "name": "Barbarian League 6"
-      },
-      "trophies": 102,
-      "builderBaseTrophies": 111,
-      "clanRank": 20,
-      "previousClanRank": 20,
-      "donations": 0,
-      "donationsReceived": 0,
-      "builderBaseLeague": {
-        "id": 44000001,
-        "name": "Wood League IV"
-      }
-    },
-    {
       "tag": "#R9GR9QC9C",
       "name": "kerrykopito",
       "role": "member",
@@ -869,9 +844,9 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 69,
+      "trophies": 109,
       "builderBaseTrophies": 1618,
-      "clanRank": 21,
+      "clanRank": 20,
       "previousClanRank": 21,
       "donations": 0,
       "donationsReceived": 0,
@@ -901,6 +876,31 @@
       }
     },
     {
+      "tag": "#G0CQCCQR9",
+      "name": "murdoc",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 63,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000006,
+        "name": "Barbarian League 6"
+      },
+      "trophies": 102,
+      "builderBaseTrophies": 111,
+      "clanRank": 21,
+      "previousClanRank": 20,
+      "donations": 0,
+      "donationsReceived": 0,
+      "builderBaseLeague": {
+        "id": 44000001,
+        "name": "Wood League IV"
+      }
+    },
+    {
       "tag": "#R820CCYQ0",
       "name": "jhon cna",
       "role": "member",
@@ -915,7 +915,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1945,
+      "builderBaseTrophies": 1998,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 0,
