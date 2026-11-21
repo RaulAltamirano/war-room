@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 26900,
-  "clanBuilderBasePoints": 18270,
+  "clanBuilderBasePoints": 18263,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -85,7 +85,7 @@
       "name": "kssto",
       "role": "coLeader",
       "townHallLevel": 16,
-      "expLevel": 184,
+      "expLevel": 185,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -459,7 +459,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 10,
+      "trophies": 36,
       "builderBaseTrophies": 1146,
       "clanRank": 11,
       "previousClanRank": 11,
@@ -505,7 +505,7 @@
         "name": "Archer League 9"
       },
       "trophies": 265,
-      "builderBaseTrophies": 1706,
+      "builderBaseTrophies": 1677,
       "clanRank": 12,
       "previousClanRank": 12,
       "donations": 0,
@@ -531,8 +531,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000017,
-        "name": "Copper League III"
+        "id": 44000016,
+        "name": "Copper League IV"
       }
     },
     {
@@ -585,7 +585,7 @@
       "name": "Brandon2.0 07",
       "role": "admin",
       "townHallLevel": 12,
-      "expLevel": 125,
+      "expLevel": 126,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -667,7 +667,7 @@
       "trophies": 67,
       "builderBaseTrophies": 1166,
       "clanRank": 16,
-      "previousClanRank": 17,
+      "previousClanRank": 18,
       "donations": 48,
       "donationsReceived": 0,
       "playerHouse": {
@@ -757,7 +757,7 @@
       "trophies": 45,
       "builderBaseTrophies": 2350,
       "clanRank": 18,
-      "previousClanRank": 18,
+      "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
