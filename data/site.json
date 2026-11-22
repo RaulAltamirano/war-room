@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T02:44:42Z",
+  "generatedAt": "2026-11-22T10:30:19Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -12,9 +12,9 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26900,
-    "builder": 18298,
+    "builder": 18552,
     "capital": 1078,
-    "members": 31,
+    "members": 32,
     "freq": "Siempre",
     "location": "Internacional",
     "join": "Abierto a todos",
@@ -64,7 +64,7 @@
       "C",
       16,
       213,
-      2233,
+      2345,
       0,
       3029
     ],
@@ -73,8 +73,8 @@
       "C",
       16,
       185,
-      2419,
-      2586,
+      2605,
+      2668,
       3204
     ],
     [
@@ -110,14 +110,14 @@
       13,
       104,
       649,
-      1323,
+      1355,
       1827
     ],
     [
       "xlMURDOClx",
       "C",
       14,
-      150,
+      151,
       306,
       0,
       2334
@@ -137,7 +137,7 @@
       13,
       144,
       2941,
-      3111,
+      3188,
       2274
     ],
     [
@@ -226,7 +226,7 @@
       "M",
       12,
       83,
-      75,
+      77,
       200,
       1686
     ],
@@ -272,7 +272,7 @@
       11,
       120,
       487,
-      2128,
+      2262,
       1791
     ],
     [
@@ -307,7 +307,7 @@
       "M",
       16,
       216,
-      0,
+      25,
       0,
       2424
     ],
@@ -328,6 +328,15 @@
       66,
       48,
       2131
+    ],
+    [
+      "Lightwood",
+      "M",
+      13,
+      161,
+      0,
+      0,
+      1860
     ],
     [
       "clandes",
@@ -12796,7 +12805,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 25,
     "attacksPerMember": 2,
     "rival": "IMN",
@@ -12807,21 +12816,21 @@
         "name": "xlMURDOClx",
         "th": 14,
         "pos": 6,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2VL98GPGU",
         "name": "ⓟⓐⓒⓜⓐⓝ",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8ULYVJ09P",
         "name": "Meliodas",
         "th": 16,
         "pos": 3,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R820CCYQ0",
@@ -12835,7 +12844,7 @@
         "name": "Pete Zahut",
         "th": 15,
         "pos": 4,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GPYCLGLGG",
@@ -12877,7 +12886,7 @@
         "name": "..::MURDOC::..",
         "th": 16,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8VCYYPVLU",
@@ -12898,14 +12907,14 @@
         "name": "demiur",
         "th": 12,
         "pos": 10,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 17,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#YJ8VRVPY",
@@ -12933,21 +12942,21 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 8,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2PJGU2YGJ",
         "name": "..::RAMIRO::..",
         "th": 11,
         "pos": 15,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#Y9GU8QYYG",
         "name": "kssto",
         "th": 16,
         "pos": 2,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GC9ULU80G",
@@ -12961,7 +12970,7 @@
         "name": "murdoc",
         "th": 11,
         "pos": 19,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G92R92J98",
@@ -13012,7 +13021,7 @@
         "name": "sabbir",
         "th": 16,
         "pos": 3,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GUU2LCR09",
@@ -13040,7 +13049,7 @@
         "name": "NAUNG",
         "th": 9,
         "pos": 25,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#G88V08J8U",
@@ -13068,14 +13077,14 @@
         "name": "Шахтер(Beket)",
         "th": 10,
         "pos": 19,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R8L08G8PV",
         "name": "KZT 1500",
         "th": 10,
         "pos": 21,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GJC0Y9CJ0",
@@ -13124,7 +13133,7 @@
         "name": "Night.Dragon",
         "th": 13,
         "pos": 8,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G09JPPQYY",
@@ -13155,7 +13164,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-22T02:44:42.442Z",
+    "at": "2026-11-22T10:30:19.938Z",
     "source": "currentwar"
   }
 }

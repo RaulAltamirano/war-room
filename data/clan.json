@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 26900,
-  "clanBuilderBasePoints": 18298,
+  "clanBuilderBasePoints": 18552,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -33,7 +33,7 @@
     "id": 48000006,
     "name": "Silver League I"
   },
-  "members": 31,
+  "members": 32,
   "memberList": [
     {
       "tag": "#8VJYRRGQ",
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 2233,
+      "donations": 2345,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -98,8 +98,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 2419,
-      "donationsReceived": 2586,
+      "donations": 2605,
+      "donationsReceived": 2668,
       "playerHouse": {
         "elements": [
           {
@@ -274,12 +274,12 @@
         "id": 105000014,
         "name": "Valkyrie League 14"
       },
-      "trophies": 369,
+      "trophies": 395,
       "builderBaseTrophies": 1827,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 649,
-      "donationsReceived": 1323,
+      "donationsReceived": 1355,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -290,7 +290,7 @@
       "name": "xlMURDOClx",
       "role": "coLeader",
       "townHallLevel": 14,
-      "expLevel": 150,
+      "expLevel": 151,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -394,7 +394,7 @@
       "clanRank": 9,
       "previousClanRank": 9,
       "donations": 2941,
-      "donationsReceived": 3111,
+      "donationsReceived": 3188,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -803,7 +803,7 @@
       "builderBaseTrophies": 1686,
       "clanRank": 19,
       "previousClanRank": 19,
-      "donations": 75,
+      "donations": 77,
       "donationsReceived": 200,
       "playerHouse": {
         "elements": [
@@ -847,7 +847,7 @@
       "trophies": 112,
       "builderBaseTrophies": 1618,
       "clanRank": 20,
-      "previousClanRank": 21,
+      "previousClanRank": 20,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -892,7 +892,7 @@
       "trophies": 102,
       "builderBaseTrophies": 111,
       "clanRank": 21,
-      "previousClanRank": 20,
+      "previousClanRank": 21,
       "donations": 0,
       "donationsReceived": 0,
       "builderBaseLeague": {
@@ -1009,7 +1009,7 @@
       "clanRank": 24,
       "previousClanRank": 24,
       "donations": 487,
-      "donationsReceived": 2128,
+      "donationsReceived": 2262,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -1148,7 +1148,7 @@
       "builderBaseTrophies": 2424,
       "clanRank": 28,
       "previousClanRank": 28,
-      "donations": 0,
+      "donations": 25,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -1266,6 +1266,51 @@
       }
     },
     {
+      "tag": "#Y8RYV2000",
+      "name": "Lightwood",
+      "role": "member",
+      "townHallLevel": 13,
+      "expLevel": 161,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000000,
+        "name": "Unranked"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 1860,
+      "clanRank": 31,
+      "previousClanRank": 0,
+      "donations": 0,
+      "donationsReceived": 0,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000053
+          },
+          {
+            "type": "roof",
+            "id": 82000009
+          },
+          {
+            "type": "decoration",
+            "id": 82000063
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000018,
+        "name": "Copper League II"
+      }
+    },
+    {
       "tag": "#R2PLC2008",
       "name": "clandes",
       "role": "member",
@@ -1281,7 +1326,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1102,
-      "clanRank": 31,
+      "clanRank": 32,
       "previousClanRank": 31,
       "donations": 35,
       "donationsReceived": 90,
