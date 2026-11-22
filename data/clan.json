@@ -15,8 +15,8 @@
     "medium": "https://api-assets.clashofclans.com/badges/200/3WD9AyeJMStQAh63HOjfWS90nA875oTgg1GWUO5-c8g.png"
   },
   "clanLevel": 7,
-  "clanPoints": 26900,
-  "clanBuilderBasePoints": 18529,
+  "clanPoints": 25400,
+  "clanBuilderBasePoints": 17849,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -33,7 +33,7 @@
     "id": 48000006,
     "name": "Silver League I"
   },
-  "members": 32,
+  "members": 30,
   "memberList": [
     {
       "tag": "#8VJYRRGQ",
@@ -49,11 +49,11 @@
         "id": 105000020,
         "name": "Golem League 20"
       },
-      "trophies": 351,
+      "trophies": 396,
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 2345,
+      "donations": 2375,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -331,51 +331,6 @@
       }
     },
     {
-      "tag": "#YG8LJLVQ9",
-      "name": "jaimerrdd",
-      "role": "member",
-      "townHallLevel": 13,
-      "expLevel": 129,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000012,
-        "name": "Wizard League 12"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 2455,
-      "clanRank": 8,
-      "previousClanRank": 8,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000009
-          },
-          {
-            "type": "decoration",
-            "id": 82000059
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000022,
-        "name": "Brass League I"
-      }
-    },
-    {
       "tag": "#2VL98GPGU",
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
@@ -391,10 +346,10 @@
       },
       "trophies": 106,
       "builderBaseTrophies": 2274,
-      "clanRank": 9,
+      "clanRank": 8,
       "previousClanRank": 9,
-      "donations": 2941,
-      "donationsReceived": 3188,
+      "donations": 3177,
+      "donationsReceived": 3312,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -416,7 +371,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1593,
-      "clanRank": 10,
+      "clanRank": 9,
       "previousClanRank": 10,
       "donations": 0,
       "donationsReceived": 0,
@@ -461,7 +416,7 @@
       },
       "trophies": 82,
       "builderBaseTrophies": 1146,
-      "clanRank": 11,
+      "clanRank": 10,
       "previousClanRank": 11,
       "donations": 0,
       "donationsReceived": 0,
@@ -505,8 +460,8 @@
         "name": "Archer League 9"
       },
       "trophies": 265,
-      "builderBaseTrophies": 1677,
-      "clanRank": 12,
+      "builderBaseTrophies": 1667,
+      "clanRank": 11,
       "previousClanRank": 12,
       "donations": 0,
       "donationsReceived": 67,
@@ -522,7 +477,7 @@
           },
           {
             "type": "roof",
-            "id": 82000014
+            "id": 82000029
           },
           {
             "type": "decoration",
@@ -551,7 +506,7 @@
       },
       "trophies": 158,
       "builderBaseTrophies": 2184,
-      "clanRank": 13,
+      "clanRank": 12,
       "previousClanRank": 13,
       "donations": 42,
       "donationsReceived": 467,
@@ -595,8 +550,8 @@
         "name": "Archer League 8"
       },
       "trophies": 417,
-      "builderBaseTrophies": 1451,
-      "clanRank": 14,
+      "builderBaseTrophies": 1413,
+      "clanRank": 13,
       "previousClanRank": 14,
       "donations": 273,
       "donationsReceived": 711,
@@ -621,7 +576,7 @@
       },
       "trophies": 109,
       "builderBaseTrophies": 842,
-      "clanRank": 15,
+      "clanRank": 14,
       "previousClanRank": 15,
       "donations": 83,
       "donationsReceived": 0,
@@ -666,7 +621,7 @@
       },
       "trophies": 78,
       "builderBaseTrophies": 1166,
-      "clanRank": 16,
+      "clanRank": 15,
       "previousClanRank": 16,
       "donations": 48,
       "donationsReceived": 0,
@@ -711,7 +666,7 @@
       },
       "trophies": 53,
       "builderBaseTrophies": 1693,
-      "clanRank": 17,
+      "clanRank": 16,
       "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
@@ -756,7 +711,7 @@
       },
       "trophies": 45,
       "builderBaseTrophies": 2394,
-      "clanRank": 18,
+      "clanRank": 17,
       "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
@@ -801,9 +756,9 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1686,
-      "clanRank": 19,
+      "clanRank": 18,
       "previousClanRank": 19,
-      "donations": 77,
+      "donations": 156,
       "donationsReceived": 200,
       "playerHouse": {
         "elements": [
@@ -846,7 +801,7 @@
       },
       "trophies": 112,
       "builderBaseTrophies": 1618,
-      "clanRank": 20,
+      "clanRank": 19,
       "previousClanRank": 20,
       "donations": 0,
       "donationsReceived": 0,
@@ -891,7 +846,7 @@
       },
       "trophies": 102,
       "builderBaseTrophies": 111,
-      "clanRank": 21,
+      "clanRank": 20,
       "previousClanRank": 21,
       "donations": 0,
       "donationsReceived": 0,
@@ -916,7 +871,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1904,
-      "clanRank": 22,
+      "clanRank": 21,
       "previousClanRank": 22,
       "donations": 0,
       "donationsReceived": 0,
@@ -961,7 +916,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 455,
-      "clanRank": 23,
+      "clanRank": 22,
       "previousClanRank": 23,
       "donations": 0,
       "donationsReceived": 0,
@@ -1006,10 +961,10 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1791,
-      "clanRank": 24,
+      "clanRank": 23,
       "previousClanRank": 24,
-      "donations": 487,
-      "donationsReceived": 2262,
+      "donations": 534,
+      "donationsReceived": 2530,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -1031,7 +986,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 586,
-      "clanRank": 25,
+      "clanRank": 24,
       "previousClanRank": 25,
       "donations": 0,
       "donationsReceived": 0,
@@ -1076,58 +1031,13 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 109,
-      "clanRank": 26,
+      "clanRank": 25,
       "previousClanRank": 26,
       "donations": 0,
       "donationsReceived": 111,
       "builderBaseLeague": {
         "id": 44000001,
         "name": "Wood League IV"
-      }
-    },
-    {
-      "tag": "#GGPJ2PCPR",
-      "name": "luisval",
-      "role": "member",
-      "townHallLevel": 9,
-      "expLevel": 63,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000003,
-        "name": "Skeleton League 3"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 1604,
-      "clanRank": 27,
-      "previousClanRank": 27,
-      "donations": 0,
-      "donationsReceived": 0,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000048
-          },
-          {
-            "type": "roof",
-            "id": 82000030
-          },
-          {
-            "type": "decoration",
-            "id": 82000063
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
       }
     },
     {
@@ -1146,7 +1056,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2424,
-      "clanRank": 28,
+      "clanRank": 26,
       "previousClanRank": 28,
       "donations": 25,
       "donationsReceived": 0,
@@ -1191,7 +1101,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1114,
-      "clanRank": 29,
+      "clanRank": 27,
       "previousClanRank": 29,
       "donations": 0,
       "donationsReceived": 0,
@@ -1236,7 +1146,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 2131,
-      "clanRank": 30,
+      "clanRank": 28,
       "previousClanRank": 30,
       "donations": 66,
       "donationsReceived": 48,
@@ -1281,7 +1191,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1860,
-      "clanRank": 31,
+      "clanRank": 29,
       "previousClanRank": 0,
       "donations": 0,
       "donationsReceived": 0,
@@ -1326,7 +1236,7 @@
       },
       "trophies": 0,
       "builderBaseTrophies": 1102,
-      "clanRank": 32,
+      "clanRank": 30,
       "previousClanRank": 31,
       "donations": 35,
       "donationsReceived": 90,

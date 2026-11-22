@@ -257,7 +257,7 @@
       "name": "otacuno11",
       "th": 10,
       "pos": 20,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Q0PCGQV0V",
@@ -292,7 +292,7 @@
       "name": "IMN",
       "th": 19,
       "pos": 1,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GLQ9QUJ8U",
@@ -358,6 +358,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-22T18:08:12.549Z",
+  "at": "2026-11-22T23:41:37.226Z",
   "source": "currentwar"
 }
