@@ -98,7 +98,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 2342,
+      "donations": 2419,
       "donationsReceived": 2586,
       "playerHouse": {
         "elements": [
@@ -278,8 +278,8 @@
       "builderBaseTrophies": 1827,
       "clanRank": 6,
       "previousClanRank": 6,
-      "donations": 582,
-      "donationsReceived": 1246,
+      "donations": 649,
+      "donationsReceived": 1323,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -549,12 +549,12 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 118,
+      "trophies": 158,
       "builderBaseTrophies": 2184,
       "clanRank": 13,
       "previousClanRank": 13,
       "donations": 42,
-      "donationsReceived": 400,
+      "donationsReceived": 467,
       "playerHouse": {
         "elements": [
           {
@@ -844,7 +844,7 @@
         "id": 105000006,
         "name": "Barbarian League 6"
       },
-      "trophies": 109,
+      "trophies": 112,
       "builderBaseTrophies": 1618,
       "clanRank": 20,
       "previousClanRank": 21,
