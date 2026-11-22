@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T10:30:19Z",
+  "generatedAt": "2026-11-22T18:08:12Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 26900,
-    "builder": 18552,
+    "builder": 18529,
     "capital": 1078,
     "members": 32,
     "freq": "Siempre",
@@ -252,10 +252,10 @@
       "jhon cna",
       "M",
       10,
-      74,
+      75,
       0,
       0,
-      1998
+      1904
     ],
     [
       "Shiba",
@@ -12837,7 +12837,7 @@
         "name": "jhon cna",
         "th": 10,
         "pos": 22,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GP2PGPUVJ",
@@ -12914,14 +12914,14 @@
         "name": "Casdo",
         "th": 11,
         "pos": 17,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#YJ8VRVPY",
         "name": "Brandon2.0 07",
         "th": 12,
         "pos": 9,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R9GR9QC9C",
@@ -13147,7 +13147,7 @@
         "name": "RT SAKIL",
         "th": 16,
         "pos": 5,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G8VL2RLUG",
@@ -13164,7 +13164,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-22T10:30:19.938Z",
+    "at": "2026-11-22T18:08:12.549Z",
     "source": "currentwar"
   }
 }
