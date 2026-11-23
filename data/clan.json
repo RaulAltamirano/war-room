@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 25400,
-  "clanBuilderBasePoints": 17849,
+  "clanBuilderBasePoints": 17860,
   "clanCapitalPoints": 1078,
   "capitalLeague": {
     "id": 85000005,
@@ -24,8 +24,8 @@
   },
   "requiredTrophies": 200,
   "warFrequency": "always",
-  "warWinStreak": 3,
-  "warWins": 18,
+  "warWinStreak": 4,
+  "warWins": 19,
   "warTies": 0,
   "warLosses": 25,
   "isWarLogPublic": true,
@@ -49,11 +49,11 @@
         "id": 105000020,
         "name": "Golem League 20"
       },
-      "trophies": 396,
+      "trophies": 619,
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 2375,
+      "donations": 2442,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -130,7 +130,7 @@
       "name": "Pete Zahut",
       "role": "admin",
       "townHallLevel": 15,
-      "expLevel": 135,
+      "expLevel": 136,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -504,12 +504,12 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 158,
-      "builderBaseTrophies": 2184,
+      "trophies": 263,
+      "builderBaseTrophies": 2207,
       "clanRank": 12,
       "previousClanRank": 13,
       "donations": 42,
-      "donationsReceived": 467,
+      "donationsReceived": 534,
       "playerHouse": {
         "elements": [
           {
@@ -531,8 +531,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000020,
-        "name": "Brass League III"
+        "id": 44000021,
+        "name": "Brass League II"
       }
     },
     {
@@ -745,7 +745,7 @@
       "name": "demiur",
       "role": "member",
       "townHallLevel": 12,
-      "expLevel": 83,
+      "expLevel": 84,
       "league": {
         "id": 29000000,
         "name": "Unranked"

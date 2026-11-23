@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-11-22T23:41:37Z",
+  "generatedAt": "2026-11-23T04:45:23Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
     "tag": "#2RGC02RYC",
     "badge": "https://api-assets.clashofclans.com/badges/200/3WD9AyeJMStQAh63HOjfWS90nA875oTgg1GWUO5-c8g.png",
-    "w": 18,
+    "w": 19,
     "t": 0,
     "l": 25,
-    "streak": 3,
+    "streak": 4,
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 25400,
-    "builder": 17849,
+    "builder": 17860,
     "capital": 1078,
     "members": 30,
     "freq": "Siempre",
@@ -64,7 +64,7 @@
       "C",
       16,
       213,
-      2375,
+      2442,
       0,
       3029
     ],
@@ -81,7 +81,7 @@
       "Pete Zahut",
       "E",
       15,
-      135,
+      136,
       3131,
       1634,
       2520
@@ -164,8 +164,8 @@
       11,
       91,
       42,
-      467,
-      2184
+      534,
+      2207
     ],
     [
       "Brandon2.0 07",
@@ -216,7 +216,7 @@
       "demiur",
       "M",
       12,
-      83,
+      84,
       156,
       200,
       1686
@@ -12787,366 +12787,8 @@
     }
   ],
   "activeWar": {
-    "state": "inWar",
-    "teamSize": 25,
-    "attacksPerMember": 2,
-    "rival": "IMN",
-    "rivalTag": "#2QPVR2UU9",
-    "us": [
-      {
-        "tag": "#Y0PPGVQL2",
-        "name": "xlMURDOClx",
-        "th": 14,
-        "pos": 6,
-        "attacks": 2
-      },
-      {
-        "tag": "#2VL98GPGU",
-        "name": "ⓟⓐⓒⓜⓐⓝ",
-        "th": 13,
-        "pos": 7,
-        "attacks": 2
-      },
-      {
-        "tag": "#8ULYVJ09P",
-        "name": "Meliodas",
-        "th": 16,
-        "pos": 3,
-        "attacks": 2
-      },
-      {
-        "tag": "#R820CCYQ0",
-        "name": "jhon cna",
-        "th": 10,
-        "pos": 22,
-        "attacks": 2
-      },
-      {
-        "tag": "#GP2PGPUVJ",
-        "name": "Pete Zahut",
-        "th": 15,
-        "pos": 4,
-        "attacks": 2
-      },
-      {
-        "tag": "#GPYCLGLGG",
-        "name": "KOLET",
-        "th": 11,
-        "pos": 16,
-        "attacks": 0
-      },
-      {
-        "tag": "#R08LUU9CV",
-        "name": "J-J POPEYE",
-        "th": 10,
-        "pos": 20,
-        "attacks": 0
-      },
-      {
-        "tag": "#G09LQLJV0",
-        "name": "Shiba",
-        "th": 11,
-        "pos": 18,
-        "attacks": 0
-      },
-      {
-        "tag": "#QLJRGP2C9",
-        "name": "ZackyB",
-        "th": 9,
-        "pos": 24,
-        "attacks": 0
-      },
-      {
-        "tag": "#LY9J99L9G",
-        "name": "cozo 2000",
-        "th": 11,
-        "pos": 12,
-        "attacks": 0
-      },
-      {
-        "tag": "#8VJYRRGQ",
-        "name": "..::MURDOC::..",
-        "th": 16,
-        "pos": 1,
-        "attacks": 2
-      },
-      {
-        "tag": "#8VCYYPVLU",
-        "name": "Nicolás",
-        "th": 14,
-        "pos": 5,
-        "attacks": 0
-      },
-      {
-        "tag": "#R2PLC2008",
-        "name": "clandes",
-        "th": 9,
-        "pos": 25,
-        "attacks": 0
-      },
-      {
-        "tag": "#R2ULCJ0J8",
-        "name": "demiur",
-        "th": 12,
-        "pos": 10,
-        "attacks": 2
-      },
-      {
-        "tag": "#QV20QPJGR",
-        "name": "Casdo",
-        "th": 11,
-        "pos": 17,
-        "attacks": 2
-      },
-      {
-        "tag": "#YJ8VRVPY",
-        "name": "Brandon2.0 07",
-        "th": 12,
-        "pos": 9,
-        "attacks": 1
-      },
-      {
-        "tag": "#R9GR9QC9C",
-        "name": "kerrykopito",
-        "th": 10,
-        "pos": 21,
-        "attacks": 0
-      },
-      {
-        "tag": "#GGUV8U2LQ",
-        "name": "joshua",
-        "th": 11,
-        "pos": 14,
-        "attacks": 0
-      },
-      {
-        "tag": "#Q02JR2JYV",
-        "name": "Abrasive7X",
-        "th": 13,
-        "pos": 8,
-        "attacks": 2
-      },
-      {
-        "tag": "#2PJGU2YGJ",
-        "name": "..::RAMIRO::..",
-        "th": 11,
-        "pos": 15,
-        "attacks": 2
-      },
-      {
-        "tag": "#Y9GU8QYYG",
-        "name": "kssto",
-        "th": 16,
-        "pos": 2,
-        "attacks": 2
-      },
-      {
-        "tag": "#GC9ULU80G",
-        "name": "TaP",
-        "th": 11,
-        "pos": 13,
-        "attacks": 0
-      },
-      {
-        "tag": "#G0CQCCQR9",
-        "name": "murdoc",
-        "th": 11,
-        "pos": 19,
-        "attacks": 2
-      },
-      {
-        "tag": "#G92R92J98",
-        "name": "VORTEX",
-        "th": 12,
-        "pos": 11,
-        "attacks": 0
-      },
-      {
-        "tag": "#GGPJ2PCPR",
-        "name": "luisval",
-        "th": 9,
-        "pos": 23,
-        "attacks": 0
-      }
-    ],
-    "them": [
-      {
-        "tag": "#GLR8UL9CJ",
-        "name": "Rider 5",
-        "th": 10,
-        "pos": 24,
-        "attacks": 0
-      },
-      {
-        "tag": "#GYP0LY9PY",
-        "name": "abn",
-        "th": 11,
-        "pos": 14,
-        "attacks": 0
-      },
-      {
-        "tag": "#GQ2UC80CV",
-        "name": "you",
-        "th": 11,
-        "pos": 16,
-        "attacks": 0
-      },
-      {
-        "tag": "#GVLP0QVJY",
-        "name": "Rider 6",
-        "th": 10,
-        "pos": 23,
-        "attacks": 0
-      },
-      {
-        "tag": "#LVYCLV29G",
-        "name": "sabbir",
-        "th": 16,
-        "pos": 3,
-        "attacks": 2
-      },
-      {
-        "tag": "#GUU2LCR09",
-        "name": "KSEVN RUSB",
-        "th": 11,
-        "pos": 12,
-        "attacks": 0
-      },
-      {
-        "tag": "#QYUULUJQG",
-        "name": "david",
-        "th": 11,
-        "pos": 18,
-        "attacks": 0
-      },
-      {
-        "tag": "#R2P89Q82L",
-        "name": "Rocky Bhai",
-        "th": 11,
-        "pos": 13,
-        "attacks": 0
-      },
-      {
-        "tag": "#R98JYYVRP",
-        "name": "NAUNG",
-        "th": 9,
-        "pos": 25,
-        "attacks": 1
-      },
-      {
-        "tag": "#G88V08J8U",
-        "name": "Aliyer Sahab",
-        "th": 14,
-        "pos": 4,
-        "attacks": 0
-      },
-      {
-        "tag": "#R89GRGJG0",
-        "name": "otacuno11",
-        "th": 10,
-        "pos": 20,
-        "attacks": 1
-      },
-      {
-        "tag": "#Q0PCGQV0V",
-        "name": "Rage worrior",
-        "th": 13,
-        "pos": 9,
-        "attacks": 0
-      },
-      {
-        "tag": "#GP8CQ09YR",
-        "name": "Шахтер(Beket)",
-        "th": 10,
-        "pos": 19,
-        "attacks": 2
-      },
-      {
-        "tag": "#R8L08G8PV",
-        "name": "KZT 1500",
-        "th": 10,
-        "pos": 21,
-        "attacks": 2
-      },
-      {
-        "tag": "#GJC0Y9CJ0",
-        "name": "K patel",
-        "th": 13,
-        "pos": 11,
-        "attacks": 0
-      },
-      {
-        "tag": "#G8QVLQJ02",
-        "name": "IMN",
-        "th": 19,
-        "pos": 1,
-        "attacks": 1
-      },
-      {
-        "tag": "#GLQ9QUJ8U",
-        "name": "Rider01",
-        "th": 14,
-        "pos": 6,
-        "attacks": 0
-      },
-      {
-        "tag": "#R0JG9Q9PY",
-        "name": "abn2",
-        "th": 11,
-        "pos": 15,
-        "attacks": 0
-      },
-      {
-        "tag": "#R0JJCGYVG",
-        "name": "you",
-        "th": 11,
-        "pos": 17,
-        "attacks": 0
-      },
-      {
-        "tag": "#GL8Y0Y20Q",
-        "name": "Rider02",
-        "th": 14,
-        "pos": 7,
-        "attacks": 0
-      },
-      {
-        "tag": "#RPPGRY082",
-        "name": "Night.Dragon",
-        "th": 13,
-        "pos": 8,
-        "attacks": 2
-      },
-      {
-        "tag": "#G09JPPQYY",
-        "name": "Adi",
-        "th": 17,
-        "pos": 2,
-        "attacks": 0
-      },
-      {
-        "tag": "#RP2GCR9JR",
-        "name": "RT SAKIL",
-        "th": 16,
-        "pos": 5,
-        "attacks": 2
-      },
-      {
-        "tag": "#G8VL2RLUG",
-        "name": "Rider03",
-        "th": 13,
-        "pos": 10,
-        "attacks": 0
-      },
-      {
-        "tag": "#R02GRGL92",
-        "name": "NasiUduk",
-        "th": 10,
-        "pos": 22,
-        "attacks": 0
-      }
-    ],
-    "at": "2026-11-22T23:41:37.226Z",
-    "source": "currentwar"
+    "state": "notInWar",
+    "at": "2026-11-23T04:45:23.377Z",
+    "source": "none"
   }
 }
