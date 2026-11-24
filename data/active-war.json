@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 25,
   "attacksPerMember": 2,
   "rival": "Rush",
@@ -85,7 +85,7 @@
     {
       "tag": "#Y8RYV2000",
       "name": "Lightwood",
-      "th": 13,
+      "th": 14,
       "pos": 7,
       "attacks": 0
     },
@@ -115,7 +115,7 @@
       "name": "Brandon2.0 07",
       "th": 12,
       "pos": 10,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R9GR9QC9C",
@@ -178,7 +178,7 @@
       "name": "VORTEX",
       "th": 12,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     }
   ],
   "them": [
@@ -236,14 +236,14 @@
       "name": "Adele",
       "th": 10,
       "pos": 24,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R88VQ0GU8",
       "name": "Dereny",
       "th": 12,
       "pos": 11,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R89YLPJ2P",
@@ -264,7 +264,7 @@
       "name": "perdnul",
       "th": 13,
       "pos": 8,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R0QJ2QRU9",
@@ -285,14 +285,14 @@
       "name": "Niko",
       "th": 11,
       "pos": 17,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R8JPGYP0G",
       "name": "Stein",
-      "th": 10,
+      "th": 11,
       "pos": 21,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LQ8QCJYQL",
@@ -306,7 +306,7 @@
       "name": "THE STRANGER",
       "th": 17,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G8UVGU0VC",
@@ -320,7 +320,7 @@
       "name": "Друже",
       "th": 12,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R0LQUGVPY",
@@ -334,7 +334,7 @@
       "name": "OEL",
       "th": 11,
       "pos": 16,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#PJ00PLJ88",
@@ -358,6 +358,6 @@
       "attacks": 0
     }
   ],
-  "at": "2026-11-24T02:41:39.162Z",
+  "at": "2026-11-24T13:04:29.419Z",
   "source": "currentwar"
 }

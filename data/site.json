@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T02:41:39Z",
+  "generatedAt": "2026-11-24T13:04:29Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 27800,
-    "builder": 17891,
+    "builder": 17911,
     "capital": 1007,
     "members": 30,
     "freq": "Siempre",
@@ -87,15 +87,6 @@
       3204
     ],
     [
-      "imparable",
-      "L",
-      14,
-      146,
-      0,
-      167,
-      2400
-    ],
-    [
       "Pete Zahut",
       "E",
       15,
@@ -105,12 +96,21 @@
       2520
     ],
     [
+      "imparable",
+      "L",
+      14,
+      146,
+      0,
+      167,
+      2400
+    ],
+    [
       "Abrasive7X",
       "C",
       13,
       104,
       649,
-      1402,
+      1425,
       1827
     ],
     [
@@ -174,14 +174,14 @@
       92,
       42,
       534,
-      2207
+      2246
     ],
     [
       "Brandon2.0 07",
       "E",
       12,
       126,
-      320,
+      343,
       711,
       1413
     ],
@@ -12787,7 +12787,7 @@
     }
   ],
   "activeWar": {
-    "state": "preparation",
+    "state": "inWar",
     "teamSize": 25,
     "attacksPerMember": 2,
     "rival": "Rush",
@@ -12873,7 +12873,7 @@
       {
         "tag": "#Y8RYV2000",
         "name": "Lightwood",
-        "th": 13,
+        "th": 14,
         "pos": 7,
         "attacks": 0
       },
@@ -12903,7 +12903,7 @@
         "name": "Brandon2.0 07",
         "th": 12,
         "pos": 10,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R9GR9QC9C",
@@ -12966,7 +12966,7 @@
         "name": "VORTEX",
         "th": 12,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       }
     ],
     "them": [
@@ -13024,14 +13024,14 @@
         "name": "Adele",
         "th": 10,
         "pos": 24,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R88VQ0GU8",
         "name": "Dereny",
         "th": 12,
         "pos": 11,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R89YLPJ2P",
@@ -13052,7 +13052,7 @@
         "name": "perdnul",
         "th": 13,
         "pos": 8,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R0QJ2QRU9",
@@ -13073,14 +13073,14 @@
         "name": "Niko",
         "th": 11,
         "pos": 17,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R8JPGYP0G",
         "name": "Stein",
-        "th": 10,
+        "th": 11,
         "pos": 21,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#LQ8QCJYQL",
@@ -13094,7 +13094,7 @@
         "name": "THE STRANGER",
         "th": 17,
         "pos": 1,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G8UVGU0VC",
@@ -13108,7 +13108,7 @@
         "name": "Друже",
         "th": 12,
         "pos": 12,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R0LQUGVPY",
@@ -13122,7 +13122,7 @@
         "name": "OEL",
         "th": 11,
         "pos": 16,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#PJ00PLJ88",
@@ -13146,7 +13146,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-24T02:41:39.162Z",
+    "at": "2026-11-24T13:04:29.419Z",
     "source": "currentwar"
   }
 }

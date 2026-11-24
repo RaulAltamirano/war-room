@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 27800,
-  "clanBuilderBasePoints": 17891,
+  "clanBuilderBasePoints": 17911,
   "clanCapitalPoints": 1007,
   "capitalLeague": {
     "id": 85000005,
@@ -49,7 +49,7 @@
         "id": 105000021,
         "name": "Golem League 21"
       },
-      "trophies": 29,
+      "trophies": 52,
       "builderBaseTrophies": 3029,
       "clanRank": 1,
       "previousClanRank": 1,
@@ -139,7 +139,7 @@
         "id": 105000020,
         "name": "Golem League 20"
       },
-      "trophies": 0,
+      "trophies": 34,
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 2,
@@ -171,51 +171,6 @@
       }
     },
     {
-      "tag": "#QL2V8CYRU",
-      "name": "imparable",
-      "role": "leader",
-      "townHallLevel": 14,
-      "expLevel": 146,
-      "league": {
-        "id": 29000011,
-        "name": "Crystal League II"
-      },
-      "leagueTier": {
-        "id": 105000017,
-        "name": "Witch League 17"
-      },
-      "trophies": 0,
-      "builderBaseTrophies": 2400,
-      "clanRank": 4,
-      "previousClanRank": 3,
-      "donations": 0,
-      "donationsReceived": 167,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000002
-          },
-          {
-            "type": "walls",
-            "id": 82000049
-          },
-          {
-            "type": "roof",
-            "id": 82000032
-          },
-          {
-            "type": "decoration",
-            "id": 82000064
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000022,
-        "name": "Brass League I"
-      }
-    },
-    {
       "tag": "#GP2PGPUVJ",
       "name": "Pete Zahut",
       "role": "admin",
@@ -229,9 +184,9 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 0,
+      "trophies": 30,
       "builderBaseTrophies": 2520,
-      "clanRank": 5,
+      "clanRank": 4,
       "previousClanRank": 4,
       "donations": 3131,
       "donationsReceived": 1634,
@@ -261,6 +216,51 @@
       }
     },
     {
+      "tag": "#QL2V8CYRU",
+      "name": "imparable",
+      "role": "leader",
+      "townHallLevel": 14,
+      "expLevel": 146,
+      "league": {
+        "id": 29000011,
+        "name": "Crystal League II"
+      },
+      "leagueTier": {
+        "id": 105000017,
+        "name": "Witch League 17"
+      },
+      "trophies": 0,
+      "builderBaseTrophies": 2400,
+      "clanRank": 5,
+      "previousClanRank": 3,
+      "donations": 0,
+      "donationsReceived": 167,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000002
+          },
+          {
+            "type": "walls",
+            "id": 82000049
+          },
+          {
+            "type": "roof",
+            "id": 82000032
+          },
+          {
+            "type": "decoration",
+            "id": 82000064
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000022,
+        "name": "Brass League I"
+      }
+    },
+    {
       "tag": "#Q02JR2JYV",
       "name": "Abrasive7X",
       "role": "coLeader",
@@ -274,12 +274,12 @@
         "id": 105000015,
         "name": "Valkyrie League 15"
       },
-      "trophies": 82,
+      "trophies": 90,
       "builderBaseTrophies": 1827,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 649,
-      "donationsReceived": 1402,
+      "donationsReceived": 1425,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -344,7 +344,7 @@
         "id": 105000014,
         "name": "Valkyrie League 14"
       },
-      "trophies": 71,
+      "trophies": 111,
       "builderBaseTrophies": 2334,
       "clanRank": 8,
       "previousClanRank": 7,
@@ -504,7 +504,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 0,
+      "trophies": 10,
       "builderBaseTrophies": 1146,
       "clanRank": 12,
       "previousClanRank": 10,
@@ -550,7 +550,7 @@
         "name": "Wizard League 10"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2207,
+      "builderBaseTrophies": 2246,
       "clanRank": 13,
       "previousClanRank": 11,
       "donations": 42,
@@ -594,11 +594,11 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 28,
+      "trophies": 58,
       "builderBaseTrophies": 1413,
       "clanRank": 14,
       "previousClanRank": 13,
-      "donations": 320,
+      "donations": 343,
       "donationsReceived": 711,
       "builderBaseLeague": {
         "id": 44000014,
@@ -622,7 +622,7 @@
       "trophies": 25,
       "builderBaseTrophies": 842,
       "clanRank": 15,
-      "previousClanRank": 18,
+      "previousClanRank": 14,
       "donations": 83,
       "donationsReceived": 0,
       "playerHouse": {
@@ -667,7 +667,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1686,
       "clanRank": 16,
-      "previousClanRank": 14,
+      "previousClanRank": 15,
       "donations": 156,
       "donationsReceived": 200,
       "playerHouse": {
@@ -712,7 +712,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1166,
       "clanRank": 17,
-      "previousClanRank": 15,
+      "previousClanRank": 16,
       "donations": 48,
       "donationsReceived": 0,
       "playerHouse": {
@@ -757,7 +757,7 @@
       "trophies": 0,
       "builderBaseTrophies": 2394,
       "clanRank": 18,
-      "previousClanRank": 16,
+      "previousClanRank": 17,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -802,7 +802,7 @@
       "trophies": 0,
       "builderBaseTrophies": 1687,
       "clanRank": 19,
-      "previousClanRank": 17,
+      "previousClanRank": 18,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
