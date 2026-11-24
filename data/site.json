@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T13:04:29Z",
+  "generatedAt": "2026-11-24T23:08:57Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -11,10 +11,10 @@
     "streak": 4,
     "league": "Plata I",
     "capLeague": "Plata II",
-    "trophies": 27800,
-    "builder": 17911,
+    "trophies": 30000,
+    "builder": 18087,
     "capital": 1007,
-    "members": 30,
+    "members": 31,
     "freq": "Siempre",
     "location": "Internacional",
     "join": "Abierto a todos",
@@ -64,7 +64,7 @@
       "C",
       16,
       213,
-      2442,
+      2511,
       0,
       3029
     ],
@@ -108,7 +108,7 @@
       "Abrasive7X",
       "C",
       13,
-      104,
+      105,
       649,
       1425,
       1827
@@ -132,6 +132,15 @@
       2334
     ],
     [
+      "Lightwood",
+      "M",
+      14,
+      162,
+      0,
+      0,
+      1860
+    ],
+    [
       "يسوري❤️❤️",
       "M",
       13,
@@ -145,7 +154,7 @@
       "C",
       13,
       144,
-      3177,
+      3217,
       3312,
       2390
     ],
@@ -173,8 +182,8 @@
       11,
       92,
       42,
-      534,
-      2246
+      601,
+      2287
     ],
     [
       "Brandon2.0 07",
@@ -182,8 +191,17 @@
       12,
       126,
       343,
-      711,
+      753,
       1413
+    ],
+    [
+      "trueno⚡️",
+      "M",
+      10,
+      69,
+      0,
+      0,
+      1331
     ],
     [
       "VORTEX",
@@ -252,7 +270,7 @@
       "kerrykopito",
       "M",
       10,
-      74,
+      75,
       0,
       0,
       1618
@@ -310,15 +328,6 @@
       66,
       48,
       2131
-    ],
-    [
-      "Lightwood",
-      "M",
-      14,
-      161,
-      0,
-      0,
-      1860
     ],
     [
       "clandes",
@@ -12798,7 +12807,7 @@
         "name": "xlMURDOClx",
         "th": 14,
         "pos": 6,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2VL98GPGU",
@@ -12812,7 +12821,7 @@
         "name": "Meliodas",
         "th": 16,
         "pos": 3,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R820CCYQ0",
@@ -12854,7 +12863,7 @@
         "name": "cozo 2000",
         "th": 11,
         "pos": 13,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#8VJYRRGQ",
@@ -12875,7 +12884,7 @@
         "name": "Lightwood",
         "th": 14,
         "pos": 7,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R2PLC2008",
@@ -12889,14 +12898,14 @@
         "name": "demiur",
         "th": 12,
         "pos": 11,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#QV20QPJGR",
         "name": "Casdo",
         "th": 11,
         "pos": 19,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#YJ8VRVPY",
@@ -12924,14 +12933,14 @@
         "name": "Abrasive7X",
         "th": 13,
         "pos": 9,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#2PJGU2YGJ",
         "name": "..::RAMIRO::..",
         "th": 11,
         "pos": 17,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#Y9GU8QYYG",
@@ -12959,7 +12968,7 @@
         "name": "murdoc",
         "th": 11,
         "pos": 20,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#G92R92J98",
@@ -12975,7 +12984,7 @@
         "name": "StalkerOptimist",
         "th": 14,
         "pos": 5,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#GGUQ0P2PL",
@@ -12996,7 +13005,7 @@
         "name": "s.andy",
         "th": 10,
         "pos": 22,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R2RY99PRY",
@@ -13024,7 +13033,7 @@
         "name": "Adele",
         "th": 10,
         "pos": 24,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#R88VQ0GU8",
@@ -13045,14 +13054,14 @@
         "name": "Sampik",
         "th": 11,
         "pos": 15,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#R2R00RUVL",
         "name": "perdnul",
         "th": 13,
         "pos": 8,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#R0QJ2QRU9",
@@ -13066,14 +13075,14 @@
         "name": "Smalestshou661",
         "th": 12,
         "pos": 14,
-        "attacks": 0
+        "attacks": 2
       },
       {
         "tag": "#R2V202LPP",
         "name": "Niko",
         "th": 11,
         "pos": 17,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#R8JPGYP0G",
@@ -13087,7 +13096,7 @@
         "name": "Adeliia",
         "th": 13,
         "pos": 7,
-        "attacks": 0
+        "attacks": 1
       },
       {
         "tag": "#G0PRL9QGJ",
@@ -13122,7 +13131,7 @@
         "name": "OEL",
         "th": 11,
         "pos": 16,
-        "attacks": 1
+        "attacks": 2
       },
       {
         "tag": "#PJ00PLJ88",
@@ -13143,10 +13152,10 @@
         "name": "s1rota",
         "th": 11,
         "pos": 18,
-        "attacks": 0
+        "attacks": 1
       }
     ],
-    "at": "2026-11-24T13:04:29.419Z",
+    "at": "2026-11-24T23:08:57.205Z",
     "source": "currentwar"
   }
 }

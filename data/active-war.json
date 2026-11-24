@@ -10,7 +10,7 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2VL98GPGU",
@@ -24,7 +24,7 @@
       "name": "Meliodas",
       "th": 16,
       "pos": 3,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R820CCYQ0",
@@ -66,7 +66,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VJYRRGQ",
@@ -87,7 +87,7 @@
       "name": "Lightwood",
       "th": 14,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2PLC2008",
@@ -101,14 +101,14 @@
       "name": "demiur",
       "th": 12,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
       "name": "Casdo",
       "th": 11,
       "pos": 19,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#YJ8VRVPY",
@@ -136,14 +136,14 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2PJGU2YGJ",
       "name": "..::RAMIRO::..",
       "th": 11,
       "pos": 17,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
@@ -171,7 +171,7 @@
       "name": "murdoc",
       "th": 11,
       "pos": 20,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
@@ -187,7 +187,7 @@
       "name": "StalkerOptimist",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GGUQ0P2PL",
@@ -208,7 +208,7 @@
       "name": "s.andy",
       "th": 10,
       "pos": 22,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2RY99PRY",
@@ -236,7 +236,7 @@
       "name": "Adele",
       "th": 10,
       "pos": 24,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R88VQ0GU8",
@@ -257,14 +257,14 @@
       "name": "Sampik",
       "th": 11,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R2R00RUVL",
       "name": "perdnul",
       "th": 13,
       "pos": 8,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R0QJ2QRU9",
@@ -278,14 +278,14 @@
       "name": "Smalestshou661",
       "th": 12,
       "pos": 14,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R2V202LPP",
       "name": "Niko",
       "th": 11,
       "pos": 17,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R8JPGYP0G",
@@ -299,7 +299,7 @@
       "name": "Adeliia",
       "th": 13,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#G0PRL9QGJ",
@@ -334,7 +334,7 @@
       "name": "OEL",
       "th": 11,
       "pos": 16,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#PJ00PLJ88",
@@ -355,9 +355,9 @@
       "name": "s1rota",
       "th": 11,
       "pos": 18,
-      "attacks": 0
+      "attacks": 1
     }
   ],
-  "at": "2026-11-24T13:04:29.419Z",
+  "at": "2026-11-24T23:08:57.205Z",
   "source": "currentwar"
 }
