@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 29900,
-  "clanBuilderBasePoints": 18002,
+  "clanBuilderBasePoints": 18003,
   "clanCapitalPoints": 1007,
   "capitalLeague": {
     "id": 85000005,
@@ -299,7 +299,7 @@
         "id": 105000014,
         "name": "Valkyrie League 14"
       },
-      "trophies": 137,
+      "trophies": 151,
       "builderBaseTrophies": 2334,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -470,7 +470,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "role": "coLeader",
       "townHallLevel": 13,
-      "expLevel": 144,
+      "expLevel": 145,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -585,7 +585,7 @@
       "name": "cozo 2000",
       "role": "admin",
       "townHallLevel": 11,
-      "expLevel": 92,
+      "expLevel": 93,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -595,7 +595,7 @@
         "name": "Wizard League 10"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2171,
+      "builderBaseTrophies": 2173,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 42,

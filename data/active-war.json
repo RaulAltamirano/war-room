@@ -24,7 +24,7 @@
       "name": "trueno⚡️",
       "th": 10,
       "pos": 26,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2VL98GPGU",
@@ -38,7 +38,7 @@
       "name": "Meliodas",
       "th": 16,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R820CCYQ0",
@@ -87,14 +87,14 @@
       "name": "ZackyB",
       "th": 9,
       "pos": 29,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#LY9J99L9G",
       "name": "cozo 2000",
       "th": 11,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8VJYRRGQ",
@@ -115,7 +115,7 @@
       "name": "Lightwood",
       "th": 14,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R282UJLVJ",
@@ -150,7 +150,7 @@
       "name": "Brandon2.0 07",
       "th": 12,
       "pos": 12,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R9GR9QC9C",
@@ -222,7 +222,7 @@
       "name": "Kaykay28",
       "th": 12,
       "pos": 17,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GUC20R9CC",
@@ -236,7 +236,7 @@
       "name": "queen",
       "th": 11,
       "pos": 22,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R8RU2G0GC",
@@ -278,7 +278,7 @@
       "name": "Loythegreat",
       "th": 11,
       "pos": 19,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#GYR8JQ8QQ",
@@ -341,21 +341,21 @@
       "name": "Le76",
       "th": 13,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GCJGGPLPJ",
       "name": "kulata~boy",
       "th": 15,
       "pos": 4,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R2VCPY8GC",
       "name": "kaykay",
       "th": 14,
       "pos": 9,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QCJR0P2VY",
@@ -376,7 +376,7 @@
       "name": "zeero",
       "th": 11,
       "pos": 21,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#Q28J9C98P",
@@ -390,7 +390,7 @@
       "name": "TheNight’sWatch",
       "th": 13,
       "pos": 16,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GJ0VC0VPV",
@@ -428,6 +428,6 @@
       "attacks": 1
     }
   ],
-  "at": "2026-11-26T09:00:28.830Z",
+  "at": "2026-11-26T19:10:53.784Z",
   "source": "currentwar"
 }
