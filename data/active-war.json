@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 30,
   "attacksPerMember": 2,
   "rival": "ASISI BOYS",
@@ -17,7 +17,7 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 7,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GYR2UVLVP",
@@ -31,7 +31,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 13,
       "pos": 10,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8ULYVJ09P",
@@ -52,7 +52,7 @@
       "name": "Pete Zahut",
       "th": 15,
       "pos": 4,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GPYCLGLGG",
@@ -101,7 +101,7 @@
       "name": "..::MURDOC::..",
       "th": 16,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VCYYPVLU",
@@ -143,7 +143,7 @@
       "name": "Casdo",
       "th": 11,
       "pos": 20,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#YJ8VRVPY",
@@ -171,21 +171,21 @@
       "name": "Abrasive7X",
       "th": 13,
       "pos": 11,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#2PJGU2YGJ",
       "name": "..::RAMIRO::..",
       "th": 11,
       "pos": 19,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
       "name": "kssto",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GVQL0892Y",
@@ -206,7 +206,7 @@
       "name": "murdoc",
       "th": 11,
       "pos": 23,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
@@ -236,14 +236,14 @@
       "name": "queen",
       "th": 11,
       "pos": 22,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R8RU2G0GC",
       "name": "Warlord (\")",
-      "th": 10,
+      "th": 11,
       "pos": 29,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#YJ8909PUV",
@@ -255,9 +255,9 @@
     {
       "tag": "#R8GQ82V8Y",
       "name": "ChrisMae16",
-      "th": 11,
+      "th": 12,
       "pos": 27,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GVCQ0CJ88",
@@ -278,7 +278,7 @@
       "name": "Loythegreat",
       "th": 11,
       "pos": 19,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GYR8JQ8QQ",
@@ -320,14 +320,14 @@
       "name": "kamandag",
       "th": 11,
       "pos": 18,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R9Y00CVJP",
       "name": "zion",
       "th": 10,
       "pos": 30,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9QVRPV90",
@@ -348,7 +348,7 @@
       "name": "kulata~boy",
       "th": 15,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R2VCPY8GC",
@@ -362,7 +362,7 @@
       "name": "Pogi",
       "th": 12,
       "pos": 15,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G99RVYGC0",
@@ -376,7 +376,7 @@
       "name": "zeero",
       "th": 11,
       "pos": 21,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#Q28J9C98P",
@@ -404,30 +404,30 @@
       "name": "CM ft. tabz",
       "th": 15,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GJVJ902L9",
       "name": "bisdak",
       "th": 15,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R2L2C200G",
       "name": "\"Rush King\"",
       "th": 11,
       "pos": 24,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8QJ0020C0",
       "name": "19SKEPTRON73",
       "th": 14,
       "pos": 7,
-      "attacks": 0
+      "attacks": 1
     }
   ],
-  "at": "2026-11-26T00:34:45.962Z",
+  "at": "2026-11-26T09:00:28.830Z",
   "source": "currentwar"
 }

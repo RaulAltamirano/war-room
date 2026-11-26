@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 29900,
-  "clanBuilderBasePoints": 17988,
+  "clanBuilderBasePoints": 18002,
   "clanCapitalPoints": 1007,
   "capitalLeague": {
     "id": 85000005,
@@ -49,11 +49,11 @@
         "id": 105000021,
         "name": "Golem League 21"
       },
-      "trophies": 534,
+      "trophies": 561,
       "builderBaseTrophies": 2926,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 2869,
+      "donations": 3180,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2424,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 25,
+      "donations": 33,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -143,8 +143,8 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 2683,
-      "donationsReceived": 2804,
+      "donations": 2828,
+      "donationsReceived": 2938,
       "playerHouse": {
         "elements": [
           {
@@ -188,8 +188,8 @@
       "builderBaseTrophies": 2520,
       "clanRank": 4,
       "previousClanRank": 4,
-      "donations": 3131,
-      "donationsReceived": 1712,
+      "donations": 3223,
+      "donationsReceived": 1868,
       "playerHouse": {
         "elements": [
           {
@@ -275,11 +275,11 @@
         "name": "Valkyrie League 15"
       },
       "trophies": 107,
-      "builderBaseTrophies": 1827,
+      "builderBaseTrophies": 1831,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 649,
-      "donationsReceived": 1472,
+      "donationsReceived": 1519,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -483,8 +483,8 @@
       "builderBaseTrophies": 2390,
       "clanRank": 11,
       "previousClanRank": 11,
-      "donations": 3217,
-      "donationsReceived": 3466,
+      "donations": 3219,
+      "donationsReceived": 3620,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -595,7 +595,7 @@
         "name": "Wizard League 10"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2150,
+      "builderBaseTrophies": 2171,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 42,
@@ -700,7 +700,7 @@
       "name": "trueno⚡️",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 69,
+      "expLevel": 70,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 8"
       },
       "trophies": 56,
-      "builderBaseTrophies": 1346,
+      "builderBaseTrophies": 1370,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -925,7 +925,7 @@
       "name": "jhon cna",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 75,
+      "expLevel": 76,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1074,7 +1074,7 @@
       "clanRank": 25,
       "previousClanRank": 25,
       "donations": 534,
-      "donationsReceived": 2530,
+      "donationsReceived": 2597,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"
@@ -1085,7 +1085,7 @@
       "name": "murdoc",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 63,
+      "expLevel": 64,
       "league": {
         "id": 29000000,
         "name": "Unranked"
