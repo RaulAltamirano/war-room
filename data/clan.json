@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 29900,
-  "clanBuilderBasePoints": 18022,
+  "clanBuilderBasePoints": 18036,
   "clanCapitalPoints": 1007,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 2926,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 3258,
+      "donations": 3261,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 2828,
+      "donations": 2872,
       "donationsReceived": 2938,
       "playerHouse": {
         "elements": [
@@ -229,12 +229,12 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 29,
+      "trophies": 40,
       "builderBaseTrophies": 2410,
       "clanRank": 5,
       "previousClanRank": 5,
       "donations": 0,
-      "donationsReceived": 212,
+      "donationsReceived": 259,
       "playerHouse": {
         "elements": [
           {
@@ -504,7 +504,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 175,
+      "trophies": 204,
       "builderBaseTrophies": 1146,
       "clanRank": 12,
       "previousClanRank": 13,
@@ -639,7 +639,7 @@
         "id": 105000009,
         "name": "Archer League 9"
       },
-      "trophies": 115,
+      "trophies": 143,
       "builderBaseTrophies": 1439,
       "clanRank": 15,
       "previousClanRank": 15,
@@ -700,7 +700,7 @@
       "name": "trueno⚡️",
       "role": "member",
       "townHallLevel": 10,
-      "expLevel": 70,
+      "expLevel": 71,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -710,7 +710,7 @@
         "name": "Archer League 8"
       },
       "trophies": 56,
-      "builderBaseTrophies": 1370,
+      "builderBaseTrophies": 1392,
       "clanRank": 17,
       "previousClanRank": 17,
       "donations": 0,
@@ -935,7 +935,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1981,
+      "builderBaseTrophies": 2025,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 0,
@@ -961,8 +961,8 @@
         ]
       },
       "builderBaseLeague": {
-        "id": 44000019,
-        "name": "Copper League I"
+        "id": 44000020,
+        "name": "Brass League III"
       }
     },
     {
