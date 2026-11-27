@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 29900,
-  "clanBuilderBasePoints": 18003,
+  "clanBuilderBasePoints": 18013,
   "clanCapitalPoints": 1007,
   "capitalLeague": {
     "id": 85000005,
@@ -53,7 +53,7 @@
       "builderBaseTrophies": 2926,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 3180,
+      "donations": 3258,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -98,7 +98,7 @@
       "builderBaseTrophies": 2424,
       "clanRank": 2,
       "previousClanRank": 2,
-      "donations": 33,
+      "donations": 73,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -274,12 +274,12 @@
         "id": 105000015,
         "name": "Valkyrie League 15"
       },
-      "trophies": 107,
+      "trophies": 175,
       "builderBaseTrophies": 1831,
       "clanRank": 6,
       "previousClanRank": 6,
       "donations": 649,
-      "donationsReceived": 1519,
+      "donationsReceived": 1595,
       "builderBaseLeague": {
         "id": 44000018,
         "name": "Copper League II"
@@ -483,56 +483,11 @@
       "builderBaseTrophies": 2390,
       "clanRank": 11,
       "previousClanRank": 11,
-      "donations": 3219,
+      "donations": 3265,
       "donationsReceived": 3620,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
-      }
-    },
-    {
-      "tag": "#QV20QPJGR",
-      "name": "Casdo",
-      "role": "member",
-      "townHallLevel": 11,
-      "expLevel": 78,
-      "league": {
-        "id": 29000000,
-        "name": "Unranked"
-      },
-      "leagueTier": {
-        "id": 105000010,
-        "name": "Wizard League 10"
-      },
-      "trophies": 160,
-      "builderBaseTrophies": 1603,
-      "clanRank": 12,
-      "previousClanRank": 12,
-      "donations": 0,
-      "donationsReceived": 67,
-      "playerHouse": {
-        "elements": [
-          {
-            "type": "ground",
-            "id": 82000000
-          },
-          {
-            "type": "walls",
-            "id": 82000053
-          },
-          {
-            "type": "roof",
-            "id": 82000029
-          },
-          {
-            "type": "decoration",
-            "id": 82000060
-          }
-        ]
-      },
-      "builderBaseLeague": {
-        "id": 44000016,
-        "name": "Copper League IV"
       }
     },
     {
@@ -549,9 +504,9 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 40,
+      "trophies": 175,
       "builderBaseTrophies": 1146,
-      "clanRank": 13,
+      "clanRank": 12,
       "previousClanRank": 13,
       "donations": 0,
       "donationsReceived": 0,
@@ -581,6 +536,51 @@
       }
     },
     {
+      "tag": "#QV20QPJGR",
+      "name": "Casdo",
+      "role": "member",
+      "townHallLevel": 11,
+      "expLevel": 78,
+      "league": {
+        "id": 29000000,
+        "name": "Unranked"
+      },
+      "leagueTier": {
+        "id": 105000010,
+        "name": "Wizard League 10"
+      },
+      "trophies": 160,
+      "builderBaseTrophies": 1630,
+      "clanRank": 13,
+      "previousClanRank": 12,
+      "donations": 0,
+      "donationsReceived": 67,
+      "playerHouse": {
+        "elements": [
+          {
+            "type": "ground",
+            "id": 82000000
+          },
+          {
+            "type": "walls",
+            "id": 82000053
+          },
+          {
+            "type": "roof",
+            "id": 82000029
+          },
+          {
+            "type": "decoration",
+            "id": 82000060
+          }
+        ]
+      },
+      "builderBaseLeague": {
+        "id": 44000016,
+        "name": "Copper League IV"
+      }
+    },
+    {
       "tag": "#LY9J99L9G",
       "name": "cozo 2000",
       "role": "admin",
@@ -595,7 +595,7 @@
         "name": "Wizard League 10"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2173,
+      "builderBaseTrophies": 2143,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 42,
@@ -640,11 +640,11 @@
         "name": "Archer League 9"
       },
       "trophies": 115,
-      "builderBaseTrophies": 1413,
+      "builderBaseTrophies": 1439,
       "clanRank": 15,
       "previousClanRank": 15,
       "donations": 366,
-      "donationsReceived": 753,
+      "donationsReceived": 793,
       "builderBaseLeague": {
         "id": 44000014,
         "name": "Stone League I"
@@ -935,7 +935,7 @@
         "name": "Barbarian League 6"
       },
       "trophies": 0,
-      "builderBaseTrophies": 1923,
+      "builderBaseTrophies": 1981,
       "clanRank": 22,
       "previousClanRank": 22,
       "donations": 0,
@@ -1179,7 +1179,7 @@
       "tag": "#R08LUU9CV",
       "name": "J-J POPEYE",
       "role": "member",
-      "townHallLevel": 10,
+      "townHallLevel": 11,
       "expLevel": 73,
       "league": {
         "id": 29000000,
@@ -1239,7 +1239,7 @@
       "clanRank": 30,
       "previousClanRank": 30,
       "donations": 66,
-      "donationsReceived": 48,
+      "donationsReceived": 96,
       "playerHouse": {
         "elements": [
           {

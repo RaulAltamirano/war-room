@@ -38,7 +38,7 @@
       "name": "Meliodas",
       "th": 16,
       "pos": 3,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#R820CCYQ0",
@@ -94,7 +94,7 @@
       "name": "cozo 2000",
       "th": 11,
       "pos": 15,
-      "attacks": 1
+      "attacks": 2
     },
     {
       "tag": "#8VJYRRGQ",
@@ -108,7 +108,7 @@
       "name": "Nicolás",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y8RYV2000",
@@ -136,7 +136,7 @@
       "name": "demiur",
       "th": 12,
       "pos": 13,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#QV20QPJGR",
@@ -306,7 +306,7 @@
       "name": "JAY PITZ",
       "th": 15,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#R8JC82CVC",
@@ -397,7 +397,7 @@
       "name": "shanrodian",
       "th": 17,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#RPUQYQ8Y9",
@@ -425,9 +425,9 @@
       "name": "19SKEPTRON73",
       "th": 14,
       "pos": 7,
-      "attacks": 1
+      "attacks": 2
     }
   ],
-  "at": "2026-11-26T19:10:53.784Z",
+  "at": "2026-11-27T02:18:25.033Z",
   "source": "currentwar"
 }
