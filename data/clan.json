@@ -16,7 +16,7 @@
   },
   "clanLevel": 7,
   "clanPoints": 29900,
-  "clanBuilderBasePoints": 18036,
+  "clanBuilderBasePoints": 18039,
   "clanCapitalPoints": 1007,
   "capitalLeague": {
     "id": 85000005,
@@ -40,7 +40,7 @@
       "name": "..::MURDOC::..",
       "role": "coLeader",
       "townHallLevel": 16,
-      "expLevel": 213,
+      "expLevel": 214,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -184,7 +184,7 @@
         "id": 105000017,
         "name": "Witch League 17"
       },
-      "trophies": 103,
+      "trophies": 116,
       "builderBaseTrophies": 2520,
       "clanRank": 4,
       "previousClanRank": 4,
@@ -274,7 +274,7 @@
         "id": 105000015,
         "name": "Valkyrie League 15"
       },
-      "trophies": 175,
+      "trophies": 202,
       "builderBaseTrophies": 1831,
       "clanRank": 6,
       "previousClanRank": 6,
@@ -300,7 +300,7 @@
         "name": "Valkyrie League 14"
       },
       "trophies": 151,
-      "builderBaseTrophies": 2334,
+      "builderBaseTrophies": 2343,
       "clanRank": 7,
       "previousClanRank": 7,
       "donations": 306,
@@ -507,7 +507,7 @@
       "trophies": 204,
       "builderBaseTrophies": 1146,
       "clanRank": 12,
-      "previousClanRank": 13,
+      "previousClanRank": 12,
       "donations": 0,
       "donationsReceived": 0,
       "playerHouse": {
@@ -552,7 +552,7 @@
       "trophies": 160,
       "builderBaseTrophies": 1630,
       "clanRank": 13,
-      "previousClanRank": 12,
+      "previousClanRank": 13,
       "donations": 0,
       "donationsReceived": 67,
       "playerHouse": {
@@ -595,7 +595,7 @@
         "name": "Wizard League 10"
       },
       "trophies": 0,
-      "builderBaseTrophies": 2161,
+      "builderBaseTrophies": 2158,
       "clanRank": 14,
       "previousClanRank": 14,
       "donations": 42,
@@ -1014,7 +1014,7 @@
       "tag": "#R9GR9QC9C",
       "name": "kerrykopito",
       "role": "member",
-      "townHallLevel": 10,
+      "townHallLevel": 11,
       "expLevel": 75,
       "league": {
         "id": 29000000,

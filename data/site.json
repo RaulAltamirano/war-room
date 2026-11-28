@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T20:05:27Z",
+  "generatedAt": "2026-11-28T02:50:20Z",
   "clan": {
     "name": "clandestinos",
     "level": 7,
@@ -12,7 +12,7 @@
     "league": "Plata I",
     "capLeague": "Plata II",
     "trophies": 29900,
-    "builder": 18036,
+    "builder": 18039,
     "capital": 1007,
     "members": 31,
     "freq": "Siempre",
@@ -63,7 +63,7 @@
       "..::MURDOC::..",
       "C",
       16,
-      213,
+      214,
       3261,
       0,
       2926
@@ -120,7 +120,7 @@
       151,
       306,
       0,
-      2334
+      2343
     ],
     [
       "Lightwood",
@@ -183,7 +183,7 @@
       93,
       42,
       601,
-      2161
+      2158
     ],
     [
       "Brandon2.0 07",
@@ -269,7 +269,7 @@
     [
       "kerrykopito",
       "M",
-      10,
+      11,
       75,
       0,
       0,
@@ -13155,7 +13155,7 @@
         "attacks": 0
       }
     ],
-    "at": "2026-11-27T20:05:27.428Z",
+    "at": "2026-11-28T02:50:20.001Z",
     "source": "currentwar"
   }
 }
