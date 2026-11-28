@@ -53,7 +53,7 @@
       "builderBaseTrophies": 2926,
       "clanRank": 1,
       "previousClanRank": 1,
-      "donations": 3261,
+      "donations": 3516,
       "donationsReceived": 0,
       "playerHouse": {
         "elements": [
@@ -143,7 +143,7 @@
       "builderBaseTrophies": 3204,
       "clanRank": 3,
       "previousClanRank": 3,
-      "donations": 2872,
+      "donations": 2927,
       "donationsReceived": 2938,
       "playerHouse": {
         "elements": [
@@ -188,7 +188,7 @@
       "builderBaseTrophies": 2520,
       "clanRank": 4,
       "previousClanRank": 4,
-      "donations": 3223,
+      "donations": 3268,
       "donationsReceived": 1868,
       "playerHouse": {
         "elements": [
@@ -274,7 +274,7 @@
         "id": 105000015,
         "name": "Valkyrie League 15"
       },
-      "trophies": 202,
+      "trophies": 249,
       "builderBaseTrophies": 1831,
       "clanRank": 6,
       "previousClanRank": 6,
@@ -299,7 +299,7 @@
         "id": 105000014,
         "name": "Valkyrie League 14"
       },
-      "trophies": 151,
+      "trophies": 170,
       "builderBaseTrophies": 2343,
       "clanRank": 7,
       "previousClanRank": 7,
@@ -484,7 +484,7 @@
       "clanRank": 11,
       "previousClanRank": 11,
       "donations": 3265,
-      "donationsReceived": 3620,
+      "donationsReceived": 3774,
       "builderBaseLeague": {
         "id": 44000021,
         "name": "Brass League II"
@@ -504,7 +504,7 @@
         "id": 105000010,
         "name": "Wizard League 10"
       },
-      "trophies": 204,
+      "trophies": 232,
       "builderBaseTrophies": 1146,
       "clanRank": 12,
       "previousClanRank": 12,
@@ -1060,7 +1060,7 @@
       "name": "..::RAMIRO::..",
       "role": "member",
       "townHallLevel": 11,
-      "expLevel": 120,
+      "expLevel": 121,
       "league": {
         "id": 29000000,
         "name": "Unranked"
@@ -1074,7 +1074,7 @@
       "clanRank": 25,
       "previousClanRank": 25,
       "donations": 534,
-      "donationsReceived": 2597,
+      "donationsReceived": 2798,
       "builderBaseLeague": {
         "id": 44000017,
         "name": "Copper League III"

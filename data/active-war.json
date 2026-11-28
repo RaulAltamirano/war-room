@@ -1,5 +1,5 @@
 {
-  "state": "preparation",
+  "state": "inWar",
   "teamSize": 25,
   "attacksPerMember": 2,
   "rival": "newbie PH",
@@ -10,7 +10,7 @@
       "name": "xlMURDOClx",
       "th": 14,
       "pos": 6,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GYR2UVLVP",
@@ -24,7 +24,7 @@
       "name": "ⓟⓐⓒⓜⓐⓝ",
       "th": 13,
       "pos": 8,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8ULYVJ09P",
@@ -45,7 +45,7 @@
       "name": "Pete Zahut",
       "th": 15,
       "pos": 4,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GPYCLGLGG",
@@ -87,7 +87,7 @@
       "name": "..::MURDOC::..",
       "th": 16,
       "pos": 1,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#8VCYYPVLU",
@@ -115,7 +115,7 @@
       "name": "Casdo",
       "th": 11,
       "pos": 17,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#YJ8VRVPY",
@@ -127,7 +127,7 @@
     {
       "tag": "#R9GR9QC9C",
       "name": "kerrykopito",
-      "th": 10,
+      "th": 11,
       "pos": 23,
       "attacks": 0
     },
@@ -150,14 +150,14 @@
       "name": "..::RAMIRO::..",
       "th": 11,
       "pos": 16,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#Y9GU8QYYG",
       "name": "kssto",
       "th": 16,
       "pos": 2,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#GC9ULU80G",
@@ -171,7 +171,7 @@
       "name": "murdoc",
       "th": 11,
       "pos": 19,
-      "attacks": 0
+      "attacks": 2
     },
     {
       "tag": "#G92R92J98",
@@ -187,7 +187,7 @@
       "name": "nomar",
       "th": 11,
       "pos": 16,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GPR0G2GQV",
@@ -208,21 +208,21 @@
       "name": "RY",
       "th": 10,
       "pos": 24,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#LRURJRVU0",
       "name": "Y^199x",
       "th": 11,
       "pos": 14,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R0RY0JP9J",
       "name": "drock80",
       "th": 12,
       "pos": 11,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#G0U0QR09Y",
@@ -236,14 +236,14 @@
       "name": "RonMacky",
       "th": 12,
       "pos": 13,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#PCJLYJ2JC",
       "name": "shiki",
       "th": 11,
       "pos": 18,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#GLRL88JQQ",
@@ -264,7 +264,7 @@
       "name": "▪️The Equalizer",
       "th": 11,
       "pos": 19,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#8J28V9JJR",
@@ -278,7 +278,7 @@
       "name": "YJ•199X",
       "th": 14,
       "pos": 5,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#YV2UVPU88",
@@ -292,14 +292,14 @@
       "name": "3-in-1",
       "th": 15,
       "pos": 4,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R9VQVVP92",
       "name": "kingsol",
       "th": 11,
       "pos": 17,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#RPQQPPP9C",
@@ -341,7 +341,7 @@
       "name": "solking",
       "th": 16,
       "pos": 3,
-      "attacks": 0
+      "attacks": 1
     },
     {
       "tag": "#R0L0P2LPU",
@@ -355,9 +355,9 @@
       "name": "Ulquiorra cifer",
       "th": 11,
       "pos": 15,
-      "attacks": 0
+      "attacks": 1
     }
   ],
-  "at": "2026-11-28T02:50:20.001Z",
+  "at": "2026-11-28T11:07:33.497Z",
   "source": "currentwar"
 }
